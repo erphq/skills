@@ -61,34 +61,34 @@ This is not a textbook. It's a practical, opinionated, implementation-ready skil
 <br>
 
 ```
-┌───────────────────────────────────────────────────────────┐
-│                                                           │
-│  BUSINESS PROCESS SKILLS                                  │
-│                                                           │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐        │
-│  │   ERP   │ │   CRM   │ │  HRMS   │ │   SCM   │        │
-│  │ 8 procs │ │ 8 procs │ │ 8 procs │ │ 8 procs │        │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘        │
-│  ┌─────────────┐ ┌─────────────┐                         │
-│  │  Helpdesk   │ │     PSA     │                         │
-│  │  7 procs    │ │   7 procs   │                         │
-│  └─────────────┘ └─────────────┘                         │
-│                                                           │
-│  Each process:  Build · Maintain · Scale                  │
-│                 × 30 industries × 4 company sizes         │
-│                                                           │
-├───────────────────────────────────────────────────────────┤
-│                                                           │
-│  TECHNICAL SKILLS (17) │ ROLES (6)  │ TEMPLATES (4)      │
-│  Builder toolkit       │ Expert     │ Delivery            │
-│                        │ personas   │ artifacts           │
-│                                                           │
-├───────────────────────────────────────────────────────────┤
-│                                                           │
-│  DOMAINS (6) — Enterprise Verticals                       │
-│  Finance · HR · Supply Chain · Sales · Projects · Support │
-│                                                           │
-└───────────────────────────────────────────────────────────┘
++-----------------------------------------------------------+
+|                                                           |
+|   BUSINESS PROCESS SKILLS                                 |
+|                                                           |
+|   +---------+ +---------+ +---------+ +---------+        |
+|   |   ERP   | |   CRM   | |  HRMS   | |   SCM   |        |
+|   | 8 procs | | 8 procs | | 8 procs | | 8 procs |        |
+|   +---------+ +---------+ +---------+ +---------+        |
+|   +-------------+ +-------------+                         |
+|   |  Helpdesk   | |     PSA     |                         |
+|   |  7 procs    | |   7 procs   |                         |
+|   +-------------+ +-------------+                         |
+|                                                           |
+|   Each process:  Build  .  Maintain  .  Scale             |
+|                  x 30 industries  x 4 company sizes       |
+|                                                           |
++-----------------------------------------------------------+
+|                                                           |
+|   TECHNICAL SKILLS (17) | ROLES (6)  | TEMPLATES (4)     |
+|   Builder toolkit       | Expert     | Delivery           |
+|                         | personas   | artifacts           |
+|                                                           |
++-----------------------------------------------------------+
+|                                                           |
+|   DOMAINS (6) -- Enterprise Verticals                     |
+|   Finance . HR . Supply Chain . Sales . Projects . Support|
+|                                                           |
++-----------------------------------------------------------+
 ```
 
 ---
@@ -110,22 +110,22 @@ This is not a textbook. It's a practical, opinionated, implementation-ready skil
 The core of SDStack. Find your system, find your process. Each skill covers:
 
 ```
-  ┌──────────────────────────────────────────────────┐
-  │  Start Here     Check templates first.           │
-  │                 Deploy. Customize. Done.          │
-  │                                                  │
-  │  Build          Set it up from scratch or        │
-  │                 template — with agent help        │
-  │                                                  │
-  │  Maintain       Dashboards, alerts, exceptions,  │
-  │                 routine automation                │
-  │                                                  │
-  │  Scale          Add complexity, new workflows,   │
-  │                 automation, redesign triggers     │
-  │                                                  │
-  │  By Industry    30 industries, specific guidance  │
-  │  By Size        Startup · SMB · Mid · Enterprise  │
-  └──────────────────────────────────────────────────┘
+  +--------------------------------------------------+
+  |  Start Here     Check templates first.            |
+  |                 Deploy. Customize. Done.           |
+  |                                                   |
+  |  Build          Set it up from scratch or         |
+  |                 template -- with agent help        |
+  |                                                   |
+  |  Maintain       Dashboards, alerts, exceptions,   |
+  |                 routine automation                 |
+  |                                                   |
+  |  Scale          Add complexity, new workflows,    |
+  |                 automation, redesign triggers      |
+  |                                                   |
+  |  By Industry    30 industries, specific guidance   |
+  |  By Size        Startup . SMB . Mid . Enterprise   |
+  +--------------------------------------------------+
 ```
 
 ---
