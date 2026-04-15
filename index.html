@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDStack — Enterprise App Builder's Skill Stack for erp.ai</title>
+    <style>
+        :root {
+            --bg: #fafbfc;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --text-secondary: #64748b;
+            --accent: #6C3CE9;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --role: #2563eb;
+            --role-light: #eff6ff;
+            --skill: #059669;
+            --skill-light: #ecfdf5;
+            --domain: #d97706;
+            --domain-light: #fffbeb;
+            --template: #dc2626;
+            --template-light: #fef2f2;
+            --radius: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250, 251, 252, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0 24px;
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .nav-logo span { color: var(--text); }
+        .nav-links { display: flex; gap: 32px; }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--text); }
+
+        .hero {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 140px 24px 60px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+        }
+        .hero h1 .accent { color: var(--accent); }
+        .hero p {
+            font-size: 19px;
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 0 auto 32px;
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 40px;
+        }
+        .stat { text-align: center; }
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -1px;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+        .section-header {
+            margin-bottom: 40px;
+        }
+        .section-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .section-header p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+        .section-divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        .card-tag.role { background: var(--role-light); color: var(--role); }
+        .card-tag.skill { background: var(--skill-light); color: var(--skill); }
+        .card-tag.domain { background: var(--domain-light); color: var(--domain); }
+        .card-tag.template { background: var(--template-light); color: var(--template); }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card-desc {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .card-file {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 12px;
+            color: var(--accent);
+            margin-top: 12px;
+            opacity: 0.7;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero-stats { flex-direction: column; gap: 20px; }
+            .card-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">SD<span>Stack</span></a>
+        <div class="nav-links">
+            <a href="#roles">Roles</a>
+            <a href="#skills">Skills</a>
+            <a href="#domains">Domains</a>
+            <a href="#templates">Templates</a>
+            <a href="README.md">README</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-badge">6 ROLES &middot; 17 SKILLS &middot; 6 DOMAINS &middot; 4 TEMPLATES</div>
+    <h1>Build enterprise apps<br>with <span class="accent">erp.ai</span></h1>
+    <p>The complete skill stack for building production-grade enterprise SaaS applications. Roles to think with, skills to build with, domains to build for, and templates to ship with.</p>
+
+    <div class="hero-stats">
+        <div class="stat">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Role Personas</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">17</div>
+            <div class="stat-label">Builder Skills</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Enterprise Domains</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Delivery Templates</div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ROLES -->
+<section class="section" id="roles">
+    <div class="section-header">
+        <h2>Roles</h2>
+        <p>Invocable personas. Activate a role when you need to think like a specific expert. Each role defines a mindset, responsibilities, and decision frameworks.</p>
+    </div>
+
+    <div class="card-grid">
+        <a href="roles/solution-architect.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">Solution Architect</div>
+            <div class="card-desc">System design, integration strategy, technology decisions, and solution blueprints. The person who sees the whole picture and makes sure the pieces fit.</div>
+            <div class="card-file">roles/solution-architect.md</div>
+        </a>
+
+        <a href="roles/requirements-analyst.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">Requirements Analyst</div>
+            <div class="card-desc">Feature gathering, stakeholder interviews, discovery workshops, and requirements documentation. Translates business needs into buildable specs.</div>
+            <div class="card-file">roles/requirements-analyst.md</div>
+        </a>
+
+        <a href="roles/data-engineer.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">Data Engineer</div>
+            <div class="card-desc">Data modeling, cleansing, transformation pipelines, and quality enforcement. Owns the structure and integrity of every byte in the system.</div>
+            <div class="card-file">roles/data-engineer.md</div>
+        </a>
+
+        <a href="roles/migration-architect.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">Migration Architect</div>
+            <div class="card-desc">ETL design, legacy system extraction, cutover planning, and data reconciliation. Gets data from where it is to where it needs to be.</div>
+            <div class="card-file">roles/migration-architect.md</div>
+        </a>
+
+        <a href="roles/compliance-analyst.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">Compliance Analyst</div>
+            <div class="card-desc">SOX, GDPR, HIPAA, SOC 2 compliance. Segregation of duties, audit trails, data retention, and access control reviews. Builds compliance in from day one.</div>
+            <div class="card-file">roles/compliance-analyst.md</div>
+        </a>
+
+        <a href="roles/qa-lead.md" class="card">
+            <span class="card-tag role">Role</span>
+            <div class="card-title">QA Lead</div>
+            <div class="card-desc">Test strategy, UAT scripts, regression suites, performance testing, and defect management. The gatekeeper between "built" and "ready."</div>
+            <div class="card-file">roles/qa-lead.md</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <div class="section-header">
+        <h2>Skills</h2>
+        <p>Builder capabilities — the things you DO with erp.ai. Each skill walks through the complete workflow, decision points, patterns, and pitfalls.</p>
+    </div>
+
+    <div class="card-grid">
+        <a href="skills/data-modeling.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Data Modeling</div>
+            <div class="card-desc">Schema design, entity relationships, field types, validation rules, normalization strategies, and multi-tenancy patterns for enterprise apps.</div>
+            <div class="card-file">skills/data-modeling.md</div>
+        </a>
+
+        <a href="skills/workflow-automation.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Workflow Automation</div>
+            <div class="card-desc">Business rules, approval chains, triggers, notifications, state machines, escalation rules, and SLA timers for enterprise processes.</div>
+            <div class="card-file">skills/workflow-automation.md</div>
+        </a>
+
+        <a href="skills/integrations.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Integrations</div>
+            <div class="card-desc">REST/SOAP APIs, webhooks, EDI, iPaaS, middleware patterns, authentication, error handling, and real-time vs batch data exchange.</div>
+            <div class="card-file">skills/integrations.md</div>
+        </a>
+
+        <a href="skills/data-migration.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Data Migration</div>
+            <div class="card-desc">ETL pipelines, source profiling, field mapping, data cleansing, loading strategies, validation, reconciliation, and cutover execution.</div>
+            <div class="card-file">skills/data-migration.md</div>
+        </a>
+
+        <a href="skills/security-roles.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Security & Roles</div>
+            <div class="card-desc">RBAC design, row-level security, field-level access, segregation of duties, audit logging, encryption, and compliance-driven access controls.</div>
+            <div class="card-file">skills/security-roles.md</div>
+        </a>
+
+        <a href="skills/reports-dashboards.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Reports & Dashboards</div>
+            <div class="card-desc">KPI design, operational and analytical reports, dashboard patterns, scheduled distribution, embedded BI, and data visualization best practices.</div>
+            <div class="card-file">skills/reports-dashboards.md</div>
+        </a>
+
+        <a href="skills/testing-validation.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Testing & Validation</div>
+            <div class="card-desc">UAT frameworks, regression suites, performance testing, test data management, defect lifecycle, data validation rules, and acceptance criteria.</div>
+            <div class="card-file">skills/testing-validation.md</div>
+        </a>
+
+        <a href="skills/deployment-golive.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Deployment & Go-Live</div>
+            <div class="card-desc">Environment strategy, deployment pipelines, cutover runbooks, go/no-go decisions, hypercare planning, rollback procedures, and progressive rollout.</div>
+            <div class="card-file">skills/deployment-golive.md</div>
+        </a>
+
+        <a href="skills/user-onboarding.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">User Onboarding</div>
+            <div class="card-desc">Training needs analysis, content creation, in-app walkthroughs, adoption tracking, champion programs, and change resistance strategies.</div>
+            <div class="card-file">skills/user-onboarding.md</div>
+        </a>
+
+        <a href="skills/performance-optimization.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Performance Optimization</div>
+            <div class="card-desc">Query tuning, indexing strategies, caching layers, batch job scheduling, pagination, connection pooling, monitoring, and capacity planning.</div>
+            <div class="card-file">skills/performance-optimization.md</div>
+        </a>
+
+        <a href="skills/api-design.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">API Design</div>
+            <div class="card-desc">REST and GraphQL design, versioning strategies, rate limiting, webhook contracts, idempotency patterns, error handling, and API lifecycle management.</div>
+            <div class="card-file">skills/api-design.md</div>
+        </a>
+
+        <a href="skills/master-data-management.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Master Data Management</div>
+            <div class="card-desc">Golden record resolution, data stewardship programs, data quality frameworks, MDM architecture styles, reference data lifecycle, and cross-system sync.</div>
+            <div class="card-file">skills/master-data-management.md</div>
+        </a>
+
+        <a href="skills/observability.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Observability</div>
+            <div class="card-desc">Structured logging, metrics architecture, distributed tracing, alerting strategy, incident response playbooks, SLO monitoring, and runbook automation.</div>
+            <div class="card-file">skills/observability.md</div>
+        </a>
+
+        <a href="skills/change-management.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Change Management</div>
+            <div class="card-desc">ADKAR and Kotter frameworks, stakeholder engagement, impact assessment, resistance management, sponsorship activation, and benefits realization.</div>
+            <div class="card-file">skills/change-management.md</div>
+        </a>
+
+        <a href="skills/disaster-recovery.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Disaster Recovery</div>
+            <div class="card-desc">RTO/RPO classification, backup strategies, DR architecture patterns, failover procedures, DR testing, business continuity planning, and compliance.</div>
+            <div class="card-file">skills/disaster-recovery.md</div>
+        </a>
+
+        <a href="skills/configuration-management.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Configuration Management</div>
+            <div class="card-desc">Config-as-code, promotion pipelines, drift detection, environment management, secrets management, tenant-specific config, and release management.</div>
+            <div class="card-file">skills/configuration-management.md</div>
+        </a>
+
+        <a href="skills/localization-i18n.md" class="card">
+            <span class="card-tag skill">Skill</span>
+            <div class="card-title">Localization & i18n</div>
+            <div class="card-desc">Multi-language support, multi-currency handling, timezone management, locale-specific formatting, regulatory localization, and multi-country deployment.</div>
+            <div class="card-file">skills/localization-i18n.md</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- DOMAINS -->
+<section class="section" id="domains">
+    <div class="section-header">
+        <h2>Domains</h2>
+        <p>Enterprise verticals — the industries and functions you're building FOR. Key entities, business processes, regulatory requirements, and configuration patterns.</p>
+    </div>
+
+    <div class="card-grid">
+        <a href="domains/finance-accounting.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Finance & Accounting</div>
+            <div class="card-desc">General ledger, accounts payable/receivable, fixed assets, budgeting, consolidation, revenue recognition (ASC 606), tax, and period close.</div>
+            <div class="card-file">domains/finance-accounting.md</div>
+        </a>
+
+        <a href="domains/human-resources.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Human Resources</div>
+            <div class="card-desc">Core HR, payroll, benefits administration, talent management, time and attendance, leave management, workforce planning, and labor compliance.</div>
+            <div class="card-file">domains/human-resources.md</div>
+        </a>
+
+        <a href="domains/supply-chain.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Supply Chain</div>
+            <div class="card-desc">Procurement, inventory management, warehousing, logistics, MRP, demand planning, quality management, and vendor scoring.</div>
+            <div class="card-file">domains/supply-chain.md</div>
+        </a>
+
+        <a href="domains/sales-crm.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Sales & CRM</div>
+            <div class="card-desc">Lead-to-cash, pipeline management, CPQ, contract management, commission calculation, territory management, and customer 360.</div>
+            <div class="card-file">domains/sales-crm.md</div>
+        </a>
+
+        <a href="domains/project-operations.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Project Operations</div>
+            <div class="card-desc">Professional services automation, resource management, time/expense tracking, project billing (T&M, fixed price, milestone), and project accounting.</div>
+            <div class="card-file">domains/project-operations.md</div>
+        </a>
+
+        <a href="domains/customer-support.md" class="card">
+            <span class="card-tag domain">Domain</span>
+            <div class="card-title">Customer Support</div>
+            <div class="card-desc">Case/ticket lifecycle, SLA management, knowledge base, escalation tiers (L1/L2/L3), CSAT/NPS, omnichannel support, and service analytics.</div>
+            <div class="card-file">domains/customer-support.md</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- TEMPLATES -->
+<section class="section" id="templates">
+    <div class="section-header">
+        <h2>Templates</h2>
+        <p>Reusable delivery artifacts. Each template includes structure, instructions, examples, and guidance on when to use it.</p>
+    </div>
+
+    <div class="card-grid">
+        <a href="templates/fit-gap-matrix.md" class="card">
+            <span class="card-tag template">Template</span>
+            <div class="card-title">Fit-Gap Matrix</div>
+            <div class="card-desc">Score requirements against platform capabilities. Classify as Fit, Partial Fit, or Gap with effort estimates and resolution paths.</div>
+            <div class="card-file">templates/fit-gap-matrix.md</div>
+        </a>
+
+        <a href="templates/migration-runbook.md" class="card">
+            <span class="card-tag template">Template</span>
+            <div class="card-title">Migration Runbook</div>
+            <div class="card-desc">Minute-by-minute cutover execution plan with task sequences, owners, duration estimates, rollback triggers, and communication checkpoints.</div>
+            <div class="card-file">templates/migration-runbook.md</div>
+        </a>
+
+        <a href="templates/requirements-traceability.md" class="card">
+            <span class="card-tag template">Template</span>
+            <div class="card-title">Requirements Traceability Matrix</div>
+            <div class="card-desc">Link every requirement through design, configuration, testing, and sign-off. Proves the system does what it's supposed to do.</div>
+            <div class="card-file">templates/requirements-traceability.md</div>
+        </a>
+
+        <a href="templates/go-live-checklist.md" class="card">
+            <span class="card-tag template">Template</span>
+            <div class="card-title">Go-Live Checklist</div>
+            <div class="card-desc">Go/no-go decision criteria across all workstreams: data, config, integrations, testing, training, support, and infrastructure.</div>
+            <div class="card-file">templates/go-live-checklist.md</div>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>SDStack &mdash; Enterprise App Builder's Skill Stack for <a href="https://erp.ai">erp.ai</a></p>
+    <p style="margin-top:8px; font-size:12px;">For humans and agents alike.</p>
+</footer>
+
+</body>
+</html>
