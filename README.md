@@ -1,81 +1,140 @@
 ---
 title: SDStack
-description: The enterprise skill stack for erp.ai — business process skills, technical skills, roles, domains, and templates for building and running enterprise applications.
+description: The open enterprise skill stack — business process skills, technical skills, roles, domains, and templates for building and running enterprise applications.
 audience: both
 category: index
 ---
 
+<div align="center">
+
 ```
-  ____  ____  ____  _             _    
- / ___||  _ \/ ___|| |_ __ _  ___| | __
- \___ \| | | \___ \| __/ _` |/ __| |/ /
-  ___) | |_| |___) | || (_| | (__|   < 
- |____/|____/|____/ \__\__,_|\___|_|\_\
-                                        
-  The Enterprise Skill Stack for erp.ai
+
+  ███████╗██████╗ ███████╗████████╗ █████╗  ██████╗██╗  ██╗
+  ██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝
+  ███████╗██║  ██║███████╗   ██║   ███████║██║     █████╔╝ 
+  ╚════██║██║  ██║╚════██║   ██║   ██╔══██║██║     ██╔═██╗ 
+  ███████║██████╔╝███████║   ██║   ██║  ██║╚██████╗██║  ██╗
+  ╚══════╝╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+
 ```
+
+### The Open Enterprise Skill Stack
+
+**Every business process. Every industry. Every company size.**<br>
+**For humans and AI agents alike.**
+
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/Business_Processes-46-blue)](skills/)
+[![Technical](https://img.shields.io/badge/Technical_Skills-17-green)](skills/technical/)
+[![Industries](https://img.shields.io/badge/Industries-30-orange)](skills/)
+[![Files](https://img.shields.io/badge/Total_Files-80-purple)](skills/)
+[![erp.ai](https://img.shields.io/badge/Works_with-erp.ai-6C3CE9)](https://erp.ai)
+
+<br>
+
+</div>
 
 ---
 
-**SDStack** is the definitive knowledge base for building, running, and scaling enterprise applications with [erp.ai](https://erp.ai). It covers **every major business system** — ERP, CRM, HRMS, SCM, Helpdesk, and PSA — broken down by the actual business processes people do every day, across 30 industries and 4 company sizes.
+**SDStack** is the open knowledge base for enterprise business processes. It covers **every major business system** — ERP, CRM, HRMS, SCM, Helpdesk, and PSA — broken down by the actual processes people do every day, across **30 industries** and **4 company sizes**.
 
-Whether you're an AP clerk figuring out three-way matching, a sales manager setting up pipeline stages, or an AI agent executing a mission autonomously — SDStack has the playbook.
+This is not a textbook. It's a practical, opinionated, implementation-ready skill stack — designed to be read by business users, consumed by AI agents, and used by builders shipping enterprise applications on any platform.
+
+> Whether you're an AP clerk figuring out three-way matching, a sales manager setting up pipeline stages, or an autonomous agent executing a mission — SDStack has the playbook.
+
+<br>
+
+<div align="center">
+
+| | System | Processes | For |
+|---|--------|-----------|-----|
+| **$** | [**ERP**](#erp--finance--accounting) | 8 | Finance & Accounting teams |
+| **📊** | [**CRM**](#crm--sales) | 8 | Sales & Revenue teams |
+| **👥** | [**HRMS**](#hrms--human-resources) | 8 | HR & People teams |
+| **📦** | [**SCM**](#scm--supply-chain) | 8 | Operations & Supply Chain teams |
+| **🎧** | [**Helpdesk**](#helpdesk--customer-support) | 7 | Support & Success teams |
+| **📋** | [**PSA**](#psa--professional-services) | 7 | Services & Consulting teams |
+| **🔧** | [**Technical**](#technical-skills) | 17 | Builders & Architects |
+
+</div>
+
+<br>
 
 ```
- +----------------------------------------------------------+
- |                    BUSINESS PROCESS SKILLS                |
- |                                                          |
- |  ERP         CRM         HRMS        SCM                |
- |  8 processes  8 processes  8 processes  8 processes       |
- |                                                          |
- |  Helpdesk    PSA                                         |
- |  7 processes  7 processes                                 |
- |                                                          |
- |  Each: Build / Maintain / Scale                          |
- |        x 30 industries x 4 company sizes                 |
- +----------------------------------------------------------+
-                          |
- +----------------------------------------------------------+
- |  TECHNICAL SKILLS (17)  |  ROLES (6)  |  TEMPLATES (4)  |
- |  The builder toolkit    |  Expert     |  Delivery        |
- |  underneath             |  personas   |  artifacts       |
- +----------------------------------------------------------+
-                          |
- +----------------------------------------------------------+
- |              DOMAINS (6) — Enterprise Verticals           |
- +----------------------------------------------------------+
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                                                                 │
+  │   BUSINESS PROCESS SKILLS                                       │
+  │                                                                 │
+  │   ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐             │
+  │   │   ERP   │ │   CRM   │ │  HRMS   │ │   SCM   │             │
+  │   │ 8 procs │ │ 8 procs │ │ 8 procs │ │ 8 procs │             │
+  │   └─────────┘ └─────────┘ └─────────┘ └─────────┘             │
+  │   ┌──────────────┐ ┌──────────────┐                             │
+  │   │   Helpdesk   │ │     PSA      │                             │
+  │   │   7 procs    │ │   7 procs    │                             │
+  │   └──────────────┘ └──────────────┘                             │
+  │                                                                 │
+  │   Each process:  Build  ·  Maintain  ·  Scale                   │
+  │                  × 30 industries  × 4 company sizes             │
+  │                                                                 │
+  ├─────────────────────────────────────────────────────────────────┤
+  │                                                                 │
+  │   TECHNICAL SKILLS (17)  │  ROLES (6)  │  TEMPLATES (4)        │
+  │   Builder toolkit        │  Expert     │  Delivery              │
+  │                          │  personas   │  artifacts             │
+  │                                                                 │
+  ├─────────────────────────────────────────────────────────────────┤
+  │                                                                 │
+  │   DOMAINS (6)  —  Enterprise Verticals                          │
+  │   Finance · HR · Supply Chain · Sales · Projects · Support      │
+  │                                                                 │
+  └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## Who This Is For
 
-- **Business users** who want to do their job better using AI agents — no technical background needed
-- **Solo builders** shipping enterprise apps end-to-end with erp.ai
-- **Small teams and agencies** delivering enterprise apps for clients
-- **Enterprise IT teams** building internal applications and migrating off legacy
-- **AI agents** (including [Proto](https://erp.ai/proto/)) that need structured knowledge to assist with real work
+| You are... | SDStack gives you... |
+|------------|---------------------|
+| **A business user** | Plain-English guides for your specific process, industry, and company size |
+| **A solo builder** | End-to-end playbook for shipping enterprise apps |
+| **A team or agency** | Structured skills for fast, consistent client delivery |
+| **An enterprise IT team** | Implementation reference for builds and migrations |
+| **An AI agent** | Structured knowledge for autonomous enterprise missions |
 
 ---
 
 ## Business Process Skills
 
-These are the core of SDStack. Organized by the system you know — **ERP** if you're in finance, **CRM** if you're in sales, **HRMS** if you're in HR, and so on. Each process covers:
+The core of SDStack. Find your system, find your process. Each skill covers:
 
-- **Start Here** — Check erp.ai's 720+ app templates first. Deploy the closest match, customize on top.
-- **Build** — How to set it up from scratch (or from a template) with agent assistance
-- **Maintain** — Dashboards, alerts, exception handling, routine automation
-- **Scale** — Adding complexity, automation opportunities, when to redesign
-- **By Industry** — How this process works differently across 30 industries
-- **By Company Size** — Startup, SMB, Mid-Market, Enterprise
+```
+  ┌──────────────────────────────────────────────────┐
+  │  Start Here     Check templates first.           │
+  │                 Deploy. Customize. Done.          │
+  │                                                  │
+  │  Build          Set it up from scratch or        │
+  │                 template — with agent help        │
+  │                                                  │
+  │  Maintain       Dashboards, alerts, exceptions,  │
+  │                 routine automation                │
+  │                                                  │
+  │  Scale          Add complexity, new workflows,   │
+  │                 automation, redesign triggers     │
+  │                                                  │
+  │  By Industry    30 industries, specific guidance  │
+  │  By Size        Startup · SMB · Mid · Enterprise  │
+  └──────────────────────────────────────────────────┘
+```
 
 ---
 
 ### ERP — Finance & Accounting
 
-```
-  ERP = The system finance people know
-```
+> *The system finance people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -92,9 +151,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ### CRM — Sales
 
-```
-  CRM = The system sales people know
-```
+> *The system sales people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -111,9 +168,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ### HRMS — Human Resources
 
-```
-  HRMS = The system HR people know
-```
+> *The system HR people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -130,9 +185,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ### SCM — Supply Chain
 
-```
-  SCM = The system operations people know
-```
+> *The system operations people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -149,9 +202,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ### Helpdesk — Customer Support
 
-```
-  Helpdesk = The system support people know
-```
+> *The system support people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -167,9 +218,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ### PSA — Professional Services
 
-```
-  PSA = The system services people know
-```
+> *The system services people know.*
 
 | Process | What It Covers |
 |---------|---------------|
@@ -185,11 +234,7 @@ These are the core of SDStack. Organized by the system you know — **ERP** if y
 
 ## Technical Skills
 
-```
-  TECHNICAL = The builder toolkit underneath
-```
-
-The 17 technical skills are the implementation-level reference for builders and architects. Each one is a deep, opinionated guide covering key concepts, workflows, decision guides, patterns, anti-patterns, and checklists. Business process skills tell you **what** to build; technical skills tell you **how**.
+> *The builder toolkit underneath. Business process skills tell you **what** to build; technical skills tell you **how**.*
 
 #### Core Build
 
@@ -237,11 +282,7 @@ The 17 technical skills are the implementation-level reference for builders and 
 
 ## Roles
 
-```
-  ROLES = Who you think like
-```
-
-Invocable expert personas. Activate a role when you need to think like a specialist. Each role defines the persona's mindset, responsibilities, decision frameworks, and the questions they ask.
+> *Invocable expert personas. Activate a role when you need to think like a specialist.*
 
 | Role | When to Invoke |
 |------|---------------|
@@ -256,11 +297,7 @@ Invocable expert personas. Activate a role when you need to think like a special
 
 ## Domains
 
-```
-  DOMAINS = Enterprise verticals
-```
-
-Complete reference for each enterprise vertical: key entities, end-to-end business processes, regulatory requirements, configuration patterns, integration points, and KPIs.
+> *Complete reference for each enterprise vertical: entities, processes, regulations, config patterns, KPIs.*
 
 | Domain | What It Covers |
 |--------|---------------|
@@ -275,10 +312,6 @@ Complete reference for each enterprise vertical: key entities, end-to-end busine
 
 ## Templates
 
-```
-  TEMPLATES = Delivery artifacts
-```
-
 | Template | What It Is |
 |----------|-----------|
 | [Fit-Gap Matrix](templates/fit-gap-matrix.md) | Requirements vs capabilities scoring with effort estimates and gap resolution |
@@ -290,32 +323,45 @@ Complete reference for each enterprise vertical: key entities, end-to-end busine
 
 ## How to Use SDStack
 
-### If you're a business user
+<table>
+<tr>
+<td width="33%">
 
-Find your system (ERP, CRM, HRMS, SCM, Helpdesk, or PSA), then find your process. Each file explains what the process does in plain English, how agents can help you build, maintain, and scale it, and what's different for your industry and company size.
+**Business User**
 
-### If you're a builder
+Find your system (ERP, CRM, HRMS...), then your process. Each file explains it in plain English — what to build, what to monitor, how to scale — for your industry and size.
 
-Start with the business process skills to understand **what** needs to be built, then dive into technical skills for **how**. Use roles to adopt expert mindsets, domains for vertical-specific requirements, and templates for delivery artifacts.
+</td>
+<td width="33%">
 
-### If you're an AI agent
+**Builder / Architect**
 
-Load business process skills for mission context. Load technical skills for implementation guidance. Adopt roles for reasoning frameworks. Check erp.ai templates before building from scratch.
+Start with business process skills for the **what**, then technical skills for the **how**. Use roles for expert mindsets, domains for vertical depth, templates for deliverables.
+
+</td>
+<td width="33%">
+
+**AI Agent**
+
+Load business process skills as mission context. Load technical skills for implementation. Adopt roles for reasoning frameworks. Every file has structured frontmatter for parsing.
+
+</td>
+</tr>
+</table>
 
 ```
   Example: "Set up accounts payable for a mid-market manufacturer"
   
   1. Load:  skills/erp/accounts-payable.md
-            +--> Start Here: deploy erp.ai AP template
-            +--> Build: customize three-way matching
             +--> By Industry > Manufacturing
             +--> By Company Size > Mid-Market
+            +--> Build: set up three-way matching
 
   2. Load:  skills/technical/workflow-automation.md
-            +--> Design approval chain for PO > Invoice > Payment
+            +--> Design approval chain: PO > Invoice > Payment
 
   3. Load:  skills/technical/security-roles.md
-            +--> Configure SoD: person who creates PO != person who approves invoice
+            +--> SoD: person who creates PO != person who approves invoice
 
   4. Load:  roles/compliance-analyst.md
             +--> Review SOX controls for the AP process
@@ -323,26 +369,24 @@ Load business process skills for mission context. Load technical skills for impl
 
 ---
 
-## erp.ai & Proto
+## Works with erp.ai
 
-SDStack skills are general-purpose enterprise knowledge — they apply regardless of platform. Each skill file includes a section showing how it maps to [erp.ai](https://erp.ai) and [Proto](https://erp.ai/proto/) (erp.ai's autonomous agent engine) for teams building on that stack.
-
-**Always start with erp.ai's 720+ app templates.** Deploy the closest match, then customize. Only build from scratch when no template fits.
+SDStack is platform-agnostic enterprise knowledge. It also integrates with [**erp.ai**](https://erp.ai) and [**Proto**](https://erp.ai/proto/) (erp.ai's autonomous agent engine). Each skill file includes a small section showing how it maps to erp.ai's 720+ app templates and Proto's ORAI cycle.
 
 ---
 
-## What's Inside: By the Numbers
+## By the Numbers
 
 ```
-  Business Process Skills ... 46 (across 6 systems, 30 industries each)
-  Technical Skills .......... 17 (deep implementation guides)
-  Roles ..................... 6  (expert personas)
-  Domains ................... 6  (enterprise verticals)
-  Templates ................. 4  (delivery artifacts)
-  Industries Covered ........ 30 (per process skill)
-  Company Size Tiers ........ 4  (per process skill)
-  Total Files ............... 80 markdown files + index.html
-  Total Lines ............... 18,000+ lines of guidance
+  Business Process Skills ........ 46    across 6 systems
+  Technical Skills ............... 17    deep implementation guides
+  Roles .......................... 6     expert personas
+  Domains ........................ 6     enterprise verticals
+  Templates ...................... 4     delivery artifacts
+  Industries per Process ......... 30
+  Company Size Tiers ............. 4     Startup · SMB · Mid-Market · Enterprise
+  Total Files .................... 80
+  Total Lines .................... 18,000+
 ```
 
 ---
