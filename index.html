@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDStack — Enterprise App Builder's Skill Stack for erp.ai</title>
+    <title>SDStack — Enterprise Skill Stack for erp.ai</title>
     <style>
         :root {
             --bg: #fafbfc;
@@ -21,6 +21,20 @@
             --domain-light: #fffbeb;
             --template: #dc2626;
             --template-light: #fef2f2;
+            --erp: #7c3aed;
+            --erp-light: #f5f3ff;
+            --crm: #0891b2;
+            --crm-light: #ecfeff;
+            --hrms: #be185d;
+            --hrms-light: #fdf2f8;
+            --scm: #b45309;
+            --scm-light: #fffbeb;
+            --helpdesk: #0d9488;
+            --helpdesk-light: #f0fdfa;
+            --psa: #4f46e5;
+            --psa-light: #eef2ff;
+            --technical: #475569;
+            --technical-light: #f8fafc;
             --radius: 12px;
         }
 
@@ -60,11 +74,11 @@
             letter-spacing: -0.5px;
         }
         .nav-logo span { color: var(--text); }
-        .nav-links { display: flex; gap: 32px; }
+        .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
             transition: color 0.2s;
         }
@@ -104,8 +118,9 @@
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 48px;
+            gap: 36px;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
         .stat { text-align: center; }
         .stat-number {
@@ -115,7 +130,7 @@
             letter-spacing: -1px;
         }
         .stat-label {
-            font-size: 13px;
+            font-size: 12px;
             color: var(--text-secondary);
             font-weight: 500;
             margin-top: 4px;
@@ -139,6 +154,13 @@
             font-size: 17px;
             color: var(--text-secondary);
             max-width: 600px;
+        }
+        .section-header .system-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
         }
         .section-divider {
             border: none;
@@ -181,6 +203,13 @@
         .card-tag.skill { background: var(--skill-light); color: var(--skill); }
         .card-tag.domain { background: var(--domain-light); color: var(--domain); }
         .card-tag.template { background: var(--template-light); color: var(--template); }
+        .card-tag.erp { background: var(--erp-light); color: var(--erp); }
+        .card-tag.crm { background: var(--crm-light); color: var(--crm); }
+        .card-tag.hrms { background: var(--hrms-light); color: var(--hrms); }
+        .card-tag.scm { background: var(--scm-light); color: var(--scm); }
+        .card-tag.helpdesk { background: var(--helpdesk-light); color: var(--helpdesk); }
+        .card-tag.psa { background: var(--psa-light); color: var(--psa); }
+        .card-tag.technical { background: var(--technical-light); color: var(--technical); }
 
         .card-title {
             font-size: 18px;
@@ -208,6 +237,7 @@
             font-size: 14px;
         }
         footer a { color: var(--accent); text-decoration: none; }
+        footer .sub { font-size: 12px; margin-top: 8px; }
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 32px; }
@@ -223,8 +253,14 @@
     <div class="nav-inner">
         <a href="#" class="nav-logo">SD<span>Stack</span></a>
         <div class="nav-links">
+            <a href="#erp">ERP</a>
+            <a href="#crm">CRM</a>
+            <a href="#hrms">HRMS</a>
+            <a href="#scm">SCM</a>
+            <a href="#helpdesk">Helpdesk</a>
+            <a href="#psa">PSA</a>
+            <a href="#technical">Technical</a>
             <a href="#roles">Roles</a>
-            <a href="#skills">Skills</a>
             <a href="#domains">Domains</a>
             <a href="#templates">Templates</a>
             <a href="README.md">README</a>
@@ -234,27 +270,437 @@
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-badge">6 ROLES &middot; 17 SKILLS &middot; 6 DOMAINS &middot; 4 TEMPLATES</div>
+    <div class="hero-badge">46 PROCESSES &middot; 17 TECHNICAL SKILLS &middot; 6 ROLES &middot; 6 DOMAINS &middot; 4 TEMPLATES</div>
     <h1>Build enterprise apps<br>with <span class="accent">erp.ai</span></h1>
-    <p>The complete skill stack for building production-grade enterprise SaaS applications. Roles to think with, skills to build with, domains to build for, and templates to ship with.</p>
+    <p>The complete skill stack for building, running, and scaling enterprise applications. Business process skills across 6 systems, 30 industries, and 4 company sizes.</p>
 
     <div class="hero-stats">
         <div class="stat">
-            <div class="stat-number">6</div>
-            <div class="stat-label">Role Personas</div>
+            <div class="stat-number">46</div>
+            <div class="stat-label">Business Processes</div>
         </div>
         <div class="stat">
             <div class="stat-number">17</div>
-            <div class="stat-label">Builder Skills</div>
+            <div class="stat-label">Technical Skills</div>
         </div>
         <div class="stat">
             <div class="stat-number">6</div>
-            <div class="stat-label">Enterprise Domains</div>
+            <div class="stat-label">Systems</div>
         </div>
         <div class="stat">
-            <div class="stat-number">4</div>
-            <div class="stat-label">Delivery Templates</div>
+            <div class="stat-number">30</div>
+            <div class="stat-label">Industries</div>
         </div>
+        <div class="stat">
+            <div class="stat-number">80</div>
+            <div class="stat-label">Total Files</div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ERP -->
+<section class="section" id="erp">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--erp);">ERP &mdash; Finance & Accounting</div>
+        <h2>ERP</h2>
+        <p>The system finance people know. Accounts payable, receivable, general ledger, assets, budgeting, period close, tax, and consolidation.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/erp/accounts-payable.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Accounts Payable</div>
+            <div class="card-desc">Invoice receipt, three-way matching, payment runs, vendor management, early-pay discounts.</div>
+        </a>
+        <a href="skills/erp/accounts-receivable.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Accounts Receivable</div>
+            <div class="card-desc">Customer invoicing, collections, cash application, aging analysis, dunning letters.</div>
+        </a>
+        <a href="skills/erp/general-ledger.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">General Ledger</div>
+            <div class="card-desc">Chart of accounts, journal entries, trial balance, financial statements, multi-entity.</div>
+        </a>
+        <a href="skills/erp/fixed-assets.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Fixed Assets</div>
+            <div class="card-desc">Asset tracking, depreciation methods, disposal, revaluation, lease accounting (ASC 842).</div>
+        </a>
+        <a href="skills/erp/budgeting-forecasting.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Budgeting & Forecasting</div>
+            <div class="card-desc">Budget creation, variance analysis, rolling forecasts, scenario planning, what-if modeling.</div>
+        </a>
+        <a href="skills/erp/period-close.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Period Close</div>
+            <div class="card-desc">Month-end close, reconciliations, accruals, adjustments, reporting deadlines.</div>
+        </a>
+        <a href="skills/erp/tax-compliance.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Tax Compliance</div>
+            <div class="card-desc">Sales tax, VAT, GST, withholding, 1099s, statutory reporting, tax engine integration.</div>
+        </a>
+        <a href="skills/erp/consolidation.md" class="card">
+            <span class="card-tag erp">ERP</span>
+            <div class="card-title">Consolidation</div>
+            <div class="card-desc">Multi-entity rollup, intercompany eliminations, currency translation, minority interests.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CRM -->
+<section class="section" id="crm">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--crm);">CRM &mdash; Sales</div>
+        <h2>CRM</h2>
+        <p>The system sales people know. Leads, pipeline, quoting, contracts, commissions, territories, customer 360, and campaigns.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/crm/lead-management.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Lead Management</div>
+            <div class="card-desc">Lead capture, scoring, routing, nurturing sequences, conversion tracking.</div>
+        </a>
+        <a href="skills/crm/pipeline-forecasting.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Pipeline & Forecasting</div>
+            <div class="card-desc">Opportunity stages, probability, weighted pipeline, forecast methods, accuracy tracking.</div>
+        </a>
+        <a href="skills/crm/quoting-cpq.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Quoting & CPQ</div>
+            <div class="card-desc">Configure-price-quote, discount approval, proposal generation, e-signatures.</div>
+        </a>
+        <a href="skills/crm/contracts-renewals.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Contracts & Renewals</div>
+            <div class="card-desc">Contract lifecycle, renewal tracking, amendments, auto-renewal, churn prevention.</div>
+        </a>
+        <a href="skills/crm/commissions.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Commissions</div>
+            <div class="card-desc">Commission plans, accelerators, clawbacks, split credits, payout calculation.</div>
+        </a>
+        <a href="skills/crm/territory-management.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Territory Management</div>
+            <div class="card-desc">Territory design, account assignment, quota allocation, rebalancing, overlay models.</div>
+        </a>
+        <a href="skills/crm/customer-360.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Customer 360</div>
+            <div class="card-desc">Unified customer view, activity history, health scoring, cross-sell/upsell signals.</div>
+        </a>
+        <a href="skills/crm/campaign-management.md" class="card">
+            <span class="card-tag crm">CRM</span>
+            <div class="card-title">Campaign Management</div>
+            <div class="card-desc">Campaign planning, audience segmentation, execution, attribution, ROI tracking.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- HRMS -->
+<section class="section" id="hrms">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--hrms);">HRMS &mdash; Human Resources</div>
+        <h2>HRMS</h2>
+        <p>The system HR people know. Recruitment, onboarding, payroll, benefits, performance, leave, training, and offboarding.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/hrms/recruitment.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Recruitment</div>
+            <div class="card-desc">Job posting, applicant tracking, screening, interviewing, offer management.</div>
+        </a>
+        <a href="skills/hrms/onboarding.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Onboarding</div>
+            <div class="card-desc">New hire setup, documentation, orientation, system access, first-day-to-productive.</div>
+        </a>
+        <a href="skills/hrms/payroll.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Payroll</div>
+            <div class="card-desc">Salary calculation, tax withholding, deductions, pay runs, payslips, compliance.</div>
+        </a>
+        <a href="skills/hrms/benefits.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Benefits</div>
+            <div class="card-desc">Health insurance, retirement plans, FSA/HSA, open enrollment, life events, ACA.</div>
+        </a>
+        <a href="skills/hrms/performance-reviews.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Performance Reviews</div>
+            <div class="card-desc">Goal setting, review cycles, 360 feedback, calibration, PIPs, promotions.</div>
+        </a>
+        <a href="skills/hrms/leave-attendance.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Leave & Attendance</div>
+            <div class="card-desc">Time tracking, PTO policies, FMLA, sick leave, shift scheduling, overtime.</div>
+        </a>
+        <a href="skills/hrms/training-development.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Training & Development</div>
+            <div class="card-desc">Learning paths, certifications, skill gaps, LMS, compliance training, career pathing.</div>
+        </a>
+        <a href="skills/hrms/offboarding.md" class="card">
+            <span class="card-tag hrms">HRMS</span>
+            <div class="card-title">Offboarding</div>
+            <div class="card-desc">Exit interviews, access revocation, knowledge transfer, final pay, COBRA, alumni.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- SCM -->
+<section class="section" id="scm">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--scm);">SCM &mdash; Supply Chain</div>
+        <h2>SCM</h2>
+        <p>The system operations people know. Procurement, inventory, warehouse, demand planning, quality, logistics, vendors, and production.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/scm/procurement.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Procurement</div>
+            <div class="card-desc">Purchase requisitions, RFQ, vendor selection, PO management, approval workflows.</div>
+        </a>
+        <a href="skills/scm/inventory.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Inventory</div>
+            <div class="card-desc">Stock tracking, reorder points, ABC analysis, cycle counts, stock valuation.</div>
+        </a>
+        <a href="skills/scm/warehouse.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Warehouse</div>
+            <div class="card-desc">Receiving, putaway, picking, packing, shipping, zone management, bin locations.</div>
+        </a>
+        <a href="skills/scm/demand-planning.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Demand Planning</div>
+            <div class="card-desc">Demand forecasting, safety stock, MRP, production scheduling, S&OP.</div>
+        </a>
+        <a href="skills/scm/quality.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Quality</div>
+            <div class="card-desc">Incoming inspection, in-process checks, NCRs, CAPA, lot traceability, recalls.</div>
+        </a>
+        <a href="skills/scm/logistics.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Logistics</div>
+            <div class="card-desc">Freight management, carrier selection, route optimization, tracking, last-mile delivery.</div>
+        </a>
+        <a href="skills/scm/vendor-management.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Vendor Management</div>
+            <div class="card-desc">Vendor onboarding, scorecards, performance reviews, risk assessment, diversity tracking.</div>
+        </a>
+        <a href="skills/scm/production-planning.md" class="card">
+            <span class="card-tag scm">SCM</span>
+            <div class="card-title">Production Planning</div>
+            <div class="card-desc">BOM management, work orders, shop floor control, scheduling, capacity planning.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- HELPDESK -->
+<section class="section" id="helpdesk">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--helpdesk);">HELPDESK &mdash; Customer Support</div>
+        <h2>Helpdesk</h2>
+        <p>The system support people know. Tickets, SLAs, knowledge base, escalation, omnichannel, satisfaction, and field service.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/helpdesk/ticket-lifecycle.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Ticket Lifecycle</div>
+            <div class="card-desc">Ticket creation, classification, assignment, resolution, closure, reopens.</div>
+        </a>
+        <a href="skills/helpdesk/sla-management.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">SLA Management</div>
+            <div class="card-desc">Response times, resolution targets, escalation rules, breach handling, reporting.</div>
+        </a>
+        <a href="skills/helpdesk/knowledge-base.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Knowledge Base</div>
+            <div class="card-desc">Article creation, categorization, search optimization, self-service deflection.</div>
+        </a>
+        <a href="skills/helpdesk/escalation.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Escalation</div>
+            <div class="card-desc">Tier routing (L1/L2/L3), functional escalation, management escalation, on-call.</div>
+        </a>
+        <a href="skills/helpdesk/omnichannel.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Omnichannel</div>
+            <div class="card-desc">Email, chat, phone, social, portal, WhatsApp — unified routing and context.</div>
+        </a>
+        <a href="skills/helpdesk/customer-satisfaction.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Customer Satisfaction</div>
+            <div class="card-desc">CSAT surveys, NPS, CES, feedback loops, sentiment analysis, action plans.</div>
+        </a>
+        <a href="skills/helpdesk/field-service.md" class="card">
+            <span class="card-tag helpdesk">Helpdesk</span>
+            <div class="card-title">Field Service</div>
+            <div class="card-desc">Dispatch, scheduling, mobile workforce, parts inventory, work orders, on-site SLA.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- PSA -->
+<section class="section" id="psa">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--psa);">PSA &mdash; Professional Services</div>
+        <h2>PSA</h2>
+        <p>The system services people know. Project planning, resource management, time/expense, billing, portfolio, subcontractors, and client collaboration.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/psa/project-planning.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Project Planning</div>
+            <div class="card-desc">Project setup, WBS, milestones, Gantt charts, dependencies, baseline management.</div>
+        </a>
+        <a href="skills/psa/resource-management.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Resource Management</div>
+            <div class="card-desc">Capacity planning, skill matching, utilization targets, bench management, staffing.</div>
+        </a>
+        <a href="skills/psa/time-expense.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Time & Expense</div>
+            <div class="card-desc">Timesheet entry, approval workflows, expense reports, receipts, policy enforcement.</div>
+        </a>
+        <a href="skills/psa/billing.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Billing</div>
+            <div class="card-desc">T&M billing, fixed-price milestones, retainers, invoice generation, revenue recognition.</div>
+        </a>
+        <a href="skills/psa/portfolio-management.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Portfolio Management</div>
+            <div class="card-desc">Project prioritization, cross-project allocation, pipeline-to-delivery, health scoring.</div>
+        </a>
+        <a href="skills/psa/subcontractor-management.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Subcontractor Management</div>
+            <div class="card-desc">Vendor onboarding, rate cards, SOWs, time approval, markup, payment.</div>
+        </a>
+        <a href="skills/psa/client-collaboration.md" class="card">
+            <span class="card-tag psa">PSA</span>
+            <div class="card-title">Client Collaboration</div>
+            <div class="card-desc">Client portals, status reports, approval workflows, document sharing, feedback.</div>
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- TECHNICAL SKILLS -->
+<section class="section" id="technical">
+    <div class="section-header">
+        <div class="system-label" style="color: var(--technical);">TECHNICAL &mdash; Builder Toolkit</div>
+        <h2>Technical Skills</h2>
+        <p>The implementation-level reference for builders and architects. Deep guides on how to build what the business process skills describe.</p>
+    </div>
+    <div class="card-grid">
+        <a href="skills/technical/data-modeling.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Data Modeling</div>
+            <div class="card-desc">Schema design, entity relationships, field types, temporal modeling, schema versioning, data lineage.</div>
+        </a>
+        <a href="skills/technical/workflow-automation.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Workflow Automation</div>
+            <div class="card-desc">State machines, approval chains, saga patterns, workflow versioning, error handling.</div>
+        </a>
+        <a href="skills/technical/integrations.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Integrations</div>
+            <div class="card-desc">REST/SOAP/GraphQL, webhooks, schema evolution, rate limiting, circuit breakers.</div>
+        </a>
+        <a href="skills/technical/security-roles.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Security & Roles</div>
+            <div class="card-desc">RBAC, SoD, zero trust, PAM, key management, OAuth, insider threat detection.</div>
+        </a>
+        <a href="skills/technical/data-migration.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Data Migration</div>
+            <div class="card-desc">ETL pipelines, source profiling, parallel runs, timezone handling, data residency.</div>
+        </a>
+        <a href="skills/technical/master-data-management.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Master Data Management</div>
+            <div class="card-desc">Golden records, MDM architecture, survivorship rules, data stewardship.</div>
+        </a>
+        <a href="skills/technical/deployment-golive.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Deployment & Go-Live</div>
+            <div class="card-desc">Promotion pipelines, cutover runbooks, rollback frameworks, drift detection.</div>
+        </a>
+        <a href="skills/technical/observability.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Observability</div>
+            <div class="card-desc">Logs/metrics/traces, alerting, incident response, SLO monitoring.</div>
+        </a>
+        <a href="skills/technical/disaster-recovery.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Disaster Recovery</div>
+            <div class="card-desc">RTO/RPO, backup strategies, DR architecture, failover testing, BCP.</div>
+        </a>
+        <a href="skills/technical/configuration-management.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Configuration Management</div>
+            <div class="card-desc">Config-as-code, promotion pipelines, drift detection, secrets management.</div>
+        </a>
+        <a href="skills/technical/performance-optimization.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Performance Optimization</div>
+            <div class="card-desc">Query tuning, caching, CQRS, cloud scaling, profiling & diagnostics.</div>
+        </a>
+        <a href="skills/technical/reports-dashboards.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Reports & Dashboards</div>
+            <div class="card-desc">KPI design, drill-downs, self-service BI, predictive analytics, data storytelling.</div>
+        </a>
+        <a href="skills/technical/testing-validation.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Testing & Validation</div>
+            <div class="card-desc">UAT, API testing, security testing, CI/CD gates, chaos engineering.</div>
+        </a>
+        <a href="skills/technical/user-onboarding.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">User Onboarding</div>
+            <div class="card-desc">Competency certification, spaced repetition, accessibility, multilingual training.</div>
+        </a>
+        <a href="skills/technical/change-management.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Change Management</div>
+            <div class="card-desc">ADKAR/Kotter, stakeholder engagement, resistance management, readiness.</div>
+        </a>
+        <a href="skills/technical/api-design.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">API Design</div>
+            <div class="card-desc">REST/GraphQL, versioning, rate limiting, webhooks, idempotency.</div>
+        </a>
+        <a href="skills/technical/localization-i18n.md" class="card">
+            <span class="card-tag technical">Technical</span>
+            <div class="card-title">Localization & i18n</div>
+            <div class="card-desc">Multi-language, multi-currency, timezone, regulatory localization.</div>
+        </a>
     </div>
 </section>
 
@@ -264,181 +710,38 @@
 <section class="section" id="roles">
     <div class="section-header">
         <h2>Roles</h2>
-        <p>Invocable personas. Activate a role when you need to think like a specific expert. Each role defines a mindset, responsibilities, and decision frameworks.</p>
+        <p>Invocable expert personas. Activate a role when you need to think like a specialist.</p>
     </div>
-
     <div class="card-grid">
         <a href="roles/solution-architect.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">Solution Architect</div>
-            <div class="card-desc">System design, integration strategy, technology decisions, and solution blueprints. The person who sees the whole picture and makes sure the pieces fit.</div>
-            <div class="card-file">roles/solution-architect.md</div>
+            <div class="card-desc">System design, integration strategy, technology decisions, solution blueprints.</div>
         </a>
-
         <a href="roles/requirements-analyst.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">Requirements Analyst</div>
-            <div class="card-desc">Feature gathering, stakeholder interviews, discovery workshops, and requirements documentation. Translates business needs into buildable specs.</div>
-            <div class="card-file">roles/requirements-analyst.md</div>
+            <div class="card-desc">Discovery workshops, stakeholder interviews, requirements documentation, scope management.</div>
         </a>
-
         <a href="roles/data-engineer.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">Data Engineer</div>
-            <div class="card-desc">Data modeling, cleansing, transformation pipelines, and quality enforcement. Owns the structure and integrity of every byte in the system.</div>
-            <div class="card-file">roles/data-engineer.md</div>
+            <div class="card-desc">Data modeling, cleansing, transformation pipelines, quality enforcement.</div>
         </a>
-
         <a href="roles/migration-architect.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">Migration Architect</div>
-            <div class="card-desc">ETL design, legacy system extraction, cutover planning, and data reconciliation. Gets data from where it is to where it needs to be.</div>
-            <div class="card-file">roles/migration-architect.md</div>
+            <div class="card-desc">ETL design, legacy extraction, cutover planning, data reconciliation.</div>
         </a>
-
         <a href="roles/compliance-analyst.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">Compliance Analyst</div>
-            <div class="card-desc">SOX, GDPR, HIPAA, SOC 2 compliance. Segregation of duties, audit trails, data retention, and access control reviews. Builds compliance in from day one.</div>
-            <div class="card-file">roles/compliance-analyst.md</div>
+            <div class="card-desc">SOX/GDPR/HIPAA/SOC 2, audit trails, SoD, data retention, access reviews.</div>
         </a>
-
         <a href="roles/qa-lead.md" class="card">
             <span class="card-tag role">Role</span>
             <div class="card-title">QA Lead</div>
-            <div class="card-desc">Test strategy, UAT scripts, regression suites, performance testing, and defect management. The gatekeeper between "built" and "ready."</div>
-            <div class="card-file">roles/qa-lead.md</div>
-        </a>
-    </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- SKILLS -->
-<section class="section" id="skills">
-    <div class="section-header">
-        <h2>Skills</h2>
-        <p>Builder capabilities — the things you DO with erp.ai. Each skill walks through the complete workflow, decision points, patterns, and pitfalls.</p>
-    </div>
-
-    <div class="card-grid">
-        <a href="skills/data-modeling.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Data Modeling</div>
-            <div class="card-desc">Schema design, entity relationships, field types, validation rules, normalization strategies, and multi-tenancy patterns for enterprise apps.</div>
-            <div class="card-file">skills/data-modeling.md</div>
-        </a>
-
-        <a href="skills/workflow-automation.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Workflow Automation</div>
-            <div class="card-desc">Business rules, approval chains, triggers, notifications, state machines, escalation rules, and SLA timers for enterprise processes.</div>
-            <div class="card-file">skills/workflow-automation.md</div>
-        </a>
-
-        <a href="skills/integrations.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Integrations</div>
-            <div class="card-desc">REST/SOAP APIs, webhooks, EDI, iPaaS, middleware patterns, authentication, error handling, and real-time vs batch data exchange.</div>
-            <div class="card-file">skills/integrations.md</div>
-        </a>
-
-        <a href="skills/data-migration.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Data Migration</div>
-            <div class="card-desc">ETL pipelines, source profiling, field mapping, data cleansing, loading strategies, validation, reconciliation, and cutover execution.</div>
-            <div class="card-file">skills/data-migration.md</div>
-        </a>
-
-        <a href="skills/security-roles.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Security & Roles</div>
-            <div class="card-desc">RBAC design, row-level security, field-level access, segregation of duties, audit logging, encryption, and compliance-driven access controls.</div>
-            <div class="card-file">skills/security-roles.md</div>
-        </a>
-
-        <a href="skills/reports-dashboards.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Reports & Dashboards</div>
-            <div class="card-desc">KPI design, operational and analytical reports, dashboard patterns, scheduled distribution, embedded BI, and data visualization best practices.</div>
-            <div class="card-file">skills/reports-dashboards.md</div>
-        </a>
-
-        <a href="skills/testing-validation.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Testing & Validation</div>
-            <div class="card-desc">UAT frameworks, regression suites, performance testing, test data management, defect lifecycle, data validation rules, and acceptance criteria.</div>
-            <div class="card-file">skills/testing-validation.md</div>
-        </a>
-
-        <a href="skills/deployment-golive.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Deployment & Go-Live</div>
-            <div class="card-desc">Environment strategy, deployment pipelines, cutover runbooks, go/no-go decisions, hypercare planning, rollback procedures, and progressive rollout.</div>
-            <div class="card-file">skills/deployment-golive.md</div>
-        </a>
-
-        <a href="skills/user-onboarding.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">User Onboarding</div>
-            <div class="card-desc">Training needs analysis, content creation, in-app walkthroughs, adoption tracking, champion programs, and change resistance strategies.</div>
-            <div class="card-file">skills/user-onboarding.md</div>
-        </a>
-
-        <a href="skills/performance-optimization.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Performance Optimization</div>
-            <div class="card-desc">Query tuning, indexing strategies, caching layers, batch job scheduling, pagination, connection pooling, monitoring, and capacity planning.</div>
-            <div class="card-file">skills/performance-optimization.md</div>
-        </a>
-
-        <a href="skills/api-design.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">API Design</div>
-            <div class="card-desc">REST and GraphQL design, versioning strategies, rate limiting, webhook contracts, idempotency patterns, error handling, and API lifecycle management.</div>
-            <div class="card-file">skills/api-design.md</div>
-        </a>
-
-        <a href="skills/master-data-management.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Master Data Management</div>
-            <div class="card-desc">Golden record resolution, data stewardship programs, data quality frameworks, MDM architecture styles, reference data lifecycle, and cross-system sync.</div>
-            <div class="card-file">skills/master-data-management.md</div>
-        </a>
-
-        <a href="skills/observability.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Observability</div>
-            <div class="card-desc">Structured logging, metrics architecture, distributed tracing, alerting strategy, incident response playbooks, SLO monitoring, and runbook automation.</div>
-            <div class="card-file">skills/observability.md</div>
-        </a>
-
-        <a href="skills/change-management.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Change Management</div>
-            <div class="card-desc">ADKAR and Kotter frameworks, stakeholder engagement, impact assessment, resistance management, sponsorship activation, and benefits realization.</div>
-            <div class="card-file">skills/change-management.md</div>
-        </a>
-
-        <a href="skills/disaster-recovery.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Disaster Recovery</div>
-            <div class="card-desc">RTO/RPO classification, backup strategies, DR architecture patterns, failover procedures, DR testing, business continuity planning, and compliance.</div>
-            <div class="card-file">skills/disaster-recovery.md</div>
-        </a>
-
-        <a href="skills/configuration-management.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Configuration Management</div>
-            <div class="card-desc">Config-as-code, promotion pipelines, drift detection, environment management, secrets management, tenant-specific config, and release management.</div>
-            <div class="card-file">skills/configuration-management.md</div>
-        </a>
-
-        <a href="skills/localization-i18n.md" class="card">
-            <span class="card-tag skill">Skill</span>
-            <div class="card-title">Localization & i18n</div>
-            <div class="card-desc">Multi-language support, multi-currency handling, timezone management, locale-specific formatting, regulatory localization, and multi-country deployment.</div>
-            <div class="card-file">skills/localization-i18n.md</div>
+            <div class="card-desc">Test strategy, UAT scripts, regression suites, performance and security testing.</div>
         </a>
     </div>
 </section>
@@ -449,50 +752,38 @@
 <section class="section" id="domains">
     <div class="section-header">
         <h2>Domains</h2>
-        <p>Enterprise verticals — the industries and functions you're building FOR. Key entities, business processes, regulatory requirements, and configuration patterns.</p>
+        <p>Enterprise verticals. Key entities, business processes, regulatory requirements, and configuration patterns.</p>
     </div>
-
     <div class="card-grid">
         <a href="domains/finance-accounting.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Finance & Accounting</div>
-            <div class="card-desc">General ledger, accounts payable/receivable, fixed assets, budgeting, consolidation, revenue recognition (ASC 606), tax, and period close.</div>
-            <div class="card-file">domains/finance-accounting.md</div>
+            <div class="card-desc">GL, AP/AR, fixed assets, budgeting, consolidation, revenue recognition, tax, period close.</div>
         </a>
-
         <a href="domains/human-resources.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Human Resources</div>
-            <div class="card-desc">Core HR, payroll, benefits administration, talent management, time and attendance, leave management, workforce planning, and labor compliance.</div>
-            <div class="card-file">domains/human-resources.md</div>
+            <div class="card-desc">Core HR, payroll, benefits, talent management, time and attendance, workforce planning.</div>
         </a>
-
         <a href="domains/supply-chain.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Supply Chain</div>
-            <div class="card-desc">Procurement, inventory management, warehousing, logistics, MRP, demand planning, quality management, and vendor scoring.</div>
-            <div class="card-file">domains/supply-chain.md</div>
+            <div class="card-desc">Procurement, inventory, warehousing, logistics, MRP, production, quality.</div>
         </a>
-
         <a href="domains/sales-crm.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Sales & CRM</div>
-            <div class="card-desc">Lead-to-cash, pipeline management, CPQ, contract management, commission calculation, territory management, and customer 360.</div>
-            <div class="card-file">domains/sales-crm.md</div>
+            <div class="card-desc">Lead-to-cash, pipeline, CPQ, contracts, commissions, territory, customer 360.</div>
         </a>
-
         <a href="domains/project-operations.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Project Operations</div>
-            <div class="card-desc">Professional services automation, resource management, time/expense tracking, project billing (T&M, fixed price, milestone), and project accounting.</div>
-            <div class="card-file">domains/project-operations.md</div>
+            <div class="card-desc">PSA, resources, time/expense, project billing, WIP, revenue recognition.</div>
         </a>
-
         <a href="domains/customer-support.md" class="card">
             <span class="card-tag domain">Domain</span>
             <div class="card-title">Customer Support</div>
-            <div class="card-desc">Case/ticket lifecycle, SLA management, knowledge base, escalation tiers (L1/L2/L3), CSAT/NPS, omnichannel support, and service analytics.</div>
-            <div class="card-file">domains/customer-support.md</div>
+            <div class="card-desc">Case lifecycle, SLA, knowledge base, escalation, CSAT/NPS, omnichannel.</div>
         </a>
     </div>
 </section>
@@ -503,44 +794,36 @@
 <section class="section" id="templates">
     <div class="section-header">
         <h2>Templates</h2>
-        <p>Reusable delivery artifacts. Each template includes structure, instructions, examples, and guidance on when to use it.</p>
+        <p>Reusable delivery artifacts. Structure, instructions, examples, and guidance for each.</p>
     </div>
-
     <div class="card-grid">
         <a href="templates/fit-gap-matrix.md" class="card">
             <span class="card-tag template">Template</span>
             <div class="card-title">Fit-Gap Matrix</div>
-            <div class="card-desc">Score requirements against platform capabilities. Classify as Fit, Partial Fit, or Gap with effort estimates and resolution paths.</div>
-            <div class="card-file">templates/fit-gap-matrix.md</div>
+            <div class="card-desc">Score requirements against platform capabilities with effort estimates and gap resolution.</div>
         </a>
-
         <a href="templates/migration-runbook.md" class="card">
             <span class="card-tag template">Template</span>
             <div class="card-title">Migration Runbook</div>
-            <div class="card-desc">Minute-by-minute cutover execution plan with task sequences, owners, duration estimates, rollback triggers, and communication checkpoints.</div>
-            <div class="card-file">templates/migration-runbook.md</div>
+            <div class="card-desc">Minute-by-minute cutover plan with rollback triggers and go/no-go criteria.</div>
         </a>
-
         <a href="templates/requirements-traceability.md" class="card">
             <span class="card-tag template">Template</span>
             <div class="card-title">Requirements Traceability Matrix</div>
-            <div class="card-desc">Link every requirement through design, configuration, testing, and sign-off. Proves the system does what it's supposed to do.</div>
-            <div class="card-file">templates/requirements-traceability.md</div>
+            <div class="card-desc">Link requirements through design, config, test, and sign-off.</div>
         </a>
-
         <a href="templates/go-live-checklist.md" class="card">
             <span class="card-tag template">Template</span>
             <div class="card-title">Go-Live Checklist</div>
-            <div class="card-desc">Go/no-go decision criteria across all workstreams: data, config, integrations, testing, training, support, and infrastructure.</div>
-            <div class="card-file">templates/go-live-checklist.md</div>
+            <div class="card-desc">Go/no-go criteria across all workstreams: data, config, integrations, testing, training.</div>
         </a>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>SDStack &mdash; Enterprise App Builder's Skill Stack for <a href="https://erp.ai">erp.ai</a></p>
-    <p style="margin-top:8px; font-size:12px;">For humans and agents alike.</p>
+    <p>SDStack &mdash; Enterprise Skill Stack for <a href="https://erp.ai">erp.ai</a></p>
+    <p class="sub">SD &mdash; Shashank Dixit</p>
 </footer>
 
 </body>
