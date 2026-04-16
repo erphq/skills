@@ -1,17 +1,15 @@
 ---
-title: Testing & Validation
-description: Quality assurance strategy and execution for enterprise applications -- from test planning and UAT through performance testing, data validation, and sign-off.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/workflow-automation.md
-  - skills/deployment-golive.md
-  - skills/security-roles.md
-  - roles/qa-lead.md
-  - templates/requirements-traceability.md
+name: testing-validation
+description: This skill should be used when the task involves quality assurance strategy and execution for enterprise applications -- from test planning and UAT through performance testing, data validation, and sign-off.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Testing & Validation
 
 ## Purpose

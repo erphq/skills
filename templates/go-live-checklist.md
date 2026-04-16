@@ -1,15 +1,15 @@
 ---
-title: Go-Live Checklist
-description: Go/no-go decision criteria across all workstreams — use to make the final decision on whether to launch.
-audience: both
-category: template
-related:
-  - skills/deployment-golive.md
-  - templates/migration-runbook.md
-  - templates/requirements-traceability.md
-  - roles/qa-lead.md
+name: go-live-checklist
+description: This skill should be used when the task involves go/no-go decision criteria across all workstreams — use to make the final decision on whether to launch.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - template
+  type: template
+  scope: internal
 ---
-
 # Go-Live Checklist
 
 ## Purpose

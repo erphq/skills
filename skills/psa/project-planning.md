@@ -1,10 +1,15 @@
 ---
-title: Project Planning
-description: How to set up projects with work breakdowns, milestones, timelines, dependencies, and baselines so delivery stays on track
-system: psa
-category: build
+name: project-planning
+description: This skill should be used when the task involves how to set up projects with work breakdowns, milestones, timelines, dependencies, and baselines so delivery stays on track.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Project Planning
 
 ## What This Process Does

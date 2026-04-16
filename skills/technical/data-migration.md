@@ -1,14 +1,15 @@
 ---
-title: Data Migration
-description: Plan and execute data migration from legacy systems into erp.ai -- use when performing source discovery, data profiling, field mapping, transformation, loading, validation, reconciliation, and cutover execution.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/integrations.md
-  - skills/security-roles.md
+name: data-migration
+description: This skill should be used when the task involves plan and execute data migration from legacy systems into erp.ai -- use when performing source discovery, data profiling, field mapping, transformation, loading, validation, reconciliation, and cutover execution.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Data Migration
 
 ## Purpose
@@ -24,6 +25,20 @@ Builders need this skill when:
 - Performing a one-time bulk data import from spreadsheets, databases, or files
 
 The core challenge: legacy data is dirty, inconsistent, undocumented, and structured differently than the target. Migration is not just moving data -- it is cleaning, transforming, and validating it against the new system's rules.
+
+## Start Here: Define Migration Control
+
+Before writing ETL logic, lock down migration controls:
+
+- Start with the [Migration Runbook](../../templates/migration-runbook.md) to sequence cutover tasks, ownership, and rollback steps.
+- Use the [Requirements Traceability](../../templates/requirements-traceability.md) template to connect mapping rules to validation and sign-off criteria.
+- Assign [Migration Architect](../../roles/migration-architect.md) as accountable owner and [Data Engineer](../../roles/data-engineer.md) as execution lead.
+
+Do these first actions before the migration lifecycle:
+
+1. Freeze the scope of entities and history horizon for each cycle.
+2. Approve source-to-target mapping sign-off responsibilities.
+3. Define reconciliation thresholds for record counts and financial totals.
 
 ## Key Concepts
 

@@ -1,10 +1,15 @@
 ---
-title: Vendor Management
-description: How to find, evaluate, and work with the companies that supply what you need
-system: scm
-category: maintain
+name: vendor-management
+description: This skill should be used when the task involves how to find, evaluate, and work with the companies that supply what you need.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Vendor Management
 
 ## What This Process Does

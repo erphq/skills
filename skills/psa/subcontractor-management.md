@@ -1,10 +1,15 @@
 ---
-title: Subcontractor Management
-description: How to onboard vendors, manage rate cards and SOWs, approve subcontractor time, apply markups, and process payments
-system: psa
-category: scale
+name: subcontractor-management
+description: This skill should be used when the task involves how to onboard vendors, manage rate cards and SOWs, approve subcontractor time, apply markups, and process payments.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Subcontractor Management
 
 ## What This Process Does

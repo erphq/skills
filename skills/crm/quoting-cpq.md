@@ -1,10 +1,15 @@
 ---
-title: Quoting & CPQ
-description: Configure products, calculate pricing with discounts and bundles, get approvals, and generate professional proposals that close deals
-system: crm
-category: build
+name: quoting-cpq
+description: This skill should be used when the task involves configure products, calculate pricing with discounts and bundles, get approvals, and generate professional proposals that close deals.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Quoting & CPQ
 
 ## What This Process Does

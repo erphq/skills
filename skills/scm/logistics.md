@@ -1,10 +1,15 @@
 ---
-title: Logistics & Transportation
-description: How to move products from point A to point B efficiently, affordably, and on time
-system: scm
-category: build
+name: logistics
+description: This skill should be used when the task involves how to move products from point A to point B efficiently, affordably, and on time.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Logistics & Transportation
 
 ## What This Process Does

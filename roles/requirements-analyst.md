@@ -1,19 +1,15 @@
 ---
-title: Requirements Analyst
-description: Discovers, documents, and manages business requirements for erp.ai builds -- invoke when gathering features, running workshops, or controlling scope.
-audience: both
-category: role
-related:
-  - roles/solution-architect.md
-  - roles/compliance-analyst.md
-  - templates/fit-gap-matrix.md
-  - templates/requirements-traceability.md
-  - skills/workflow-automation.md
-  - skills/data-modeling.md
-  - domains/finance-accounting.md
-  - domains/supply-chain.md
+name: requirements-analyst
+description: This skill should be used when the task involves discovers, documents, and manages business requirements for erp.ai builds -- invoke when gathering features, running workshops, or controlling scope.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - requirements-analyst
+  type: role
+  scope: internal
 ---
-
 # Requirements Analyst
 
 ## Purpose

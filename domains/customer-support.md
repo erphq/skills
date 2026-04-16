@@ -1,14 +1,15 @@
 ---
-title: Customer Support
-description: Case/ticket lifecycle, SLA management, knowledge base, escalation management, customer satisfaction, omnichannel support, and service analytics
-audience: both
-category: domain
-related:
-  - domains/sales-crm.md
-  - domains/finance-accounting.md
-  - domains/human-resources.md
+name: customer-support
+description: This skill should be used when the task involves case/ticket lifecycle, SLA management, knowledge base, escalation management, customer satisfaction, omnichannel support, and service analytics.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Customer Support
 
 ## Purpose

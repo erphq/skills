@@ -1,10 +1,15 @@
 ---
-title: Omnichannel Support
-description: How to unify email, chat, phone, social media, portal, and WhatsApp into one seamless support experience
-system: helpdesk
-category: scale
+name: omnichannel
+description: This skill should be used when the task involves how to unify email, chat, phone, social media, portal, and WhatsApp into one seamless support experience.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Omnichannel Support
 
 ## What This Process Does

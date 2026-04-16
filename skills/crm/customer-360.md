@@ -1,10 +1,15 @@
 ---
-title: Customer 360
-description: Build a unified view of every customer — their history, health, spending patterns, and signals for cross-sell and upsell opportunities
-system: crm
-category: maintain
+name: customer-360
+description: This skill should be used when the task involves build a unified view of every customer — their history, health, spending patterns, and signals for cross-sell and upsell opportunities.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Customer 360
 
 ## What This Process Does

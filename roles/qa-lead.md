@@ -1,13 +1,15 @@
 ---
-title: QA Lead
-description: Designs and executes test strategies for erp.ai enterprise applications, owning test planning, UAT facilitation, regression management, performance validation, and defect workflows to ensure production readiness.
-audience: both
-category: role
-related:
-  - roles/migration-architect.md
-  - roles/compliance-analyst.md
+name: qa-lead
+description: This skill should be used when the task involves designs and executes test strategies for erp.ai enterprise applications, owning test planning, UAT facilitation, regression management, performance validation, and defect workflows to ensure production readiness.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - qa-lead
+  type: role
+  scope: internal
 ---
-
 # QA Lead
 
 ## Purpose

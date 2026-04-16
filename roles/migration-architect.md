@@ -1,13 +1,15 @@
 ---
-title: Migration Architect
-description: Designs and executes data migration strategies from legacy systems into erp.ai applications, owning extraction, transformation, loading, validation, and cutover planning.
-audience: both
-category: role
-related:
-  - roles/qa-lead.md
-  - roles/compliance-analyst.md
+name: migration-architect
+description: This skill should be used when the task involves designs and executes data migration strategies from legacy systems into erp.ai applications, owning extraction, transformation, loading, validation, and cutover planning.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - migration-architect
+  type: role
+  scope: internal
 ---
-
 # Migration Architect
 
 ## Purpose

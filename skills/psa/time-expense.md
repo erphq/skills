@@ -1,10 +1,15 @@
 ---
-title: Time & Expense Management
-description: How to capture timesheets, approve hours, submit expense reports, manage receipts, and enforce company policies
-system: psa
-category: maintain
+name: time-expense
+description: This skill should be used when the task involves how to capture timesheets, approve hours, submit expense reports, manage receipts, and enforce company policies.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Time & Expense Management
 
 ## What This Process Does

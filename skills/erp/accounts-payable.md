@@ -1,10 +1,15 @@
 ---
-title: Accounts Payable
-description: Manage vendor invoices, match them to purchase orders and receipts, run payment batches, and keep supplier relationships healthy
-system: erp
-category: build
+name: accounts-payable
+description: This skill should be used when the task involves manage vendor invoices, match them to purchase orders and receipts, run payment batches, and keep supplier relationships healthy.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - erp
+  type: skill
+  scope: internal
 ---
-
 # Accounts Payable
 
 ## What This Process Does

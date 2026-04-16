@@ -1,10 +1,15 @@
 ---
-title: Field Service Management
-description: How to dispatch technicians, schedule on-site work, manage mobile workforce, parts inventory, work orders, and on-site SLAs
-system: helpdesk
-category: scale
+name: field-service
+description: This skill should be used when the task involves how to dispatch technicians, schedule on-site work, manage mobile workforce, parts inventory, work orders, and on-site SLAs.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Field Service Management
 
 ## What This Process Does

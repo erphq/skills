@@ -1,14 +1,15 @@
 ---
-title: Human Resources
-description: Core HR, payroll, benefits administration, talent management, time and attendance, and workforce compliance
-audience: both
-category: domain
-related:
-  - domains/finance-accounting.md
-  - domains/project-operations.md
-  - domains/customer-support.md
+name: human-resources
+description: This skill should be used when the task involves core HR, payroll, benefits administration, talent management, time and attendance, and workforce compliance.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Human Resources
 
 ## Purpose

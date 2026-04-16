@@ -1,10 +1,15 @@
 ---
-title: Payroll
-description: Calculate pay, withhold taxes, process deductions, run pay cycles, and stay compliant with wage laws
-system: hrms
-category: maintain
+name: payroll
+description: This skill should be used when the task involves calculate pay, withhold taxes, process deductions, run pay cycles, and stay compliant with wage laws.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Payroll
 
 ## What This Process Does

@@ -1,15 +1,15 @@
 ---
-title: API Design
-description: Design and manage ERP APIs -- use when building REST endpoints, versioning strategies, rate limiting, webhook systems, error handling, and developer experience for enterprise platform APIs.
-audience: both
-category: skill
-related:
-  - skills/integrations.md
-  - skills/security-roles.md
-  - skills/data-modeling.md
-  - skills/configuration-management.md
+name: api-design
+description: This skill should be used when the task involves design and manage ERP APIs -- use when building REST endpoints, versioning strategies, rate limiting, webhook systems, error handling, and developer experience for enterprise platform APIs.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # API Design
 
 ## Purpose

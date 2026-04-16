@@ -1,10 +1,15 @@
 ---
-title: Procurement
-description: How to buy things your company needs — from requesting items to paying for them
-system: scm
-category: build
+name: procurement
+description: This skill should be used when the task involves how to buy things your company needs — from requesting items to paying for them.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Procurement
 
 ## What This Process Does

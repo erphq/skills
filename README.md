@@ -105,6 +105,49 @@ This is not a textbook. It's a practical, opinionated, implementation-ready skil
 
 ---
 
+## Install & Quick Start
+
+SDStack is currently maintained as a content library in this repository.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/erphq/sdstack.git
+cd sdstack/skills
+```
+
+### 2. Start from templates
+
+Use the reusable delivery templates first:
+
+- [Go-Live Checklist](templates/go-live-checklist.md)
+- [Migration Runbook](templates/migration-runbook.md)
+- [Requirements Traceability](templates/requirements-traceability.md)
+- [Fit-Gap Matrix](templates/fit-gap-matrix.md)
+
+### 3. Pick one domain and one technical skill
+
+For each project phase, pair:
+
+- one process skill from `skills/<system>/`
+- one technical skill from `skills/technical/`
+- one owner role from `roles/`
+
+### 4. Run work in this order
+
+1. Start Here section in the selected skill
+2. Build section
+3. Maintain section
+4. Scale section
+5. Related references at the end of the file
+
+### Notes
+
+- This repo is not yet packaged as a marketplace `/learn` skill set.
+- Use the markdown files directly in your agent workflow for now.
+
+---
+
 ## Business Process Skills
 
 The core of SDStack. Find your system, find your process. Each skill covers:

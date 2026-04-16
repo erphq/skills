@@ -1,15 +1,15 @@
 ---
-title: Security & Roles
-description: Design and implement access control, authentication, audit logging, encryption, and compliance-driven security configurations in erp.ai -- use when defining RBAC, segregation of duties, SSO, field-level security, and regulatory controls.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/workflow-automation.md
-  - skills/integrations.md
-  - skills/data-migration.md
+name: security-roles
+description: This skill should be used when the task involves design and implement access control, authentication, audit logging, encryption, and compliance-driven security configurations in erp.ai -- use when defining RBAC, segregation of duties, SSO, field-level security, and regulatory controls.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Security & Roles
 
 ## Purpose

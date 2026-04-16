@@ -1,10 +1,15 @@
 ---
-title: Client Collaboration
-description: How to set up client portals, share status reports, manage approval workflows, share documents, and collect feedback
-system: psa
-category: maintain
+name: client-collaboration
+description: This skill should be used when the task involves how to set up client portals, share status reports, manage approval workflows, share documents, and collect feedback.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Client Collaboration
 
 ## What This Process Does

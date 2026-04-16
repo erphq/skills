@@ -1,10 +1,15 @@
 ---
-title: Demand Planning
-description: How to predict what customers will need so you can have the right stuff ready at the right time
-system: scm
-category: build
+name: demand-planning
+description: This skill should be used when the task involves how to predict what customers will need so you can have the right stuff ready at the right time.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Demand Planning
 
 ## What This Process Does

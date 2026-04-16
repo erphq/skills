@@ -1,10 +1,15 @@
 ---
-title: Lead Management
-description: Capture leads from every source, score them, route them to the right rep, nurture the ones not ready to buy, and track what converts
-system: crm
-category: build
+name: lead-management
+description: This skill should be used when the task involves capture leads from every source, score them, route them to the right rep, nurture the ones not ready to buy, and track what converts.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Lead Management
 
 ## What This Process Does

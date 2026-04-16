@@ -1,15 +1,15 @@
 ---
-title: Finance & Accounting
-description: General ledger, accounts payable/receivable, fixed assets, budgeting, period close, revenue recognition, and financial consolidation
-audience: both
-category: domain
-related:
-  - domains/supply-chain.md
-  - domains/project-operations.md
-  - domains/sales-crm.md
-  - domains/human-resources.md
+name: finance-accounting
+description: This skill should be used when the task involves general ledger, accounts payable/receivable, fixed assets, budgeting, period close, revenue recognition, and financial consolidation.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Finance & Accounting
 
 ## Purpose

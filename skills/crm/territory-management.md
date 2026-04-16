@@ -1,10 +1,15 @@
 ---
-title: Territory Management
-description: Design sales territories, assign accounts to reps, allocate quotas fairly, and rebalance when things get lopsided
-system: crm
-category: scale
+name: territory-management
+description: This skill should be used when the task involves design sales territories, assign accounts to reps, allocate quotas fairly, and rebalance when things get lopsided.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Territory Management
 
 ## What This Process Does
