@@ -1,16 +1,15 @@
 ---
-title: User Onboarding
-description: Getting enterprise users productive on a new application -- training design, content creation, adoption tracking, change management, and ongoing knowledge support.
-audience: both
-category: skill
-related:
-  - skills/deployment-golive.md
-  - skills/security-roles.md
-  - skills/workflow-automation.md
-  - skills/reports-dashboards.md
-  - domains/human-resources.md
+name: user-onboarding
+description: This skill should be used when the task involves getting enterprise users productive on a new application -- training design, content creation, adoption tracking, change management, and ongoing knowledge support.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # User Onboarding
 
 ## Purpose

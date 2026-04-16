@@ -1,15 +1,15 @@
 ---
-title: Sales & CRM
-description: Lead-to-cash, pipeline management, CPQ, contract management, commissions, territory management, and customer 360
-audience: both
-category: domain
-related:
-  - domains/finance-accounting.md
-  - domains/supply-chain.md
-  - domains/customer-support.md
-  - domains/project-operations.md
+name: sales-crm
+description: This skill should be used when the task involves lead-to-cash, pipeline management, CPQ, contract management, commissions, territory management, and customer 360.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Sales & CRM
 
 ## Purpose

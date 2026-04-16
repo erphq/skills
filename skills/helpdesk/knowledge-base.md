@@ -1,10 +1,15 @@
 ---
-title: Knowledge Base Management
-description: How to create, organize, and maintain a self-service knowledge base that actually helps customers
-system: helpdesk
-category: build
+name: knowledge-base
+description: This skill should be used when the task involves how to create, organize, and maintain a self-service knowledge base that actually helps customers.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Knowledge Base Management
 
 ## What This Process Does

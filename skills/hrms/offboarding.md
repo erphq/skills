@@ -1,10 +1,15 @@
 ---
-title: Offboarding
-description: Manage exit interviews, access revocation, knowledge transfer, final pay, COBRA, and alumni relationships
-system: hrms
-category: maintain
+name: offboarding
+description: This skill should be used when the task involves manage exit interviews, access revocation, knowledge transfer, final pay, COBRA, and alumni relationships.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Offboarding
 
 ## What This Process Does

@@ -1,10 +1,15 @@
 ---
-title: Resource Management
-description: How to match the right people to the right projects based on skills, availability, and utilization targets
-system: psa
-category: build
+name: resource-management
+description: This skill should be used when the task involves how to match the right people to the right projects based on skills, availability, and utilization targets.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Resource Management
 
 ## What This Process Does

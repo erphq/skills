@@ -1,15 +1,15 @@
 ---
-title: Data Modeling
-description: Design and structure enterprise data schemas in erp.ai -- use when defining entities, relationships, field types, validation rules, and multi-tenancy patterns for transactional and analytical workloads.
-audience: both
-category: skill
-related:
-  - skills/data-migration.md
-  - skills/security-roles.md
-  - skills/workflow-automation.md
-  - skills/integrations.md
+name: data-modeling
+description: This skill should be used when the task involves design and structure enterprise data schemas in erp.ai -- use when defining entities, relationships, field types, validation rules, and multi-tenancy patterns for transactional and analytical workloads.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Data Modeling
 
 ## Purpose
@@ -23,6 +23,20 @@ Data modeling is the foundation of every enterprise application built on erp.ai.
 - Defining the contract between the app layer and integrations
 
 Poor data modeling creates compounding technical debt: bad queries, broken reports, integration mismatches, and audit failures. Getting the schema right early is the highest-leverage activity in enterprise app building.
+
+## Start Here: Frame the Schema Decisions
+
+Before creating entities and fields, align design intent:
+
+- Use the [Fit-Gap Matrix](../../templates/fit-gap-matrix.md) to classify standard vs custom data structures.
+- Use the [Requirements Traceability](../../templates/requirements-traceability.md) template to connect each entity decision to reporting, integration, and compliance needs.
+- Assign [Solution Architect](../../roles/solution-architect.md) and [Data Engineer](../../roles/data-engineer.md) as joint owners for model quality and operability.
+
+Do these first actions before detailed modeling:
+
+1. Define canonical entities, ownership, and source-of-truth boundaries.
+2. Define tenant isolation and key strategy (natural vs surrogate).
+3. Define audit and temporal requirements that affect table shape.
 
 ## Key Concepts
 

@@ -1,10 +1,15 @@
 ---
-title: Period Close
-description: Run your month-end close efficiently — reconciliations, accruals, adjustments, and reporting on time every time
-system: erp
-category: maintain
+name: period-close
+description: This skill should be used when the task involves run your month-end close efficiently — reconciliations, accruals, adjustments, and reporting on time every time.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - erp
+  type: skill
+  scope: internal
 ---
-
 # Period Close
 
 ## What This Process Does

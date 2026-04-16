@@ -1,10 +1,15 @@
 ---
-title: Ticket Lifecycle Management
-description: How support tickets are created, classified, assigned, resolved, closed, and reopened
-system: helpdesk
-category: build
+name: ticket-lifecycle
+description: This skill should be used when the task involves how support tickets are created, classified, assigned, resolved, closed, and reopened.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Ticket Lifecycle Management
 
 ## What This Process Does

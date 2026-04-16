@@ -1,10 +1,15 @@
 ---
-title: Campaign Management
-description: Plan marketing campaigns, segment your audience, execute across channels, track what influenced revenue, and prove ROI
-system: crm
-category: build
+name: campaign-management
+description: This skill should be used when the task involves plan marketing campaigns, segment your audience, execute across channels, track what influenced revenue, and prove ROI.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Campaign Management
 
 ## What This Process Does

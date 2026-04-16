@@ -1,10 +1,15 @@
 ---
-title: Recruitment
-description: Manage the entire hiring process from job posting through offer acceptance
-system: hrms
-category: build
+name: recruitment
+description: This skill should be used when the task involves manage the entire hiring process from job posting through offer acceptance.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Recruitment
 
 ## What This Process Does

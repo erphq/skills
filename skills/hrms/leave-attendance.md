@@ -1,10 +1,15 @@
 ---
-title: Leave & Attendance
-description: Track time, manage PTO policies, handle FMLA, schedule shifts, and manage overtime compliance
-system: hrms
-category: maintain
+name: leave-attendance
+description: This skill should be used when the task involves track time, manage PTO policies, handle FMLA, schedule shifts, and manage overtime compliance.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Leave & Attendance
 
 ## What This Process Does

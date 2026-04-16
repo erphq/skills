@@ -1,15 +1,15 @@
 ---
-title: Configuration Management
-description: Manage ERP configuration as code -- use when designing promotion pipelines, environment management, drift detection, tenant overrides, and release management for enterprise application configuration.
-audience: both
-category: skill
-related:
-  - skills/security-roles.md
-  - skills/integrations.md
-  - skills/workflow-automation.md
-  - skills/data-migration.md
+name: configuration-management
+description: This skill should be used when the task involves manage ERP configuration as code -- use when designing promotion pipelines, environment management, drift detection, tenant overrides, and release management for enterprise application configuration.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Configuration Management
 
 ## Purpose
@@ -29,6 +29,20 @@ Builders need this skill when:
 - Release management requires versioning, changelogs, and rollback capability for configuration changes
 
 Bad configuration management is invisible until it is catastrophic. A mismatched tax rate in production, a missing approval workflow after promotion, or a leaked database credential can each cause regulatory violations, financial loss, or security breaches. This skill covers how to prevent those outcomes.
+
+## Start Here: Establish Config Governance
+
+Before promoting any configuration, set guardrails:
+
+- Use the [Requirements Traceability](../../templates/requirements-traceability.md) template to map each config change to a business requirement and test case.
+- Use the [Go-Live Checklist](../../templates/go-live-checklist.md) to define deployment gates, rollback requirements, and approval ownership.
+- Assign [Solution Architect](../../roles/solution-architect.md) as release design owner and [QA Lead](../../roles/qa-lead.md) as gate validator.
+
+Do these first actions before implementation:
+
+1. Define environment parity rules and approved differences.
+2. Define change approval tiers by risk level.
+3. Define rollback criteria and the smoke-test suite required after promotion.
 
 ## Key Concepts
 

@@ -1,10 +1,15 @@
 ---
-title: Training & Development
-description: Build learning paths, manage certifications, close skill gaps, run compliance training, and support career growth
-system: hrms
-category: scale
+name: training-development
+description: This skill should be used when the task involves build learning paths, manage certifications, close skill gaps, run compliance training, and support career growth.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Training & Development
 
 ## What This Process Does

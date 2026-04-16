@@ -1,10 +1,15 @@
 ---
-title: Commissions
-description: Design commission plans, calculate payouts with accelerators and clawbacks, handle split credits, and pay your sales team accurately and on time
-system: crm
-category: maintain
+name: commissions
+description: This skill should be used when the task involves design commission plans, calculate payouts with accelerators and clawbacks, handle split credits, and pay your sales team accurately and on time.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Commissions
 
 ## What This Process Does

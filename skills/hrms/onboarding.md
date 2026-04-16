@@ -1,10 +1,15 @@
 ---
-title: Onboarding
-description: Get new hires from offer acceptance to full productivity with structured setup and orientation
-system: hrms
-category: build
+name: onboarding
+description: This skill should be used when the task involves get new hires from offer acceptance to full productivity with structured setup and orientation.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Onboarding
 
 ## What This Process Does

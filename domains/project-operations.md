@@ -1,14 +1,15 @@
 ---
-title: Project Operations
-description: Professional services automation, project lifecycle, resource management, time and expense, project billing, and portfolio management
-audience: both
-category: domain
-related:
-  - domains/finance-accounting.md
-  - domains/human-resources.md
-  - domains/sales-crm.md
+name: project-operations
+description: This skill should be used when the task involves professional services automation, project lifecycle, resource management, time and expense, project billing, and portfolio management.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Project Operations
 
 ## Purpose

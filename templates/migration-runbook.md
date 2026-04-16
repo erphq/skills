@@ -1,14 +1,15 @@
 ---
-title: Migration Runbook
-description: Step-by-step cutover checklist with rollback procedures — use when executing data migration from legacy systems to erp.ai.
-audience: both
-category: template
-related:
-  - roles/migration-architect.md
-  - skills/data-migration.md
-  - templates/go-live-checklist.md
+name: migration-runbook
+description: This skill should be used when the task involves step-by-step cutover checklist with rollback procedures — use when executing data migration from legacy systems to erp.ai.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - template
+  type: template
+  scope: internal
 ---
-
 # Migration Runbook
 
 ## Purpose

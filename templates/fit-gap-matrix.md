@@ -1,14 +1,15 @@
 ---
-title: Fit-Gap Matrix
-description: Template for scoring requirements against platform capabilities with effort estimates — use during discovery and solution design phases.
-audience: both
-category: template
-related:
-  - roles/requirements-analyst.md
-  - roles/solution-architect.md
-  - skills/data-modeling.md
+name: fit-gap-matrix
+description: This skill should be used when the task involves template for scoring requirements against platform capabilities with effort estimates — use during discovery and solution design phases.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - template
+  type: template
+  scope: internal
 ---
-
 # Fit-Gap Matrix
 
 ## Purpose

@@ -1,19 +1,15 @@
 ---
-title: Data Engineer
-description: Designs data models, enforces data quality, and builds transformation pipelines for erp.ai -- invoke when modeling entities, profiling source data, or migrating datasets.
-audience: both
-category: role
-related:
-  - skills/data-modeling.md
-  - skills/data-migration.md
-  - roles/solution-architect.md
-  - roles/migration-architect.md
-  - roles/requirements-analyst.md
-  - skills/reports-dashboards.md
-  - skills/performance-optimization.md
-  - templates/migration-runbook.md
+name: data-engineer
+description: This skill should be used when the task involves designs data models, enforces data quality, and builds transformation pipelines for erp.ai -- invoke when modeling entities, profiling source data, or migrating datasets.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - data-engineer
+  type: role
+  scope: internal
 ---
-
 # Data Engineer
 
 ## Purpose

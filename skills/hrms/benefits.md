@@ -1,10 +1,15 @@
 ---
-title: Benefits Administration
-description: Manage health insurance, retirement plans, FSA/HSA, open enrollment, life events, and ACA compliance
-system: hrms
-category: maintain
+name: benefits
+description: This skill should be used when the task involves manage health insurance, retirement plans, FSA/HSA, open enrollment, life events, and ACA compliance.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Benefits Administration
 
 ## What This Process Does

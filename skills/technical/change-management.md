@@ -1,15 +1,15 @@
 ---
-title: Change Management
-description: Plan and execute organizational change management for ERP implementations on erp.ai -- use when designing stakeholder engagement, communication plans, training strategies, resistance management, and benefits realization for enterprise transformations.
-audience: both
-category: skill
-related:
-  - skills/data-migration.md
-  - skills/workflow-automation.md
-  - skills/master-data-management.md
-  - skills/security-roles.md
+name: change-management
+description: This skill should be used when the task involves plan and execute organizational change management for ERP implementations on erp.ai -- use when designing stakeholder engagement, communication plans, training strategies, resistance management, and benefits realization for enterprise transformations.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Change Management
 
 ## Purpose
@@ -25,6 +25,20 @@ Change management is the structured approach to transitioning individuals, teams
 - Managing the human side of any technology-driven transformation
 
 The most common cause of ERP implementation failure is not technology -- it is people. Systems go live, but users revert to spreadsheets. Processes are redesigned, but departments refuse to adopt them. Training is delivered, but knowledge does not translate to behavior change. Change management is the discipline that prevents these failures.
+
+## Start Here: Plan the Change Track
+
+Before designing communications or training, set the execution frame:
+
+- Start with the [Fit-Gap Matrix](../../templates/fit-gap-matrix.md) to identify which process changes are likely to create adoption resistance.
+- Use the [Go-Live Checklist](../../templates/go-live-checklist.md) to define readiness gates and reinforcement checkpoints.
+- Assign a primary owner from [Requirements Analyst](../../roles/requirements-analyst.md) and [Solution Architect](../../roles/solution-architect.md) for business + technical alignment.
+
+Do these first actions before the detailed workflow:
+
+1. Build a stakeholder map with influence and impact levels.
+2. Define adoption metrics and success thresholds per user group.
+3. Publish the first 30-60-90 day communication and training cadence.
 
 ## Key Concepts
 

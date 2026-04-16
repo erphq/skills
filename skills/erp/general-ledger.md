@@ -1,10 +1,15 @@
 ---
-title: General Ledger
-description: Manage your chart of accounts, record journal entries, produce trial balances, and generate financial statements
-system: erp
-category: build
+name: general-ledger
+description: This skill should be used when the task involves manage your chart of accounts, record journal entries, produce trial balances, and generate financial statements.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - erp
+  type: skill
+  scope: internal
 ---
-
 # General Ledger
 
 ## What This Process Does

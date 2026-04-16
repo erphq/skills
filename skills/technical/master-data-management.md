@@ -1,15 +1,15 @@
 ---
-title: Master Data Management
-description: Design and operate master data management programs in erp.ai -- use when establishing golden records, data stewardship, duplicate detection, data quality frameworks, and cross-system synchronization for enterprise master data.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/data-migration.md
-  - skills/integrations.md
-  - skills/security-roles.md
+name: master-data-management
+description: This skill should be used when the task involves design and operate master data management programs in erp.ai -- use when establishing golden records, data stewardship, duplicate detection, data quality frameworks, and cross-system synchronization for enterprise master data.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Master Data Management
 
 ## Purpose

@@ -1,10 +1,15 @@
 ---
-title: SLA Management
-description: How to set response times, resolution targets, escalation rules, and handle breaches
-system: helpdesk
-category: build
+name: sla-management
+description: This skill should be used when the task involves how to set response times, resolution targets, escalation rules, and handle breaches.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # SLA Management
 
 ## What This Process Does

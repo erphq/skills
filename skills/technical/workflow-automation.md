@@ -1,14 +1,15 @@
 ---
-title: Workflow Automation
-description: Design and implement business process automation in erp.ai -- use when building approval chains, state machines, scheduled jobs, notification rules, SLA enforcement, and business rule engines.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/security-roles.md
-  - skills/integrations.md
+name: workflow-automation
+description: This skill should be used when the task involves design and implement business process automation in erp.ai -- use when building approval chains, state machines, scheduled jobs, notification rules, SLA enforcement, and business rule engines.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Workflow Automation
 
 ## Purpose

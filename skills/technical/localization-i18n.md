@@ -1,15 +1,15 @@
 ---
-title: Localization & Internationalization
-description: Build ERP applications for global use -- use when implementing multi-language support, multi-currency handling, timezone management, locale-specific formatting, and multi-country regulatory compliance.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/configuration-management.md
-  - skills/reporting-analytics.md
-  - skills/workflow-automation.md
+name: localization-i18n
+description: This skill should be used when the task involves build ERP applications for global use -- use when implementing multi-language support, multi-currency handling, timezone management, locale-specific formatting, and multi-country regulatory compliance.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Localization & Internationalization
 
 ## Purpose

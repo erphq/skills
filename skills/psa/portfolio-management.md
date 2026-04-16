@@ -1,10 +1,15 @@
 ---
-title: Portfolio Management
-description: How to prioritize projects, allocate resources across your portfolio, manage the pipeline-to-delivery handoff, and score project health
-system: psa
-category: scale
+name: portfolio-management
+description: This skill should be used when the task involves how to prioritize projects, allocate resources across your portfolio, manage the pipeline-to-delivery handoff, and score project health.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Portfolio Management
 
 ## What This Process Does

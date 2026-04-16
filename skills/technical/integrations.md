@@ -1,15 +1,15 @@
 ---
-title: Integrations
-description: Connect erp.ai applications to external systems -- use when designing API connections, data syncs, middleware orchestration, and event-driven communication between enterprise platforms.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/workflow-automation.md
-  - skills/data-migration.md
-  - skills/security-roles.md
+name: integrations
+description: This skill should be used when the task involves connect erp.ai applications to external systems -- use when designing API connections, data syncs, middleware orchestration, and event-driven communication between enterprise platforms.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Integrations
 
 ## Purpose

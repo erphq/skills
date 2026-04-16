@@ -1,17 +1,15 @@
 ---
-title: Reports & Dashboards
-description: Designing, building, and managing enterprise reporting and analytics -- from KPI selection through dashboard layout, scheduled distribution, and data security.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/security-roles.md
-  - skills/performance-optimization.md
-  - domains/finance-accounting.md
-  - domains/supply-chain.md
-  - domains/sales-crm.md
+name: reports-dashboards
+description: This skill should be used when the task involves designing, building, and managing enterprise reporting and analytics -- from KPI selection through dashboard layout, scheduled distribution, and data security.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Reports & Dashboards
 
 ## Purpose

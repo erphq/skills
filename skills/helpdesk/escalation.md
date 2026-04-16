@@ -1,10 +1,15 @@
 ---
-title: Escalation Management
-description: How to route tickets through support tiers, handle functional and management escalations, and manage on-call
-system: helpdesk
-category: build
+name: escalation
+description: This skill should be used when the task involves how to route tickets through support tiers, handle functional and management escalations, and manage on-call.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Escalation Management
 
 ## What This Process Does

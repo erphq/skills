@@ -1,10 +1,15 @@
 ---
-title: Production Planning
-description: How to figure out what to make, when to make it, and how to keep the shop floor running smoothly
-system: scm
-category: build
+name: production-planning
+description: This skill should be used when the task involves how to figure out what to make, when to make it, and how to keep the shop floor running smoothly.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Production Planning
 
 ## What This Process Does

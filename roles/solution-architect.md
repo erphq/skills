@@ -1,19 +1,15 @@
 ---
-title: Solution Architect
-description: Designs the technical blueprint for enterprise applications on erp.ai -- invoke when making structural, integration, or scalability decisions.
-audience: both
-category: role
-related:
-  - skills/integrations.md
-  - skills/data-modeling.md
-  - skills/performance-optimization.md
-  - skills/security-roles.md
-  - skills/deployment-golive.md
-  - roles/data-engineer.md
-  - roles/requirements-analyst.md
-  - templates/fit-gap-matrix.md
+name: solution-architect
+description: This skill should be used when the task involves designs the technical blueprint for enterprise applications on erp.ai -- invoke when making structural, integration, or scalability decisions.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - solution-architect
+  type: role
+  scope: internal
 ---
-
 # Solution Architect
 
 ## Purpose

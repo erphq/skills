@@ -1,10 +1,15 @@
 ---
-title: Contracts & Renewals
-description: Manage contract creation, track renewal dates, handle amendments, process auto-renewals, and make sure revenue doesn't walk out the door
-system: crm
-category: maintain
+name: contracts-renewals
+description: This skill should be used when the task involves manage contract creation, track renewal dates, handle amendments, process auto-renewals, and make sure revenue doesn't walk out the door.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Contracts & Renewals
 
 ## What This Process Does

@@ -1,15 +1,15 @@
 ---
-title: Performance Optimization
-description: Making enterprise applications fast and scalable -- database tuning, caching, batch processing, monitoring, and capacity planning.
-audience: both
-category: skill
-related:
-  - skills/data-modeling.md
-  - skills/reports-dashboards.md
-  - skills/deployment-golive.md
-  - roles/solution-architect.md
+name: performance-optimization
+description: This skill should be used when the task involves making enterprise applications fast and scalable -- database tuning, caching, batch processing, monitoring, and capacity planning.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Performance Optimization
 
 ## Purpose

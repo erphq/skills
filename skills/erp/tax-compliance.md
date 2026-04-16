@@ -1,10 +1,15 @@
 ---
-title: Tax Compliance
-description: Handle sales tax, VAT, GST, withholding tax, 1099 reporting, and statutory filings so you stay on the right side of every tax authority
-system: erp
-category: maintain
+name: tax-compliance
+description: This skill should be used when the task involves handle sales tax, VAT, GST, withholding tax, 1099 reporting, and statutory filings so you stay on the right side of every tax authority.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - erp
+  type: skill
+  scope: internal
 ---
-
 # Tax Compliance
 
 ## What This Process Does

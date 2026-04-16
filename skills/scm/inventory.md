@@ -1,10 +1,15 @@
 ---
-title: Inventory Management
-description: How to track what you have, where it is, and when to order more
-system: scm
-category: build
+name: inventory
+description: This skill should be used when the task involves how to track what you have, where it is, and when to order more.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - scm
+  type: skill
+  scope: internal
 ---
-
 # Inventory Management
 
 ## What This Process Does

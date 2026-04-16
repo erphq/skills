@@ -1,10 +1,15 @@
 ---
-title: Billing & Revenue Recognition
-description: How to generate invoices from project work, handle different billing models, and recognize revenue correctly
-system: psa
-category: maintain
+name: billing
+description: This skill should be used when the task involves how to generate invoices from project work, handle different billing models, and recognize revenue correctly.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - psa
+  type: skill
+  scope: internal
 ---
-
 # Billing & Revenue Recognition
 
 ## What This Process Does

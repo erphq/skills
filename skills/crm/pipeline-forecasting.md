@@ -1,10 +1,15 @@
 ---
-title: Pipeline & Forecasting
-description: Track deals through stages, weight them by probability, build reliable revenue forecasts, and hold reps accountable to their numbers
-system: crm
-category: maintain
+name: pipeline-forecasting
+description: This skill should be used when the task involves track deals through stages, weight them by probability, build reliable revenue forecasts, and hold reps accountable to their numbers.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - crm
+  type: skill
+  scope: internal
 ---
-
 # Pipeline & Forecasting
 
 ## What This Process Does

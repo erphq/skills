@@ -1,18 +1,15 @@
 ---
-title: Deployment & Go-Live
-description: Planning and executing the transition from development to production -- environment strategy, cutover runbooks, rollback procedures, go/no-go decisions, and hypercare.
-audience: both
-category: skill
-related:
-  - skills/testing-validation.md
-  - skills/data-migration.md
-  - skills/security-roles.md
-  - skills/user-onboarding.md
-  - templates/go-live-checklist.md
-  - templates/migration-runbook.md
-  - roles/solution-architect.md
+name: deployment-golive
+description: This skill should be used when the task involves planning and executing the transition from development to production -- environment strategy, cutover runbooks, rollback procedures, go/no-go decisions, and hypercare.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Deployment & Go-Live
 
 ## Purpose

@@ -1,15 +1,15 @@
 ---
-title: Disaster Recovery
-description: Design and operate disaster recovery and business continuity programs for erp.ai -- use when defining RTO/RPO targets, backup strategies, failover architecture, DR testing, and incident communication for enterprise SaaS applications.
-audience: both
-category: skill
-related:
-  - skills/observability.md
-  - skills/security-roles.md
-  - skills/integrations.md
-  - skills/data-modeling.md
+name: disaster-recovery
+description: This skill should be used when the task involves design and operate disaster recovery and business continuity programs for erp.ai -- use when defining RTO/RPO targets, backup strategies, failover architecture, DR testing, and incident communication for enterprise SaaS applications.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Disaster Recovery
 
 ## Purpose
@@ -26,6 +26,20 @@ Disaster recovery (DR) and business continuity planning (BCP) ensure that an ent
 - Planning recovery procedures that restore service in the correct order with verified integrity
 
 An ERP system is the operational backbone of an enterprise. When it is down, orders do not ship, invoices do not process, employees do not get paid, and financial reporting halts. The cost of downtime is measured in revenue loss, regulatory penalties, and customer trust. DR planning turns "if disaster strikes" into "when disaster strikes, here is exactly what we do."
+
+## Start Here: Set Recovery Baselines
+
+Before selecting architecture, define recovery commitments:
+
+- Use the [Go-Live Checklist](../../templates/go-live-checklist.md) to define mandatory DR readiness gates and evidence before production launch.
+- Use the [Migration Runbook](../../templates/migration-runbook.md) style to codify failover and rollback runbooks with step ownership.
+- Assign [Solution Architect](../../roles/solution-architect.md) as DR design owner and [Compliance Analyst](../../roles/compliance-analyst.md) for audit/control requirements.
+
+Do these first actions before technical design:
+
+1. Classify systems into criticality tiers and target RTO/RPO per tier.
+2. Define failover decision authority and escalation paths.
+3. Schedule the first tabletop and full failover test windows.
 
 ## Key Concepts
 

@@ -1,15 +1,15 @@
 ---
-title: Requirements Traceability Matrix
-description: Template linking requirements to configuration, test cases, and sign-off — use to ensure nothing falls through the cracks from discovery to go-live.
-audience: both
-category: template
-related:
-  - roles/requirements-analyst.md
-  - roles/qa-lead.md
-  - templates/fit-gap-matrix.md
-  - skills/testing-validation.md
+name: requirements-traceability
+description: This skill should be used when the task involves template linking requirements to configuration, test cases, and sign-off — use to ensure nothing falls through the cracks from discovery to go-live.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - template
+  type: template
+  scope: internal
 ---
-
 # Requirements Traceability Matrix (RTM)
 
 ## Purpose

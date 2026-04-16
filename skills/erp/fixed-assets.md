@@ -1,10 +1,15 @@
 ---
-title: Fixed Assets
-description: Track company property and equipment, calculate depreciation, handle disposals and revaluations, and manage lease accounting
-system: erp
-category: build
+name: fixed-assets
+description: This skill should be used when the task involves track company property and equipment, calculate depreciation, handle disposals and revaluations, and manage lease accounting.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - erp
+  type: skill
+  scope: internal
 ---
-
 # Fixed Assets
 
 ## What This Process Does

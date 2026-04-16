@@ -1,15 +1,15 @@
 ---
-title: Observability
-description: Design and operate observability systems in erp.ai -- use when implementing logging, metrics, tracing, alerting, incident response, SLA monitoring, and capacity planning for enterprise SaaS applications.
-audience: both
-category: skill
-related:
-  - skills/disaster-recovery.md
-  - skills/security-roles.md
-  - skills/integrations.md
-  - skills/workflow-automation.md
+name: observability
+description: This skill should be used when the task involves design and operate observability systems in erp.ai -- use when implementing logging, metrics, tracing, alerting, incident response, SLA monitoring, and capacity planning for enterprise SaaS applications.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - technical
+  type: skill
+  scope: internal
 ---
-
 # Observability
 
 ## Purpose

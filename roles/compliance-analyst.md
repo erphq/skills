@@ -1,13 +1,15 @@
 ---
-title: Compliance Analyst
-description: Ensures erp.ai applications satisfy regulatory, legal, and audit requirements by embedding controls, access policies, audit trails, and data governance into the build from day one.
-audience: both
-category: role
-related:
-  - roles/migration-architect.md
-  - roles/qa-lead.md
+name: compliance-analyst
+description: This skill should be used when the task involves ensures erp.ai applications satisfy regulatory, legal, and audit requirements by embedding controls, access policies, audit trails, and data governance into the build from day one.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - compliance-analyst
+  type: role
+  scope: internal
 ---
-
 # Compliance Analyst
 
 ## Purpose

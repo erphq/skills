@@ -1,10 +1,15 @@
 ---
-title: Customer Satisfaction Measurement
-description: How to collect, analyze, and act on CSAT surveys, NPS, CES, sentiment analysis, and customer feedback
-system: helpdesk
-category: maintain
+name: customer-satisfaction
+description: This skill should be used when the task involves how to collect, analyze, and act on CSAT surveys, NPS, CES, sentiment analysis, and customer feedback.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - helpdesk
+  type: skill
+  scope: internal
 ---
-
 # Customer Satisfaction Measurement
 
 ## What This Process Does

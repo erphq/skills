@@ -1,14 +1,15 @@
 ---
-title: Supply Chain
-description: Procurement, inventory management, warehousing, logistics, MRP, and quality management
-audience: both
-category: domain
-related:
-  - domains/finance-accounting.md
-  - domains/sales-crm.md
-  - domains/project-operations.md
+name: supply-chain
+description: This skill should be used when the task involves procurement, inventory management, warehousing, logistics, MRP, and quality management.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - domain
+  type: domain
+  scope: internal
 ---
-
 # Supply Chain
 
 ## Purpose

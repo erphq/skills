@@ -1,10 +1,15 @@
 ---
-title: Performance Reviews
-description: Run goal setting, review cycles, 360 feedback, calibration sessions, PIPs, and promotion decisions
-system: hrms
-category: maintain
+name: performance-reviews
+description: This skill should be used when the task involves run goal setting, review cycles, 360 feedback, calibration sessions, PIPs, and promotion decisions.
+version: 1.0.0
+metadata:
+  author: erphq
+  domain: erpai.studio
+  roles:
+    - hrms
+  type: skill
+  scope: internal
 ---
-
 # Performance Reviews
 
 ## What This Process Does
