@@ -20,9 +20,9 @@ This process covers time-and-materials billing (charging clients for actual hour
 
 Think of it like running a restaurant. Time-and-materials is like a regular menu — the client pays for what they order. Fixed-price is like a prix fixe dinner — one set price regardless of what it costs you to make it. Retainers are like a monthly meal subscription. And revenue recognition is like making sure your accountant records the subscription revenue in the month the meals are actually served, not the month the client paid upfront.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Sales Invoice**, **Subscription**, and **Revenue Recognition** apps in the catalog. The Sales Invoice doctype supports line-item billing with different rate structures. The Projects module integrates with Accounts to pull billable time and expenses into draft invoices. Deploy the professional services or consulting template — it will come pre-configured with time-based billing, milestone billing, and retainer structures.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Sales Invoice**, **Subscription**, and **Revenue Recognition** apps in the catalog. The Sales Invoice doctype supports line-item billing with different rate structures. The Projects module integrates with Accounts to pull billable time and expenses into draft invoices. Deploy the professional services or consulting template — it will come pre-configured with time-based billing, milestone billing, and retainer structures.
 
 Also look for **Pricing Rule** and **Billing Plan** templates that define rate cards, discount structures, and billing schedules.
 
@@ -220,8 +220,8 @@ Dedicated billing team, likely 3 to 10 people. Complex contract structures inclu
 
 Global billing operations across multiple entities, currencies, and tax jurisdictions. Shared service center model for invoice production. Centralized revenue recognition with quarterly close processes reviewed by external auditors. Contract review involves legal, finance, and delivery teams. You are managing thousands of active contracts with varying terms. AI-driven billing anomaly detection is not optional — it is how you maintain accuracy at scale.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Sales Invoice and Subscription doctypes handle one-time and recurring billing. Integration with Projects and Timesheets means billable time flows directly into draft invoices. The Accounts module supports multi-currency, tax calculation, and revenue recognition journal entries. Payment Entry tracking gives visibility into collections.
+**ERP•AI**: The Sales Invoice and Subscription doctypes handle one-time and recurring billing. Integration with Projects and Timesheets means billable time flows directly into draft invoices. The Accounts module supports multi-currency, tax calculation, and revenue recognition journal entries. Payment Entry tracking gives visibility into collections.
 
 **Proto**: Proto agents power the ORAI cycle for billing — Observing approved timesheets, milestone completions, and contract terms; Reasoning about correct rates, billing model application, and revenue recognition timing; Acting by generating draft invoices and revenue journal entries; and Iterating by learning client preferences and catching patterns of revenue leakage or billing errors.

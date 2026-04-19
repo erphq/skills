@@ -123,7 +123,7 @@ This model scales because a core team of 3-5 people can train 20-30 trainers who
 - For each process in the curriculum, create the appropriate content type(s) based on the content type selection guide.
 - Write step-by-step guides with annotated screenshots. Number every step. Include the expected system response after each action.
 - Record video walkthroughs for processes that benefit from visual demonstration. Keep videos under 5 minutes; break longer processes into multiple videos.
-- Build in-app walkthroughs for first-time task guidance using erp.ai's built-in or third-party walkthrough tools.
+- Build in-app walkthroughs for first-time task guidance using ERP•AI's built-in or third-party walkthrough tools.
 - Create quick reference cards (QRCs): single-page, printable summaries of the most common tasks. Include field definitions, keyboard shortcuts, and "what to do when" troubleshooting tips.
 - Create a process flow diagram for each end-to-end process that shows the user's path through the system.
 - **Watch out for**: Screenshots that become outdated. Use annotation tools that reference UI elements by name rather than by position, and maintain a screenshot refresh checklist for each release.
@@ -373,7 +373,7 @@ Enterprise systems are complex. Training that dumps too much information at once
 
 ### Multilingual & Localized Training
 
-Global enterprises deploy erp.ai across multiple countries, languages, and regulatory environments. Training content must be adapted -- not just translated -- for each locale.
+Global enterprises deploy ERP•AI across multiple countries, languages, and regulatory environments. Training content must be adapted -- not just translated -- for each locale.
 
 **Translation workflows:**
 
@@ -545,9 +545,9 @@ Present training ROI in financial terms: "The $180,000 training investment reduc
 - [ ] Help desk ticket reduction correlated with training activities by topic
 - [ ] Training ROI calculated and presented in financial terms (payback period, cost avoidance)
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: In-app walkthrough builder with role-based onboarding guides and adoption analytics dashboards that track time-to-competency and feature usage across the user base.
+**ERP•AI**: In-app walkthrough builder with role-based onboarding guides and adoption analytics dashboards that track time-to-competency and feature usage across the user base.
 
 **Proto**: Generates tailored training content and onboarding sequences as mission deliverables, pulling role definitions from the L3 knowledge graph and tracking adoption metrics through the 720+ app fabric during the ITERATE phase.
 

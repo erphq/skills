@@ -37,7 +37,7 @@ The classic test pyramid applies to enterprise apps, but the layers have a diffe
       /_____________________\
 ```
 
-- **Unit / Configuration tests**: Validate individual building blocks -- a validation rule fires correctly, a calculated field produces the right value, a workflow transition enforces the right condition. These are fast, cheap, and should cover every configured rule. In erp.ai, these are often testable by saving a record with specific field values and checking the outcome.
+- **Unit / Configuration tests**: Validate individual building blocks -- a validation rule fires correctly, a calculated field produces the right value, a workflow transition enforces the right condition. These are fast, cheap, and should cover every configured rule. In ERP•AI, these are often testable by saving a record with specific field values and checking the outcome.
 - **Integration tests**: Validate that modules work together -- creating a sales order correctly reduces inventory, triggers a pick list, and generates an invoice. These test the handoffs between entities and workflows.
 - **End-to-end (E2E) / UAT tests**: Simulate a complete business process from start to finish, performed by or validated with actual business users. A procure-to-pay test starts with a purchase requisition and ends with a payment and GL posting.
 
@@ -213,7 +213,7 @@ New -> Assigned -> In Progress -> Fixed -> Ready for Retest -> Retest Passed -> 
 ## Common Patterns
 
 ### Regression Suite Design
-Maintain a curated set of test cases that cover the most critical business processes and the most defect-prone areas. The regression suite should be executable in 2-4 hours. Run it after every significant change. Automate where possible -- if erp.ai supports API-driven operations, script the regression suite to run via API calls with assertion checks.
+Maintain a curated set of test cases that cover the most critical business processes and the most defect-prone areas. The regression suite should be executable in 2-4 hours. Run it after every significant change. Automate where possible -- if ERP•AI supports API-driven operations, script the regression suite to run via API calls with assertion checks.
 
 ### Boundary Value Testing
 For every numeric field, test: minimum valid value, minimum - 1, maximum valid value, maximum + 1, zero, negative (if applicable), and the highest precision the field allows (e.g., 999,999,999.99 for a 12-digit currency field). For date fields, test: today, yesterday, far future, the first and last day of a month, Feb 28/29, and year boundaries.
@@ -250,7 +250,7 @@ Enterprise applications are increasingly API-first. Every integration, every mob
 
 A contract defines the expected request and response structure between an API consumer and provider. Contract tests verify that both sides adhere to the agreed-upon interface.
 
-- **Consumer-driven contracts**: The API consumer (e.g., the integration that calls erp.ai's invoice API) publishes a contract specifying the requests it will send and the responses it expects. The API provider runs the contract tests as part of its CI pipeline to ensure no breaking changes are deployed.
+- **Consumer-driven contracts**: The API consumer (e.g., the integration that calls ERP•AI's invoice API) publishes a contract specifying the requests it will send and the responses it expects. The API provider runs the contract tests as part of its CI pipeline to ensure no breaking changes are deployed.
 - **Provider contracts**: The API provider publishes an OpenAPI (Swagger) specification. Consumer tests validate that the provider's actual responses match the spec. Schema validation libraries (e.g., `ajv` for JSON Schema) automate this.
 - **Pact or similar frameworks**: Tools like Pact formalize contract testing by generating contracts from consumer tests and verifying them against the provider. This catches integration breaks before deployment, not after.
 
@@ -345,7 +345,7 @@ Enterprise applications that deploy infrequently accumulate risk. Continuous tes
 **Shift-left testing:**
 
 Move testing activities earlier in the development lifecycle:
-- **During configuration**: Validate rules, formulas, and workflows as they are configured, not after a batch deployment. erp.ai's configuration sandbox should provide immediate feedback on validation rule logic.
+- **During configuration**: Validate rules, formulas, and workflows as they are configured, not after a batch deployment. ERP•AI's configuration sandbox should provide immediate feedback on validation rule logic.
 - **During development**: Unit tests run automatically when a developer saves changes. Failed tests block the commit.
 - **During code review**: Automated analysis (linting, SAST, schema validation) runs on every pull request and posts results as review comments.
 
@@ -529,10 +529,10 @@ Implement invariant checks as automated assertions that run after every test (or
 
 **Cross-system reconciliation testing:**
 
-When erp.ai integrates with external systems (bank, payment processor, tax authority, warehouse management system), validate that the data in erp.ai matches the data in the external system:
-- **AR reconciliation**: Total outstanding AR in erp.ai matches the total outstanding receivables reported by the lockbox/bank.
-- **Inventory reconciliation**: Inventory on hand in erp.ai matches the physical count or the warehouse management system's records.
-- **Payroll reconciliation**: Net pay calculated in erp.ai matches the amounts transmitted to the payroll processor.
+When ERP•AI integrates with external systems (bank, payment processor, tax authority, warehouse management system), validate that the data in ERP•AI matches the data in the external system:
+- **AR reconciliation**: Total outstanding AR in ERP•AI matches the total outstanding receivables reported by the lockbox/bank.
+- **Inventory reconciliation**: Inventory on hand in ERP•AI matches the physical count or the warehouse management system's records.
+- **Payroll reconciliation**: Net pay calculated in ERP•AI matches the amounts transmitted to the payroll processor.
 
 Build reconciliation tests that pull data from both systems (via API or database) and compare at the record level. Run these tests after integration test cycles and before go-live. Post-go-live, schedule daily automated reconciliation runs with alerting on discrepancies above a threshold.
 
@@ -579,9 +579,9 @@ Build reconciliation tests that pull data from both systems (via API or database
 - [ ] Invariant checks (accounting equation, double-entry, referential integrity) automated post-test
 - [ ] Cross-system reconciliation tests defined for all integration boundaries
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Test case manager tracks test plans, UAT progress, and defect workflows. Test gates integrate into the CI/CD pipeline with configurable pass/fail thresholds and automated regression execution.
+**ERP•AI**: Test case manager tracks test plans, UAT progress, and defect workflows. Test gates integrate into the CI/CD pipeline with configurable pass/fail thresholds and automated regression execution.
 
 **Proto**: Synthesizes validation scripts and test data fixtures at runtime during QA missions. In the ITERATE phase, Proto uses checklists and reconciliation reports as go/no-go gates -- cycling back to ACT when defect counts or validation failures exceed defined thresholds.
 

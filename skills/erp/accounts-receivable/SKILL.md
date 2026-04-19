@@ -18,9 +18,9 @@ Accounts Receivable (AR) is the other side of the cash equation — it is how yo
 
 The core loop: generate an invoice from a sales order or contract, deliver it to the customer, monitor aging, send reminders (dunning), receive and apply payment, and resolve disputes. The complexity comes from partial payments, short payments, credit memos, deductions, payment plans, and customers who pay one invoice but dispute another.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Accounts Receivable Automation** app, the **Customer Portal** template, the **Collections Workbench**, and the **Cash Application Engine**. If you run a subscription business, the **Recurring Billing Suite** handles subscription invoicing and dunning out of the box. Deploy the closest match from erp.ai's 720+ catalog, then customize on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Accounts Receivable Automation** app, the **Customer Portal** template, the **Collections Workbench**, and the **Cash Application Engine**. If you run a subscription business, the **Recurring Billing Suite** handles subscription invoicing and dunning out of the box. Deploy the closest match from ERP•AI's 720+ catalog, then customize on top.
 
 ## Build — Setting It Up
 
@@ -172,7 +172,7 @@ AI agents transform AR from a reactive collections function into a proactive cas
 
 ### Startup (< 50 people)
 
-You probably send invoices from accounting software or even a spreadsheet. The founder or office manager does collections by email when they remember. This works until you have more than 20 active customers. At that point, deploy erp.ai's basic AR template to centralize invoicing and aging. Set up a simple dunning sequence (three emails over 30 days). Use an agent to auto-generate invoices from your CRM's closed-won deals. Focus on getting invoices out the same day as delivery and following up within a week of the due date. Do not worry about cash application automation yet — your payment volume does not justify it.
+You probably send invoices from accounting software or even a spreadsheet. The founder or office manager does collections by email when they remember. This works until you have more than 20 active customers. At that point, deploy ERP•AI's basic AR template to centralize invoicing and aging. Set up a simple dunning sequence (three emails over 30 days). Use an agent to auto-generate invoices from your CRM's closed-won deals. Focus on getting invoices out the same day as delivery and following up within a week of the due date. Do not worry about cash application automation yet — your payment volume does not justify it.
 
 ### SMB (50–500 people)
 
@@ -186,8 +186,8 @@ You have thousands of customers across segments — some pay reliably, others re
 
 AR at scale involves millions of invoices, complex global operations, and sophisticated financial instruments. You may factor receivables or use securitization programs. Cash application must handle high payment volumes across multiple banks and currencies. Collections is a specialized team with workload balancing and performance metrics. Agents operate across the entire order-to-cash cycle — from credit decisioning to invoice generation to cash application to collections to dispute management. Integration with CRM, order management, and revenue recognition systems must be seamless. Benchmark against industry DSO, CEI, and bad debt ratios.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Accounts Receivable module in erp.ai includes automated invoice generation from sales orders, multi-channel delivery (email, portal, EDI), AI-powered cash application, configurable dunning sequences, dispute management workflows, and a customer self-service portal for viewing invoices and making payments.
+**ERP•AI**: The Accounts Receivable module in ERP•AI includes automated invoice generation from sales orders, multi-channel delivery (email, portal, EDI), AI-powered cash application, configurable dunning sequences, dispute management workflows, and a customer self-service portal for viewing invoices and making payments.
 
 **Proto**: Proto agents manage the entire order-to-cash cycle through the ORAI loop — they observe payment patterns and customer behavior, reason about collection priority and credit risk, act by generating invoices and sending dunning communications, and iterate by continuously improving cash application matching and collection strategies based on outcomes.

@@ -20,9 +20,9 @@ This process covers timesheet entry (logging what hours were spent on what proje
 
 Think of it like a cash register in a store. If the cashier does not ring up a sale, the store does not get paid. If they ring it up wrong, the books are off. Timesheets are your cash register. Expense reports are your receipt drawer. And policy enforcement is the price list everyone needs to follow.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Timesheet**, **Expense Claim**, and **HR Module** apps in the catalog. The Timesheet doctype supports project-based time logging with approval workflows. The Expense Claim doctype handles receipt attachments, category-based limits, and multi-level approvals. Deploy the professional services template if available, as it comes pre-configured with billable vs. non-billable categories and project-linked time entries.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Timesheet**, **Expense Claim**, and **HR Module** apps in the catalog. The Timesheet doctype supports project-based time logging with approval workflows. The Expense Claim doctype handles receipt attachments, category-based limits, and multi-level approvals. Deploy the professional services template if available, as it comes pre-configured with billable vs. non-billable categories and project-linked time entries.
 
 Also look for **Expense Policy** and **Timesheet Policy** templates that define approval thresholds, submission deadlines, and category limits.
 
@@ -215,8 +215,8 @@ Multi-level approval workflows, delegation rules (approve on behalf of someone o
 
 Global expense policy framework with regional variations. Integration with corporate travel booking systems, corporate card programs, and ERP financials. Audit sampling programs. Predictive analytics for budget forecasting. AI-driven fraud detection. You are processing tens of thousands of timesheets and expense reports per month — manual review is impossible, so automation and exception-based management are the only path.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Timesheet and Expense Claim doctypes provide structured time and expense capture with built-in approval workflows. Integration with Projects ensures time is logged against the right work, and integration with Accounts means approved expenses flow directly into financials for reimbursement and billing.
+**ERP•AI**: The Timesheet and Expense Claim doctypes provide structured time and expense capture with built-in approval workflows. Integration with Projects ensures time is logged against the right work, and integration with Accounts means approved expenses flow directly into financials for reimbursement and billing.
 
 **Proto**: Proto agents drive the ORAI cycle for time and expense — Observing calendar events, project assignments, and submitted entries; Reasoning about correct categorization, policy compliance, and missing entries; Acting by pre-populating timesheets, processing receipts, and routing approvals; and Iterating by learning individual patterns to make suggestions more accurate over time.

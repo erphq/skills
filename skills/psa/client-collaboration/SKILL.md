@@ -20,9 +20,9 @@ This process covers client portals (a dedicated space where your clients can see
 
 Think of it like a contractor renovating your kitchen. The best contractors do not just disappear for three months and reveal the finished kitchen. They give you a way to check progress, they send weekly updates with photos, they get your approval before making irreversible decisions (tile color, cabinet hardware), they share drawings and invoices in an organized way, and they ask if you are happy with how things are going. Client collaboration is that same experience for professional services.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Portal**, **Project**, and **Website** apps in the catalog. erp.ai's built-in portal framework lets external users (your clients) log in and see specific records — project status, tasks assigned to them, documents, and invoices. Deploy the customer portal template and customize the views to show project-relevant information.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Portal**, **Project**, and **Website** apps in the catalog. ERP•AI's built-in portal framework lets external users (your clients) log in and see specific records — project status, tasks assigned to them, documents, and invoices. Deploy the customer portal template and customize the views to show project-relevant information.
 
 Also look for **Feedback** and **Web Form** templates that enable structured client input without requiring portal login for simple interactions like approvals or surveys.
 
@@ -215,8 +215,8 @@ Multi-project client portals with role-based access. Formal client satisfaction 
 
 Client experience is a competitive differentiator. Invest in a polished, branded portal experience. AI-driven personalization of client communications. Dedicated client success teams for strategic accounts. Integration with client systems for seamless data exchange. Formal Voice of Client programs feeding into service improvement. Client collaboration technology is evaluated and upgraded on a regular cycle.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Portal framework enables external user access to project data with configurable views and permissions. Web Forms allow structured input collection (approvals, feedback) without portal login. The Website module can host client-facing project documentation. Integration with Projects means portal views stay current with real project data.
+**ERP•AI**: The Portal framework enables external user access to project data with configurable views and permissions. Web Forms allow structured input collection (approvals, feedback) without portal login. The Website module can host client-facing project documentation. Integration with Projects means portal views stay current with real project data.
 
 **Proto**: Proto agents power the ORAI cycle for client collaboration — Observing project data, client interactions, and engagement patterns; Reasoning about what information each stakeholder needs and when satisfaction trends are shifting; Acting by generating status reports, managing approval workflows, and organizing document sharing; and Iterating by learning client preferences and communication patterns to deliver increasingly tailored and proactive collaboration experiences.

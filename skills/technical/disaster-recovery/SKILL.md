@@ -1,6 +1,6 @@
 ---
 name: disaster-recovery
-description: This skill should be used when the task involves design and operate disaster recovery and business continuity programs for erp.ai -- use when defining RTO/RPO targets, backup strategies, failover architecture, DR testing, and incident communication for enterprise SaaS applications.
+description: This skill should be used when the task involves design and operate disaster recovery and business continuity programs for ERP•AI -- use when defining RTO/RPO targets, backup strategies, failover architecture, DR testing, and incident communication for enterprise SaaS applications.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Disaster recovery (DR) and business continuity planning (BCP) ensure that an enterprise application can survive and recover from failures ranging from a single component outage to a full data center loss. For ERP systems on erp.ai, DR is not a theoretical exercise -- it is a contractual, regulatory, and operational necessity. Builders and operators need this skill whenever they are:
+Disaster recovery (DR) and business continuity planning (BCP) ensure that an enterprise application can survive and recover from failures ranging from a single component outage to a full data center loss. For ERP systems on ERP•AI, DR is not a theoretical exercise -- it is a contractual, regulatory, and operational necessity. Builders and operators need this skill whenever they are:
 
 - Defining recovery objectives (RTO/RPO) that align with business criticality
 - Designing backup strategies that protect against data loss, corruption, and ransomware
@@ -74,7 +74,7 @@ Backups are the foundation of data protection. The strategy must balance recover
 | **Continuous / CDP** | Every write is captured in real-time to a secondary location | Very fast (near-zero RPO) | High (continuous replication) | Tier 1 systems with near-zero RPO |
 | **Point-in-time recovery (PITR)** | Transaction log replay to any point in time | Medium (restore base + replay logs) | Medium (base + logs) | Database recovery to a specific moment (e.g., before a data corruption event) |
 
-**Recommended backup architecture for erp.ai:**
+**Recommended backup architecture for ERP•AI:**
 
 - **Database**: Continuous replication (synchronous for Tier 1, asynchronous for Tier 2/3) + daily full backup + transaction log archival for PITR. Retain PITR capability for 30 days.
 - **File storage** (documents, attachments): Daily incremental backup + weekly full backup. Retain 90 days.
@@ -116,7 +116,7 @@ RTO: 15-30 minutes. Cheaper than full warm standby because application compute i
 The application is deployed across multiple geographic regions, each capable of serving traffic independently. Regional failures are handled by routing traffic to surviving regions.
 
 - Requires careful data strategy: each region can own a data partition (e.g., by tenant or geography) or all regions share a globally distributed database.
-- In erp.ai, multi-region is configured per tenant tier. Tier 1 tenants can be assigned to multi-region deployment with automatic geo-failover.
+- In ERP•AI, multi-region is configured per tenant tier. Tier 1 tenants can be assigned to multi-region deployment with automatic geo-failover.
 
 **Decision matrix:**
 
@@ -221,7 +221,7 @@ For each business process, determine:
 Data protection goes beyond backups to address the full spectrum of threats to data availability and integrity.
 
 **Encryption:**
-- **At rest**: All data stored on disk (databases, file storage, backups) must be encrypted. Use AES-256 or equivalent. In erp.ai, encryption at rest is enabled by default.
+- **At rest**: All data stored on disk (databases, file storage, backups) must be encrypted. Use AES-256 or equivalent. In ERP•AI, encryption at rest is enabled by default.
 - **In transit**: All data moving between systems must use TLS 1.2+. This includes internal service-to-service communication, not just external-facing endpoints.
 - **Backup encryption**: All backups must be encrypted with keys stored separately from the backups themselves. If an attacker gains access to backup storage, they should not be able to read the data.
 
@@ -283,7 +283,7 @@ Recovery is the process of restoring service after a disaster. It must be execut
 5. **Verification tier**: Data integrity checks, functional smoke tests, synthetic monitoring
 6. **Traffic restoration**: Gradual traffic routing to recovered environment (canary, then full)
 
-**Dependency ordering**: Map all system dependencies and restore in bottom-up order. A service should not start until all of its critical dependencies are healthy. In erp.ai, the dependency graph is maintained in the Infrastructure module and drives the automated recovery sequence.
+**Dependency ordering**: Map all system dependencies and restore in bottom-up order. A service should not start until all of its critical dependencies are healthy. In ERP•AI, the dependency graph is maintained in the Infrastructure module and drives the automated recovery sequence.
 
 **Data integrity verification** post-recovery:
 - Row count comparison between primary and recovered databases
@@ -318,7 +318,7 @@ ERP systems do not exist in isolation. DR must account for integration partners 
 - After recovery, reconcile the state of all active integration flows.
 - Compare transaction counts and totals with integration partners for the period around the outage.
 - Identify and resolve any transactions that were lost, duplicated, or partially processed.
-- In erp.ai, the Integration Hub provides a reconciliation dashboard showing the last successful sync per integration and any gaps.
+- In ERP•AI, the Integration Hub provides a reconciliation dashboard showing the last successful sync per integration and any gaps.
 
 ### Compliance Requirements
 
@@ -376,7 +376,7 @@ DR is not just a best practice -- it is a regulatory requirement for most enterp
 - Design backup strategy (full, incremental, continuous) per data type.
 - Design failover procedures (automated vs manual) per component.
 - Design data protection measures (encryption, immutable backups, air-gapped copies).
-- **Tool**: erp.ai's Infrastructure Designer, cloud provider DR services.
+- **Tool**: ERP•AI's Infrastructure Designer, cloud provider DR services.
 - **Watch out for**: Designing DR in isolation from the observability stack. DR depends on monitoring to detect failures that trigger failover.
 - **Output**: DR architecture document with diagrams, procedures, and cost estimates.
 
@@ -529,9 +529,9 @@ Map each component to its degradation behavior and communicate the expected user
 - [ ] Compliance requirements mapped and audit evidence maintained
 - [ ] DR operations integrated into deployment pipeline (deploy to DR on every release)
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Backup configuration, environment replication, and failover settings with built-in RTO/RPO tracking across all platform tiers.
+**ERP•AI**: Backup configuration, environment replication, and failover settings with built-in RTO/RPO tracking across all platform tiers.
 
 **Proto**: Executes DR test missions autonomously -- simulates failover scenarios in the ACT phase, validates recovery integrity, and reports measured results against RTO/RPO targets during ITERATE.
 

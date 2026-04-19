@@ -56,12 +56,12 @@ Configuration as code means treating configuration artifacts with the same rigor
 
 | Format | When to Use | Considerations |
 |---|---|---|
-| **YAML** | Human-authored configuration. Workflow definitions, feature flags, business rules. | Readable, supports comments, indentation-sensitive (can cause subtle bugs). Default for erp.ai configuration packages. |
+| **YAML** | Human-authored configuration. Workflow definitions, feature flags, business rules. | Readable, supports comments, indentation-sensitive (can cause subtle bugs). Default for ERP•AI configuration packages. |
 | **JSON** | Machine-generated configuration. API payloads, schema definitions. | No comments, strict syntax, universally parseable. Use for integration config and API-driven configuration. |
 | **TOML** | Simple key-value configuration. Environment variables, connection strings. | Flat structure, easy to read, limited nesting. Good for infrastructure config. |
 | **HCL** | Infrastructure configuration (Terraform-style). | Rich expression language, good for templated infrastructure config. |
 
-**Version control for config artifacts**: Store all configuration in Git alongside application code, or in a dedicated configuration repository. Every change gets a commit message, a pull request, and a review. erp.ai provides a Configuration Repository that integrates with Git for version control and supports branching strategies for parallel configuration development.
+**Version control for config artifacts**: Store all configuration in Git alongside application code, or in a dedicated configuration repository. Every change gets a commit message, a pull request, and a review. ERP•AI provides a Configuration Repository that integrates with Git for version control and supports branching strategies for parallel configuration development.
 
 **Config schema validation**: Define JSON Schema or equivalent validation rules for every configuration file. Validate on commit (pre-commit hooks), on PR (CI pipeline), and before deployment. Catch errors early -- a missing required field in a YAML file should never reach production.
 
@@ -77,7 +77,7 @@ Configuration as code means treating configuration artifacts with the same rigor
 
 **Environment parity**: Lower environments should mirror production as closely as possible in configuration, infrastructure, and data shape. Differences between environments are the primary source of "works in test, breaks in production" failures.
 
-**Environment provisioning**: Automate environment creation from configuration. A new environment should be spun up from a configuration baseline in minutes, not days. erp.ai supports environment templates that define the full configuration state for a new environment.
+**Environment provisioning**: Automate environment creation from configuration. A new environment should be spun up from a configuration baseline in minutes, not days. ERP•AI supports environment templates that define the full configuration state for a new environment.
 
 **Data masking for lower environments**: Production data refreshed into lower environments must be masked to protect PII and sensitive financial data. Masking rules should be configuration-driven:
 
@@ -86,7 +86,7 @@ Configuration as code means treating configuration artifacts with the same rigor
 - **Account numbers**: Hash or replace while maintaining referential integrity.
 - **Addresses**: Replace with synthetic addresses in the same region/country.
 
-erp.ai's Data Masking Engine applies masking rules during environment refresh. Rules are stored as configuration and version-controlled.
+ERP•AI's Data Masking Engine applies masking rules during environment refresh. Rules are stored as configuration and version-controlled.
 
 ### Promotion Pipelines
 
@@ -113,7 +113,7 @@ A promotion pipeline moves configuration from one environment to the next, with 
 | **Impact Analysis** | Downstream dependencies assessed | Unresolved impact |
 | **Change Window** | Promotion occurs during approved change window | Outside window |
 
-**Approval workflows**: Different configuration types require different approval chains. A cosmetic label change may need one approval. A change to financial posting rules requires finance manager + controller approval. erp.ai's promotion pipeline supports configurable approval matrices based on configuration type and risk level.
+**Approval workflows**: Different configuration types require different approval chains. A cosmetic label change may need one approval. A change to financial posting rules requires finance manager + controller approval. ERP•AI's promotion pipeline supports configurable approval matrices based on configuration type and risk level.
 
 ### Configuration Drift Detection
 
@@ -135,7 +135,7 @@ Drift occurs when the actual state of an environment diverges from the expected 
 
 **Remediation**: For unintended drift, either revert the live environment to the baseline or update the baseline to reflect the new intended state (via a proper config package). Never leave drift unresolved.
 
-erp.ai's Drift Monitor runs on a configurable schedule, compares live state against the configuration repository, and generates drift reports with diff views.
+ERP•AI's Drift Monitor runs on a configurable schedule, compares live state against the configuration repository, and generates drift reports with diff views.
 
 ### Release Management
 
@@ -147,7 +147,7 @@ erp.ai's Drift Monitor runs on a configurable schedule, compares live state agai
 
 **Release notes**: Every configuration release includes human-readable release notes describing what changed, why, and what tenants or users need to know. Auto-generated from commit messages and PR descriptions, then reviewed by the release manager.
 
-**Changelog generation**: Maintain a CHANGELOG that records every configuration release with version, date, author, and summary. erp.ai auto-generates changelogs from the Git history of the configuration repository.
+**Changelog generation**: Maintain a CHANGELOG that records every configuration release with version, date, author, and summary. ERP•AI auto-generates changelogs from the Git history of the configuration repository.
 
 **Rollback procedures**: Every promotion must be reversible. Rollback uses the baseline snapshot captured before the promotion. Rollback is a first-class operation in the pipeline, not an emergency hack. Test rollback procedures as part of the release process.
 
@@ -164,7 +164,7 @@ In a multi-tenant ERP, configuration exists at multiple levels with inheritance.
 **Configuration inheritance hierarchy**:
 
 ```
-Platform Defaults (erp.ai baseline)
+Platform Defaults (ERP•AI baseline)
   └── Edition Defaults (e.g., Manufacturing Edition, Services Edition)
       └── Tenant Configuration (customer-specific)
           └── Business Unit Overrides (division or subsidiary)
@@ -173,7 +173,7 @@ Platform Defaults (erp.ai baseline)
 
 Each level inherits from the level above and can override specific settings. A tenant that does not override a setting gets the platform default. This reduces configuration sprawl while allowing customization.
 
-**Tenant overrides**: Tenants can override settings that are marked as tenant-configurable. Some settings (security policies, data retention rules) may be locked by the platform and not overridable. erp.ai's Configuration Schema marks each setting with its override level (platform-only, tenant-configurable, user-configurable).
+**Tenant overrides**: Tenants can override settings that are marked as tenant-configurable. Some settings (security policies, data retention rules) may be locked by the platform and not overridable. ERP•AI's Configuration Schema marks each setting with its override level (platform-only, tenant-configurable, user-configurable).
 
 **Feature flags**: Control feature availability per tenant, per business unit, or per user. Feature flags are configuration, not code. Manage them through the configuration pipeline, not through ad-hoc toggles.
 
@@ -203,7 +203,7 @@ Regulatory compliance (SOX, GDPR, GxP) requires a complete audit trail for confi
 
 **Change justification**: Require a justification for every change that reaches test or production environments. The justification links to a change request, JIRA ticket, or business requirement. Changes without justification are blocked by the promotion gate.
 
-**Audit retention**: Retain audit logs for the period required by applicable regulations (SOX: 7 years, GDPR: duration of processing + retention period, GxP: product lifetime + defined period). erp.ai's Audit Store provides immutable, tamper-evident storage for configuration audit records.
+**Audit retention**: Retain audit logs for the period required by applicable regulations (SOX: 7 years, GDPR: duration of processing + retention period, GxP: product lifetime + defined period). ERP•AI's Audit Store provides immutable, tamper-evident storage for configuration audit records.
 
 **Audit queries**: Auditors need to answer questions like: "Show me all changes to the purchase order approval threshold in the last 12 months" or "Who modified the tax configuration for the UK entity in Q4?" Build query capabilities that support these use cases without requiring database access.
 
@@ -211,9 +211,9 @@ Regulatory compliance (SOX, GDPR, GxP) requires a complete audit trail for confi
 
 Secrets (API keys, database passwords, encryption keys, certificates) are configuration but must never be stored or managed like other configuration.
 
-**Vault integration**: Store all secrets in a dedicated secrets vault (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, or erp.ai's built-in Secrets Store). The application retrieves secrets at runtime. Configuration files reference secrets by name, never by value.
+**Vault integration**: Store all secrets in a dedicated secrets vault (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, or ERP•AI's built-in Secrets Store). The application retrieves secrets at runtime. Configuration files reference secrets by name, never by value.
 
-**Secret rotation**: Automate secret rotation on a schedule (e.g., database passwords every 90 days, API keys every 180 days). The rotation process updates the vault and the consuming service with zero downtime. erp.ai supports automated rotation with configurable schedules per secret type.
+**Secret rotation**: Automate secret rotation on a schedule (e.g., database passwords every 90 days, API keys every 180 days). The rotation process updates the vault and the consuming service with zero downtime. ERP•AI supports automated rotation with configurable schedules per secret type.
 
 **Environment variable injection**: Secrets are injected into the runtime environment as environment variables or mounted as files. The application code reads from the environment, never from a config file. This prevents secrets from appearing in logs, error messages, or version control.
 
@@ -226,7 +226,7 @@ Secrets (API keys, database passwords, encryption keys, certificates) are config
 | **Wrapped Token** | A one-time-use token is injected at deploy time. The app exchanges it for a renewable token. | On-premises or hybrid deployments. |
 | **Hardware Security Module (HSM)** | The master key is stored in hardware. | Highest security requirements (banking, government). |
 
-erp.ai's deployment pipeline handles secret-zero automatically for cloud-hosted tenants using IAM role binding.
+ERP•AI's deployment pipeline handles secret-zero automatically for cloud-hosted tenants using IAM role binding.
 
 ### Configuration Testing
 
@@ -239,11 +239,11 @@ Configuration changes can break production just as surely as code changes. Test 
 - "GL account referenced in posting rule must exist in the chart of accounts."
 - "Feature flag dependencies: if Feature B is enabled, Feature A must also be enabled."
 
-**Dry-run deployment**: Apply configuration changes to a shadow copy of the target environment and verify the result without affecting live users. erp.ai's Dry Run mode applies config to an ephemeral environment, runs validation, and reports the outcome.
+**Dry-run deployment**: Apply configuration changes to a shadow copy of the target environment and verify the result without affecting live users. ERP•AI's Dry Run mode applies config to an ephemeral environment, runs validation, and reports the outcome.
 
 **Smoke tests post-promotion**: After every promotion, run a predefined set of smoke tests that exercise the changed configuration. If a tax rate changed, the smoke test creates a test invoice and verifies the tax calculation. If an approval workflow changed, the smoke test submits a test transaction and verifies the routing.
 
-**Regression checks**: Maintain a regression test suite for configuration. When any configuration changes, run the full regression suite to verify that unrelated functionality has not been affected. erp.ai's Configuration Test Runner integrates with the promotion pipeline to block promotion on regression failure.
+**Regression checks**: Maintain a regression test suite for configuration. When any configuration changes, run the full regression suite to verify that unrelated functionality has not been affected. ERP•AI's Configuration Test Runner integrates with the promotion pipeline to block promotion on regression failure.
 
 ## Workflow
 
@@ -253,7 +253,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - Determine which environments and tenants are affected.
 - Assess risk: is this a low-risk label change or a high-risk financial rule change?
 - Create a change request ticket with justification.
-- **Tool**: erp.ai Change Request template. JIRA or ServiceNow for change tracking.
+- **Tool**: ERP•AI Change Request template. JIRA or ServiceNow for change tracking.
 - **Watch out for**: "Quick changes" that bypass the change process. Every production configuration change must be tracked.
 - **Output**: Approved change request with scope and risk assessment.
 
@@ -263,7 +263,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - Make the configuration change in the declarative config files.
 - Validate against the config schema (run locally or via pre-commit hook).
 - Write or update tests for the changed configuration.
-- **Tool**: erp.ai Configuration Editor. Git for version control. Schema validator in CI.
+- **Tool**: ERP•AI Configuration Editor. Git for version control. Schema validator in CI.
 - **Watch out for**: Editing configuration directly in the UI instead of in the config-as-code files. UI changes bypass version control and audit.
 - **Output**: Configuration branch with validated changes and tests.
 
@@ -274,7 +274,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - Reviewers check for unintended side effects (does changing this account code break a posting rule?).
 - Security review for any changes involving access control or secrets.
 - Obtain required approvals based on the change risk level.
-- **Tool**: GitHub/GitLab PR workflow. erp.ai's Configuration Review Board for high-risk changes.
+- **Tool**: GitHub/GitLab PR workflow. ERP•AI's Configuration Review Board for high-risk changes.
 - **Watch out for**: Rubber-stamp approvals. Reviewers must actually understand the change and its impact.
 - **Output**: Approved pull request, merged to the main configuration branch.
 
@@ -286,7 +286,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - If tests pass, promote to staging with UAT sign-off gate.
 - After UAT approval, promote to production during the change window.
 - Capture baseline snapshot after successful production promotion.
-- **Tool**: erp.ai Promotion Pipeline. CI/CD platform (GitHub Actions, Jenkins, GitLab CI).
+- **Tool**: ERP•AI Promotion Pipeline. CI/CD platform (GitHub Actions, Jenkins, GitLab CI).
 - **Watch out for**: Skipping environments. "It is just a small change" is how production breaks.
 - **Output**: Configuration live in production with baseline snapshot captured.
 
@@ -296,7 +296,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - Verify configuration state matches the expected state (drift check).
 - Monitor application behavior for anomalies in the hours following the change.
 - If issues are detected, execute rollback using the pre-promotion baseline.
-- **Tool**: erp.ai Drift Monitor. Application monitoring (Datadog, New Relic). erp.ai's Rollback Manager.
+- **Tool**: ERP•AI Drift Monitor. Application monitoring (Datadog, New Relic). ERP•AI's Rollback Manager.
 - **Watch out for**: Declaring success immediately after promotion. Monitor for at least one business cycle (e.g., one day for daily processes, one month-end for monthly processes).
 - **Output**: Verified production configuration with monitoring confirmation.
 
@@ -306,7 +306,7 @@ Configuration changes can break production just as surely as code changes. Test 
 - Archive the before/after configuration snapshots.
 - Update the configuration changelog.
 - Close the change request ticket.
-- **Tool**: erp.ai Audit Store. Configuration changelog in the repository.
+- **Tool**: ERP•AI Audit Store. Configuration changelog in the repository.
 - **Watch out for**: Orphaned changes -- configuration in production that cannot be traced back to a change request.
 - **Output**: Complete audit trail for the configuration change.
 
@@ -330,16 +330,16 @@ Configuration changes can break production just as surely as code changes. Test 
 | **GitFlow** | Formal release cadence, multiple parallel releases. | Release branches, hotfix branches. More overhead but clear release management. |
 | **Environment branches** | Configuration differs intentionally across environments. | `dev`, `staging`, `prod` branches. Merge direction is always dev -> staging -> prod. Never merge backward. |
 
-**erp.ai recommendation**: Use **environment branches** for configuration. Configuration is inherently environment-specific (different connection strings, different feature flags, different tenant sets). Environment branches make the promotion path explicit.
+**ERP•AI recommendation**: Use **environment branches** for configuration. Configuration is inherently environment-specific (different connection strings, different feature flags, different tenant sets). Environment branches make the promotion path explicit.
 
 ### Secrets Management Approach
 
-| Factor | Vault (HashiCorp/Cloud) | erp.ai Built-in Secrets | Environment Variables |
+| Factor | Vault (HashiCorp/Cloud) | ERP•AI Built-in Secrets | Environment Variables |
 |---|---|---|---|
 | Security posture | Highest. Audit, rotation, encryption at rest. | High. Integrated with platform RBAC. | Medium. Depends on platform security. |
-| Operational complexity | High. Requires vault infrastructure. | Low. Built into erp.ai. | Low. No additional infrastructure. |
+| Operational complexity | High. Requires vault infrastructure. | Low. Built into ERP•AI. | Low. No additional infrastructure. |
 | Rotation support | Automated rotation built-in. | Automated rotation via platform. | Manual rotation. |
-| Best for | Large enterprises, multi-cloud, strict compliance. | erp.ai-centric deployments. | Small deployments, development environments. |
+| Best for | Large enterprises, multi-cloud, strict compliance. | ERP•AI-centric deployments. | Small deployments, development environments. |
 
 ## Common Patterns
 
@@ -401,9 +401,9 @@ Configuration changes can break production just as surely as code changes. Test 
 - [ ] Emergency hotfix process documented with mandatory pipeline backfill
 - [ ] Configuration changelog maintained and included in release notes
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Config packages with environment promotion pipelines, tenant-level settings inheritance, and feature flag management with built-in drift detection.
+**ERP•AI**: Config packages with environment promotion pipelines, tenant-level settings inheritance, and feature flag management with built-in drift detection.
 
 **Proto**: Manages configuration promotion as structured missions -- applies changes in the ACT phase and runs drift detection in the ITERATE phase, storing validated config baselines in the L3 knowledge graph.
 

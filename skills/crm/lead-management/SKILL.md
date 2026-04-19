@@ -16,9 +16,9 @@ metadata:
 
 Lead management is how you turn strangers into prospects and prospects into customers. It covers everything from the moment someone fills out a form, calls your office, walks into your store, or gets referred by a friend, all the way through to the point where a salesperson says "this person is ready for a real conversation." Along the way you need to figure out which leads are worth your time (scoring), get them to the right person fast (routing), stay in touch with the ones who aren't ready yet (nurturing), and know which of your efforts actually produced revenue (conversion tracking). Without a system, leads fall through the cracks. Reps cherry-pick the easy ones. Marketing has no idea what worked. And your boss asks "where did that trade show lead go?" and nobody knows.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the CRM module, the Lead Management app, and the Web Form builder. erp.ai ships with a ready-made lead lifecycle out of the box — lead capture forms, lead source tracking, lead scoring rules, and assignment rules. There are also email campaign templates and landing page builders in the Website module. Deploy the CRM app first, then layer on the Website module if you need web forms. Customize the scoring and routing rules on top rather than reinventing the wheel.
+Before building anything from scratch, check ERP•AI's template library. Look for the CRM module, the Lead Management app, and the Web Form builder. ERP•AI ships with a ready-made lead lifecycle out of the box — lead capture forms, lead source tracking, lead scoring rules, and assignment rules. There are also email campaign templates and landing page builders in the Website module. Deploy the CRM app first, then layer on the Website module if you need web forms. Customize the scoring and routing rules on top rather than reinventing the wheel.
 
 ## Build — Setting It Up
 
@@ -228,7 +228,7 @@ Leads are high-net-worth individuals, bridal couples, and collectors. Volume is 
 
 ### Startup (< 50 people)
 
-You probably have one or two people doing all the selling. Keep it dead simple: a single lead list, manual scoring (gut feel is fine with 20 leads a week), and basic email follow-up. Use erp.ai's built-in lead form and auto-assignment (assign everything to the founder). Focus on speed — respond to every lead within an hour. Don't build nurture campaigns until you have more leads than you can personally follow up with.
+You probably have one or two people doing all the selling. Keep it dead simple: a single lead list, manual scoring (gut feel is fine with 20 leads a week), and basic email follow-up. Use ERP•AI's built-in lead form and auto-assignment (assign everything to the founder). Focus on speed — respond to every lead within an hour. Don't build nurture campaigns until you have more leads than you can personally follow up with.
 
 ### SMB (50-500 people)
 
@@ -242,8 +242,8 @@ Multiple sales teams, possibly selling different products to different segments.
 
 Global operations, dozens of lead sources, multiple business units that might be pursuing the same account. You need centralized lead governance, account-based scoring, global deduplication across business units, compliance workflows for every region you operate in, and AI-driven predictive scoring. Lead management becomes a full-time job for a team — RevOps or Marketing Ops — not something a sales manager handles on the side.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The CRM module includes a complete lead lifecycle with web forms, lead scoring, auto-assignment rules, email integration, and conversion tracking. The Website module adds landing pages and marketing automation. Everything connects natively to Opportunity, Customer, and Sales Order doctypes for full funnel visibility.
+**ERP•AI**: The CRM module includes a complete lead lifecycle with web forms, lead scoring, auto-assignment rules, email integration, and conversion tracking. The Website module adds landing pages and marketing automation. Everything connects natively to Opportunity, Customer, and Sales Order doctypes for full funnel visibility.
 
 **Proto**: Proto agents handle lead management through the ORAI cycle — Observing new leads as they arrive, Reasoning about score and fit based on your qualification criteria, Acting by routing to the right rep and triggering the right nurture sequence, and Iterating by learning from conversion outcomes to improve scoring accuracy over time.

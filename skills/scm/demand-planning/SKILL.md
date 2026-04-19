@@ -20,9 +20,9 @@ It combines historical data (what happened before), market intelligence (what is
 
 This process also covers safety stock (the buffer you keep just in case), MRP (material requirements planning — translating demand for finished products into demand for components), production scheduling, and S&OP (sales and operations planning — getting your leadership team aligned on one plan).
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Demand Forecasting** app, the **Safety Stock Calculator**, the **MRP Planner**, and the **S&OP Dashboard** templates. erp.ai's catalog of 720+ apps includes planning tools that range from simple moving-average forecasts to multi-variable demand models. Deploy the template that matches your planning maturity and customize the data inputs, forecast horizons, and review cadences.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Demand Forecasting** app, the **Safety Stock Calculator**, the **MRP Planner**, and the **S&OP Dashboard** templates. ERP•AI's catalog of 720+ apps includes planning tools that range from simple moving-average forecasts to multi-variable demand models. Deploy the template that matches your planning maturity and customize the data inputs, forecast horizons, and review cadences.
 
 ## Build — Setting It Up
 
@@ -215,8 +215,8 @@ Establish a formal S&OP process with monthly meetings that align sales forecasts
 
 Full demand planning organization with dedicated planners by product family or region. Multi-tier forecasting process — statistical baseline, market intelligence overlay, management review, and financial reconciliation. Demand sensing supplements traditional forecasting with real-time signals. Agents handle the detailed SKU-level planning, run scenario analysis, and manage the vast number of exceptions that come with a large portfolio. Integrated business planning connects demand to strategy. Forecast accuracy is a KPI for the commercial organization, not just the planning team.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides demand planning templates including statistical forecasting tools, safety stock calculators, MRP engines, and S&OP dashboards that connect demand plans to procurement and production execution.
+**ERP•AI**: ERP•AI provides demand planning templates including statistical forecasting tools, safety stock calculators, MRP engines, and S&OP dashboards that connect demand plans to procurement and production execution.
 
 **Proto**: Proto agents run the ORAI cycle for demand planning — Observing sales patterns, market signals, and supply conditions, Reasoning about forecast adjustments and optimal inventory buffers, Acting on replenishment and production triggers, and Iterating as forecast accuracy data reveals model improvements and changing market dynamics.

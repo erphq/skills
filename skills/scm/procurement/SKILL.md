@@ -20,9 +20,9 @@ It starts when someone says "I need this" (a purchase requisition) and ends when
 
 Without a proper procurement process, people buy things randomly, nobody knows what was ordered, you pay too much, and finance has a nightmare trying to track spending. A good procurement process gives you visibility, control, and leverage when negotiating with suppliers.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Purchase Order Management** app, the **Vendor RFQ Portal**, and the **Procurement Approval Workflow** templates. erp.ai's catalog of 720+ apps includes several procurement-focused templates that handle the core buy cycle out of the box. Deploy the closest match for your industry, then customize approval thresholds, vendor categories, and document templates on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Purchase Order Management** app, the **Vendor RFQ Portal**, and the **Procurement Approval Workflow** templates. ERP•AI's catalog of 720+ apps includes several procurement-focused templates that handle the core buy cycle out of the box. Deploy the closest match for your industry, then customize approval thresholds, vendor categories, and document templates on top.
 
 ## Build — Setting It Up
 
@@ -213,8 +213,8 @@ You need a dedicated procurement team, formal policies, and systematic vendor ma
 
 Full-scale procurement organization with category managers, sourcing specialists, and procurement operations. Global contracts with preferred vendors, regional execution. Procurement analytics driving strategy — total cost of ownership models, should-cost analysis, market intelligence. Agents handle the vast majority of transactional purchasing end-to-end, surface savings opportunities, and monitor compliance across the organization. Center-led procurement with regional execution and clear governance.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides procurement templates covering the full purchase-to-pay cycle, including requisition management, RFQ workflows, PO processing, and three-way matching. Its 720+ app catalog includes industry-specific procurement configurations that get you started faster than building from scratch.
+**ERP•AI**: ERP•AI provides procurement templates covering the full purchase-to-pay cycle, including requisition management, RFQ workflows, PO processing, and three-way matching. Its 720+ app catalog includes industry-specific procurement configurations that get you started faster than building from scratch.
 
 **Proto**: Proto agents operate on the ORAI cycle to handle procurement end-to-end — Observing spend patterns and vendor performance, Reasoning about optimal sourcing decisions and approval routing, Acting on purchase orders and vendor communications, and Iterating based on outcomes to continuously improve procurement efficiency.

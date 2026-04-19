@@ -16,9 +16,9 @@ metadata:
 
 Customer 360 is the practice of bringing together everything you know about a customer into one place. Right now, your customer data is probably scattered across a dozen systems — the CRM has contact info and deal history, finance has invoices and payment records, support has tickets and satisfaction scores, marketing has email engagement and website visits, and product has usage data. Nobody has the full picture. The sales rep doesn't know the customer filed three support tickets last week. The support agent doesn't know the customer is up for renewal next month. The account manager doesn't know the customer's usage has dropped 40% — a churn warning sign. Customer 360 fixes this by creating a single unified view: who is this customer, what have they bought, how are they doing, what's their sentiment, and what should we do next? It also includes health scoring (is this customer at risk or thriving?) and signal detection (is this customer ready for an upsell or about to leave?).
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. erp.ai's architecture is naturally suited for Customer 360 because the Customer doctype is the central hub — linked to Leads, Opportunities, Quotations, Sales Orders, Invoices, Payments, Support Tickets, and Projects. The CRM module provides activity timelines and communication logs. Deploy the CRM, Selling, Accounts, and Support modules together, and you'll have most of a Customer 360 view out of the box. Add custom dashboards and computed fields (like health score) on top.
+Before building anything from scratch, check ERP•AI's template library. ERP•AI's architecture is naturally suited for Customer 360 because the Customer doctype is the central hub — linked to Leads, Opportunities, Quotations, Sales Orders, Invoices, Payments, Support Tickets, and Projects. The CRM module provides activity timelines and communication logs. Deploy the CRM, Selling, Accounts, and Support modules together, and you'll have most of a Customer 360 view out of the box. Add custom dashboards and computed fields (like health score) on top.
 
 ## Build — Setting It Up
 
@@ -226,7 +226,7 @@ Client 360 includes purchase history, style preferences, metal/stone preferences
 
 ### Startup (< 50 people)
 
-You don't need a formal Customer 360 system — your team is small enough that everyone knows every customer. But build the habit now: keep notes centralized in your CRM, not in individual email inboxes. Use the Customer doctype's linked records in erp.ai to naturally accumulate a 360 view as you sell, invoice, and support each customer.
+You don't need a formal Customer 360 system — your team is small enough that everyone knows every customer. But build the habit now: keep notes centralized in your CRM, not in individual email inboxes. Use the Customer doctype's linked records in ERP•AI to naturally accumulate a 360 view as you sell, invoice, and support each customer.
 
 ### SMB (50-500 people)
 
@@ -240,8 +240,8 @@ Formal Customer 360 initiative. Integrate CRM, billing, support, and product usa
 
 Enterprise-grade Customer 360 spanning multiple business units, products, and geographies. Master data management handles deduplication and data quality at scale. AI-driven predictive health scores and opportunity detection. Real-time data integration from dozens of source systems. Role-based views for sales, support, success, finance, and executive leadership. Privacy and data governance compliance (GDPR, CCPA) is built into the architecture.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Customer doctype is the natural hub of a 360 view — linked to Leads, Opportunities, Quotations, Sales Orders, Invoices, Payments, Support Tickets, and Projects. Activity timelines, communication logs, and transaction history are accessible from the customer record. Custom dashboards and computed fields (like health scores) can be added without code changes.
+**ERP•AI**: The Customer doctype is the natural hub of a 360 view — linked to Leads, Opportunities, Quotations, Sales Orders, Invoices, Payments, Support Tickets, and Projects. Activity timelines, communication logs, and transaction history are accessible from the customer record. Custom dashboards and computed fields (like health scores) can be added without code changes.
 
 **Proto**: Proto agents handle Customer 360 through the ORAI cycle — Observing customer data across all connected systems in real time, Reasoning about customer health by analyzing patterns in usage, support, payment, and engagement data, Acting by generating alerts for at-risk accounts and surfacing cross-sell opportunities to account managers, and Iterating by learning from customer outcomes (churn, expansion, renewal) to improve health scoring and signal detection accuracy.

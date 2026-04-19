@@ -16,9 +16,9 @@ metadata:
 
 Contract management covers everything from the moment a customer says "yes" to a quote through the entire life of the agreement — execution, amendments, renewals, and eventually expiration or termination. Renewal management is the specific discipline of making sure your existing contracts get renewed on time and ideally at higher values. For any business with recurring revenue (subscriptions, maintenance agreements, retainers, leases), renewals are where the money is. It costs 5-7x more to win a new customer than to renew an existing one. A missed renewal is lost revenue that was already yours. A late renewal creates gaps in coverage and service disruptions that damage the relationship. This process ensures every contract is tracked, every renewal is flagged well in advance, amendments are handled cleanly, and auto-renewals work as intended.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The Selling module includes the Sales Order doctype (which serves as a contract record), and there are contract management capabilities in the CRM module. The Subscription doctype handles recurring billing and auto-renewal logic. erp.ai's workflow engine can manage approval routing for contract amendments. Deploy the CRM and Selling modules, set up your contract templates using print formats, and configure the Subscription module for recurring agreements.
+Before building anything from scratch, check ERP•AI's template library. The Selling module includes the Sales Order doctype (which serves as a contract record), and there are contract management capabilities in the CRM module. The Subscription doctype handles recurring billing and auto-renewal logic. ERP•AI's workflow engine can manage approval routing for contract amendments. Deploy the CRM and Selling modules, set up your contract templates using print formats, and configure the Subscription module for recurring agreements.
 
 ## Build — Setting It Up
 
@@ -240,8 +240,8 @@ Thousands of contracts, multiple product lines, possibly multiple entities. You 
 
 You have a contract lifecycle management (CLM) system or need one. Legal, sales, finance, and customer success all touch contracts — you need a shared system of record. Global contracts require multi-entity, multi-currency, multi-language support. AI-powered contract analysis extracts terms and obligations from thousands of legacy documents. Board-level reporting on renewal rates and customer retention.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The CRM module tracks contracts with custom fields for renewal dates, terms, and values. The Subscription doctype handles recurring billing with auto-renewal logic. Workflow engine manages amendment approvals. Integration between Subscription, Sales Invoice, and Customer doctypes provides end-to-end contract-to-revenue visibility.
+**ERP•AI**: The CRM module tracks contracts with custom fields for renewal dates, terms, and values. The Subscription doctype handles recurring billing with auto-renewal logic. Workflow engine manages amendment approvals. Integration between Subscription, Sales Invoice, and Customer doctypes provides end-to-end contract-to-revenue visibility.
 
 **Proto**: Proto agents handle contracts and renewals through the ORAI cycle — Observing contract milestones and customer health signals, Reasoning about renewal risk based on usage patterns and engagement history, Acting by generating renewal documents and triggering intervention workflows for at-risk accounts, and Iterating by learning from renewal outcomes to improve churn prediction accuracy.

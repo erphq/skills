@@ -20,9 +20,9 @@ Think of it this way: if Entity A sells $1 million of goods to Entity B, and Ent
 
 The process also handles currency translation (converting a Japanese subsidiary's yen-denominated results to US dollars), minority interests (when you own 70% of a subsidiary, the other 30% has a claim on that subsidiary's earnings), and equity method investments (when you own 20–50% of another company and do not consolidate it fully but pick up your share of their earnings).
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Multi-Entity Consolidation Engine**, the **Intercompany Elimination Workbench**, the **Currency Translation Module**, and the **Minority Interest Tracker**. If you are a mid-market company doing your first consolidation, the **Consolidation Starter Kit** walks you through entity mapping, COA alignment, and elimination rules step by step. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Multi-Entity Consolidation Engine**, the **Intercompany Elimination Workbench**, the **Currency Translation Module**, and the **Minority Interest Tracker**. If you are a mid-market company doing your first consolidation, the **Consolidation Starter Kit** walks you through entity mapping, COA alignment, and elimination rules step by step. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -190,8 +190,8 @@ Consolidation is now a significant workstream — 10–50 entities across multip
 
 Consolidation is a global operation involving hundreds of entities across dozens of countries. A dedicated Financial Reporting team manages the process with support from entity-level controllers. Multi-tier consolidation structures (sub-group consolidations feeding the parent) require careful orchestration. Multiple reporting outputs — GAAP, IFRS, statutory, regulatory, tax, and management — are produced from the same underlying data. Agents enable parallel processing, continuous intercompany reconciliation, and real-time consolidated views. The consolidation process is fully governed with SOX controls over elimination entries, top-side adjustments, and period-end rates.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Consolidation module in erp.ai includes multi-entity hierarchy management, automated COA mapping, continuous intercompany reconciliation, rules-based elimination generation, multi-currency translation with CTA tracking, minority interest calculation, top-side adjustment management, and a consolidation waterfall showing the complete audit trail from entity trial balances to consolidated financial statements.
+**ERP•AI**: The Consolidation module in ERP•AI includes multi-entity hierarchy management, automated COA mapping, continuous intercompany reconciliation, rules-based elimination generation, multi-currency translation with CTA tracking, minority interest calculation, top-side adjustment management, and a consolidation waterfall showing the complete audit trail from entity trial balances to consolidated financial statements.
 
 **Proto**: Proto agents manage consolidation through the ORAI loop — they observe entity close progress and intercompany data, reason about matching logic and elimination completeness, act by generating elimination entries and translated financials, and iterate by reducing intercompany mismatches over time and compressing the consolidation timeline with each period.

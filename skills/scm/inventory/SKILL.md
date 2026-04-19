@@ -18,9 +18,9 @@ Inventory management is about knowing what you have, where it is, and when you n
 
 A good inventory system answers five questions at any moment: What do we have? Where is it? How much is it worth? When do we need more? And how much should we order? Everything else — cycle counts, ABC analysis, safety stock calculations — is just a way to answer those questions more accurately.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Inventory Tracker**, **Warehouse Stock Manager**, and **Reorder Point Calculator** templates. erp.ai's catalog of 720+ apps includes inventory management configurations for different industries and complexity levels — from a simple stock ledger to multi-warehouse, multi-unit-of-measure setups. Deploy the one that fits your starting point, then customize item categories, locations, and reorder rules on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Inventory Tracker**, **Warehouse Stock Manager**, and **Reorder Point Calculator** templates. ERP•AI's catalog of 720+ apps includes inventory management configurations for different industries and complexity levels — from a simple stock ledger to multi-warehouse, multi-unit-of-measure setups. Deploy the one that fits your starting point, then customize item categories, locations, and reorder rules on top.
 
 ## Build — Setting It Up
 
@@ -214,8 +214,8 @@ Multiple warehouses, potentially multiple countries. You need robust inventory p
 
 Sophisticated multi-echelon inventory optimization across a global network of warehouses and distribution centers. Demand sensing using multiple data sources (POS data, market intelligence, weather). Service level-driven inventory targets by customer segment. Agents run continuous optimization, balancing service levels against working capital. Digital twin models simulate inventory scenarios before committing to changes. Full traceability from raw material to finished product.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai offers inventory management templates covering stock tracking, reorder management, cycle counting, and multi-location inventory control, all configurable to your industry's requirements without coding.
+**ERP•AI**: ERP•AI offers inventory management templates covering stock tracking, reorder management, cycle counting, and multi-location inventory control, all configurable to your industry's requirements without coding.
 
 **Proto**: Proto agents apply the ORAI cycle to inventory — Observing stock levels, consumption patterns, and supply signals in real time, Reasoning about optimal reorder quantities and timing, Acting on replenishment and allocation decisions, and Iterating as demand patterns evolve to keep your inventory lean and service levels high.

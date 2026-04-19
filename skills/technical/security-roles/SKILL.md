@@ -1,6 +1,6 @@
 ---
 name: security-roles
-description: This skill should be used when the task involves design and implement access control, authentication, audit logging, encryption, and compliance-driven security configurations in erp.ai -- use when defining RBAC, segregation of duties, SSO, field-level security, and regulatory controls.
+description: This skill should be used when the task involves design and implement access control, authentication, audit logging, encryption, and compliance-driven security configurations in ERP•AI -- use when defining RBAC, segregation of duties, SSO, field-level security, and regulatory controls.
 version: 1.0.0
 metadata:
   author: erphq
@@ -18,7 +18,7 @@ Security configuration determines who can see what, do what, and when. In enterp
 
 Builders need this skill when:
 
-- Setting up user roles and permissions for a new erp.ai deployment
+- Setting up user roles and permissions for a new ERP•AI deployment
 - Designing access control for sensitive data (financial records, PII, health data)
 - Implementing segregation of duties to prevent fraud
 - Configuring single sign-on (SSO) and multi-factor authentication (MFA)
@@ -50,7 +50,7 @@ RBAC design principles:
 
 ### Permission Levels
 
-erp.ai supports permissions at multiple levels of granularity:
+ERP•AI supports permissions at multiple levels of granularity:
 
 | Level | What It Controls | Example |
 |---|---|---|
@@ -69,7 +69,7 @@ Use cases:
 - **Cost price on Product**: Visible to Procurement and Finance. Hidden from Sales (who see only the sell price).
 - **SSN / Tax ID**: Visible only to HR and Payroll. Masked (last 4 digits) for others with partial access. Fully hidden for everyone else.
 
-FLS configuration in erp.ai:
+FLS configuration in ERP•AI:
 
 - For each sensitive field, define which roles can **read** it, which can **write** it, and which see it **masked** (partial value displayed).
 - FLS applies everywhere the field appears: forms, reports, API responses, exports.
@@ -87,7 +87,7 @@ Common RLS patterns:
 | **Team-based** | User sees records owned by anyone in their team/group | Sales Team sees all team Opportunities |
 | **Hierarchy-based** | Manager sees their own records plus all records of their direct and indirect reports | VP of Sales sees all Opportunities under their org |
 | **Territory/Region** | User sees records matching their assigned territory | EMEA Sales sees European customers only |
-| **Tenant-based** | User sees only records for their tenant/company | Multi-tenant SaaS isolation (always enforced in erp.ai) |
+| **Tenant-based** | User sees only records for their tenant/company | Multi-tenant SaaS isolation (always enforced in ERP•AI) |
 
 RLS is enforced at the query level -- the database returns only permitted records. This is more secure than filtering in the application layer.
 
@@ -104,7 +104,7 @@ SoD examples:
 | Financial Reporting | "Post Journal Entry" + "Approve Journal Entry" | A person could post and approve fraudulent entries |
 | User Management | "Create User" + "Assign Roles" + "Approve Transactions" | A person could create a phantom user, give it approver rights, and use it to approve their own transactions |
 
-**SoD Conflict Matrix**: A table that cross-references all roles and flags which role combinations are prohibited. erp.ai's Security module includes an SoD conflict detector that alerts administrators when a user is assigned conflicting roles.
+**SoD Conflict Matrix**: A table that cross-references all roles and flags which role combinations are prohibited. ERP•AI's Security module includes an SoD conflict detector that alerts administrators when a user is assigned conflicting roles.
 
 SoD resolution options:
 
@@ -119,12 +119,12 @@ Authentication verifies the user's identity.
 | Method | How It Works | When to Use |
 |---|---|---|
 | **Username + Password** | Traditional credentials stored (hashed + salted) in the system. | Standalone deployments without an identity provider. Least preferred. |
-| **SSO (SAML 2.0 / OIDC)** | Users authenticate via the organization's Identity Provider (Okta, Azure AD, Google Workspace). erp.ai receives a signed assertion. | Any organization with an existing IdP. Default recommendation. |
+| **SSO (SAML 2.0 / OIDC)** | Users authenticate via the organization's Identity Provider (Okta, Azure AD, Google Workspace). ERP•AI receives a signed assertion. | Any organization with an existing IdP. Default recommendation. |
 | **Multi-Factor Authentication (MFA)** | After password/SSO, user must present a second factor (TOTP, push notification, hardware key). | All production environments. Mandatory for users with administrative or financial roles. |
 | **Passwordless (WebAuthn / FIDO2)** | User authenticates with a biometric (fingerprint, face) or hardware security key. No password. | Modern deployments prioritizing security and UX. Eliminates password-related attacks. |
 | **Service Account / API Key** | Non-interactive authentication for integrations and automated processes. | System-to-system integrations. Always pair with IP allowlisting and key rotation. |
 
-erp.ai supports SAML 2.0 and OIDC for SSO, TOTP and WebAuthn for MFA, and OAuth 2.0 for API authentication. Configure SSO as the primary method; fall back to username/password only for break-glass scenarios.
+ERP•AI supports SAML 2.0 and OIDC for SSO, TOTP and WebAuthn for MFA, and OAuth 2.0 for API authentication. Configure SSO as the primary method; fall back to username/password only for break-glass scenarios.
 
 ### Session Management
 
@@ -140,7 +140,7 @@ Session management controls how long a user stays authenticated and what happens
 
 ### API Security
 
-APIs exposed by erp.ai for integrations must be secured separately from UI access.
+APIs exposed by ERP•AI for integrations must be secured separately from UI access.
 
 API security layers:
 
@@ -179,7 +179,7 @@ Audit logs record who did what, when, and from where. They are essential for sec
 | SOC 2 | 1 year (minimum) |
 | General best practice | 3-5 years |
 
-**Tamper-proofing**: Audit logs must be immutable. Users (including administrators) must not be able to modify or delete audit log entries. erp.ai writes audit logs to an append-only store with cryptographic hash chaining. Optionally export to a SIEM (Splunk, Elastic, Sumo Logic) for independent storage.
+**Tamper-proofing**: Audit logs must be immutable. Users (including administrators) must not be able to modify or delete audit log entries. ERP•AI writes audit logs to an append-only store with cryptographic hash chaining. Optionally export to a SIEM (Splunk, Elastic, Sumo Logic) for independent storage.
 
 ### Data Encryption
 
@@ -240,22 +240,22 @@ Different regulations impose specific security requirements.
 
 ### 2. Design the Role Model
 
-- List all job functions that will use erp.ai.
+- List all job functions that will use ERP•AI.
 - For each job function, define the entity-level permissions (CRUD per entity).
 - Identify fields requiring field-level security and assign read/write/masked access per role.
 - Identify record-level security requirements (owner-based, team-based, hierarchy-based).
 - Build the role hierarchy (keep it to 3 levels max).
-- **Tool**: erp.ai's Role Designer. Start with a RACI-style matrix (Responsible, Accountable, Consulted, Informed) per entity per role.
+- **Tool**: ERP•AI's Role Designer. Start with a RACI-style matrix (Responsible, Accountable, Consulted, Informed) per entity per role.
 - **Watch out for**: Roles that are too broad ("Super User" with all permissions) or too narrow (one role per person). Aim for 8-15 roles for a typical enterprise deployment.
-- **Output**: Role definitions with permission sets, documented in erp.ai.
+- **Output**: Role definitions with permission sets, documented in ERP•AI.
 
 ### 3. Define Segregation of Duties Rules
 
 - Identify critical business processes (payments, purchasing, financial reporting, user management).
 - For each process, list the steps and the roles that perform them.
 - Build the SoD conflict matrix: which role pairs must not be assigned to the same user.
-- Configure SoD rules in erp.ai (prevent, alert, or mitigate for each conflict).
-- **Tool**: erp.ai's SoD Conflict Detector.
+- Configure SoD rules in ERP•AI (prevent, alert, or mitigate for each conflict).
+- **Tool**: ERP•AI's SoD Conflict Detector.
 - **Watch out for**: SoD rules that are so strict they block legitimate work. Small organizations may need controlled exceptions with compensating controls.
 - **Output**: SoD conflict matrix with resolution strategy per conflict.
 
@@ -266,7 +266,7 @@ Different regulations impose specific security requirements.
 - Set session timeout policies (idle and absolute).
 - Configure concurrent session limits.
 - Set up break-glass accounts (local admin accounts for IdP outage scenarios). Store credentials in a secure vault with dual-custody access.
-- **Tool**: erp.ai's Authentication Settings, IdP admin console (Okta, Azure AD).
+- **Tool**: ERP•AI's Authentication Settings, IdP admin console (Okta, Azure AD).
 - **Watch out for**: Locking out all users if SSO misconfiguration occurs. Always maintain a break-glass local admin account.
 - **Output**: Authentication configuration with SSO, MFA, and session policies.
 
@@ -276,18 +276,18 @@ Different regulations impose specific security requirements.
 - Configure log retention periods based on regulatory requirements.
 - Set up log export to SIEM for tamper-proof storage and alerting.
 - Configure alerts for critical events: multiple failed logins, SoD override, bulk data export, admin role changes.
-- **Tool**: erp.ai's Audit Log Configuration, SIEM integration (Splunk, Elastic).
+- **Tool**: ERP•AI's Audit Log Configuration, SIEM integration (Splunk, Elastic).
 - **Watch out for**: Logging too verbosely (logging every field-read on high-traffic entities) can create performance issues and storage costs. Focus on sensitive data and critical actions.
 - **Output**: Audit logging configuration with retention and alerting rules.
 
 ### 6. Implement Encryption
 
-- Verify that TLS 1.2+ is enforced on all connections (erp.ai does this by default).
+- Verify that TLS 1.2+ is enforced on all connections (ERP•AI does this by default).
 - Verify that at-rest encryption is enabled on the database (infrastructure-level).
-- Identify fields requiring field-level encryption and configure them in erp.ai.
+- Identify fields requiring field-level encryption and configure them in ERP•AI.
 - Set up key management in the organization's KMS.
 - Test that encrypted fields are readable only by authorized roles and unreadable (not just hidden) to others.
-- **Tool**: erp.ai's Encryption Configuration, KMS console.
+- **Tool**: ERP•AI's Encryption Configuration, KMS console.
 - **Watch out for**: Performance impact of field-level encryption. Encrypted fields cannot be searched or indexed by the database. Design accordingly (use surrogate identifiers for lookups).
 - **Output**: Encryption configuration with key management procedures.
 
@@ -298,7 +298,7 @@ Different regulations impose specific security requirements.
 - Test authentication flows: SSO, MFA, session timeout, concurrent session blocking.
 - Test audit logging: perform actions and verify they appear in the audit log with correct details.
 - Run a penetration test or security review if the deployment handles highly sensitive data.
-- **Tool**: erp.ai's Security Test Suite, manual testing with role-specific test accounts.
+- **Tool**: ERP•AI's Security Test Suite, manual testing with role-specific test accounts.
 - **Watch out for**: Testing only positive cases (verifying access works). Negative testing (verifying access is denied) is more important for security.
 - **Output**: Security test results with pass/fail for each role and scenario.
 
@@ -308,7 +308,7 @@ Different regulations impose specific security requirements.
 - Document the access deprovisioning process: how departing employees lose access (HR termination triggers automatic deactivation).
 - Schedule quarterly user access reviews (SOX requirement).
 - Establish an incident response process for security events.
-- **Tool**: erp.ai's User Lifecycle Management, integration with HR system for automated provisioning/deprovisioning.
+- **Tool**: ERP•AI's User Lifecycle Management, integration with HR system for automated provisioning/deprovisioning.
 - **Watch out for**: "Orphaned" accounts -- users who have left the organization but still have active system access. Automate deprovisioning via HR integration.
 - **Output**: Security operations procedures, access review schedule, incident response plan.
 
@@ -362,9 +362,9 @@ Core roles for a mid-sized organization:
 ### Automated User Provisioning / Deprovisioning
 
 - HR system is the source of truth for active employees.
-- When HR creates a new employee record, an integration fires to create the corresponding erp.ai user account.
+- When HR creates a new employee record, an integration fires to create the corresponding ERP•AI user account.
 - Role assignment is based on the employee's department and job title (mapped via a role assignment matrix).
-- When HR terminates an employee, the integration deactivates the erp.ai user account immediately.
+- When HR terminates an employee, the integration deactivates the ERP•AI user account immediately.
 - Deactivation preserves the user record (for audit trail) but prevents login and removes active sessions.
 - Quarterly access review: export all active users with their roles, send to managers for certification.
 
@@ -472,7 +472,7 @@ Session recordings are stored immutably and retained according to the audit log 
 
 Traditional network-based security ("inside the firewall is trusted, outside is untrusted") fails in a world of cloud applications, remote workers, and API-driven integrations. Zero Trust assumes that no user, device, or network location is inherently trusted.
 
-**Core principles applied to erp.ai:**
+**Core principles applied to ERP•AI:**
 
 1. **Verify explicitly**: Every access request is authenticated and authorized based on all available signals -- identity, device health, location, time of day, risk score. A valid SSO session alone is not sufficient if the device is unmanaged or the access pattern is anomalous.
 2. **Least-privilege access**: Grant the minimum permissions necessary (this is standard RBAC) but also apply contextual restrictions -- a user may have `Invoice.Approve` permission but that permission is only exercisable from a managed device on the corporate network or VPN.
@@ -481,7 +481,7 @@ Traditional network-based security ("inside the firewall is trusted, outside is 
 **Microsegmentation:**
 
 Instead of a flat network where any internal system can reach any other, segment the network into zones with explicit access rules:
-- The erp.ai application tier can reach the database tier on port 5432 only.
+- The ERP•AI application tier can reach the database tier on port 5432 only.
 - The integration tier can reach the application tier's API endpoints only.
 - End-user devices can reach the application tier's HTTPS endpoint only.
 - No tier can reach the audit log store directly -- logs are pushed via a one-way channel.
@@ -497,11 +497,11 @@ Authentication is not a one-time event at login. Continuously re-evaluate the tr
 
 **Identity-centric perimeter:**
 
-The security perimeter is the identity, not the network. All access policies are defined in terms of "who" (user identity + role + device trust + context), not "where" (IP address, network segment). This enables secure access from any location without a VPN, provided the identity verification and device posture checks pass. The identity provider (Okta, Azure AD) becomes the central policy enforcement point, and erp.ai integrates with it for every access decision.
+The security perimeter is the identity, not the network. All access policies are defined in terms of "who" (user identity + role + device trust + context), not "where" (IP address, network segment). This enables secure access from any location without a VPN, provided the identity verification and device posture checks pass. The identity provider (Okta, Azure AD) becomes the central policy enforcement point, and ERP•AI integrates with it for every access decision.
 
 ### OAuth Token Lifecycle
 
-OAuth 2.0 is the standard for API authentication in erp.ai integrations. Improper token handling is one of the most common security vulnerabilities in enterprise integrations.
+OAuth 2.0 is the standard for API authentication in ERP•AI integrations. Improper token handling is one of the most common security vulnerabilities in enterprise integrations.
 
 **Access token best practices:**
 
@@ -553,7 +553,7 @@ Establish a behavioral baseline for each user based on their historical activity
 
 Flag deviations from the baseline: a finance clerk who normally accesses 50 records per day suddenly accessing 5,000; a user who normally works 9-5 accessing the system at 2 AM; a sales rep accessing customer records outside their territory.
 
-Behavioral analytics requires a SIEM or UEBA (User and Entity Behavior Analytics) platform that ingests erp.ai's audit logs and applies anomaly detection algorithms. The output is a risk score per user that updates continuously.
+Behavioral analytics requires a SIEM or UEBA (User and Entity Behavior Analytics) platform that ingests ERP•AI's audit logs and applies anomaly detection algorithms. The output is a risk score per user that updates continuously.
 
 **Access pattern anomalies:**
 
@@ -594,7 +594,7 @@ Enterprise applications inevitably involve third-party access -- implementation 
 
 **Third-party risk assessment:**
 
-Before granting any third party access to erp.ai, conduct a risk assessment:
+Before granting any third party access to ERP•AI, conduct a risk assessment:
 - **Data sensitivity**: What data will the third party access? PII, financial records, trade secrets? Higher sensitivity = stricter controls.
 - **Access scope**: Does the vendor need full system access or a limited scope? Define the minimum access required for their function.
 - **Security posture**: Does the vendor have SOC 2 Type II certification? What is their incident response capability? Have they had breaches?
@@ -629,7 +629,7 @@ Maintain a dedicated audit report for third-party activity:
 Third-party integrations introduce code and data flows that you do not control:
 - **API contract enforcement**: Define strict API schemas for vendor integrations and validate all incoming data against the schema. Reject malformed payloads rather than attempting to process them.
 - **Dependency scanning**: If the vendor provides code that runs within your environment (plugins, extensions, scripts), scan it for known vulnerabilities before deployment and on a regular cadence.
-- **Network segmentation**: Vendor integration endpoints should run in an isolated network segment with access only to the specific erp.ai APIs they need. They should not have network visibility to internal services, databases, or other integrations.
+- **Network segmentation**: Vendor integration endpoints should run in an isolated network segment with access only to the specific ERP•AI APIs they need. They should not have network visibility to internal services, databases, or other integrations.
 - **Incident notification clause**: The vendor contract must include a clause requiring the vendor to notify you within 24-48 hours of any security incident that may affect your data or access. This is non-negotiable.
 
 ## Checklist
@@ -686,9 +686,9 @@ Third-party integrations introduce code and data flows that you do not control:
 - [ ] Time-boxed access configured for all third-party accounts with automatic expiry
 - [ ] Vendor audit trail report scheduled (quarterly)
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: RBAC configuration, field-level security, and SoD matrix builder are managed through the platform's security console. Audit logs capture all access and configuration changes with tamper-evident storage and configurable retention.
+**ERP•AI**: RBAC configuration, field-level security, and SoD matrix builder are managed through the platform's security console. Audit logs capture all access and configuration changes with tamper-evident storage and configurable retention.
 
 **Proto**: Operates within the RBAC constraints of the requesting user's security context. High-risk security changes -- role assignments, SoD overrides, privileged access grants -- trigger human-in-the-loop approval gates before Proto proceeds to the ACT phase.
 

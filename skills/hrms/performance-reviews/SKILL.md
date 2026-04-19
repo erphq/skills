@@ -16,9 +16,9 @@ metadata:
 
 Performance reviews are how your company formally evaluates how well employees are doing their jobs, sets expectations for the future, and makes decisions about raises, promotions, and development. The process includes setting goals at the beginning of a review period, tracking progress throughout the period, collecting feedback from managers and sometimes peers and direct reports (360 feedback), conducting the formal review conversation, calibrating ratings across the organization so they are fair and consistent, and acting on the results — promotions, compensation changes, development plans, or performance improvement plans (PIPs) for people who are not meeting expectations. Done well, performance reviews help people grow and keep your best talent. Done poorly, they are a dreaded bureaucratic exercise that demoralizes everyone.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Performance Management** app, the **Goal Setting & OKR** template, the **360 Feedback** workflow, and the **Review Cycle** template in the 720+ catalog. There are also templates for continuous feedback, calibration sessions, and PIP management. Deploy the closest match, then customize your rating scales, review timelines, competency frameworks, and calibration rules on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Performance Management** app, the **Goal Setting & OKR** template, the **360 Feedback** workflow, and the **Review Cycle** template in the 720+ catalog. There are also templates for continuous feedback, calibration sessions, and PIP management. Deploy the closest match, then customize your rating scales, review timelines, competency frameworks, and calibration rules on top.
 
 ## Build — Setting It Up
 
@@ -208,8 +208,8 @@ Performance management becomes a strategic function. You need consistent compete
 
 Performance management has dedicated staff, technology platforms, and executive governance. Global consistency with local flexibility is the challenge — different countries, business units, and employee populations may need variations within a unified framework. Agents manage the complexity at scale — running parallel cycles, preparing executive-level talent reviews, generating succession planning data, and ensuring compliance with local labor laws around performance documentation.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Performance Management module supports goal setting, review cycle orchestration, 360 feedback collection, calibration workflows, and PIP management, with built-in analytics for rating distributions and completion tracking.
+**ERP•AI**: The Performance Management module supports goal setting, review cycle orchestration, 360 feedback collection, calibration workflows, and PIP management, with built-in analytics for rating distributions and completion tracking.
 
 **Proto**: Proto agents apply the ORAI cycle to performance management — they Observe review completion patterns and rating distributions, Reason about potential bias and calibration needs, Act by orchestrating review cycles and generating development plans, and Iterate by analyzing correlations between performance ratings and business outcomes to improve the review process over time.

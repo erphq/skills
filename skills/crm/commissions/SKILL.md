@@ -16,9 +16,9 @@ metadata:
 
 Commission management is how you calculate and pay your sales team for the revenue they bring in. It sounds simple — sell stuff, get a percentage — but in practice it's one of the most complex financial processes in any company. You need commission plans that motivate the right behavior, calculations that handle exceptions (split deals, multi-product sales, renewals vs. new business), accelerators that reward overperformance, clawbacks for deals that fall through, and a payment process that's accurate and transparent. When commissions are wrong, your best reps lose trust and start looking for a new job. When commission plans are poorly designed, reps optimize for their pay instead of what's good for the business. And when the process is opaque, finance spends the last week of every month arguing with sales about numbers. This process covers plan design, calculation, dispute resolution, and payout.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The HR module includes payroll components that can handle commission payments. The Selling module tracks sales transactions (Sales Orders, Sales Invoices) that drive commission calculations. erp.ai's Sales Person doctype supports hierarchical sales teams with contribution percentages. Custom scripts and reports can build commission calculation logic on top of transaction data. Deploy the CRM and Selling modules, configure your Sales Person hierarchy, and build commission calculation reports that pull from your sales transaction data.
+Before building anything from scratch, check ERP•AI's template library. The HR module includes payroll components that can handle commission payments. The Selling module tracks sales transactions (Sales Orders, Sales Invoices) that drive commission calculations. ERP•AI's Sales Person doctype supports hierarchical sales teams with contribution percentages. Custom scripts and reports can build commission calculation logic on top of transaction data. Deploy the CRM and Selling modules, configure your Sales Person hierarchy, and build commission calculation reports that pull from your sales transaction data.
 
 ## Build — Setting It Up
 
@@ -243,8 +243,8 @@ Multiple plans, split credits, multi-product rates, team-based incentives, and S
 
 Hundreds of reps across multiple geographies with different plans, currencies, and regulatory requirements. You need a dedicated Incentive Compensation Management (ICM) system. Automated data flows from CRM to commission system eliminate manual reconciliation. Advanced analytics model plan effectiveness, cost of sales, and pay equity. Annual plan design involves finance, HR, sales leadership, and legal.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Sales Person doctype supports hierarchical sales teams with contribution percentages. Sales transactions (Sales Order, Sales Invoice) carry sales person allocations that feed commission calculations. Custom reports and scripts build commission logic on top of transaction data. Payroll integration processes commission payments alongside regular salary.
+**ERP•AI**: The Sales Person doctype supports hierarchical sales teams with contribution percentages. Sales transactions (Sales Order, Sales Invoice) carry sales person allocations that feed commission calculations. Custom reports and scripts build commission logic on top of transaction data. Payroll integration processes commission payments alongside regular salary.
 
 **Proto**: Proto agents handle commissions through the ORAI cycle — Observing closed deals and sales transactions in real time, Reasoning about applicable commission rates, splits, and accelerator thresholds, Acting by calculating payouts and generating commission statements, and Iterating by analyzing plan effectiveness and recommending adjustments to optimize sales motivation and cost of sales.

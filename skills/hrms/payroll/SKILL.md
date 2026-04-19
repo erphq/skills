@@ -16,9 +16,9 @@ metadata:
 
 Payroll is the process of paying your employees correctly and on time, every pay period. It sounds simple, but it involves calculating gross pay (salary, hourly wages, overtime, commissions, bonuses), subtracting the right amounts for taxes (federal, state, local income tax, Social Security, Medicare), applying deductions (health insurance premiums, retirement contributions, garnishments, union dues), and delivering the net amount to each employee's bank account. Then you have to report everything to multiple government agencies, file taxes quarterly and annually, and keep records that survive an audit. Getting payroll wrong means unhappy employees, government penalties, and potential lawsuits.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Payroll Management** app, the **Pay Run** workflow, and the **Tax Compliance** template in the 720+ catalog. There are also country-specific payroll templates for US multi-state, UK PAYE, Indian statutory compliance, and EU payroll configurations. Deploy the closest match, then customize your pay schedules, earning codes, deduction types, and tax configurations on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Payroll Management** app, the **Pay Run** workflow, and the **Tax Compliance** template in the 720+ catalog. There are also country-specific payroll templates for US multi-state, UK PAYE, Indian statutory compliance, and EU payroll configurations. Deploy the closest match, then customize your pay schedules, earning codes, deduction types, and tax configurations on top.
 
 ## Build — Setting It Up
 
@@ -206,8 +206,8 @@ You likely have a payroll department or a managed service relationship with a ma
 
 Payroll is a core financial operation with its own budget, technology stack, and governance structure. Global payroll consolidation across dozens of countries, multiple currencies, and hundreds of tax jurisdictions is the norm. Agents handle cross-system data validation, automated compliance across jurisdictions, real-time analytics for finance, and continuous audit readiness. Integration with ERP, benefits, equity, and time systems must be seamless.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Payroll module handles multi-frequency pay runs, tax calculations across jurisdictions, statutory compliance, and integration with time tracking and benefits, with pre-built configurations for major countries.
+**ERP•AI**: The Payroll module handles multi-frequency pay runs, tax calculations across jurisdictions, statutory compliance, and integration with time tracking and benefits, with pre-built configurations for major countries.
 
 **Proto**: Proto agents apply the ORAI cycle to payroll processing — they Observe incoming time and compensation data for anomalies, Reason about whether flagged exceptions are errors or legitimate changes, Act by processing pay runs and filing tax reports, and Iterate by learning from correction patterns to prevent recurring errors.

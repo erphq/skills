@@ -20,9 +20,9 @@ The core activities are: incoming inspection (checking what suppliers send you),
 
 Quality management is not about being perfect — it is about being consistent and catching problems early when they are cheap to fix instead of late when they are expensive or dangerous.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Quality Inspection** app, the **Non-Conformance Tracker**, the **CAPA Management** workflow, and the **Lot Traceability** templates. erp.ai's catalog of 720+ apps includes quality management configurations for different regulatory environments — from basic inspection checklists to full GMP-compliant quality systems. Deploy the template that matches your industry's requirements and customize inspection criteria, disposition workflows, and reporting formats.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Quality Inspection** app, the **Non-Conformance Tracker**, the **CAPA Management** workflow, and the **Lot Traceability** templates. ERP•AI's catalog of 720+ apps includes quality management configurations for different regulatory environments — from basic inspection checklists to full GMP-compliant quality systems. Deploy the template that matches your industry's requirements and customize inspection criteria, disposition workflows, and reporting formats.
 
 ## Build — Setting It Up
 
@@ -215,8 +215,8 @@ Dedicated quality department with inspectors, quality engineers, and a quality m
 
 Full quality organization with corporate quality leadership setting standards and site quality teams executing. Integrated quality data across all sites for enterprise-wide visibility. Advanced analytics identifying subtle quality patterns that span sites, products, and time periods. Agents serve as the quality intelligence layer — continuously monitoring all quality signals, predicting emerging issues, automating routine compliance documentation, and enabling real-time quality decision-making across the organization.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai offers quality management templates covering incoming inspection, in-process checks, CAPA management, lot traceability, and supplier quality tracking, configurable to industry-specific regulatory requirements.
+**ERP•AI**: ERP•AI offers quality management templates covering incoming inspection, in-process checks, CAPA management, lot traceability, and supplier quality tracking, configurable to industry-specific regulatory requirements.
 
 **Proto**: Proto agents apply the ORAI cycle to quality management — Observing inspection results, defect patterns, and process parameters, Reasoning about root causes and quality risks, Acting on containment measures and CAPA assignments, and Iterating as quality data accumulates to shift from detection to prevention.

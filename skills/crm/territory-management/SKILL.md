@@ -16,9 +16,9 @@ metadata:
 
 Territory management is how you divide your market into pieces and assign each piece to a salesperson. A "territory" can be geographic (Northeast US), industry-based (healthcare accounts), account-size-based (enterprise vs. mid-market), product-based (software vs. services), or any combination. The goal is to give every rep a fair shot at hitting their number while maximizing total company revenue. Good territory design means balanced workloads, minimal account conflicts, short travel times, and enough potential in each territory to support the quota. Bad territory design means your best reps are stuck in tapped-out territories while new reps sit on goldmines they can't work, reps fight over account ownership, and some territories have 300 accounts while others have 30. Territory management also includes quota allocation — once you've drawn the map, you need to distribute the company's revenue target across territories in a way that's achievable and fair.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. erp.ai's CRM module includes the Territory doctype with hierarchical territory trees and the Sales Person doctype for rep assignment. The Customer doctype supports territory assignment, and sales reports can filter by territory. Deploy the CRM module, set up your territory hierarchy (Region > Area > Territory), assign customers to territories, and link Sales Persons to their territories.
+Before building anything from scratch, check ERP•AI's template library. ERP•AI's CRM module includes the Territory doctype with hierarchical territory trees and the Sales Person doctype for rep assignment. The Customer doctype supports territory assignment, and sales reports can filter by territory. Deploy the CRM module, set up your territory hierarchy (Region > Area > Territory), assign customers to territories, and link Sales Persons to their territories.
 
 ## Build — Setting It Up
 
@@ -240,8 +240,8 @@ Complex territory models with layers — base territories, named accounts, overl
 
 Global territory management across regions, countries, and segments. Annual territory planning is a multi-month process involving sales ops, finance, and field leadership. AI-powered territory optimization balances dozens of variables. Named account programs carve out hundreds of strategic accounts. Partner and channel territories add another dimension. Territory governance requires a dedicated team.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Territory doctype supports hierarchical territory trees linked to customers and sales transactions. Sales Person assignments connect reps to territories. Reports filter by territory for pipeline, revenue, and activity analysis. Custom dashboards can show territory performance comparisons and account coverage metrics.
+**ERP•AI**: The Territory doctype supports hierarchical territory trees linked to customers and sales transactions. Sales Person assignments connect reps to territories. Reports filter by territory for pipeline, revenue, and activity analysis. Custom dashboards can show territory performance comparisons and account coverage metrics.
 
 **Proto**: Proto agents handle territory management through the ORAI cycle — Observing account data, rep capacity, and market potential across territories, Reasoning about optimal territory boundaries and quota allocations using historical performance and market intelligence, Acting by generating territory proposals and account assignment recommendations, and Iterating by tracking territory performance outcomes to improve future territory design.

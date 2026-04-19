@@ -1,6 +1,6 @@
 ---
 name: integrations
-description: This skill should be used when the task involves connect erp.ai applications to external systems -- use when designing API connections, data syncs, middleware orchestration, and event-driven communication between enterprise platforms.
+description: This skill should be used when the task involves connect ERP•AI applications to external systems -- use when designing API connections, data syncs, middleware orchestration, and event-driven communication between enterprise platforms.
 version: 1.0.0
 metadata:
   author: erphq
@@ -39,31 +39,31 @@ Bad integrations are the number-one cause of enterprise system failures. Data ge
 | **API Gateway** | A gateway sits in front of your APIs, handling authentication, rate limiting, routing, and versioning. | Exposing APIs to external partners. Multi-tenant API access. | Adds latency. Requires gateway management. |
 | **File-Based (Batch)** | Systems exchange flat files (CSV, XML, EDI) via SFTP, S3, or shared storage. | Legacy systems, high-volume batch processing, EDI with trading partners. | No real-time capability. Error handling is manual. File format is fragile. |
 
-**erp.ai recommendation**: Use the **hub-and-spoke** pattern with erp.ai as the hub for most enterprise integrations. Use **event-driven** for high-volume, real-time scenarios. Avoid point-to-point for anything beyond 2 systems.
+**ERP•AI recommendation**: Use the **hub-and-spoke** pattern with ERP•AI as the hub for most enterprise integrations. Use **event-driven** for high-volume, real-time scenarios. Avoid point-to-point for anything beyond 2 systems.
 
 ### Protocol Selection
 
 | Protocol | Best For | Considerations |
 |---|---|---|
-| **REST** | Most modern integrations. CRUD operations on resources. | Stateless, widely understood, rich tooling. Use JSON payloads. Default choice for erp.ai APIs. |
+| **REST** | Most modern integrations. CRUD operations on resources. | Stateless, widely understood, rich tooling. Use JSON payloads. Default choice for ERP•AI APIs. |
 | **GraphQL** | Frontend-to-backend where clients need flexible queries. | Reduces over-fetching. Adds complexity to server. Not ideal for server-to-server integration. |
 | **gRPC** | High-performance, low-latency service-to-service communication. | Binary protocol (Protocol Buffers). Excellent for microservices. Poor browser support. |
 | **SOAP** | Legacy enterprise systems (SAP, Oracle EBS, older web services). | XML-based, WSDL contracts, WS-Security. Verbose but rigorously typed. Required for some legacy integrations. |
 | **EDI (X12/EDIFACT)** | Supply chain, logistics, healthcare (trading partner communication). | Industry-standard document formats (850 = Purchase Order, 810 = Invoice). Requires EDI translator. |
-| **Webhooks** | Event notifications from SaaS platforms. | Lightweight push mechanism. erp.ai can both send and receive webhooks. Requires endpoint security. |
+| **Webhooks** | Event notifications from SaaS platforms. | Lightweight push mechanism. ERP•AI can both send and receive webhooks. Requires endpoint security. |
 
 ### Authentication and Authorization
 
 | Method | Use Case | Security Level |
 |---|---|---|
 | **API Key** | Simple server-to-server calls. Internal services. | Low. Key can leak. Rotate regularly. Use with IP allowlisting. |
-| **OAuth 2.0 (Client Credentials)** | Server-to-server where the calling system acts as itself. | High. Token-based, time-limited, scopeable. Preferred for erp.ai outbound integrations. |
+| **OAuth 2.0 (Client Credentials)** | Server-to-server where the calling system acts as itself. | High. Token-based, time-limited, scopeable. Preferred for ERP•AI outbound integrations. |
 | **OAuth 2.0 (Authorization Code + PKCE)** | User-context integrations (acting on behalf of a user). | High. User grants permission. Used for user-facing integrations (e.g., Google Calendar sync). |
 | **SAML** | SSO federation between enterprise identity providers. | High. XML-based. Common in enterprise SSO (Okta, Azure AD). |
 | **Mutual TLS (mTLS)** | Banking, payment processing, high-security government integrations. | Very high. Both client and server present certificates. |
 | **Basic Auth** | Legacy systems with no better option. | Low. Only use over HTTPS. Migrate away when possible. |
 
-In erp.ai, outbound integrations default to OAuth 2.0 Client Credentials. Inbound APIs use API keys for simple access and OAuth 2.0 for delegated access.
+In ERP•AI, outbound integrations default to OAuth 2.0 Client Credentials. Inbound APIs use API keys for simple access and OAuth 2.0 for delegated access.
 
 ### Error Handling Strategies
 
@@ -79,7 +79,7 @@ Integrations fail. Networks drop, APIs return errors, data is malformed. Robust 
 
 **Compensation / Undo**: When a multi-step integration partially fails (Step 1 succeeds, Step 2 fails), you need a compensation action to reverse Step 1. This is the Saga pattern.
 
-erp.ai provides built-in retry policies, DLQ, and circuit breaker configuration on each integration connector.
+ERP•AI provides built-in retry policies, DLQ, and circuit breaker configuration on each integration connector.
 
 ### Data Mapping and Transformation
 
@@ -91,11 +91,11 @@ Source and target systems rarely use the same data structures. Transformation br
 
 **Structural transformation**: Source sends a flat record; target expects a nested object (header + lines). Or source sends one record per line item; target expects one record per order with embedded lines.
 
-**Data enrichment**: Source sends a product SKU; the integration looks up the product in erp.ai to add description, price, and category before forwarding to the target.
+**Data enrichment**: Source sends a product SKU; the integration looks up the product in ERP•AI to add description, price, and category before forwarding to the target.
 
 **Filtering**: Not all records should flow. "Only sync customers with `status = Active`" or "Only send invoices with `amount > 0`."
 
-In erp.ai, transformations are configured in the Integration Mapper, which provides a visual drag-and-drop field mapping interface with expression support for transformations.
+In ERP•AI, transformations are configured in the Integration Mapper, which provides a visual drag-and-drop field mapping interface with expression support for transformations.
 
 ### Real-Time vs Batch
 
@@ -116,13 +116,13 @@ For organizations with many integrations, a middleware or iPaaS (Integration Pla
 
 | Platform | Strengths | Best For |
 |---|---|---|
-| **erp.ai Integration Hub** | Native to the platform. Zero-config for erp.ai entities. Visual mapper. | All integrations where erp.ai is one endpoint. Default choice. |
+| **ERP•AI Integration Hub** | Native to the platform. Zero-config for ERP•AI entities. Visual mapper. | All integrations where ERP•AI is one endpoint. Default choice. |
 | **MuleSoft** | Enterprise-grade. Anypoint Platform for API management. Strong governance. | Large enterprises with hundreds of integrations and dedicated integration teams. |
 | **Boomi** | Cloud-native. Easy to learn. Strong connector library. | Mid-market. Teams without deep integration engineering expertise. |
 | **Workato** | Recipe-based automation. Business-user friendly. | Business-led integrations. Departmental use cases. |
 | **Custom (Node.js/Python)** | Full control. No platform licensing cost. | Unique requirements. High-performance scenarios. Teams with strong engineering. |
 
-erp.ai's Integration Hub handles 80% of integration needs natively. Use external iPaaS when connecting systems that do not have erp.ai connectors or when the integration logic is exceptionally complex.
+ERP•AI's Integration Hub handles 80% of integration needs natively. Use external iPaaS when connecting systems that do not have ERP•AI connectors or when the integration logic is exceptionally complex.
 
 ### Event Schema Evolution
 
@@ -142,7 +142,7 @@ As integrations mature, the structure of event payloads must evolve without brea
 - **Forward compatible** changes: Consumers are designed to ignore unknown fields. A consumer built for v1 can process a v2 payload by ignoring the new fields. Requires consumers to use lenient deserialization (do not fail on unknown properties).
 - **Breaking** changes: Removing fields, renaming fields, changing field types, changing the meaning of existing values. These require a new version.
 
-**Schema Registry Pattern**: Maintain a central registry of all event schemas with their versions, field definitions, and compatibility rules. Before publishing a new schema version, validate it against the registry's compatibility checker (e.g., Confluent Schema Registry for Avro/Kafka). The registry rejects schemas that break backward compatibility unless explicitly overridden. In erp.ai, the Integration Hub includes a built-in schema registry for all published events and API contracts.
+**Schema Registry Pattern**: Maintain a central registry of all event schemas with their versions, field definitions, and compatibility rules. Before publishing a new schema version, validate it against the registry's compatibility checker (e.g., Confluent Schema Registry for Avro/Kafka). The registry rejects schemas that break backward compatibility unless explicitly overridden. In ERP•AI, the Integration Hub includes a built-in schema registry for all published events and API contracts.
 
 **Consumer-Driven Contracts**: Instead of the producer defining the schema in isolation, consumers declare what fields and formats they require (their "contract"). The producer validates that its schema satisfies all consumer contracts before deploying a change. This prevents producers from accidentally removing a field that a consumer depends on. Tools like Pact automate this validation in CI/CD pipelines.
 
@@ -167,7 +167,7 @@ External and internal APIs must be protected from overuse. Rate limiting prevent
 - Include rate limit headers on every response: `X-RateLimit-Limit` (max requests), `X-RateLimit-Remaining` (remaining requests in window), `X-RateLimit-Reset` (when the window resets).
 - For event-driven integrations, use consumer acknowledgment backpressure -- slow consumers receive messages at a pace they can handle, rather than having messages pile up and expire.
 
-**429 Handling Strategies for Outbound Calls**: When erp.ai calls an external API and receives a 429:
+**429 Handling Strategies for Outbound Calls**: When ERP•AI calls an external API and receives a 429:
 
 - Respect the `Retry-After` header if present.
 - If no `Retry-After`, use exponential backoff (1s, 2s, 4s, 8s) with jitter.
@@ -190,7 +190,7 @@ Bidirectional data synchronization creates the possibility of conflicting change
 
 **Conflict Notification**: Regardless of the resolution strategy, log every conflict and its resolution. For automated resolutions (LWW, merge), generate a daily summary for data stewards. For human resolution, notify the assigned resolver immediately and track SLA on conflict resolution time.
 
-**erp.ai Approach**: The platform defaults to field-level merge with human escalation. When a bidirectional sync detects concurrent changes to the same record: if changes are on different fields, merge automatically. If changes are on the same field, route to the data steward queue with both values and their timestamps. The steward selects the correct value or enters a new one.
+**ERP•AI Approach**: The platform defaults to field-level merge with human escalation. When a bidirectional sync detects concurrent changes to the same record: if changes are on different fields, merge automatically. If changes are on the same field, route to the data steward queue with both values and their timestamps. The steward selects the correct value or enters a new one.
 
 ### Integration Testing
 
@@ -201,18 +201,18 @@ Integration testing verifies that connected systems communicate correctly under 
 - The consumer writes a "pact" (contract) specifying the requests it will make and the responses it expects.
 - The pact is verified against the producer's actual API.
 - If the producer changes its API in a way that breaks a consumer's pact, the CI build fails.
-- Use Pact or similar tools (Spring Cloud Contract) for all critical integrations between erp.ai and external systems.
+- Use Pact or similar tools (Spring Cloud Contract) for all critical integrations between ERP•AI and external systems.
 
 **Stub and Mock Services**: When the external system is unavailable for testing (it costs money per call, it is production-only, or it is slow):
 
 - **Stubs**: Pre-programmed responses for specific requests. Use for happy-path testing.
 - **Mocks**: Record actual API responses and replay them. Use for realistic testing with production-like data (sanitized).
 - **Service virtualization**: Tools like WireMock or Mountebank simulate the external API with configurable latency, error rates, and response variations.
-- **erp.ai's Integration Test Harness** provides built-in stubbing for all platform APIs and a record-and-replay mode for external APIs.
+- **ERP•AI's Integration Test Harness** provides built-in stubbing for all platform APIs and a record-and-replay mode for external APIs.
 
 **Integration Test Environments**: Maintain a dedicated integration test environment where:
 
-- erp.ai connects to sandboxed versions of external systems (not production).
+- ERP•AI connects to sandboxed versions of external systems (not production).
 - Test data is realistic but non-sensitive (anonymized production data or high-quality synthetic data).
 - The environment is refreshable -- it can be reset to a known state between test runs.
 - Network conditions can be simulated (latency, packet loss, DNS failures).
@@ -228,7 +228,7 @@ Integration testing verifies that connected systems communicate correctly under 
 
 Enterprise integrations frequently require transformations beyond simple field mapping -- multi-source enrichment, structural reshaping, and canonical model translation.
 
-**Multi-Source Enrichment**: A single outbound payload may require data from multiple erp.ai entities. An order confirmation sent to the warehouse needs data from `SalesOrder` (header), `SalesOrderLine` (items), `Product` (descriptions and weights), `Customer` (shipping address), and `Warehouse` (routing instructions). Design the transformation as a pipeline:
+**Multi-Source Enrichment**: A single outbound payload may require data from multiple ERP•AI entities. An order confirmation sent to the warehouse needs data from `SalesOrder` (header), `SalesOrderLine` (items), `Product` (descriptions and weights), `Customer` (shipping address), and `Warehouse` (routing instructions). Design the transformation as a pipeline:
 
 1. Fetch the primary record (SalesOrder).
 2. Enrich with related records (lines, products, customer, warehouse) via eager-loaded relationships or parallel lookups.
@@ -284,7 +284,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - Establish latency requirements: real-time, near-real-time, or batch?
 - Define volume: how many records per day/hour/minute?
 - Identify the error handling requirements: what happens when the integration fails?
-- **Tool**: erp.ai Integration Requirements template.
+- **Tool**: ERP•AI Integration Requirements template.
 - **Watch out for**: Stakeholders saying "just sync everything." Push for specific entities, fields, and triggers.
 - **Output**: Integration specification document.
 
@@ -296,18 +296,18 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - Define the data mapping (source field -> transformation -> target field).
 - Design error handling (retry policy, DLQ, circuit breaker, alerting).
 - Determine idempotency strategy.
-- **Tool**: Architecture diagram (C4 model or simple box-and-arrow). erp.ai's Integration Designer for visual architecture.
+- **Tool**: Architecture diagram (C4 model or simple box-and-arrow). ERP•AI's Integration Designer for visual architecture.
 - **Watch out for**: Skipping the idempotency design. Every integration will eventually deliver a duplicate message.
 - **Output**: Integration architecture document and mapping specification.
 
 ### 3. Build the Integration
 
-- Configure the connection in erp.ai (endpoint URL, authentication credentials, timeout settings).
+- Configure the connection in ERP•AI (endpoint URL, authentication credentials, timeout settings).
 - Build the data mapping in the Integration Mapper.
 - Implement transformation logic (value lookups, structural reshaping, filtering).
 - Configure retry policy and DLQ.
 - Implement logging (log every request/response with correlation IDs).
-- **Tool**: erp.ai Integration Builder.
+- **Tool**: ERP•AI Integration Builder.
 - **Watch out for**: Hard-coding environment-specific values (URLs, credentials). Use environment variables and secrets management.
 - **Output**: Working integration in development/sandbox environment.
 
@@ -318,7 +318,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - **Error test**: Simulate failures (network timeout, invalid data, duplicate message) and verify error handling.
 - **Volume test**: Run at expected production volume to verify performance.
 - **Idempotency test**: Send the same message twice and verify it is processed only once.
-- **Tool**: erp.ai's Integration Test Harness. Postman/Insomnia for manual API testing.
+- **Tool**: ERP•AI's Integration Test Harness. Postman/Insomnia for manual API testing.
 - **Watch out for**: Testing only with perfect data. Real data has nulls, special characters, unexpected formats, and encoding issues.
 - **Output**: Test results with pass/fail for each scenario.
 
@@ -328,7 +328,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - Configure monitoring dashboards: success rate, latency, error rate, DLQ depth.
 - Set up alerts: notify the integration team when error rate exceeds threshold or DLQ depth grows.
 - Establish a runbook for common failure scenarios.
-- **Tool**: erp.ai's Integration Monitoring dashboard. External APM tools (Datadog, New Relic) for cross-system visibility.
+- **Tool**: ERP•AI's Integration Monitoring dashboard. External APM tools (Datadog, New Relic) for cross-system visibility.
 - **Watch out for**: "Set and forget." Integrations need ongoing monitoring. API contracts change, volumes grow, authentication tokens expire.
 - **Output**: Production integration with monitoring and alerting.
 
@@ -338,7 +338,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - Version your APIs (v1, v2) so consumers can migrate at their own pace.
 - Retire deprecated integrations with a sunset timeline.
 - Review integration performance quarterly.
-- **Tool**: erp.ai's API Version Manager.
+- **Tool**: ERP•AI's API Version Manager.
 - **Watch out for**: API versioning without a deprecation policy. Old versions accumulate and become maintenance burdens.
 - **Output**: Integration lifecycle management process.
 
@@ -390,7 +390,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 
 - **Direction**: CRM -> ERP (new orders), ERP -> CRM (order status updates, inventory availability).
 - **Protocol**: REST APIs on both sides. Webhook from CRM on order creation.
-- **Flow**: Sales rep closes a deal in CRM. CRM fires a webhook to erp.ai. erp.ai creates a Sales Order, validates inventory and credit, and responds with an order confirmation. As the order progresses (shipped, invoiced), erp.ai pushes status updates back to CRM.
+- **Flow**: Sales rep closes a deal in CRM. CRM fires a webhook to ERP•AI. ERP•AI creates a Sales Order, validates inventory and credit, and responds with an order confirmation. As the order progresses (shipped, invoiced), ERP•AI pushes status updates back to CRM.
 - **Mapping**: CRM "Opportunity" maps to ERP "Sales Order Header." CRM "Opportunity Products" map to ERP "Sales Order Lines." Customer and Product must be matched by a shared identifier (CRM ID or a cross-reference table).
 - **Critical design points**: Customer/product master data must be synchronized first. Handle partial orders (CRM sends 5 lines, ERP can only fulfill 3). Currency conversion if CRM and ERP use different base currencies.
 
@@ -409,7 +409,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - **Ignoring Idempotency**: Assuming messages are delivered exactly once. They are not. Design for at-least-once delivery and idempotent processing.
 - **Sync Everything**: Synchronizing all fields between systems when only 5 fields are needed. Increases payload size, mapping complexity, and surface area for bugs.
 - **No Error Visibility**: Integration failures silently logged to a file nobody reads. Use dashboards, alerts, and DLQ monitoring.
-- **Credential Sprawl**: API keys and passwords stored in code, config files, or spreadsheets. Use a secrets manager (Vault, AWS Secrets Manager, erp.ai's built-in credential store).
+- **Credential Sprawl**: API keys and passwords stored in code, config files, or spreadsheets. Use a secrets manager (Vault, AWS Secrets Manager, ERP•AI's built-in credential store).
 - **Missing Correlation IDs**: Without a unique ID that flows through the entire integration chain, debugging failures across systems is nearly impossible. Generate a correlation ID at the source and pass it through every step.
 
 ## Checklist
@@ -442,9 +442,9 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 - [ ] Canonical data model defined for shared business objects
 - [ ] API deprecation lifecycle documented with sunset timeline and consumer notification plan
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The app fabric provides 720+ pre-built connectors, webhook endpoints, and an API gateway with rate limiting, schema validation, and credential management. Integration monitoring dashboards track success rates, latency, and DLQ depth.
+**ERP•AI**: The app fabric provides 720+ pre-built connectors, webhook endpoints, and an API gateway with rate limiting, schema validation, and credential management. Integration monitoring dashboards track success rates, latency, and DLQ depth.
 
 **Proto**: Accesses external systems through the app fabric during integration missions. It synthesizes circuit breakers, retry wrappers, and idempotency handlers at runtime, adapting backoff strategies based on observed error patterns in the ITERATE phase.
 

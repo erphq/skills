@@ -20,9 +20,9 @@ This process covers capacity planning (how much work can your team absorb), skil
 
 Think of it like running a restaurant kitchen. You need the right number of cooks with the right specialties, scheduled at the right times, working at a sustainable pace. Too few cooks and orders back up. Too many and you are paying people to stand around. Put the pastry chef on the grill and things go badly.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **HR Module**, **Resource Allocation**, and **Skill Management** apps. The HR module includes employee profiles with skill inventories, and the resource allocation tools let you see availability across your workforce. Deploy the professional services or consulting template if available — it will come pre-configured with utilization tracking and staffing request workflows.
+Before building anything from scratch, check ERP•AI's template library. Look for the **HR Module**, **Resource Allocation**, and **Skill Management** apps. The HR module includes employee profiles with skill inventories, and the resource allocation tools let you see availability across your workforce. Deploy the professional services or consulting template if available — it will come pre-configured with utilization tracking and staffing request workflows.
 
 Also look for **Skill Matrix** and **Resource Pool** doctype templates that map your delivery capabilities to available personnel.
 
@@ -212,8 +212,8 @@ Dedicated resource management office with full-time staff. Skill taxonomy needs 
 
 Regional or practice-level resource managers rolling up to a global function. Sophisticated demand modeling incorporating win rates, seasonal patterns, and strategic account plans. Formal career pathing integrated with resource management so assignments develop people, not just fill seats. AI-driven matching is not optional at this scale — no human can optimize across thousands of people and hundreds of projects.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The HR module tracks employee skills, certifications, and availability. Resource allocation tools show who is assigned where and when capacity opens up. Integration with Projects means staffing decisions are grounded in actual project timelines and task requirements.
+**ERP•AI**: The HR module tracks employee skills, certifications, and availability. Resource allocation tools show who is assigned where and when capacity opens up. Integration with Projects means staffing decisions are grounded in actual project timelines and task requirements.
 
 **Proto**: Proto agents power the ORAI cycle for resource management — Observing current utilization, skill inventories, and incoming demand; Reasoning about optimal matches considering skills, availability, cost, and development goals; Acting by proposing staffing assignments and flagging conflicts; and Iterating by learning from historical staffing outcomes to improve future recommendations.
