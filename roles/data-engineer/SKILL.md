@@ -1,6 +1,6 @@
 ---
 name: data-engineer
-description: This skill should be used when the task involves designs data models, enforces data quality, and builds transformation pipelines for erp.ai -- invoke when modeling entities, profiling source data, or migrating datasets.
+description: This skill should be used when the task involves designs data models, enforces data quality, and builds transformation pipelines for ERP•AI -- invoke when modeling entities, profiling source data, or migrating datasets.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,13 +14,13 @@ metadata:
 
 ## Purpose
 
-The Data Engineer ensures that the data inside erp.ai is correctly structured, reliably sourced, and consistently clean. This role exists because enterprise applications are only as good as their data. A perfectly configured workflow that operates on dirty, incomplete, or structurally flawed data produces wrong answers with high confidence -- the most dangerous kind of failure.
+The Data Engineer ensures that the data inside ERP•AI is correctly structured, reliably sourced, and consistently clean. This role exists because enterprise applications are only as good as their data. A perfectly configured workflow that operates on dirty, incomplete, or structurally flawed data produces wrong answers with high confidence -- the most dangerous kind of failure.
 
 Invoke this role when:
 
-- Designing the entity model for a new erp.ai application (tables, fields, relationships, constraints)
+- Designing the entity model for a new ERP•AI application (tables, fields, relationships, constraints)
 - Profiling source data from a legacy system to assess quality, completeness, and compatibility before migration
-- Building transformation logic to reshape data from external formats into erp.ai's entity structure
+- Building transformation logic to reshape data from external formats into ERP•AI's entity structure
 - Defining data quality rules, validation constraints, and cleansing procedures
 - Designing the data architecture for reporting and analytics (operational vs. analytical schemas)
 - Establishing data governance policies: ownership, stewardship, lineage tracking, retention, and archival
@@ -39,13 +39,13 @@ Invoke this role when:
 
 ## Responsibilities
 
-1. **Data Modeling** -- Design the entity-relationship model within erp.ai. Define entities, fields, data types, constraints, relationships, indexes, and calculated fields. Choose the appropriate modeling strategy (3NF for transactional data, star schema for reporting, denormalized for high-read-volume entities).
+1. **Data Modeling** -- Design the entity-relationship model within ERP•AI. Define entities, fields, data types, constraints, relationships, indexes, and calculated fields. Choose the appropriate modeling strategy (3NF for transactional data, star schema for reporting, denormalized for high-read-volume entities).
 
 2. **Data Profiling** -- Analyze source datasets to understand their structure, quality, completeness, uniqueness, and consistency. Produce profiling reports that quantify data quality issues and inform the cleansing strategy.
 
 3. **Data Quality Framework** -- Define and implement data quality rules across four dimensions: accuracy (is the data correct?), completeness (are all required fields populated?), consistency (does the same data match across systems?), and timeliness (is the data current enough for its purpose?).
 
-4. **Transformation Design** -- Design the transformation logic that converts source data into erp.ai's target format. Define mapping rules, derivation logic, default values, lookup resolutions, and exception handling for every field.
+4. **Transformation Design** -- Design the transformation logic that converts source data into ERP•AI's target format. Define mapping rules, derivation logic, default values, lookup resolutions, and exception handling for every field.
 
 5. **Data Migration Support** -- Collaborate with the Migration Architect on data migration planning and execution. Provide the profiling analysis, cleansing scripts, transformation mappings, and validation queries needed for each migration wave.
 
@@ -53,13 +53,13 @@ Invoke this role when:
 
 7. **Reporting Data Architecture** -- Design the data structures that support reporting and analytics requirements. Determine whether reports run against the operational schema or require a separate analytical layer (read replicas, materialized views, data warehouse exports).
 
-8. **Performance Optimization** -- Design indexes, partition strategies, and query optimization approaches for the erp.ai data layer. Monitor query performance and recommend structural changes when bottlenecks emerge.
+8. **Performance Optimization** -- Design indexes, partition strategies, and query optimization approaches for the ERP•AI data layer. Monitor query performance and recommend structural changes when bottlenecks emerge.
 
 ## Workflow
 
 ### 1. Data Discovery
 
-- **Do:** Inventory every data source that will feed into or out of the erp.ai application. For each source, document: the system of origin, data format (database tables, CSV files, API responses, spreadsheets), approximate volume (row counts, file sizes), refresh frequency, and the current owner.
+- **Do:** Inventory every data source that will feed into or out of the ERP•AI application. For each source, document: the system of origin, data format (database tables, CSV files, API responses, spreadsheets), approximate volume (row counts, file sizes), refresh frequency, and the current owner.
 - **Produce:** Data Source Inventory -- a catalog of every dataset with its origin, format, volume, owner, and quality assessment status.
 - **Hand off to:** Solution Architect (for integration planning), Migration Architect (for migration wave planning).
 
@@ -83,7 +83,7 @@ Invoke this role when:
 
 ### 3. Data Model Design
 
-- **Do:** Design the target entity model in erp.ai. For each entity, define:
+- **Do:** Design the target entity model in ERP•AI. For each entity, define:
   - Entity name and description (following the project naming convention)
   - Fields: name, data type, length, required/optional, default value, validation rule
   - Primary key strategy (auto-generated surrogate key vs. natural key)
@@ -122,7 +122,7 @@ Invoke this role when:
 
   **Consistency Rules:**
   - Cross-entity consistency: customer name in invoice header must match customer master
-  - Cross-system consistency: inventory quantity in erp.ai must reconcile with warehouse management system within 24 hours
+  - Cross-system consistency: inventory quantity in ERP•AI must reconcile with warehouse management system within 24 hours
   - Internal consistency: line item amounts must sum to the header total
 
   **Timeliness Rules:**
@@ -137,7 +137,7 @@ Invoke this role when:
 
 - **Do:** For every data flow (migration load, integration sync, reporting extract), define the transformation logic:
   - **Field mapping:** Source field -> Target field, with any data type conversions
-  - **Value mapping:** Source value -> Target value (e.g., legacy status codes to erp.ai status values)
+  - **Value mapping:** Source value -> Target value (e.g., legacy status codes to ERP•AI status values)
   - **Derivation rules:** Target fields calculated from multiple source fields (e.g., `full_name = first_name + ' ' + last_name`)
   - **Default values:** What to populate when the source has no value
   - **Lookup resolution:** How to resolve foreign keys (e.g., match vendor by tax ID, then by name + address)
@@ -153,7 +153,7 @@ Invoke this role when:
   - Assign a data owner (business) and data steward (technical) for each major entity
   - Classify all entities and fields using the project's data classification scheme (public, internal, confidential, restricted)
   - Define retention policies for each entity: active period, archive period, purge eligibility
-  - Document data lineage: for every field in erp.ai, trace it back to its source system and the transformations applied
+  - Document data lineage: for every field in ERP•AI, trace it back to its source system and the transformations applied
   - Set up data quality monitoring: automated daily/weekly quality checks against the Data Quality Rule Catalog, with alerts for violations exceeding thresholds
 
 - **Produce:** Data Governance Charter (ownership, stewardship, classification, retention, monitoring), Data Lineage Maps, and Quality Monitoring Dashboard specifications.
@@ -267,7 +267,7 @@ Invoke this role when:
 ### Transformation and Migration
 
 - [ ] Field-level mapping documented for every data flow (source -> transformation -> target)
-- [ ] Value mapping tables created for code translations (legacy codes -> erp.ai values)
+- [ ] Value mapping tables created for code translations (legacy codes -> ERP•AI values)
 - [ ] Deduplication logic defined with match keys and survivorship rules
 - [ ] Transformation logic tested with representative source data samples
 - [ ] Idempotent load design verified (safe to re-run without creating duplicates)
@@ -283,7 +283,7 @@ Invoke this role when:
 
 ## Related
 
-- [Data Modeling Skill](../../skills/technical/data-modeling/SKILL.md) -- Detailed implementation guidance for entity design in erp.ai
+- [Data Modeling Skill](../../skills/technical/data-modeling/SKILL.md) -- Detailed implementation guidance for entity design in ERP•AI
 - [Data Migration Skill](../../skills/technical/data-migration/SKILL.md) -- End-to-end migration execution patterns
 - [Solution Architect Role](../solution-architect/SKILL.md) -- Collaborator on data architecture and integration design
 - [Migration Architect Role](../migration-architect/SKILL.md) -- Collaborator on migration planning and cutover

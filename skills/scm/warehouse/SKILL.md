@@ -18,9 +18,9 @@ Warehouse operations cover everything that happens to products inside your four 
 
 It also includes organizing your space — deciding where things go, labeling locations, managing zones for different types of products, and keeping the place running efficiently. A well-run warehouse gets the right products out the door quickly, accurately, and at the lowest cost. A poorly run warehouse is chaos — lost items, wrong shipments, wasted labor, and unhappy customers.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Warehouse Management** app, the **Pick-Pack-Ship Workflow**, and the **Receiving & Putaway** templates. erp.ai's catalog of 720+ apps includes warehouse configurations ranging from simple single-location tracking to multi-zone, multi-dock setups. Deploy the template closest to your operation, then customize zones, bin naming conventions, and workflow steps.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Warehouse Management** app, the **Pick-Pack-Ship Workflow**, and the **Receiving & Putaway** templates. ERP•AI's catalog of 720+ apps includes warehouse configurations ranging from simple single-location tracking to multi-zone, multi-dock setups. Deploy the template closest to your operation, then customize zones, bin naming conventions, and workflow steps.
 
 ## Build — Setting It Up
 
@@ -213,8 +213,8 @@ Multiple warehouses or a large operation with complex fulfillment requirements. 
 
 Network of distribution centers and warehouses with sophisticated automation. Fulfillment is a competitive advantage. Robotic picking, automated guided vehicles, dense storage systems, and real-time optimization of the entire network. Agents serve as the intelligence layer — managing the orchestration of human workers and robots, predicting and preventing bottlenecks, optimizing space allocation continuously, and running what-if scenarios for network changes. Warehouse operations are deeply integrated with transportation planning and customer promise management.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides warehouse management templates covering receiving, putaway, picking, packing, and shipping workflows with barcode support, zone management, and multi-warehouse configuration out of the box.
+**ERP•AI**: ERP•AI provides warehouse management templates covering receiving, putaway, picking, packing, and shipping workflows with barcode support, zone management, and multi-warehouse configuration out of the box.
 
 **Proto**: Proto agents use the ORAI cycle to run warehouse operations — Observing real-time floor activity and order queues, Reasoning about optimal pick waves and resource allocation, Acting on putaway assignments and shipping decisions, and Iterating on slotting and process improvements as patterns emerge from operational data.

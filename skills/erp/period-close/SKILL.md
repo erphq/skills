@@ -20,9 +20,9 @@ The close process includes making sure all transactions for the period are recor
 
 A fast, accurate close gives you timely information and frees your team to do higher-value work like analysis and planning. A slow, chaotic close means your team is scrambling for 10+ days every month, errors slip through, and by the time leadership sees the numbers, they are too old to act on.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Month-End Close Checklist** app, the **Account Reconciliation Workbench**, the **Accrual Engine**, and the **Close Calendar & Task Manager**. If you are a multi-entity organization, the **Multi-Entity Close Orchestrator** coordinates close activities across subsidiaries with dependency tracking. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Month-End Close Checklist** app, the **Account Reconciliation Workbench**, the **Accrual Engine**, and the **Close Calendar & Task Manager**. If you are a multi-entity organization, the **Multi-Entity Close Orchestrator** coordinates close activities across subsidiaries with dependency tracking. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -173,7 +173,7 @@ AI agents are the single biggest accelerator for close speed and quality:
 
 ### Startup (< 50 people)
 
-Your "close" is probably one person (or an outsourced bookkeeper) doing bank reconciliation, making sure all bills are entered, and producing a basic P&L. Target a 3-day close. Use erp.ai's close checklist template to make sure nothing gets missed. The biggest risk is not closing at all — letting months go by without reconciling your books. Even at this size, an agent can auto-reconcile your bank account, post standard entries, and produce financial statements the day after period end.
+Your "close" is probably one person (or an outsourced bookkeeper) doing bank reconciliation, making sure all bills are entered, and producing a basic P&L. Target a 3-day close. Use ERP•AI's close checklist template to make sure nothing gets missed. The biggest risk is not closing at all — letting months go by without reconciling your books. Even at this size, an agent can auto-reconcile your bank account, post standard entries, and produce financial statements the day after period end.
 
 ### SMB (50–500 people)
 
@@ -187,8 +187,8 @@ Close involves 10–30 people across multiple entities and time zones. A close c
 
 Close is a military operation involving hundreds of accountants across global shared service centers. Close calendars are published months in advance. Close quality metrics are tracked and benchmarked. The close supports multiple reporting requirements — management, statutory, regulatory, and tax — each with different timelines and formats. Agents enable near-continuous close — daily reconciliation, rolling accruals, and automated financial statement generation. The goal is financial statements available within 1–3 days of period end. Close transformation initiatives (reducing close by 50%) are common strategic projects.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Period Close module in erp.ai includes a configurable close checklist with task dependencies and critical path tracking, automated recurring journal entries, an account reconciliation workbench with matching rules, intercompany reconciliation and elimination, flux analysis, and multi-entity close orchestration with real-time progress dashboards.
+**ERP•AI**: The Period Close module in ERP•AI includes a configurable close checklist with task dependencies and critical path tracking, automated recurring journal entries, an account reconciliation workbench with matching rules, intercompany reconciliation and elimination, flux analysis, and multi-entity close orchestration with real-time progress dashboards.
 
 **Proto**: Proto agents drive the close process through the ORAI loop — they observe task progress and data readiness, reason about dependencies and bottlenecks, act by executing automated tasks and escalating issues, and iterate by identifying close-over-close improvements and continuously reducing the close timeline.

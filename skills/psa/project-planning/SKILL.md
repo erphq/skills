@@ -20,9 +20,9 @@ This process covers creating the project structure (breaking big deliverables in
 
 Think of it like building a house. You don't just say "build a house." You break it down: foundation, framing, electrical, plumbing, drywall, paint. Each step depends on the one before it. You set dates. You assign people. And you save a copy of the original plan so that when things inevitably shift, you can see exactly how far off you are.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Project** and **Task** apps in the catalog, plus any industry-specific professional services templates. The **Projects** module includes built-in WBS structures, Gantt views, and milestone tracking. Deploy the closest match to your engagement type (staff augmentation, fixed-price delivery, managed services), then customize the phases and task templates on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Project** and **Task** apps in the catalog, plus any industry-specific professional services templates. The **Projects** module includes built-in WBS structures, Gantt views, and milestone tracking. Deploy the closest match to your engagement type (staff augmentation, fixed-price delivery, managed services), then customize the phases and task templates on top.
 
 Also check for **Project Template** records. If your firm does similar projects repeatedly (say, ERP implementations or compliance audits), you should have a reusable template that pre-populates the WBS, standard milestones, and typical durations.
 
@@ -208,8 +208,8 @@ Multiple practices, possibly multiple geographies, and 50 to 200 active projects
 
 You are managing hundreds or thousands of projects across business units, geographies, and delivery models. Governance becomes critical — stage-gate processes, formal change control boards, and executive dashboards. You need integration between project planning and financial systems for revenue forecasting. Consider a dedicated planning tool that feeds into your PSA rather than relying on PSA-native planning alone.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Projects module provides WBS structures, Gantt chart visualization, milestone tracking, and dependency management out of the box. Project templates allow you to standardize and reuse plans across similar engagements. Integration with the HR and resource modules means your plan is always grounded in actual people availability.
+**ERP•AI**: The Projects module provides WBS structures, Gantt chart visualization, milestone tracking, and dependency management out of the box. Project templates allow you to standardize and reuse plans across similar engagements. Integration with the HR and resource modules means your plan is always grounded in actual people availability.
 
 **Proto**: Proto agents assist through the full ORAI cycle — Observing your SOW and historical project data, Reasoning about realistic durations and dependencies, Acting by generating the project plan structure, and Iterating as the project progresses by adjusting forecasts and flagging risks before they become problems.

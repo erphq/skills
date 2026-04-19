@@ -16,9 +16,9 @@ metadata:
 
 Benefits administration is how your company manages everything you offer employees beyond their paycheck — health insurance (medical, dental, vision), retirement plans (401k, pension), flexible spending accounts (FSA), health savings accounts (HSA), life insurance, disability insurance, wellness programs, tuition reimbursement, and other perks. It covers enrolling employees in plans, processing life event changes (new baby, marriage, divorce), running annual open enrollment, calculating employer and employee costs, ensuring compliance with the Affordable Care Act (ACA), ERISA, COBRA, and HIPAA, and communicating what is available so people actually use their benefits. Benefits are typically the second-largest employment cost after salaries, and getting them wrong creates financial, legal, and employee satisfaction problems.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Benefits Management** app, the **Open Enrollment** workflow, and the **ACA Compliance** template in the 720+ catalog. There are also templates for COBRA administration, FSA/HSA management, and retirement plan enrollment. Deploy the closest match, then customize your plan structures, eligibility rules, contribution formulas, and carrier integrations on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Benefits Management** app, the **Open Enrollment** workflow, and the **ACA Compliance** template in the 720+ catalog. There are also templates for COBRA administration, FSA/HSA management, and retirement plan enrollment. Deploy the closest match, then customize your plan structures, eligibility rules, contribution formulas, and carrier integrations on top.
 
 ## Build — Setting It Up
 
@@ -207,8 +207,8 @@ You have enough scale to negotiate directly with carriers and potentially self-f
 
 Benefits is a department with actuarial support, broker relationships, and significant budget. Self-funded plans are likely, with stop-loss insurance and TPA management. Global benefits harmonization across countries is a strategic initiative. Agents handle carrier integration, compliance across jurisdictions, cost analytics, and employee communication at scale. Merger and acquisition benefits integration is a recurring challenge.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Benefits module manages plan configuration, open enrollment workflows, life event processing, carrier file generation, and ACA compliance tracking, with built-in integrations for major insurance carriers and retirement plan administrators.
+**ERP•AI**: The Benefits module manages plan configuration, open enrollment workflows, life event processing, carrier file generation, and ACA compliance tracking, with built-in integrations for major insurance carriers and retirement plan administrators.
 
 **Proto**: Proto agents run the ORAI cycle across your benefits program — they Observe enrollment patterns and cost trends, Reason about plan design effectiveness and compliance risks, Act by processing enrollments and generating carrier files, and Iterate by analyzing claims data and employee feedback to recommend plan improvements each renewal cycle.

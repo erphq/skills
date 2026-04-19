@@ -18,7 +18,7 @@ Enterprise applications are only as valuable as the decisions they enable. Repor
 
 Use this skill when a builder needs to:
 - Define KPIs and metrics for a business process
-- Build operational or analytical reports inside erp.ai
+- Build operational or analytical reports inside ERP•AI
 - Design interactive dashboards with drill-down capabilities
 - Configure scheduled report distribution
 - Implement role-based data filtering on report outputs
@@ -49,7 +49,7 @@ Use this skill when a builder needs to:
 - **Live query**: Runs directly against the transactional database. Best for operational reports on small-to-medium datasets. Risk: heavy reports can degrade application performance for all users.
 - **Materialized view**: A pre-computed query result stored as a table and refreshed on a schedule. Balances freshness with performance. Ideal for analytical reports that tolerate 15-minute to 1-hour staleness.
 - **Data warehouse / read replica**: A separate database optimized for analytical queries (star schema, columnar storage). Required when report volumes or complexity would impact transactional performance. Introduces ETL latency (typically minutes to hours).
-- **Embedded BI**: A third-party analytics engine (e.g., embedded Metabase, Looker, Power BI) rendered inside the erp.ai interface. Use when requirements exceed native reporting capabilities (complex visualizations, statistical functions, self-service exploration).
+- **Embedded BI**: A third-party analytics engine (e.g., embedded Metabase, Looker, Power BI) rendered inside the ERP•AI interface. Use when requirements exceed native reporting capabilities (complex visualizations, statistical functions, self-service exploration).
 
 ### Dashboard Design Principles
 
@@ -95,7 +95,7 @@ Use this skill when a builder needs to:
 - Apply formatting: conditional highlighting (red/amber/green), number formatting (currency, percentage, decimal places), column width.
 - Implement row-level security predicates so the same report definition serves multiple roles with different data scopes.
 - **Watch out for**: NULL handling in aggregations. A SUM that ignores NULLs vs. one that treats them as zero produces different results. Document the behavior.
-- **Output**: Working report definitions in erp.ai with test results showing correct output across roles.
+- **Output**: Working report definitions in ERP•AI with test results showing correct output across roles.
 
 ### 4. Design Dashboards
 
@@ -458,9 +458,9 @@ This requires a commentary engine that accepts the current filter context and th
 - [ ] Annotation layer enabled on dashboards for institutional context
 - [ ] Executive summary automation configured with narrative generation and delivery schedule
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Report builder and dashboard designer support drag-and-drop layout, embedded BI, row-level security, and scheduled distribution. The semantic layer maps business terms to data structures, and the metric catalog publishes certified KPI definitions.
+**ERP•AI**: Report builder and dashboard designer support drag-and-drop layout, embedded BI, row-level security, and scheduled distribution. The semantic layer maps business terms to data structures, and the metric catalog publishes certified KPI definitions.
 
 **Proto**: Generates KPI definitions, dashboard layouts, and drill-down configurations as mission outputs. During reporting missions, Proto reasons over available data dimensions and business requirements to propose metric hierarchies and visualization types.
 

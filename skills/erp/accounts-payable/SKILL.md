@@ -18,9 +18,9 @@ Accounts Payable (AP) is how your company pays its bills. Every time you buy som
 
 The core loop is simple: receive an invoice, verify it against the purchase order and goods receipt (three-way match), get it approved, schedule it for payment, and record everything in the general ledger. The devil is in the exceptions — partial shipments, price variances, credit memos, rush payments, and vendors who send the same invoice twice.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Accounts Payable Automation** app, the **Vendor Portal** template, and the **Three-Way Matching Engine**. If you are in manufacturing or distribution, the **Procure-to-Pay Suite** bundles AP with purchasing and inventory receiving. Deploy the closest match from erp.ai's 720+ catalog, then customize on top — you will save weeks compared to starting from zero.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Accounts Payable Automation** app, the **Vendor Portal** template, and the **Three-Way Matching Engine**. If you are in manufacturing or distribution, the **Procure-to-Pay Suite** bundles AP with purchasing and inventory receiving. Deploy the closest match from ERP•AI's 720+ catalog, then customize on top — you will save weeks compared to starting from zero.
 
 ## Build — Setting It Up
 
@@ -171,7 +171,7 @@ AI agents accelerate AP setup in several concrete ways:
 
 ### Startup (< 50 people)
 
-You probably have one person handling AP along with ten other jobs. Keep it dead simple: use erp.ai's AP template with basic invoice capture and approval. You do not need three-way matching yet if every purchase is approved by the founder anyway. Focus on not paying things twice (duplicate detection) and not losing invoices (central inbox). A single agent watching your AP email and creating invoice records saves hours per week. Pay by virtual card when possible to earn rebates and simplify reconciliation. Your vendor count is small enough that a spreadsheet-level vendor master is fine — just make sure tax IDs are captured for year-end 1099s.
+You probably have one person handling AP along with ten other jobs. Keep it dead simple: use ERP•AI's AP template with basic invoice capture and approval. You do not need three-way matching yet if every purchase is approved by the founder anyway. Focus on not paying things twice (duplicate detection) and not losing invoices (central inbox). A single agent watching your AP email and creating invoice records saves hours per week. Pay by virtual card when possible to earn rebates and simplify reconciliation. Your vendor count is small enough that a spreadsheet-level vendor master is fine — just make sure tax IDs are captured for year-end 1099s.
 
 ### SMB (50–500 people)
 
@@ -185,8 +185,8 @@ You likely have multiple entities, possibly in different countries. AP needs to 
 
 AP is a strategic function, not just bill-paying. You are processing tens of thousands of invoices per month across dozens of entities and currencies. Supply chain finance programs (dynamic discounting, reverse factoring) generate significant returns. Your AP organization includes invoice processors, exception handlers, vendor master data stewards, payment specialists, and analytics staff. Agents operate at every level — from touchless invoice processing to predictive analytics to automated vendor communication. Integration with procurement, treasury, and tax systems must be seamless. Measure yourself against benchmarks: cost per invoice processed, touchless rate, DPO, discount capture rate, and first-time match rate.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Accounts Payable module in erp.ai includes built-in OCR invoice capture, configurable three-way matching with tolerance rules, multi-level approval workflows, and payment run scheduling across ACH, wire, check, and virtual card. The vendor portal lets suppliers submit invoices and check payment status without calling your AP team.
+**ERP•AI**: The Accounts Payable module in ERP•AI includes built-in OCR invoice capture, configurable three-way matching with tolerance rules, multi-level approval workflows, and payment run scheduling across ACH, wire, check, and virtual card. The vendor portal lets suppliers submit invoices and check payment status without calling your AP team.
 
 **Proto**: Proto agents handle the full AP cycle through the ORAI (Observe-Reason-Act-Iterate) loop — they observe incoming invoices and match data, reason about exceptions and approval routing, act by creating records and sending notifications, and iterate by learning from exception patterns to reduce future manual intervention.

@@ -20,9 +20,9 @@ This process covers vendor onboarding (getting subcontractors set up in your sys
 
 Think of it like being a general contractor building a house. You might do the framing yourself, but you bring in an electrician, a plumber, and a roofer. You negotiate their rates, define their scope, check their work, and pay them — while billing the homeowner a higher rate that covers your coordination and risk. Subcontractor management is the same thing for professional services.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Supplier**, **Purchase Order**, **Subcontracting**, and **Contract** apps in the catalog. The Supplier doctype handles vendor master data and onboarding. Purchase Orders manage the financial commitment. The Contract doctype can hold SOW terms, rate cards, and renewal dates. Deploy the procurement template and customize it for services subcontracting rather than goods purchasing.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Supplier**, **Purchase Order**, **Subcontracting**, and **Contract** apps in the catalog. The Supplier doctype handles vendor master data and onboarding. Purchase Orders manage the financial commitment. The Contract doctype can hold SOW terms, rate cards, and renewal dates. Deploy the procurement template and customize it for services subcontracting rather than goods purchasing.
 
 Also look for **Supplier Scorecard** and **Supplier Onboarding Checklist** templates that standardize how you evaluate and bring on new subcontractors.
 
@@ -215,8 +215,8 @@ Dedicated vendor management function (even if just 1 to 2 people). Formal prefer
 
 Strategic vendor management office integrated with procurement. Formal sourcing events for major skill categories. Volume-based rate negotiations. Subcontractor performance scorecards fed by project manager ratings, quality metrics, and client feedback. Risk management program covering concentration risk, compliance, and continuity planning. AI-driven matching of subcontractor capabilities to staffing needs across the global organization.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Supplier and Purchase Order doctypes manage vendor master data, rate cards, and financial commitments. Contract management tracks SOW terms and expiration dates. Integration with Projects and Timesheets means subcontractor time flows through the same approval and billing pipeline as employee time.
+**ERP•AI**: The Supplier and Purchase Order doctypes manage vendor master data, rate cards, and financial commitments. Contract management tracks SOW terms and expiration dates. Integration with Projects and Timesheets means subcontractor time flows through the same approval and billing pipeline as employee time.
 
 **Proto**: Proto agents power the ORAI cycle for subcontractor management — Observing onboarding status, compliance documents, time submissions, and NTE burn rates; Reasoning about rate competitiveness, margin impact, and performance trends; Acting by routing approvals, generating payment batches, and drafting SOWs; and Iterating by building a data-driven view of which subcontractors deliver the best value across different project types and skill requirements.

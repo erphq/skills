@@ -16,9 +16,9 @@ metadata:
 
 Offboarding is everything that happens when an employee leaves your company — whether they resign, retire, get laid off, or are terminated for cause. It covers the exit interview (understanding why they are leaving), knowledge transfer (making sure critical information does not walk out the door), system access revocation (deactivating accounts, collecting devices, removing building access), final pay processing (last paycheck, PTO payout, severance if applicable), benefits continuation (COBRA notification, retirement account rollover information), return of company property (laptop, badge, keys, credit cards), and alumni relationship management (staying connected for rehires, referrals, and professional networking). A good offboarding process protects the company from security and legal risks, captures valuable institutional knowledge, and leaves the departing employee with a positive final impression. A bad one — or no process at all — creates security vulnerabilities, knowledge loss, compliance violations, and a former employee who tells everyone to avoid your company.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Employee Offboarding** app, the **Exit Checklist** template, the **Knowledge Transfer** workflow, and the **COBRA Administration** template in the 720+ catalog. There are also templates for involuntary separation workflows, severance agreement management, and alumni program setup. Deploy the closest match, then customize your exit task sequences, approval chains, and compliance requirements on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Employee Offboarding** app, the **Exit Checklist** template, the **Knowledge Transfer** workflow, and the **COBRA Administration** template in the 720+ catalog. There are also templates for involuntary separation workflows, severance agreement management, and alumni program setup. Deploy the closest match, then customize your exit task sequences, approval chains, and compliance requirements on top.
 
 ## Build — Setting It Up
 
@@ -211,8 +211,8 @@ Offboarding is a regular operation — you may process dozens of departures per 
 
 Offboarding is a global operation with legal, cultural, and logistical complexity across countries. Works council consultations, statutory severance calculations, government notifications, and multi-system access revocation across dozens of platforms require robust automation. Mass layoff management is a capability you need to have ready. Agents manage cross-country compliance, coordinate across systems, produce executive analytics, and maintain audit readiness for every separation.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Employee Offboarding module provides separation-type workflows, automated access revocation coordination, final pay calculation, COBRA administration, and exit interview management, with built-in compliance tracking for multi-state and multi-country operations.
+**ERP•AI**: The Employee Offboarding module provides separation-type workflows, automated access revocation coordination, final pay calculation, COBRA administration, and exit interview management, with built-in compliance tracking for multi-state and multi-country operations.
 
 **Proto**: Proto agents apply the ORAI cycle to offboarding — they Observe departures for compliance risks and knowledge loss exposure, Reason about the right process steps based on separation type and jurisdiction, Act by orchestrating tasks across HR, IT, finance, and management, and Iterate by analyzing turnover patterns and exit feedback to reduce future attrition and improve the departure experience.

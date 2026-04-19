@@ -16,9 +16,9 @@ metadata:
 
 Recruitment is how your company finds and hires new people. It covers everything from the moment someone says "we need to hire for this role" all the way through the new hire accepting an offer letter. That includes writing job descriptions, posting them where candidates will see them, collecting and sorting applications, screening resumes, scheduling interviews, gathering interviewer feedback, making decisions, and sending offers. A well-run recruitment process means you hire the right people faster, spend less money doing it, and give candidates a good experience even if they don't get the job.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **HR Recruitment** app and the **Applicant Tracking System (ATS)** template in the 720+ catalog. There are also industry-specific hiring templates for healthcare credentialing, retail seasonal hiring, and manufacturing shift-based recruitment. Deploy the closest match, then customize your job requisition workflows, interview stages, and approval chains on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **HR Recruitment** app and the **Applicant Tracking System (ATS)** template in the 720+ catalog. There are also industry-specific hiring templates for healthcare credentialing, retail seasonal hiring, and manufacturing shift-based recruitment. Deploy the closest match, then customize your job requisition workflows, interview stages, and approval chains on top.
 
 ## Build — Setting It Up
 
@@ -202,8 +202,8 @@ You have a recruiting team, probably organized by function or business unit. Emp
 
 You are hiring hundreds or thousands of people per year across multiple countries, business units, and job families. Governance is as important as speed — you need audit trails, compliance documentation, and standardized processes. Requisition approval chains are longer. Vendor management for staffing agencies needs its own workflow. Agents handle compliance monitoring, cross-business-unit candidate sharing, workforce planning integration, and executive reporting.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The HR Recruitment module connects job postings, applicant tracking, interview management, and offer workflows in one system, with built-in templates for common industries and role types.
+**ERP•AI**: The HR Recruitment module connects job postings, applicant tracking, interview management, and offer workflows in one system, with built-in templates for common industries and role types.
 
 **Proto**: Proto agents run the ORAI cycle across your entire recruitment pipeline — they Observe candidate flow and bottlenecks, Reason about which candidates best match your criteria, Act by scheduling interviews and generating offers, and Iterate by learning from hiring outcomes to improve future screening accuracy.

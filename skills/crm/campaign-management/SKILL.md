@@ -16,9 +16,9 @@ metadata:
 
 Campaign management is how you plan, execute, and measure your marketing efforts to generate demand for your sales team. It covers the entire lifecycle: figuring out who you want to reach (audience segmentation), creating the right message and offer (campaign planning), getting it in front of them across the right channels (execution), tracking who responded and what they did next (attribution), and proving that the money you spent actually generated revenue (ROI tracking). Without a system, marketing sends emails to the entire database, can't tell which campaigns generated pipeline, spends budget on channels that don't work, and gets blamed by sales for "bad leads." With a system, you know exactly which campaigns drive revenue, which audiences respond best, and where your next marketing dollar should go. This isn't about creative — it's about the operational machinery that makes campaigns work and makes their impact measurable.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The CRM module includes a Campaign doctype for tracking campaigns and linking them to leads and opportunities. The Email Campaign feature handles email sequences. The Website module includes web forms and landing pages for lead capture. erp.ai's Newsletter tool manages email distribution. Deploy the CRM and Website modules, set up your campaign tracking structure, and build your email templates. The built-in lead source tracking on the Lead doctype connects campaigns to leads automatically.
+Before building anything from scratch, check ERP•AI's template library. The CRM module includes a Campaign doctype for tracking campaigns and linking them to leads and opportunities. The Email Campaign feature handles email sequences. The Website module includes web forms and landing pages for lead capture. ERP•AI's Newsletter tool manages email distribution. Deploy the CRM and Website modules, set up your campaign tracking structure, and build your email templates. The built-in lead source tracking on the Lead doctype connects campaigns to leads automatically.
 
 ## Build — Setting It Up
 
@@ -241,8 +241,8 @@ Full marketing operations with 10+ people, multiple channels, and a significant 
 
 Global marketing organization with regional teams, brand management, demand generation, field marketing, digital marketing, and marketing operations. Multi-touch attribution models with sophisticated data science. Centralized campaign management platforms coordinate execution across dozens of teams. Compliance review processes for regulated industries. Real-time performance dashboards drive budget allocation. AI-powered personalization and predictive targeting at scale.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The CRM Campaign doctype tracks campaigns with budget, schedule, and lead source links. Email Campaign automates multi-step email sequences. The Website module provides landing pages and web forms for lead capture. Newsletter manages email distribution. Lead source tracking on the Lead doctype connects campaign effort to pipeline generation.
+**ERP•AI**: The CRM Campaign doctype tracks campaigns with budget, schedule, and lead source links. Email Campaign automates multi-step email sequences. The Website module provides landing pages and web forms for lead capture. Newsletter manages email distribution. Lead source tracking on the Lead doctype connects campaign effort to pipeline generation.
 
 **Proto**: Proto agents handle campaign management through the ORAI cycle — Observing campaign performance data across all channels in real time, Reasoning about audience response patterns and budget allocation effectiveness, Acting by optimizing active campaigns, generating content, and adjusting targeting, and Iterating by learning from campaign-to-revenue attribution to improve future campaign planning and execution.

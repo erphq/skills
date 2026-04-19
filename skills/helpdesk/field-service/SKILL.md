@@ -18,9 +18,9 @@ Field service management is what happens when a support ticket cannot be resolve
 
 Think of it like running a delivery service, except instead of packages, you are delivering skilled people with specialized tools. The complexity comes from juggling technician skills (not everyone can fix everything), geographic coverage (minimizing drive time), parts availability (the technician needs the right part in their truck), customer schedules (the customer has to be there), and SLA deadlines (the visit must happen within the promised window). Get it right and you build deep customer loyalty. Get it wrong and you have a technician driving 2 hours to a site without the right part, arriving when nobody is home.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module combined with the **Asset Management** module provides a foundation for tracking equipment, linking tickets to assets, and managing maintenance schedules. The **Project Management** module can manage work orders with task dependencies. The **HR Module** tracks technician skills and availability. The **Inventory** module manages spare parts across warehouses and truck stock. Deploy the Helpdesk and Asset Management templates together, then layer in inventory tracking for parts management.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module combined with the **Asset Management** module provides a foundation for tracking equipment, linking tickets to assets, and managing maintenance schedules. The **Project Management** module can manage work orders with task dependencies. The **HR Module** tracks technician skills and availability. The **Inventory** module manages spare parts across warehouses and truck stock. Deploy the Helpdesk and Asset Management templates together, then layer in inventory tracking for parts management.
 
 ## Build — Setting It Up
 
@@ -248,8 +248,8 @@ Dedicated field service management team with 50-200+ technicians across regions.
 
 Global field service operations with thousands of technicians. Multiple dispatch centers with follow-the-sun coverage. AI drives the majority of dispatching decisions. Predictive maintenance from IoT replaces reactive break/fix as the primary work order driver. Augmented reality for remote assistance and training. Complex parts logistics with forward stocking locations, just-in-time delivery, and 3D printing for specialty parts. Workforce management including hiring, training, certification, and career pathing for field technicians. Integration with ERP for billing, contracts, and revenue recognition.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk and Asset Management modules together support work order creation from tickets, equipment tracking with maintenance histories, and parts inventory management across warehouses and technician truck stock. The HR module tracks technician skills and certifications, while the Project module handles complex installation and deployment work orders with task dependencies.
+**ERP•AI**: The Helpdesk and Asset Management modules together support work order creation from tickets, equipment tracking with maintenance histories, and parts inventory management across warehouses and technician truck stock. The HR module tracks technician skills and certifications, while the Project module handles complex installation and deployment work orders with task dependencies.
 
 **Proto**: Proto agents orchestrate field service through the ORAI cycle — Observing equipment sensor data and ticket patterns to predict service needs, Routing work orders to the optimal technician based on skills, location, parts availability, and schedule capacity, Acting by coordinating dispatch, parts logistics, and customer communication for seamless service delivery, and Improving by analyzing first-time fix rates, travel patterns, and parts consumption to continuously optimize dispatch decisions, truck stock, and territory assignments.

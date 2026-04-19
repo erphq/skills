@@ -20,9 +20,9 @@ The fixed assets process covers the full lifecycle: acquire an asset (buy it, bu
 
 Get this wrong and you overstate or understate your net worth, pay the wrong amount in taxes, and cannot answer basic questions like "How old is our equipment?" or "What is our building worth?"
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Fixed Asset Register** template, the **Depreciation Engine**, and the **Lease Accounting (ASC 842 / IFRS 16)** app. If you are in manufacturing or construction, the **Capital Project Tracker** bundles asset creation with project cost accumulation. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Fixed Asset Register** template, the **Depreciation Engine**, and the **Lease Accounting (ASC 842 / IFRS 16)** app. If you are in manufacturing or construction, the **Capital Project Tracker** bundles asset creation with project cost accumulation. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -172,7 +172,7 @@ AI agents streamline fixed asset management significantly:
 
 ### Startup (< 50 people)
 
-Your asset register is short — maybe some computers, furniture, and leasehold improvements. Use erp.ai's basic fixed asset template. Set your capitalization threshold high enough ($2,500 or more) to avoid tracking every desk lamp. Your tax accountant handles depreciation at year-end. The main thing an agent does for you is flag purchases that should be capitalized but were expensed (or vice versa). If you have leases, use the agent to calculate your ASC 842 entries — this is complex enough that even a small company should automate it.
+Your asset register is short — maybe some computers, furniture, and leasehold improvements. Use ERP•AI's basic fixed asset template. Set your capitalization threshold high enough ($2,500 or more) to avoid tracking every desk lamp. Your tax accountant handles depreciation at year-end. The main thing an agent does for you is flag purchases that should be capitalized but were expensed (or vice versa). If you have leases, use the agent to calculate your ASC 842 entries — this is complex enough that even a small company should automate it.
 
 ### SMB (50–500 people)
 
@@ -186,8 +186,8 @@ Thousands of assets across multiple locations, entities, and countries. Capital 
 
 Tens of thousands to millions of assets across global operations. Asset-intensive enterprises (utilities, telecom, manufacturing) have dedicated asset management teams. Integration with engineering asset management (EAM), maintenance management (CMMS), and GIS systems is essential. Agents handle high-volume depreciation, complex tax optimization (cost segregation, bonus depreciation strategies), global lease portfolio management, and regulatory compliance across jurisdictions. Fixed asset data feeds into capital allocation models, replacement planning, and insurance valuations.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Fixed Assets module in erp.ai includes a full asset register with barcode/RFID integration, multi-book depreciation engines (book, tax, IFRS, statutory), lease accounting per ASC 842 and IFRS 16, capital project tracking with CIP-to-asset conversion, physical verification workflows, and disposal processing with gain/loss calculations.
+**ERP•AI**: The Fixed Assets module in ERP•AI includes a full asset register with barcode/RFID integration, multi-book depreciation engines (book, tax, IFRS, statutory), lease accounting per ASC 842 and IFRS 16, capital project tracking with CIP-to-asset conversion, physical verification workflows, and disposal processing with gain/loss calculations.
 
 **Proto**: Proto agents manage fixed assets through the ORAI loop — they observe asset acquisitions and condition changes, reason about capitalization decisions and impairment indicators, act by calculating depreciation and posting entries, and iterate by refining useful life estimates and identifying optimization opportunities like cost segregation or early replacement.

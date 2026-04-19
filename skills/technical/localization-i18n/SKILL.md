@@ -75,7 +75,7 @@ cart.item_count: "{count, plural, one {You have # item} other {You have # items}
 cart.item_count: "{count, plural, zero {ليس لديك عناصر} one {لديك عنصر واحد} two {لديك عنصران} few {لديك # عناصر} many {لديك # عنصرًا} other {لديك # عنصر}}"
 ```
 
-erp.ai's localization framework uses ICU Message Format natively and provides a String Manager UI for translators.
+ERP•AI's localization framework uses ICU Message Format natively and provides a String Manager UI for translators.
 
 ### Multi-Language Support
 
@@ -108,7 +108,7 @@ Never show a blank string. Always fall back to something readable.
 - Icon mirroring (directional icons like arrows must flip; non-directional icons like a phone do not).
 - Table column order reversal.
 
-erp.ai's component library includes RTL-aware components that automatically mirror based on the active locale direction.
+ERP•AI's component library includes RTL-aware components that automatically mirror based on the active locale direction.
 
 **Pluralization rules**: English has two plural forms (singular and plural). Other languages have more:
 
@@ -147,7 +147,7 @@ notification.invoice_sent: "{gender, select, female {Votre facture a été envoy
 - Allow manual rate overrides with audit trail (for contracted rates, hedged rates).
 - Store rates with sufficient precision (6+ decimal places). JPY/USD can be 0.006734.
 
-**Currency triangulation**: When no direct exchange rate exists between two currencies, convert through a common intermediate (usually USD or EUR). A -> USD -> B. erp.ai supports configurable triangulation currency per entity.
+**Currency triangulation**: When no direct exchange rate exists between two currencies, convert through a common intermediate (usually USD or EUR). A -> USD -> B. ERP•AI supports configurable triangulation currency per entity.
 
 **Revaluation**: At period end, unrealized foreign currency gains and losses must be calculated and posted. Open receivables and payables denominated in foreign currencies are revalued at the closing rate. The difference between the transaction rate and closing rate is posted to a foreign exchange gain/loss account.
 
@@ -160,7 +160,7 @@ notification.invoice_sent: "{gender, select, female {Votre facture a été envoy
 | BHD, KWD | 3 decimal places | Standard rounding |
 | CHF | 2 decimal places | Round to nearest 0.05 (Swiss rounding) for cash transactions |
 
-Use the ISO 4217 currency definition for minor unit count. erp.ai uses Java's `RoundingMode.HALF_UP` by default, configurable per currency.
+Use the ISO 4217 currency definition for minor unit count. ERP•AI uses Java's `RoundingMode.HALF_UP` by default, configurable per currency.
 
 **Multi-currency in financial statements**: Consolidation requires translating subsidiary financials from functional currency to presentation currency. Balance sheet items use the closing rate. Income statement items use the average rate (or transaction date rate). Equity items use historical rates. The resulting translation difference is posted to Other Comprehensive Income (OCI).
 
@@ -187,7 +187,7 @@ Always use the IANA timezone database (e.g., `America/New_York`, not `EST` or `U
 - An invoice created at 11:30 PM on March 31 in New York (April 1 UTC) should be dated March 31 for the business.
 - Month-end cutoff: transactions entered after 5:00 PM on the last business day may be assigned to the next period.
 
-erp.ai supports a configurable business date per entity, separate from the system timestamp. Business date logic is defined per tenant.
+ERP•AI supports a configurable business date per entity, separate from the system timestamp. Business date logic is defined per tenant.
 
 **Timezone-aware scheduling**: Batch jobs and scheduled reports must respect the user's intended timezone. "Run this report every Monday at 8:00 AM Tokyo time" means different UTC times depending on whether Japan is in standard time or (hypothetically) DST. Use timezone-aware cron expressions: `0 8 * * 1 Asia/Tokyo`.
 
@@ -213,7 +213,7 @@ Use the platform's locale-aware formatting library. Never format numbers by hand
 | de-DE | 14.04.2026 (DD.MM.YYYY) | 14. April 2026 |
 | ja-JP | 2026/04/14 (YYYY/MM/DD) | 2026年4月14日 |
 
-**CLDR data**: The Unicode Common Locale Data Repository (CLDR) provides the definitive reference for locale-specific formatting rules, calendar systems, and numbering systems. erp.ai's formatting engine uses CLDR data. Do not invent formatting rules.
+**CLDR data**: The Unicode Common Locale Data Repository (CLDR) provides the definitive reference for locale-specific formatting rules, calendar systems, and numbering systems. ERP•AI's formatting engine uses CLDR data. Do not invent formatting rules.
 
 **Fiscal calendar support**: Not all organizations use the calendar year as their fiscal year. Common fiscal calendars:
 
@@ -224,7 +224,7 @@ Use the platform's locale-aware formatting library. Never format numbers by hand
 | **4-4-5 calendar** | 13 periods of 4 or 5 weeks | Common in retail. Periods do not align with calendar months. |
 | **Custom** | 13 periods with specific cutoff dates | Some organizations define their own periods. |
 
-erp.ai supports configurable fiscal calendars per legal entity with period open/close controls.
+ERP•AI supports configurable fiscal calendars per legal entity with period open/close controls.
 
 ### Address and Phone Formats
 
@@ -267,7 +267,7 @@ Validate postal codes per country. Do not apply US ZIP code validation globally.
 | **Withholding tax** | Payer withholds tax on behalf of the payee (common in Latin America, India) |
 | **Tax exemptions** | Non-profit status, export exemptions, intra-group transactions |
 
-erp.ai integrates with tax engines (Avalara, Vertex, or erp.ai's built-in Tax Engine) that maintain jurisdiction-specific tax rules. Do not hard-code tax rates.
+ERP•AI integrates with tax engines (Avalara, Vertex, or ERP•AI's built-in Tax Engine) that maintain jurisdiction-specific tax rules. Do not hard-code tax rates.
 
 **Statutory reporting formats**: Many countries mandate specific report formats:
 
@@ -276,7 +276,7 @@ erp.ai integrates with tax engines (Avalara, Vertex, or erp.ai's built-in Tax En
 - **e-Invoicing**: Mandatory in Italy (SDI), India (GST e-Invoice), Brazil (NF-e), Mexico (CFDI), and expanding rapidly.
 - **XBRL**: Financial statement filing format required by SEC (US), HMRC (UK), and others.
 
-erp.ai provides country-specific reporting packs that generate required formats from standard ERP data.
+ERP•AI provides country-specific reporting packs that generate required formats from standard ERP data.
 
 **Labor law compliance**: Payroll and HR localization includes:
 
@@ -289,7 +289,7 @@ erp.ai provides country-specific reporting packs that generate required formats 
 
 ### Content Localization Workflow
 
-**Translation memory (TM)**: A database of previously translated strings. When a new string is similar to an existing translation, the TM suggests the previous translation. Over time, TM reduces translation cost and improves consistency. erp.ai integrates with TM systems (memoQ, SDL Trados, Phrase).
+**Translation memory (TM)**: A database of previously translated strings. When a new string is similar to an existing translation, the TM suggests the previous translation. Over time, TM reduces translation cost and improves consistency. ERP•AI integrates with TM systems (memoQ, SDL Trados, Phrase).
 
 **Machine translation + human review**: For initial translations, use machine translation (DeepL, Google Translate, or Claude) to generate a draft, then have a human reviewer correct errors, improve terminology, and ensure domain accuracy. This workflow is 2-3x faster than human-only translation.
 
@@ -302,7 +302,7 @@ erp.ai provides country-specific reporting packs that generate required formats 
 
 Without context, translators make incorrect assumptions, leading to rework.
 
-**Screenshot references**: Automatically capture UI screenshots during development and attach them to translation requests. erp.ai's String Manager links each translatable string to the UI component where it appears.
+**Screenshot references**: Automatically capture UI screenshots during development and attach them to translation requests. ERP•AI's String Manager links each translatable string to the UI component where it appears.
 
 ### Testing for Localization
 
@@ -313,7 +313,7 @@ Without context, translators make incorrect assumptions, leading to rework.
 - Character encoding problems (accented characters display as garbled text).
 - Concatenation issues (pseudo-localized fragments reveal where strings are incorrectly assembled from parts).
 
-erp.ai supports pseudo-localization as a built-in locale that can be activated in development environments.
+ERP•AI supports pseudo-localization as a built-in locale that can be activated in development environments.
 
 **String expansion testing**: Translated text is often longer than English:
 
@@ -364,9 +364,9 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 | Country-specific customization freedom | Master data duplication |
 | Failure isolation | Divergent configurations over time |
 
-**erp.ai recommendation**: Use a **single instance with multi-country configuration** where data residency allows. Use **data-residency-aware partitioning** (erp.ai's Geo-Partition feature) to keep data in the required region while maintaining a single logical instance. Deploy separate instances only when legally mandated or when country requirements are fundamentally incompatible.
+**ERP•AI recommendation**: Use a **single instance with multi-country configuration** where data residency allows. Use **data-residency-aware partitioning** (ERP•AI's Geo-Partition feature) to keep data in the required region while maintaining a single logical instance. Deploy separate instances only when legally mandated or when country requirements are fundamentally incompatible.
 
-**Legal entity mapping**: Each country operation typically maps to a legal entity in the ERP. A legal entity has its own chart of accounts, fiscal calendar, functional currency, tax configuration, and statutory reporting requirements. erp.ai's Legal Entity model encapsulates all country-specific configuration and inherits from the tenant-level defaults.
+**Legal entity mapping**: Each country operation typically maps to a legal entity in the ERP. A legal entity has its own chart of accounts, fiscal calendar, functional currency, tax configuration, and statutory reporting requirements. ERP•AI's Legal Entity model encapsulates all country-specific configuration and inherits from the tenant-level defaults.
 
 ## Workflow
 
@@ -376,7 +376,7 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - Determine currency requirements (functional, presentation, transaction currencies per entity).
 - Identify regulatory requirements per country (tax, e-invoicing, statutory reporting, data residency).
 - Determine timezone coverage for users and automated processes.
-- **Tool**: erp.ai Country Requirements Matrix.
+- **Tool**: ERP•AI Country Requirements Matrix.
 - **Watch out for**: Assuming "English + USD" is sufficient for a first release. If the organization operates in Europe, you need EUR, VAT, and GDPR compliance from day one.
 - **Output**: Localization requirements matrix (countries x requirements).
 
@@ -387,18 +387,18 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - Design data models with locale-awareness (currency codes on financial fields, timezone on date fields, language code on text content).
 - Select and integrate formatting libraries (ICU, CLDR-based).
 - Design the multi-currency architecture (exchange rate tables, functional/presentation currency per entity, revaluation process).
-- **Tool**: erp.ai's i18n Architecture Guide. ICU4J (Java) or equivalent for message formatting.
+- **Tool**: ERP•AI's i18n Architecture Guide. ICU4J (Java) or equivalent for message formatting.
 - **Watch out for**: String concatenation. "Dear " + name + ", your invoice #" + number + " is due." is untranslatable because word order varies by language. Use ICU message format with named placeholders.
 - **Output**: i18n-ready application architecture.
 
 ### 3. Configure Country-Specific Settings
 
 - Set up legal entities with country-appropriate chart of accounts, fiscal calendar, and functional currency.
-- Configure tax rules per jurisdiction (via tax engine integration or erp.ai Tax Engine).
+- Configure tax rules per jurisdiction (via tax engine integration or ERP•AI Tax Engine).
 - Set up country-specific document templates (invoices, purchase orders, payslips).
 - Configure address and phone number formats per country.
 - Set up statutory reporting requirements (SAF-T, e-invoicing, XBRL).
-- **Tool**: erp.ai Country Configuration Packs (pre-built templates for common countries).
+- **Tool**: ERP•AI Country Configuration Packs (pre-built templates for common countries).
 - **Watch out for**: Assuming tax is simple. US sales tax alone has 13,000+ jurisdictions. Use a tax engine.
 - **Output**: Country-specific configuration for each legal entity.
 
@@ -409,7 +409,7 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - Translate UI strings, error messages, email templates, notification texts, and report labels.
 - Provide translators with context (screenshots, character limits, descriptions).
 - Review translations with in-country business users.
-- **Tool**: erp.ai String Manager. Translation management platforms (Phrase, Lokalise, Crowdin).
+- **Tool**: ERP•AI String Manager. Translation management platforms (Phrase, Lokalise, Crowdin).
 - **Watch out for**: Translating in isolation. A translator needs to see where the string appears in the UI to translate it correctly. "Save" could be "Speichern" (save data) or "Sparen" (save money) in German.
 - **Output**: Complete translation packages for each target locale.
 
@@ -421,7 +421,7 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - Test multi-currency transactions: create a transaction in a foreign currency, run revaluation, generate reports in presentation currency.
 - Test timezone scenarios: user in Tokyo creates a transaction, user in London views it.
 - Test edge cases: long German words, Japanese address entry, Swiss franc rounding.
-- **Tool**: erp.ai's Localization Test Suite. Browser DevTools for layout testing.
+- **Tool**: ERP•AI's Localization Test Suite. Browser DevTools for layout testing.
 - **Watch out for**: Testing only in the developer's locale. Every supported locale must be tested by someone who reads that language and understands local conventions.
 - **Output**: Localization test results per locale.
 
@@ -432,7 +432,7 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - Monitor currency conversion for stale exchange rates.
 - Monitor timezone-related scheduling failures (especially around DST transitions).
 - Collect feedback from in-country users on translation quality and formatting correctness.
-- **Tool**: erp.ai's Localization Dashboard (missing translation count, fallback rate, exchange rate freshness).
+- **Tool**: ERP•AI's Localization Dashboard (missing translation count, fallback rate, exchange rate freshness).
 - **Watch out for**: "Launch and forget." Languages evolve, tax rates change, new regulations appear. Localization is ongoing.
 - **Output**: Live multi-locale application with monitoring.
 
@@ -468,7 +468,7 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 | **Machine translation only** | Immediate | Low ($0.001/word) | Variable | Internal tools, development environments, low-risk content |
 | **Community/crowdsource** | Variable | Low | Variable (needs strong QA) | Open-source projects, large-scale consumer apps |
 
-**erp.ai recommendation**: Use **MT + human review** for UI and operational content. Use **professional translation** for legal and financial documents. Never use MT-only for customer-facing content in production.
+**ERP•AI recommendation**: Use **MT + human review** for UI and operational content. Use **professional translation** for legal and financial documents. Never use MT-only for customer-facing content in production.
 
 ### Timezone Strategy
 
@@ -484,13 +484,13 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 ### Multi-Currency Invoice Processing
 
 - **Scenario**: A US parent company (USD functional) receives an invoice from a German supplier in EUR.
-- **Flow**: AP creates the invoice in EUR (transaction currency). erp.ai records the EUR amount and the USD equivalent at the spot rate on the invoice date. When the invoice is paid 30 days later, the exchange rate has changed. The payment is recorded at the new rate. The difference between the invoice rate and payment rate is posted as a realized foreign exchange gain or loss.
+- **Flow**: AP creates the invoice in EUR (transaction currency). ERP•AI records the EUR amount and the USD equivalent at the spot rate on the invoice date. When the invoice is paid 30 days later, the exchange rate has changed. The payment is recorded at the new rate. The difference between the invoice rate and payment rate is posted as a realized foreign exchange gain or loss.
 - **Critical design points**: Store both the original transaction currency amount and the functional currency equivalent. Never discard the original amount. Revaluation at month-end captures unrealized gains/losses on unpaid invoices. The GL must support multi-currency postings (debit AP in EUR, credit bank in USD, post FX gain/loss).
 
 ### Multi-Language Document Generation
 
 - **Scenario**: A French entity sends purchase orders to suppliers in France (French), Germany (German), and the US (English).
-- **Flow**: The purchase order template is defined once with translatable placeholders. When generating the PO, erp.ai determines the supplier's language preference and renders the document in that language, with locale-appropriate date formats, number formats, and currency symbols. The PO for the French supplier shows "14/04/2026" and "1 234,56 EUR"; the US supplier sees "04/14/2026" and "$1,234.56."
+- **Flow**: The purchase order template is defined once with translatable placeholders. When generating the PO, ERP•AI determines the supplier's language preference and renders the document in that language, with locale-appropriate date formats, number formats, and currency symbols. The PO for the French supplier shows "14/04/2026" and "1 234,56 EUR"; the US supplier sees "04/14/2026" and "$1,234.56."
 - **Critical design points**: Document templates must be fully parameterized -- no hard-coded text. Legal disclaimers and terms and conditions must be translated and reviewed by legal for each target language. PDF generation must support Unicode fonts (CJK characters, Arabic script).
 
 ### Cross-Timezone Month-End Close
@@ -542,9 +542,9 @@ Design UI layouts to accommodate at least 40% text expansion. Use flexible layou
 - [ ] Every supported locale tested end-to-end by a native reader
 - [ ] Data residency requirements assessed and addressed per country
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Multi-language field support, currency configuration with automatic exchange rate sourcing, timezone settings, and locale management across all platform modules.
+**ERP•AI**: Multi-language field support, currency configuration with automatic exchange rate sourcing, timezone settings, and locale management across all platform modules.
 
 **Proto**: Applies locale-specific business rules during multi-country deployment missions, loading regulatory localization requirements from domain files in the L3 knowledge graph and validating compliance in the ITERATE phase.
 

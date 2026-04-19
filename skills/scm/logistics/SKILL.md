@@ -20,9 +20,9 @@ The core activities are: choosing how to ship (truck, rail, ocean, air), selecti
 
 Good logistics gets the right product to the right place at the right time at the lowest cost. Bad logistics means late deliveries, damaged goods, excessive shipping costs, and unhappy customers. In many businesses, logistics costs are 5-10% of revenue, so even small improvements add up fast.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Shipment Tracker**, **Freight Rate Manager**, **Carrier Scorecard**, and **Delivery Route Planner** templates. erp.ai's catalog of 720+ apps includes logistics management configurations ranging from basic shipment tracking to multi-modal freight management. Deploy the template that matches your shipping complexity and customize carrier integrations, tracking workflows, and cost allocation rules.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Shipment Tracker**, **Freight Rate Manager**, **Carrier Scorecard**, and **Delivery Route Planner** templates. ERP•AI's catalog of 720+ apps includes logistics management configurations ranging from basic shipment tracking to multi-modal freight management. Deploy the template that matches your shipping complexity and customize carrier integrations, tracking workflows, and cost allocation rules.
 
 ## Build — Setting It Up
 
@@ -216,8 +216,8 @@ Full TMS implementation with multi-carrier rate shopping, automated routing, and
 
 Logistics is a strategic function. Multi-modal, global transportation network with dedicated carrier contracts, freight brokerage relationships, and possibly owned fleet. Control tower approach with real-time visibility across the entire network. Agents serve as the intelligence layer — optimizing carrier selection across thousands of daily shipments, predicting delays before they happen, managing exceptions across the network, and continuously analyzing for cost and service improvement opportunities. Network modeling drives strategic decisions about distribution center locations and modal strategy.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides logistics templates covering shipment management, carrier rate comparison, route planning, tracking integration, and freight cost analysis, configurable for domestic and international shipping requirements.
+**ERP•AI**: ERP•AI provides logistics templates covering shipment management, carrier rate comparison, route planning, tracking integration, and freight cost analysis, configurable for domestic and international shipping requirements.
 
 **Proto**: Proto agents apply the ORAI cycle to logistics — Observing shipment status, carrier performance, and transit conditions in real time, Reasoning about optimal routing and carrier selection, Acting on shipping decisions and exception resolution, and Iterating on carrier strategies and routing rules as performance data reveals improvement opportunities.

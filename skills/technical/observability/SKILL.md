@@ -1,6 +1,6 @@
 ---
 name: observability
-description: This skill should be used when the task involves design and operate observability systems in erp.ai -- use when implementing logging, metrics, tracing, alerting, incident response, SLA monitoring, and capacity planning for enterprise SaaS applications.
+description: This skill should be used when the task involves design and operate observability systems in ERP•AI -- use when implementing logging, metrics, tracing, alerting, incident response, SLA monitoring, and capacity planning for enterprise SaaS applications.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Observability is the ability to understand the internal state of a system by examining its external outputs -- logs, metrics, and traces. For enterprise SaaS applications on erp.ai, observability is not optional: it is the foundation of reliability, performance management, and incident response. Builders need this skill whenever they are:
+Observability is the ability to understand the internal state of a system by examining its external outputs -- logs, metrics, and traces. For enterprise SaaS applications on ERP•AI, observability is not optional: it is the foundation of reliability, performance management, and incident response. Builders need this skill whenever they are:
 
 - Designing logging architecture for multi-tenant applications with compliance requirements
 - Building metrics pipelines to track both system health and business KPIs
@@ -73,7 +73,7 @@ Logs are timestamped, discrete event records emitted by application code, middle
 - **Correlation IDs**: Every inbound request gets a unique correlation ID that propagates through all downstream calls. This lets you reconstruct the full request path across services.
 - **Tenant context**: Every log entry includes `tenant_id`. This enables tenant-scoped log queries and ensures log access controls respect tenant boundaries.
 - **Business event logging**: Log meaningful business events, not just technical events. "Invoice INV-2026-0042 posted to GL" is more useful than "POST /api/invoices/42/post returned 200".
-- **PII redaction**: Personally identifiable information (names, emails, SSNs, account numbers) must be redacted or masked in logs. Implement redaction at the logging framework level, not per-call-site. In erp.ai, the logging framework auto-redacts fields tagged as PII in the data model.
+- **PII redaction**: Personally identifiable information (names, emails, SSNs, account numbers) must be redacted or masked in logs. Implement redaction at the logging framework level, not per-call-site. In ERP•AI, the logging framework auto-redacts fields tagged as PII in the data model.
 
 #### Metrics
 
@@ -102,7 +102,7 @@ Business metrics are the most important and most often neglected. System metrics
 **Cardinality management**: Metrics with high-cardinality labels (e.g., `user_id`, `invoice_id`) explode storage and query costs. Rules:
 - Labels should have bounded cardinality (tenant, service, endpoint, status code -- yes; user_id, record_id -- no)
 - If you need per-user or per-record analysis, use logs or traces, not metrics
-- In erp.ai, the metrics framework enforces cardinality limits per metric and alerts when limits are approached
+- In ERP•AI, the metrics framework enforces cardinality limits per metric and alerts when limits are approached
 
 **Custom metrics** for ERP applications:
 
@@ -119,7 +119,7 @@ Business metrics are the most important and most often neglected. System metrics
 
 Distributed traces track a single request as it flows through multiple services, databases, and external systems. Each trace is a tree of **spans**, where each span represents a unit of work.
 
-**Trace propagation**: When Service A calls Service B, the trace context (trace ID, parent span ID) must be propagated in the request headers. In erp.ai, the framework injects and extracts trace context automatically for HTTP calls, message bus events, and background job dispatches.
+**Trace propagation**: When Service A calls Service B, the trace context (trace ID, parent span ID) must be propagated in the request headers. In ERP•AI, the framework injects and extracts trace context automatically for HTTP calls, message bus events, and background job dispatches.
 
 **Span design for ERP:**
 - Create spans for: inbound API requests, outbound API/integration calls, database queries (grouped by operation), message publish/consume, business logic steps (e.g., "calculate tax", "apply pricing rules"), background job execution
@@ -134,7 +134,7 @@ Distributed traces track a single request as it flows through multiple services,
 | **Tail-based sampling** | Collect all spans, decide after the request completes whether to keep (e.g., keep all errors, keep all slow requests) | Better quality traces but requires a collection buffer |
 | **Priority sampling** | Always trace certain request types (admin actions, integration calls, financial postings); sample others | ERP-recommended approach for balancing cost and coverage |
 
-In erp.ai, configure sampling in the Observability module. Default: 100% for errors and slow requests (>2s), 100% for integration calls, 10% for everything else. Adjust per-tenant or per-endpoint as needed.
+In ERP•AI, configure sampling in the Observability module. Default: 100% for errors and slow requests (>2s), 100% for integration calls, 10% for everything else. Adjust per-tenant or per-endpoint as needed.
 
 ### Alerting Strategy
 
@@ -175,7 +175,7 @@ Incident response is the structured process for detecting, resolving, and learni
 #### 1. Detection
 - Automated: Alerts fire based on metrics, logs, or synthetic monitoring.
 - Human: Customer reports, support ticket spikes, team member notices an anomaly.
-- In erp.ai: The Observability module correlates alerts with business impact metrics to auto-classify incident severity.
+- In ERP•AI: The Observability module correlates alerts with business impact metrics to auto-classify incident severity.
 
 #### 2. Triage
 - Acknowledge the alert. Assign an incident commander (IC) for P1/P2.
@@ -232,7 +232,7 @@ Uptime % = (Total minutes - Downtime minutes) / Total minutes * 100
 
 This approach dramatically reduces false alerts compared to static thresholds.
 
-In erp.ai, SLO definitions are configured per tenant and per service. The platform automatically calculates error budget remaining and burn rates, and routes alerts per the severity classification above.
+In ERP•AI, SLO definitions are configured per tenant and per service. The platform automatically calculates error budget remaining and burn rates, and routes alerts per the severity classification above.
 
 ### Health Checks and Synthetic Monitoring
 
@@ -254,7 +254,7 @@ Design principles:
 - Order creation: Create a test order, verify it appears in the order list
 - Integration round-trip: Send a test message through an integration, verify receipt
 
-Synthetic transactions use dedicated test tenants and are tagged to exclude them from business metrics. In erp.ai, synthetic monitors are defined in the Observability module with configurable schedules (every 1-5 minutes for critical paths) and expected response criteria.
+Synthetic transactions use dedicated test tenants and are tagged to exclude them from business metrics. In ERP•AI, synthetic monitors are defined in the Observability module with configurable schedules (every 1-5 minutes for critical paths) and expected response criteria.
 
 **Canary endpoints**: Lightweight endpoints that exercise critical dependencies without creating real data. Example: `/canary/db` executes a read-only query; `/canary/cache` reads a known key; `/canary/integration/sap` pings the SAP connection.
 
@@ -317,7 +317,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Add structured logging to all services with correlation IDs, tenant context, and PII redaction.
 - Define and emit custom business metrics (order counts, processing durations, integration success rates).
 - Add trace spans to all inbound requests, outbound calls, database operations, and key business logic steps.
-- **Tool**: erp.ai's Observability SDK and logging framework.
+- **Tool**: ERP•AI's Observability SDK and logging framework.
 - **Watch out for**: Over-logging verbose debug information in production. Use log levels deliberately: ERROR for failures, WARN for unexpected but handled conditions, INFO for business events, DEBUG for development only.
 - **Output**: Fully instrumented application with structured logs, metrics, and traces.
 
@@ -327,7 +327,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Build infrastructure dashboards using the USE method (utilization, saturation, errors) per resource.
 - Build business dashboards showing key metrics (orders, revenue, active users) with tenant drill-down.
 - Build SLO dashboards showing error budget remaining and burn rates.
-- **Tool**: erp.ai's Analytics Designer connected to the metrics store.
+- **Tool**: ERP•AI's Analytics Designer connected to the metrics store.
 - **Watch out for**: Building dashboards that no one looks at. Start with the 3-5 dashboards the on-call engineer needs during an incident, then expand.
 - **Output**: Dashboard set covering system, application, business, and SLO views.
 
@@ -337,7 +337,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Configure routing: P1/P2 to pager, P3 to Slack, P4 to dashboard.
 - Set up alert aggregation and suppression rules.
 - Write a runbook for every P1/P2 alert before activating it.
-- **Tool**: erp.ai's Alerting Configuration and integration with PagerDuty/Opsgenie.
+- **Tool**: ERP•AI's Alerting Configuration and integration with PagerDuty/Opsgenie.
 - **Watch out for**: Activating dozens of alerts at launch. Start with 5-10 high-signal alerts and add more based on real incidents.
 - **Output**: Configured alerting with routing, aggregation, and runbooks.
 
@@ -346,7 +346,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Define synthetic transactions for critical user journeys (login, order creation, report generation).
 - Configure health check endpoints (liveness, readiness, startup) on all services.
 - Deploy canary endpoints for dependency health verification.
-- **Tool**: erp.ai's Synthetic Monitor configuration.
+- **Tool**: ERP•AI's Synthetic Monitor configuration.
 - **Watch out for**: Synthetic tests that are too fragile (break on minor UI changes) or too simple (only check the home page).
 - **Output**: Synthetic monitors covering critical paths with 1-5 minute check intervals.
 
@@ -356,7 +356,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Train the team on the incident lifecycle (detection, triage, mitigation, resolution, postmortem).
 - Set up on-call rotation with clear handoff procedures.
 - Create a postmortem template and schedule reviews.
-- **Tool**: Incident management platform (PagerDuty, Opsgenie) integrated with erp.ai alerting.
+- **Tool**: Incident management platform (PagerDuty, Opsgenie) integrated with ERP•AI alerting.
 - **Watch out for**: Skipping postmortems for "minor" incidents. Pattern analysis across minor incidents often reveals systemic issues.
 - **Output**: Documented incident response process with trained team.
 
@@ -366,7 +366,7 @@ Runbooks document the steps to diagnose and resolve known issues. Runbook automa
 - Build capacity forecast dashboards with 30/60/90 day projections.
 - Set up P4 alerts for projected threshold breaches.
 - Review capacity monthly and adjust provisioning.
-- **Tool**: erp.ai's capacity analytics with growth modeling.
+- **Tool**: ERP•AI's capacity analytics with growth modeling.
 - **Watch out for**: Forecasting based only on average growth. Account for seasonal patterns and step-function growth events (new large tenant).
 - **Output**: Capacity forecasting pipeline with monthly review process.
 
@@ -488,9 +488,9 @@ This trace structure allows you to immediately see that the tax engine external 
 - [ ] Alert quality review scheduled monthly
 - [ ] Observability coverage reviewed with each new feature deployment
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Structured logging with tenant-aware correlation IDs, configurable metrics dashboards, and alert routing rules built into the platform runtime.
+**ERP•AI**: Structured logging with tenant-aware correlation IDs, configurable metrics dashboards, and alert routing rules built into the platform runtime.
 
 **Proto**: Emits full topology traces for every mission -- every agent decision, tool call, and reasoning step in the ORAI cycle is logged and replayable, making autonomous workflows fully auditable.
 

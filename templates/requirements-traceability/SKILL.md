@@ -54,7 +54,7 @@ Requirement (Fit-Gap Matrix)
     ↓
 Solution Design (Blueprint)
     ↓
-Configuration / Build (erp.ai setup)
+Configuration / Build (ERP•AI setup)
     ↓
 Test Case (UAT script)
     ↓
@@ -75,7 +75,7 @@ Every row in the RTM must complete this chain. A requirement without a test case
 
 2. **Link to design** — As the Solution Architect produces blueprints, link each requirement to its design section. A requirement without a design reference is a red flag — it means nobody has figured out how to build it yet.
 
-3. **Link to configuration** — As the Implementation Lead configures erp.ai, link each requirement to the specific configuration item, workflow, rule, or custom component that implements it. Be specific: "AP module" is not enough. "AP Matching Rule #3 with tolerance of $0.50" is.
+3. **Link to configuration** — As the Implementation Lead configures ERP•AI, link each requirement to the specific configuration item, workflow, rule, or custom component that implements it. Be specific: "AP module" is not enough. "AP Matching Rule #3 with tolerance of $0.50" is.
 
 4. **Create test cases** — The QA Lead creates at least one test case per requirement. Must Have requirements should have multiple test cases covering happy path, edge cases, and negative scenarios.
 

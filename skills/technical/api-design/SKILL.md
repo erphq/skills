@@ -56,11 +56,11 @@ ERP APIs have unique constraints compared to consumer APIs: they deal with compl
 
 **REST maturity levels** (Richardson Maturity Model):
 
-| Level | Description | erp.ai Target |
+| Level | Description | ERP•AI Target |
 |---|---|---|
 | **Level 0** | Single endpoint, single HTTP method (SOAP-style). | Do not build this. |
 | **Level 1** | Multiple resources, but not using HTTP methods properly. | Do not build this. |
-| **Level 2** | Multiple resources + correct HTTP methods (GET, POST, PUT, PATCH, DELETE) + correct status codes. | Minimum standard for all erp.ai APIs. |
+| **Level 2** | Multiple resources + correct HTTP methods (GET, POST, PUT, PATCH, DELETE) + correct status codes. | Minimum standard for all ERP•AI APIs. |
 | **Level 3** | Level 2 + HATEOAS (Hypermedia as the Engine of Application State). Responses include links to related resources and available actions. | Recommended for public APIs. |
 
 **HATEOAS for discoverability**: Include `_links` in responses to guide API consumers to related resources and available actions:
@@ -92,7 +92,7 @@ HATEOAS makes the API self-documenting and reduces the need for API consumers to
 | **Custom Header** | `X-API-Version: 2` | URL stays clean. | Invisible in browser. Easy to forget. Hard to share URLs. |
 | **Content Negotiation** | `Accept: application/vnd.erp.v2+json` | Most RESTful. Supports format negotiation. | Complex. Poor tooling support. Confusing for beginners. |
 
-**erp.ai decision matrix**:
+**ERP•AI decision matrix**:
 
 | Factor | Recommendation |
 |---|---|
@@ -101,7 +101,7 @@ HATEOAS makes the API self-documenting and reduces the need for API consumers to
 | Need to support multiple versions simultaneously | URL Path. Each version is a distinct endpoint. |
 | Gradual migration (consumers upgrade at their own pace) | URL Path with deprecation policy and sunset headers. |
 
-**erp.ai uses URL path versioning** (`/api/v1/`, `/api/v2/`) for all APIs. The version number increments only for breaking changes. Non-breaking additions (new optional fields, new endpoints) are added to the current version.
+**ERP•AI uses URL path versioning** (`/api/v1/`, `/api/v2/`) for all APIs. The version number increments only for breaking changes. Non-breaking additions (new optional fields, new endpoints) are added to the current version.
 
 ### Request/Response Design
 
@@ -113,7 +113,7 @@ HATEOAS makes the API self-documenting and reduces the need for API consumers to
 | **Cursor-based** | `?cursor=eyJpZCI6MTAwfQ&limit=25` | Large datasets, real-time data (inserts/deletes between pages). Stable pagination. |
 | **Keyset** | `?after_id=cust-100&limit=25` | High-performance pagiation on indexed columns. |
 
-erp.ai uses **cursor-based pagination** as the default for all list endpoints. Response includes pagination metadata:
+ERP•AI uses **cursor-based pagination** as the default for all list endpoints. Response includes pagination metadata:
 
 ```json
 {
@@ -228,7 +228,7 @@ Content-Type: application/merge-patch+json
 Authorization: Bearer erp_live_sk_abc123...
 ```
 
-**OAuth 2.0 scopes mapped to RBAC**: For delegated access, use OAuth 2.0 with scopes that map to erp.ai's role-based access control:
+**OAuth 2.0 scopes mapped to RBAC**: For delegated access, use OAuth 2.0 with scopes that map to ERP•AI's role-based access control:
 
 | OAuth Scope | RBAC Permission | Access Level |
 |---|---|---|
@@ -279,7 +279,7 @@ X-RateLimit-Reset: 1681500060
 }
 ```
 
-**Quota dashboards**: Provide tenants with a dashboard showing their API usage against their quotas. Include historical trends, top endpoints by volume, and alerts when approaching limits. erp.ai's API Dashboard provides this out of the box.
+**Quota dashboards**: Provide tenants with a dashboard showing their API usage against their quotas. Include historical trends, top endpoints by volume, and alerts when approaching limits. ERP•AI's API Dashboard provides this out of the box.
 
 ### API Documentation
 
@@ -296,7 +296,7 @@ X-RateLimit-Reset: 1681500060
 
 **Migration guides**: When releasing a new API version, provide a detailed migration guide: "In v2, the `customer.address` field changed from a string to a structured object. Here is how to update your integration..."
 
-**SDK generation**: Generate client SDKs from the OpenAPI specification for popular languages (Python, JavaScript/TypeScript, Java, C#, Go). erp.ai provides official SDKs generated from the OpenAPI spec with additional convenience methods and error handling.
+**SDK generation**: Generate client SDKs from the OpenAPI specification for popular languages (Python, JavaScript/TypeScript, Java, C#, Go). ERP•AI provides official SDKs generated from the OpenAPI spec with additional convenience methods and error handling.
 
 **Interactive documentation**: Host interactive API documentation (Swagger UI, Redocly) where developers can make API calls directly from the browser with their test credentials. This dramatically reduces time-to-first-call for new developers.
 
@@ -388,7 +388,7 @@ The consumer computes the HMAC of the raw request body using their shared secret
 - **DataLoader pattern**: Batch database queries per type per request. Instead of N individual customer lookups, make one `WHERE id IN (...)` query.
 - **Query planning**: Analyze the incoming query before execution and build an optimized database query plan.
 
-erp.ai's GraphQL layer uses DataLoader by default and enforces a query cost limit of 1000 units per request.
+ERP•AI's GraphQL layer uses DataLoader by default and enforces a query cost limit of 1000 units per request.
 
 **Schema stitching / federation**: For large ERP platforms with multiple services, each service owns its portion of the GraphQL schema. Apollo Federation or similar merges them into a single consumer-facing schema. The consumer does not need to know which service owns which entity.
 
@@ -403,7 +403,7 @@ erp.ai's GraphQL layer uses DataLoader by default and enforces a query cost limi
 
 **Sunset timeline**: Minimum 12 months between deprecation announcement and removal for public APIs. Minimum 6 months for partner APIs. Internal APIs may have shorter timelines with direct notification.
 
-**Usage analytics**: Track per-consumer, per-endpoint API usage. Know which consumers use deprecated endpoints so you can proactively notify and support their migration. erp.ai's API Gateway logs every request with consumer identity, endpoint, method, status code, and latency.
+**Usage analytics**: Track per-consumer, per-endpoint API usage. Know which consumers use deprecated endpoints so you can proactively notify and support their migration. ERP•AI's API Gateway logs every request with consumer identity, endpoint, method, status code, and latency.
 
 **Consumer registry**: Maintain a registry of API consumers (integration name, team owner, contact, which endpoints they use, which version). When planning breaking changes, consult the registry to assess impact and notify affected consumers.
 
@@ -443,7 +443,7 @@ The server stores the idempotency key and the response. If the same key is recei
 | 2b. Key found, original request still processing | Return `409 Conflict` with message "Request is still being processed" |
 | 2c. Key found, original request completed | Return stored response (same status code, same body) |
 
-erp.ai's API Gateway handles idempotency key storage and deduplication transparently. API developers annotate endpoints that require idempotency keys.
+ERP•AI's API Gateway handles idempotency key storage and deduplication transparently. API developers annotate endpoints that require idempotency keys.
 
 ## Workflow
 
@@ -453,7 +453,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - Define the resources: which ERP entities need to be exposed?
 - Define the operations: CRUD, bulk, workflow actions (submit, approve, cancel)?
 - Establish non-functional requirements: expected volume, latency targets, availability SLA.
-- **Tool**: erp.ai API Requirements template. User story mapping for API use cases.
+- **Tool**: ERP•AI API Requirements template. User story mapping for API use cases.
 - **Watch out for**: Designing APIs based on the database schema instead of consumer needs. The API resource model should reflect business concepts, not implementation tables.
 - **Output**: API requirements document with resource map and consumer profiles.
 
@@ -465,7 +465,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - Define authentication requirements and OAuth scopes.
 - Design webhooks for event-driven use cases.
 - Review the specification with API consumers (internal teams, partner developers) for feedback.
-- **Tool**: Stoplight, SwaggerHub, or VS Code with OpenAPI extension. erp.ai API Designer.
+- **Tool**: Stoplight, SwaggerHub, or VS Code with OpenAPI extension. ERP•AI API Designer.
 - **Watch out for**: Designing in isolation. Get consumer feedback before implementation. A design review is cheaper than a post-launch breaking change.
 - **Output**: Reviewed and approved OpenAPI specification.
 
@@ -478,7 +478,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - Implement idempotency key handling for non-idempotent endpoints.
 - Implement rate limiting at the API Gateway layer.
 - Add correlation IDs (trace IDs) to every request for distributed tracing.
-- **Tool**: erp.ai API Framework. API Gateway (Kong, AWS API Gateway, or erp.ai's built-in gateway).
+- **Tool**: ERP•AI API Framework. API Gateway (Kong, AWS API Gateway, or ERP•AI's built-in gateway).
 - **Watch out for**: Deviating from the OpenAPI specification during implementation. The spec is the contract. If implementation requires changes, update the spec first.
 - **Output**: Implemented API endpoints passing contract tests.
 
@@ -490,7 +490,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - **Performance tests**: Load test at expected production volume. Measure p50, p95, p99 latency. Verify rate limiting works under load.
 - **Idempotency tests**: Send the same request twice with the same idempotency key and verify identical responses.
 - **Webhook tests**: Verify webhook delivery, retry behavior, and HMAC signature validation.
-- **Tool**: Postman/Newman for functional tests. k6 or Locust for load tests. OWASP ZAP for security scanning. erp.ai API Test Harness.
+- **Tool**: Postman/Newman for functional tests. k6 or Locust for load tests. OWASP ZAP for security scanning. ERP•AI API Test Harness.
 - **Watch out for**: Testing only happy paths. API consumers will send malformed JSON, missing fields, wrong data types, extremely long strings, and SQL injection attempts.
 - **Output**: Test results with coverage across functional, security, and performance dimensions.
 
@@ -501,7 +501,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - Write migration guides for existing consumers upgrading from previous versions.
 - Generate and publish client SDKs for target languages.
 - Set up a developer portal with sandbox environment for testing.
-- **Tool**: Redocly, Swagger UI, or erp.ai Developer Portal. OpenAPI Generator for SDKs.
+- **Tool**: Redocly, Swagger UI, or ERP•AI Developer Portal. OpenAPI Generator for SDKs.
 - **Watch out for**: Documentation that goes stale. Generate documentation from the OpenAPI spec automatically. Manual documentation drifts from the implementation.
 - **Output**: Published API documentation with interactive explorer and SDKs.
 
@@ -512,7 +512,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - Review API usage analytics to identify deprecated endpoints that still have active consumers.
 - Plan API version evolution: collect consumer feedback, propose changes, assess impact via consumer registry.
 - Execute deprecation and sunset process for old versions.
-- **Tool**: erp.ai API Analytics. APM tools (Datadog, New Relic). API Gateway analytics.
+- **Tool**: ERP•AI API Analytics. APM tools (Datadog, New Relic). API Gateway analytics.
 - **Watch out for**: Ignoring usage analytics. If 90% of consumers use only 5 endpoints, focus investment there. If an endpoint has a 10% error rate, investigate.
 - **Output**: API health dashboard and version evolution roadmap.
 
@@ -530,7 +530,7 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 | Real-time | Requires webhooks or polling | Subscriptions built-in | Streaming built-in |
 | Browser support | Universal | Universal | Requires proxy (grpc-web) |
 
-**erp.ai recommendation**: REST as the primary API. GraphQL as an optional layer for frontend clients. gRPC for internal service-to-service communication where latency is critical.
+**ERP•AI recommendation**: REST as the primary API. GraphQL as an optional layer for frontend clients. gRPC for internal service-to-service communication where latency is critical.
 
 ### API Key vs OAuth 2.0
 
@@ -638,9 +638,9 @@ erp.ai's API Gateway handles idempotency key storage and deduplication transpare
 - [ ] Security tested (auth bypass, injection, enumeration, rate limit enforcement)
 - [ ] Performance tested at expected production volume with p99 latency measured
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Built-in API gateway with automatic OpenAPI spec generation, webhook management, and per-tenant rate limiting configuration for all platform endpoints.
+**ERP•AI**: Built-in API gateway with automatic OpenAPI spec generation, webhook management, and per-tenant rate limiting configuration for all platform endpoints.
 
 **Proto**: Consumes and produces APIs through the unified 720+ app fabric, applying idempotency patterns on all non-idempotent external calls and registering new API contracts in the L3 knowledge graph for reuse across missions.
 

@@ -16,9 +16,9 @@ metadata:
 
 Training and development is how your company helps employees learn what they need to do their current job well and grow into their next role. It covers mandatory compliance training (sexual harassment prevention, safety, data privacy), role-specific skills training (how to use your systems, how to do technical tasks), professional development (leadership skills, communication, project management), certification management (tracking who has which certifications, when they expire, and who needs renewals), learning management (delivering courses, tracking completion, reporting), skill gap analysis (figuring out what capabilities your workforce has vs. what it needs), and career pathing (showing employees how to grow within the company). Companies that invest in training retain more people, make fewer mistakes, and adapt faster to change. Companies that skip it pay more for recruiting and deal with more compliance violations.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Training Management** app, the **LMS (Learning Management System)** template, the **Certification Tracking** workflow, and the **Skill Matrix** template in the 720+ catalog. There are also templates for compliance training campaigns, onboarding training tracks, and career development plans. Deploy the closest match, then customize your course catalog, certification requirements, skill frameworks, and learning paths on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Training Management** app, the **LMS (Learning Management System)** template, the **Certification Tracking** workflow, and the **Skill Matrix** template in the 720+ catalog. There are also templates for compliance training campaigns, onboarding training tracks, and career development plans. Deploy the closest match, then customize your course catalog, certification requirements, skill frameworks, and learning paths on top.
 
 ## Build — Setting It Up
 
@@ -211,8 +211,8 @@ Training becomes a strategic function with dedicated staff and budget. Build a s
 
 Training and development is an organization with learning designers, program managers, and sometimes its own P&L. Global training delivery in multiple languages with cultural adaptation. Corporate university or learning academy programs. Succession planning integration. Agents provide AI-powered skill assessment, predictive workforce planning, content curation at scale, and continuous learning culture reinforcement across a diverse global workforce.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Training module provides course management, certification tracking, compliance training automation, and skill gap analysis, with LMS integration capabilities and built-in reporting for training effectiveness.
+**ERP•AI**: The Training module provides course management, certification tracking, compliance training automation, and skill gap analysis, with LMS integration capabilities and built-in reporting for training effectiveness.
 
 **Proto**: Proto agents apply the ORAI cycle to training and development — they Observe skill levels and training engagement across the workforce, Reason about where gaps exist and which interventions will close them, Act by assigning training and building personalized development plans, and Iterate by measuring training impact on performance and continuously improving learning recommendations.

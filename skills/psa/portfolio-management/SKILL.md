@@ -20,9 +20,9 @@ This process covers project prioritization (deciding which projects matter most)
 
 Think of it like managing an investment portfolio. You would never put all your money in one stock. You balance risk and return, diversify, rebalance periodically, and pay close attention to your worst performers. Portfolio management for professional services works the same way — you are balancing your investments of people, time, and attention across all the work your firm has committed to deliver.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Project Portfolio**, **Dashboard**, and **Report Builder** apps in the catalog. The Projects module supports multi-project views with status tracking. Deploy any PMO or portfolio template available, then customize the health scoring criteria and prioritization framework to match your firm's needs.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Project Portfolio**, **Dashboard**, and **Report Builder** apps in the catalog. The Projects module supports multi-project views with status tracking. Deploy any PMO or portfolio template available, then customize the health scoring criteria and prioritization framework to match your firm's needs.
 
 Also look for **Project Health Scorecard** and **Portfolio Dashboard** templates that provide executive-level visibility across all active engagements.
 
@@ -215,8 +215,8 @@ PMO function with dedicated staff. Formal prioritization framework with executiv
 
 Global PMO with regional portfolio managers. Sophisticated modeling including Monte Carlo simulation for project outcomes, portfolio optimization algorithms, and scenario planning. Executive portfolio dashboards updated in real time. Integration between portfolio management, financial planning, HR, and sales pipeline. Portfolio management is a core strategic function, not just a reporting exercise.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Projects module provides the underlying data for portfolio views — project status, financials, milestones, and resource allocation. Custom dashboards and Report Builder allow you to create portfolio-level visualizations. Integration with CRM gives pipeline visibility alongside active delivery.
+**ERP•AI**: The Projects module provides the underlying data for portfolio views — project status, financials, milestones, and resource allocation. Custom dashboards and Report Builder allow you to create portfolio-level visualizations. Integration with CRM gives pipeline visibility alongside active delivery.
 
 **Proto**: Proto agents power the ORAI cycle for portfolio management — Observing project data, resource utilization, pipeline changes, and financial metrics across the entire portfolio; Reasoning about health trends, risk concentrations, and optimal resource allocation; Acting by generating health scores, alerts, and rebalancing recommendations; and Iterating as the portfolio evolves, continuously refining predictions and improving decision support.

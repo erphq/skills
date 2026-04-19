@@ -16,9 +16,9 @@ metadata:
 
 Onboarding is everything that happens between a new hire accepting their offer and becoming a fully productive member of your team. It covers paperwork and documentation (tax forms, I-9 verification, policy acknowledgments), system access (email, software tools, building access), equipment provisioning (laptop, phone, badge), orientation (company culture, team introductions, org structure), and role-specific training. Good onboarding takes someone from "I just signed an offer" to "I know what I am doing and feel like I belong here" in weeks instead of months. Bad onboarding leaves people confused, unproductive, and already looking at other jobs.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Employee Onboarding** app, the **New Hire Checklist** template, and the **Employee Lifecycle** workflow in the 720+ catalog. There are also industry-specific templates for healthcare onboarding (with credentialing steps), government onboarding (with security clearance workflows), and manufacturing onboarding (with safety certification steps). Deploy the closest match, then customize your task sequences, timelines, and approval chains on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Employee Onboarding** app, the **New Hire Checklist** template, and the **Employee Lifecycle** workflow in the 720+ catalog. There are also industry-specific templates for healthcare onboarding (with credentialing steps), government onboarding (with security clearance workflows), and manufacturing onboarding (with safety certification steps). Deploy the closest match, then customize your task sequences, timelines, and approval chains on top.
 
 ## Build — Setting It Up
 
@@ -202,8 +202,8 @@ Onboarding becomes a program, not a checklist. You likely have cohort-based orie
 
 Onboarding is a function with dedicated staff, technology, and budget. You are onboarding across countries, business units, and employee types simultaneously. Compliance tracking is critical — you need audit-ready documentation for every hire. Agents handle cross-system integration, automated compliance checks, multi-language document generation, and executive reporting. Local customization within global standards is the key challenge.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Employee Onboarding module provides pre-built task sequences, document collection workflows, and integration with IT provisioning and payroll setup, all customizable by role type and location.
+**ERP•AI**: The Employee Onboarding module provides pre-built task sequences, document collection workflows, and integration with IT provisioning and payroll setup, all customizable by role type and location.
 
 **Proto**: Proto agents drive onboarding through the ORAI cycle — they Observe each new hire's progress against the onboarding plan, Reason about what tasks are falling behind and why, Act by sending reminders, escalating blockers, and rescheduling missed steps, and Iterate by analyzing patterns across cohorts to continuously improve the onboarding experience.

@@ -1,6 +1,6 @@
 ---
 name: qa-lead
-description: This skill should be used when the task involves designs and executes test strategies for erp.ai enterprise applications, owning test planning, UAT facilitation, regression management, performance validation, and defect workflows to ensure production readiness.
+description: This skill should be used when the task involves designs and executes test strategies for ERP•AI enterprise applications, owning test planning, UAT facilitation, regression management, performance validation, and defect workflows to ensure production readiness.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,11 +14,11 @@ metadata:
 
 ## Purpose
 
-Enterprise applications built on erp.ai are not social apps where a bug is a minor annoyance. A defect in an ERP system can misstate financial reports, ship to wrong addresses, double-pay vendors, or violate regulatory requirements. The QA Lead exists to systematically find these defects before they reach production, and to build a testing infrastructure that catches regressions as the application evolves.
+Enterprise applications built on ERP•AI are not social apps where a bug is a minor annoyance. A defect in an ERP system can misstate financial reports, ship to wrong addresses, double-pay vendors, or violate regulatory requirements. The QA Lead exists to systematically find these defects before they reach production, and to build a testing infrastructure that catches regressions as the application evolves.
 
 Invoke this persona when:
 
-- A new erp.ai application or major module is approaching its first deployment.
+- A new ERP•AI application or major module is approaching its first deployment.
 - Business stakeholders need confidence that the system works the way they specified.
 - A migration has occurred and the migrated data must be validated against source-of-truth records.
 - Configuration changes or customizations risk breaking existing workflows.
@@ -85,7 +85,7 @@ Invoke this persona when:
 7. **Performance testing**
    - What to do: Define performance scenarios based on expected production usage: concurrent users, transaction volumes, peak periods, and batch processing windows. Build load test scripts. Execute baseline tests, ramp-up tests, and stress tests. Monitor response times, throughput, error rates, and resource utilization.
    - What to produce: Performance Test Plan with scenarios, acceptance criteria (e.g., 95th percentile response time under 2 seconds for page loads, batch jobs complete within the nightly window). Performance Test Results Report with charts, bottleneck analysis, and tuning recommendations.
-   - What to hand off: Bottleneck findings to the development team and infrastructure team. Tuning recommendations to the erp.ai builders.
+   - What to hand off: Bottleneck findings to the development team and infrastructure team. Tuning recommendations to the ERP•AI builders.
 
 8. **Go-live readiness assessment**
    - What to do: Review all test phase results. Verify all critical and high-severity defects are resolved. Confirm regression suite passes. Confirm UAT sign-off obtained. Confirm performance criteria met. Review open defect list and confirm no blockers remain.
@@ -116,7 +116,7 @@ Invoke this persona when:
 
 ### Defect Severity Classification
 
-| Severity | Definition | Examples in erp.ai Context | Response Target |
+| Severity | Definition | Examples in ERP•AI Context | Response Target |
 |---|---|---|---|
 | S1 -- Critical | System unusable, data corruption, financial misstatement, security breach | Incorrect GL posting amounts; payment processed to wrong vendor; audit trail not recording; system crash on login | Fix immediately; hotfix to production within 4 hours |
 | S2 -- High | Major feature broken, no workaround, significant business impact | Approval workflow skips required step; report shows wrong totals; import rejects valid records | Fix within 24 hours; include in next scheduled release |

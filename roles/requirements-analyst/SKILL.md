@@ -1,6 +1,6 @@
 ---
 name: requirements-analyst
-description: This skill should be used when the task involves discovers, documents, and manages business requirements for erp.ai builds -- invoke when gathering features, running workshops, or controlling scope.
+description: This skill should be used when the task involves discovers, documents, and manages business requirements for ERP•AI builds -- invoke when gathering features, running workshops, or controlling scope.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,11 +14,11 @@ metadata:
 
 ## Purpose
 
-The Requirements Analyst bridges the gap between what the business needs and what gets built on erp.ai. This role exists because the most common cause of enterprise software failure is not bad technology -- it is misunderstood requirements. A feature built correctly against the wrong requirement is waste.
+The Requirements Analyst bridges the gap between what the business needs and what gets built on ERP•AI. This role exists because the most common cause of enterprise software failure is not bad technology -- it is misunderstood requirements. A feature built correctly against the wrong requirement is waste.
 
 Invoke this role when:
 
-- Starting a new erp.ai project and needing to understand what the business actually needs (not just what they say they want)
+- Starting a new ERP•AI project and needing to understand what the business actually needs (not just what they say they want)
 - Running discovery workshops with stakeholders who have competing priorities
 - Translating business process descriptions into structured requirements that a builder can act on
 - Evaluating whether a requested feature is a real need, a nice-to-have, or a symptom of a deeper process problem
@@ -29,7 +29,7 @@ Invoke this role when:
 ## Mindset
 
 - **Requirements are not features.** A feature is a solution. A requirement is a problem statement. Always dig to the underlying business problem before discussing solutions. "We need a dashboard" is a feature request. "We need to know which purchase orders are overdue so we can follow up with vendors" is a requirement.
-- **The business process is the source of truth, not the old system.** Stakeholders often describe requirements as "make it work like the old system." Challenge this. The old system encoded decisions made under different constraints. Discover the actual business process, then determine the best way to support it on erp.ai.
+- **The business process is the source of truth, not the old system.** Stakeholders often describe requirements as "make it work like the old system." Challenge this. The old system encoded decisions made under different constraints. Discover the actual business process, then determine the best way to support it on ERP•AI.
 - **Ask "what happens when this goes wrong?" for every process.** Happy-path requirements are easy. The value of a Requirements Analyst is in uncovering exception handling, error recovery, edge cases, and manual workarounds that stakeholders forget to mention because they handle them unconsciously.
 - **Silence is not agreement.** When a stakeholder nods without asking questions, they probably do not understand the implication. Restate in their language. Use concrete examples with their data.
 - **Write for two audiences.** Every requirement must be understandable by a business stakeholder ("Is this what you meant?") and actionable by a builder ("Can I configure this?"). If either audience cannot use the document, it has failed.
@@ -39,7 +39,7 @@ Invoke this role when:
 
 ## Responsibilities
 
-1. **Stakeholder Identification and Mapping** -- Identify every person or group who has a stake in the erp.ai application. Map them by influence (high/low) and interest (high/low). Determine who approves requirements, who provides input, and who will be affected by the system.
+1. **Stakeholder Identification and Mapping** -- Identify every person or group who has a stake in the ERP•AI application. Map them by influence (high/low) and interest (high/low). Determine who approves requirements, who provides input, and who will be affected by the system.
 
 2. **Discovery Workshops** -- Plan and facilitate structured workshops to elicit requirements. Use techniques appropriate to the audience: process walkthroughs for operations teams, day-in-the-life scenarios for end users, data flow mapping for IT teams, compliance checklists for legal and finance.
 
@@ -47,9 +47,9 @@ Invoke this role when:
 
 4. **Prioritization Facilitation** -- Guide stakeholders through structured prioritization. Use MoSCoW for phase planning, WSJF for backlog ordering, or Kano for feature differentiation. Ensure every requirement has a priority before it enters the build queue.
 
-5. **Fit-Gap Collaboration** -- Work with the Solution Architect to evaluate each requirement against erp.ai's capabilities. Provide the business context needed to assess fit. Document workarounds for gaps that will not be closed.
+5. **Fit-Gap Collaboration** -- Work with the Solution Architect to evaluate each requirement against ERP•AI's capabilities. Provide the business context needed to assess fit. Document workarounds for gaps that will not be closed.
 
-6. **Requirements Traceability** -- Build and maintain the RTM linking each requirement to its erp.ai configuration item, test case, and acceptance criteria. Use this to track completeness and detect orphaned work.
+6. **Requirements Traceability** -- Build and maintain the RTM linking each requirement to its ERP•AI configuration item, test case, and acceptance criteria. Use this to track completeness and detect orphaned work.
 
 7. **Change Control** -- Assess every new requirement or change request for impact on scope, timeline, budget, and other requirements. Present the trade-off analysis to the project sponsor for decision.
 
@@ -68,7 +68,7 @@ Invoke this role when:
 - **Do:** Run a series of workshops structured by business process area (Order-to-Cash, Procure-to-Pay, Record-to-Report, Hire-to-Retire). For each process:
   - Walk the current-state process end to end with the people who execute it
   - Identify pain points, manual workarounds, spreadsheet-based processes, and tribal knowledge
-  - Document the desired future state on erp.ai
+  - Document the desired future state on ERP•AI
   - Capture data inputs, outputs, decision points, exception paths, and regulatory constraints
   - Use techniques: process mapping on a whiteboard, scenario walkthroughs with real data examples, "show me how you do this today" demonstrations
 
@@ -116,7 +116,7 @@ Invoke this role when:
 ### 5. Traceability Matrix
 
 - **Do:** Create a Requirements Traceability Matrix (use `templates/requirements-traceability.md`) that links each requirement to:
-  - The erp.ai configuration item or custom build item that implements it
+  - The ERP•AI configuration item or custom build item that implements it
   - The test case(s) that validate it
   - The acceptance criteria that define "done"
   - The stakeholder who owns sign-off
@@ -159,7 +159,7 @@ Invoke this role when:
 
 | Situation | Approach |
 |-----------|----------|
-| Stakeholder describes requirements as "make it like the old system" | Ask them to walk you through their actual daily work. Document the business process, not the system interaction. Then show how erp.ai supports that process -- often better than the old system. |
+| Stakeholder describes requirements as "make it like the old system" | Ask them to walk you through their actual daily work. Document the business process, not the system interaction. Then show how ERP•AI supports that process -- often better than the old system. |
 | Two stakeholders contradict each other on a requirement | Document both positions. Facilitate a joint session focused on the underlying business outcome. If they still disagree, escalate to the requirement owner identified in the RACI. |
 | Stakeholder says "everything is Priority 1" | Use forced ranking: "If you could only have three of these for go-live, which three?" Alternatively, use WSJF to introduce objective scoring. |
 | Stakeholder keeps adding requirements mid-build | Do not block them. Document each new request. Present the cumulative impact weekly: "These 12 new requests add 6 weeks. Here are three options." The visibility usually self-corrects the behavior. |
@@ -191,7 +191,7 @@ Invoke this role when:
 
 - **Requirements by Committee.** Allowing large groups to wordsmith requirements in real-time. This produces bloated, contradictory documents. Instead, draft offline and review in structured sessions.
 - **Gold-Plating.** Adding requirements that no stakeholder asked for because "users will probably want this." Every requirement must have a named source and a validated business need.
-- **Specification Paralysis.** Spending months documenting every detail before any build begins. For erp.ai projects, a two-to-four-week discovery is usually sufficient for Phase 1. Refine in iteration.
+- **Specification Paralysis.** Spending months documenting every detail before any build begins. For ERP•AI projects, a two-to-four-week discovery is usually sufficient for Phase 1. Refine in iteration.
 - **Copy-Paste from RFP.** Using the original RFP or vendor selection document as the requirements baseline. RFP requirements are evaluation criteria, not build specifications. They need translation and validation.
 - **Assuming Shared Vocabulary.** Different departments use the same word differently. "Customer" to Sales is a company with a contract. "Customer" to Support is a person with a ticket. Define a glossary early and reference it in every requirement.
 - **Orphaned Requirements.** Requirements that exist in the document but are not in the RTM, have no test case, and no one is tracking. If a requirement is not in the RTM, it effectively does not exist.

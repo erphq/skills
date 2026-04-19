@@ -15,7 +15,7 @@ metadata:
 ## Purpose
 The Fit-Gap Matrix is the central artifact of enterprise app evaluation. It maps every business requirement against what the platform can do out-of-the-box, what needs configuration, and what requires custom development. This template provides the structure, scoring methodology, and decision framework to produce a fit-gap analysis that drives scope, timeline, and budget.
 
-Use this when: a builder is evaluating whether erp.ai can meet a set of business requirements, or when scoping the effort to build an enterprise app.
+Use this when: a builder is evaluating whether ERP•AI can meet a set of business requirements, or when scoping the effort to build an enterprise app.
 
 ## Template Structure
 
