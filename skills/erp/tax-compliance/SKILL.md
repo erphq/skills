@@ -20,9 +20,9 @@ Get this right and it is invisible — taxes flow correctly, filings happen on t
 
 The challenge is that tax rules are different everywhere. Each US state has different sales tax rates, exemptions, and filing requirements. Each country has different VAT/GST rates, registration thresholds, and compliance rules. Withholding tax treaties vary by country pair. And the rules change constantly — hundreds of rate changes, new nexus rules, and regulatory updates happen every year. No human can track all of this. This is where automation and AI agents earn their keep.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Sales Tax Automation** app, the **VAT/GST Compliance Engine**, the **1099 Reporting Suite**, the **Tax Calendar & Filing Manager**, and the **Withholding Tax Calculator**. If you sell internationally, the **Global Tax Compliance** template handles multi-jurisdiction VAT/GST registration, calculation, and filing. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Sales Tax Automation** app, the **VAT/GST Compliance Engine**, the **1099 Reporting Suite**, the **Tax Calendar & Filing Manager**, and the **Withholding Tax Calculator**. If you sell internationally, the **Global Tax Compliance** template handles multi-jurisdiction VAT/GST registration, calculation, and filing. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -174,7 +174,7 @@ AI agents make tax compliance manageable even as complexity grows:
 
 ### Startup (< 50 people)
 
-You probably sell in 1–3 states and have straightforward tax obligations. Use erp.ai's sales tax template with a basic tax engine integration. The biggest risk is not collecting sales tax at all because "we are too small" — post-Wayfair, there is no minimum size for economic nexus in most states. Collect W-9s from every vendor at onboarding (not in December). File your returns on time even if the amount is zero. An agent can handle sales tax calculation, return preparation, and 1099 generation at this scale with minimal setup.
+You probably sell in 1–3 states and have straightforward tax obligations. Use ERP•AI's sales tax template with a basic tax engine integration. The biggest risk is not collecting sales tax at all because "we are too small" — post-Wayfair, there is no minimum size for economic nexus in most states. Collect W-9s from every vendor at onboarding (not in December). File your returns on time even if the amount is zero. An agent can handle sales tax calculation, return preparation, and 1099 generation at this scale with minimal setup.
 
 ### SMB (50–500 people)
 
@@ -188,8 +188,8 @@ Multi-state and likely multi-country tax compliance. You may have VAT/GST obliga
 
 Global tax compliance across 50+ jurisdictions. Dozens of VAT/GST registrations. Transfer pricing documentation for hundreds of intercompany transactions. Tax provision complexity with uncertain tax positions (FIN 48), valuation allowances, and rate reconciliation items. A tax technology team manages the engine, integrations, and automation. Agents operate at industrial scale — processing millions of transactions, preparing hundreds of returns, and maintaining audit-ready documentation across all jurisdictions. Tax planning (not just compliance) becomes a strategic function that directly impacts the effective tax rate and cash flow.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Tax Compliance module in erp.ai includes real-time tax calculation with multi-jurisdiction support, exemption certificate management, automated return preparation and e-filing, 1099 and information reporting, withholding tax management, and a tax calendar with deadline tracking and alerts.
+**ERP•AI**: The Tax Compliance module in ERP•AI includes real-time tax calculation with multi-jurisdiction support, exemption certificate management, automated return preparation and e-filing, 1099 and information reporting, withholding tax management, and a tax calendar with deadline tracking and alerts.
 
 **Proto**: Proto agents manage tax compliance through the ORAI loop — they observe transactions and regulatory changes, reason about taxability and filing obligations, act by calculating tax and preparing returns, and iterate by monitoring audit outcomes and compliance gaps to continuously improve accuracy and reduce exposure.

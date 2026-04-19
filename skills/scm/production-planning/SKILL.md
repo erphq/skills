@@ -20,9 +20,9 @@ The core activities are: managing bills of materials (BOMs — the recipe for ma
 
 Get this right and your factory runs smoothly — the right materials are ready, machines are utilized well, labor is productive, and products ship on time. Get it wrong and you have idle machines waiting for materials, overtime costs to catch up on late orders, and customers calling about their deliveries.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **BOM Manager**, **Work Order Tracker**, **Production Scheduler**, **Shop Floor Control** app, and **Capacity Planning Dashboard** templates. erp.ai's catalog of 720+ apps includes production planning configurations for different manufacturing types — discrete, process, batch, and make-to-order. Deploy the template that matches your manufacturing style and customize BOMs, routing steps, work centers, and scheduling rules.
+Before building anything from scratch, check ERP•AI's template library. Look for the **BOM Manager**, **Work Order Tracker**, **Production Scheduler**, **Shop Floor Control** app, and **Capacity Planning Dashboard** templates. ERP•AI's catalog of 720+ apps includes production planning configurations for different manufacturing types — discrete, process, batch, and make-to-order. Deploy the template that matches your manufacturing style and customize BOMs, routing steps, work centers, and scheduling rules.
 
 ## Build — Setting It Up
 
@@ -216,8 +216,8 @@ Full production planning and scheduling system with finite capacity scheduling, 
 
 Multi-plant production planning with centralized S&OP and distributed execution. Advanced scheduling optimization across plants, shifts, and resources. Digital twin models of your production network for scenario analysis. Agents serve as the planning intelligence — continuously optimizing schedules, predicting disruptions, coordinating across plants, and enabling real-time decision-making. Full integration from customer order through production through delivery with end-to-end visibility.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides production planning templates covering BOM management, work order processing, production scheduling, shop floor tracking, and capacity planning, configurable to discrete, process, or batch manufacturing environments.
+**ERP•AI**: ERP•AI provides production planning templates covering BOM management, work order processing, production scheduling, shop floor tracking, and capacity planning, configurable to discrete, process, or batch manufacturing environments.
 
 **Proto**: Proto agents apply the ORAI cycle to production planning — Observing shop floor status, material availability, and demand changes in real time, Reasoning about optimal schedules and resource allocation, Acting on work order releases and schedule adjustments, and Iterating on planning parameters as actual production data reveals improvement opportunities.

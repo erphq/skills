@@ -16,9 +16,9 @@ metadata:
 
 Leave and attendance management is how your company tracks when people work, when they are off, and whether it all adds up correctly. It covers time tracking (clock-in/clock-out, timesheets, project time allocation), paid time off policies (vacation, sick leave, personal days), statutory leave (FMLA, parental leave, military leave, jury duty), shift scheduling (who works when), overtime management (tracking hours to comply with FLSA and state overtime laws), and absence management (unplanned absences, patterns, and corrective action). Getting this right means employees are paid accurately, schedules are covered, and your company complies with federal and state labor laws. Getting it wrong means wage-and-hour lawsuits, understaffed shifts, and payroll errors.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Time & Attendance** app, the **Leave Management** template, the **Shift Scheduling** workflow, and the **FMLA Tracking** template in the 720+ catalog. There are also templates for overtime management, accrual policies, and absence analytics. Deploy the closest match, then customize your leave policies, accrual formulas, shift patterns, and approval rules on top.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Time & Attendance** app, the **Leave Management** template, the **Shift Scheduling** workflow, and the **FMLA Tracking** template in the 720+ catalog. There are also templates for overtime management, accrual policies, and absence analytics. Deploy the closest match, then customize your leave policies, accrual formulas, shift patterns, and approval rules on top.
 
 ## Build — Setting It Up
 
@@ -206,8 +206,8 @@ Leave and attendance becomes a dedicated function. You likely have multiple loca
 
 Global time and attendance management across countries with different labor laws, overtime rules, statutory leave requirements, and cultural norms. Multiple time tracking methods for different worker populations. Union contracts add scheduling constraints. Agents provide cross-country compliance, demand-based scheduling optimization, predictive absence analytics, and integration with workforce planning. Audit readiness for wage-and-hour compliance is a constant requirement.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Leave & Attendance module handles accrual calculations, leave request workflows, shift scheduling, overtime tracking, and FMLA case management, with built-in compliance rules for multi-state and multi-country operations.
+**ERP•AI**: The Leave & Attendance module handles accrual calculations, leave request workflows, shift scheduling, overtime tracking, and FMLA case management, with built-in compliance rules for multi-state and multi-country operations.
 
 **Proto**: Proto agents drive the ORAI cycle for leave and attendance — they Observe time records and absence patterns for anomalies, Reason about compliance risks and scheduling gaps, Act by processing leave requests and optimizing schedules, and Iterate by analyzing attendance data to predict future staffing needs and improve schedule efficiency.

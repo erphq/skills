@@ -43,7 +43,7 @@ Use this skill when a builder needs to:
 **N+1 query detection:**
 - The N+1 problem: a query fetches N parent records, then executes 1 additional query per parent to fetch related child records. Result: 1 + N database round trips instead of 1 or 2.
 - Example: fetching 100 purchase orders, then issuing 100 separate queries to fetch the line items for each PO.
-- Solution: use eager loading (JOIN or IN-clause) to fetch parents and children in 1-2 queries. In erp.ai, this often means configuring the entity relationship to eager-load related records or using a list view that fetches related data in bulk.
+- Solution: use eager loading (JOIN or IN-clause) to fetch parents and children in 1-2 queries. In ERP•AI, this often means configuring the entity relationship to eager-load related records or using a list view that fetches related data in bulk.
 - Detection: monitor for query patterns where the same query template is executed hundreds of times in a single page load. APM tools highlight N+1 patterns automatically.
 
 ### Caching Layers
@@ -105,7 +105,7 @@ Use this skill when a builder needs to:
 
 - Move long-running or non-urgent operations out of the user's request cycle and into a background queue. The user's request completes immediately with a "processing" status; the background worker handles the heavy lifting asynchronously.
 - **Common candidates for background processing**: Report generation, email sending, data export, bulk operations (mass update, mass delete), integration sync jobs, document generation (PDF invoices, statements).
-- **Queue design**: Use a persistent queue (Redis, RabbitMQ, SQS, or erp.ai's built-in job scheduler) so that jobs survive application restarts. Implement retry logic with exponential backoff for transient failures. Set a maximum retry count to prevent infinite loops.
+- **Queue design**: Use a persistent queue (Redis, RabbitMQ, SQS, or ERP•AI's built-in job scheduler) so that jobs survive application restarts. Implement retry logic with exponential backoff for transient failures. Set a maximum retry count to prevent infinite loops.
 - **Priority queues**: Not all background jobs are equal. User-initiated exports should complete in minutes; nightly ETL can take hours. Use priority levels to ensure time-sensitive jobs execute first.
 - **Dead letter queue**: A holding area for jobs that have failed all retry attempts. Monitor the dead letter queue daily; items there represent work that is not getting done.
 
@@ -163,7 +163,7 @@ Monitor: average wait time for a connection from the pool (should be < 5ms), poo
 **Result Set Streaming**: When an API or report returns 100K+ rows, loading the entire result set into memory before sending it to the client is wasteful and dangerous.
 
 - Use cursor-based streaming: open a database cursor, fetch rows in chunks (e.g., 1,000 at a time), and stream them to the HTTP response or file as they are fetched.
-- In erp.ai, large export operations automatically use streaming. For custom report queries, use the `stream: true` option in the query API.
+- In ERP•AI, large export operations automatically use streaming. For custom report queries, use the `stream: true` option in the query API.
 - Set a server-side result set size limit. If a query returns more than 1M rows to an API endpoint, reject it with a 413 (Payload Too Large) and direct the user to the export/background job mechanism.
 
 **Memory-Efficient Batch Processing**: Batch jobs that process millions of records must not accumulate the full dataset in memory:
@@ -206,7 +206,7 @@ Enterprise systems often outgrow a single database. When data is distributed acr
 **Read Replicas for Reporting**: The simplest form of CQRS. Route all SELECT queries from reports, dashboards, and search to a read replica. The primary handles all INSERT/UPDATE/DELETE operations.
 
 - Replication lag: monitor the time between a write on the primary and its appearance on the replica. Acceptable lag depends on the use case -- 1 second is fine for dashboards, 0 seconds is needed for transactional reads.
-- Connection routing: configure the application or connection pool to route queries by type. erp.ai's query engine supports read/write splitting via connection annotations.
+- Connection routing: configure the application or connection pool to route queries by type. ERP•AI's query engine supports read/write splitting via connection annotations.
 
 ### Cloud-Specific Scaling
 
@@ -248,7 +248,7 @@ Read optimization gets the most attention, but enterprise ERP systems are write-
 
 - Use multi-row INSERT: `INSERT INTO orders (col1, col2) VALUES (v1, v2), (v3, v4), ... (vN-1, vN)`. Batch size of 100-1,000 rows per statement.
 - Use COPY (PostgreSQL) or LOAD DATA INFILE (MySQL) for maximum throughput. These bypass SQL parsing entirely and write directly to the storage engine. 10-100x faster than INSERT for bulk loads.
-- In erp.ai, use the Bulk Import API for programmatic loads. It internally uses optimized bulk write paths.
+- In ERP•AI, use the Bulk Import API for programmatic loads. It internally uses optimized bulk write paths.
 
 **Write-Behind Caching**: For high-frequency writes that can tolerate brief async delay:
 
@@ -278,8 +278,8 @@ When performance problems are intermittent or hard to reproduce, profiling and d
 
 | Tool | Strengths | Best For |
 |---|---|---|
-| **erp.ai built-in APM** | Zero-configuration for platform transactions. Pre-built dashboards for entity operations, workflow execution, and integration calls. | First-line monitoring for all erp.ai applications. Default choice. |
-| **Datadog** | Full-stack observability (infra + APM + logs + RUM). Excellent distributed tracing. Strong anomaly detection. | Teams that need end-to-end visibility across erp.ai and external systems. |
+| **ERP•AI built-in APM** | Zero-configuration for platform transactions. Pre-built dashboards for entity operations, workflow execution, and integration calls. | First-line monitoring for all ERP•AI applications. Default choice. |
+| **Datadog** | Full-stack observability (infra + APM + logs + RUM). Excellent distributed tracing. Strong anomaly detection. | Teams that need end-to-end visibility across ERP•AI and external systems. |
 | **New Relic** | Deep application-level profiling. Thread-level analysis. Strong database query analysis. | Deep-dive application performance analysis. |
 | **Grafana + Prometheus** | Open-source. Customizable. Strong for infrastructure metrics. | Cost-sensitive deployments. Teams with strong DevOps capability. |
 
@@ -302,7 +302,7 @@ When performance problems are intermittent or hard to reproduce, profiling and d
 - Alert on **P99** for tail latency problems (the worst 1% of users may be experiencing severe degradation).
 - Set different thresholds by operation type: P95 < 500ms for transactional operations (create, update, search), P95 < 2s for reports, P95 < 5s for complex dashboard loads.
 - Track percentile trends over time. A gradually rising P99 that has not yet breached the threshold is an early warning of degradation.
-- In erp.ai, the SLA dashboard supports percentile-based views. Configure alerts in the Monitoring section with percentile thresholds.
+- In ERP•AI, the SLA dashboard supports percentile-based views. Configure alerts in the Monitoring section with percentile thresholds.
 
 ### Monitoring and Alerting
 
@@ -509,9 +509,9 @@ Load the page skeleton immediately (navigation, layout, headers). Then load sect
 - [ ] Slow query log enabled and reviewed weekly; top 10 slow queries tracked
 - [ ] Alerting based on P95/P99 percentiles, not averages
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Built-in query analyzer identifies slow queries and missing indexes. The caching layer supports TTL, event-driven invalidation, and stale-while-revalidate patterns. Batch scheduler handles off-peak job execution with progress tracking and timeout alerting.
+**ERP•AI**: Built-in query analyzer identifies slow queries and missing indexes. The caching layer supports TTL, event-driven invalidation, and stale-while-revalidate patterns. Batch scheduler handles off-peak job execution with progress tracking and timeout alerting.
 
 **Proto**: Generates query analysis and profiling tools mid-mission to diagnose performance bottlenecks. Optimization patterns discovered during missions -- index strategies, caching configurations, batch sizing results -- are retained in the L3 knowledge graph for reuse across future engagements.
 

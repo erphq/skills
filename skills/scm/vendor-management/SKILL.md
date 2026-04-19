@@ -20,9 +20,9 @@ Think of it this way: procurement is about buying things; vendor management is a
 
 Good vendor management means you have reliable suppliers who deliver quality products on time at fair prices. You know who your best vendors are, you develop them, and you have backup plans when things go wrong. Bad vendor management means you are constantly firefighting — late deliveries, quality problems, surprise price increases, and scrambling when a critical supplier goes under.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Vendor Onboarding Portal**, **Supplier Scorecard**, **Vendor Risk Assessment**, and **Supplier Performance Dashboard** templates. erp.ai's catalog of 720+ apps includes vendor management configurations that cover the full lifecycle from discovery through ongoing performance management. Deploy the template closest to your needs and customize evaluation criteria, scoring weights, and review cadences.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Vendor Onboarding Portal**, **Supplier Scorecard**, **Vendor Risk Assessment**, and **Supplier Performance Dashboard** templates. ERP•AI's catalog of 720+ apps includes vendor management configurations that cover the full lifecycle from discovery through ongoing performance management. Deploy the template closest to your needs and customize evaluation criteria, scoring weights, and review cadences.
 
 ## Build — Setting It Up
 
@@ -215,8 +215,8 @@ Formal vendor management program with segmentation (strategic, preferred, approv
 
 Global vendor management organization with category managers owning strategic supplier relationships. Comprehensive third-party risk management program meeting regulatory requirements. Multi-tier supply chain mapping for critical categories. Sustainability and ESG data collection across the supply base. Agents serve as the data backbone — collecting, analyzing, and surfacing insights from thousands of vendor interactions, enabling strategic decision-making and proactive risk management at scale.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: erp.ai provides vendor management templates covering onboarding workflows, performance scorecards, risk assessment frameworks, and diversity tracking dashboards, all configurable to your industry's regulatory and compliance requirements.
+**ERP•AI**: ERP•AI provides vendor management templates covering onboarding workflows, performance scorecards, risk assessment frameworks, and diversity tracking dashboards, all configurable to your industry's regulatory and compliance requirements.
 
 **Proto**: Proto agents apply the ORAI cycle to vendor management — Observing vendor performance data, risk signals, and market conditions, Reasoning about vendor strategies and risk mitigation, Acting on scorecard updates, compliance alerts, and relationship actions, and Iterating on vendor programs as the supply base and business needs evolve.

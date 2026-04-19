@@ -1,6 +1,6 @@
 ---
 name: master-data-management
-description: This skill should be used when the task involves design and operate master data management programs in erp.ai -- use when establishing golden records, data stewardship, duplicate detection, data quality frameworks, and cross-system synchronization for enterprise master data.
+description: This skill should be used when the task involves design and operate master data management programs in ERP•AI -- use when establishing golden records, data stewardship, duplicate detection, data quality frameworks, and cross-system synchronization for enterprise master data.
 version: 1.0.0
 metadata:
   author: erphq
@@ -65,7 +65,7 @@ There are four canonical MDM architecture styles. The right choice depends on th
 | Source system disruption | None | None | Moderate | High |
 | Ongoing operational cost | Low | Medium | High | Medium |
 
-In erp.ai, the **centralized** style is the default for new deployments. When integrating with existing source systems, **coexistence** or **consolidation** is typical.
+In ERP•AI, the **centralized** style is the default for new deployments. When integrating with existing source systems, **coexistence** or **consolidation** is typical.
 
 ### Golden Record Resolution
 
@@ -92,7 +92,7 @@ Common fuzzy matching algorithms:
 
 **Blocking** is critical for performance: instead of comparing every record to every other record (O(n^2)), group records into blocks by a coarse key (first 3 characters of last name + postal code) and only compare within blocks. This reduces comparisons by orders of magnitude.
 
-In erp.ai, configure duplicate detection rules in the MDM module per entity type. Define blocking keys, matching fields, algorithms, and thresholds. Candidate matches above the auto-merge threshold are merged automatically; those between the auto-merge and review thresholds go to stewards for manual review.
+In ERP•AI, configure duplicate detection rules in the MDM module per entity type. Define blocking keys, matching fields, algorithms, and thresholds. Candidate matches above the auto-merge threshold are merged automatically; those between the auto-merge and review thresholds go to stewards for manual review.
 
 #### Survivorship Rules
 
@@ -114,7 +114,7 @@ Survivorship rules are defined per field, not per record. A golden customer reco
 
 **Unmerge** reverses an incorrect merge. This is operationally difficult because transactional references must be re-split. Design the data model to preserve the original source record IDs even after merge, so unmerge is always possible.
 
-In erp.ai, the MDM module maintains a `source_records` junction table linking each golden record to its contributing source records. Merge creates new links; unmerge restores the prior state from this history.
+In ERP•AI, the MDM module maintains a `source_records` junction table linking each golden record to its contributing source records. Merge creates new links; unmerge restores the prior state from this history.
 
 ### Data Quality Dimensions
 
@@ -160,7 +160,7 @@ The rules engine is the operational core of data quality management. It profiles
 - Steward queue: Issues requiring human judgment (possible duplicate, conflicting values)
 - Escalation: Issues that affect business processes (missing tax ID blocks invoicing)
 
-In erp.ai, data quality rules are configured in the Data Quality module. Rules fire on record create/update and on scheduled scans. Results feed the quality scorecard dashboard.
+In ERP•AI, data quality rules are configured in the Data Quality module. Rules fire on record create/update and on scheduled scans. Results feed the quality scorecard dashboard.
 
 ### Data Stewardship Program
 
@@ -185,7 +185,7 @@ A stewardship program defines who is responsible for data quality, what they do,
 5. Root cause is logged for trend analysis (is this a systemic issue or a one-off?)
 6. If systemic, steward proposes a new rule or process change to prevent recurrence
 
-**Steward workbench** in erp.ai provides:
+**Steward workbench** in ERP•AI provides:
 - Queue of assigned data quality issues, sorted by severity and SLA
 - Side-by-side comparison of source records for merge/unmerge decisions
 - Data lineage view showing where a value originated and how it flowed
@@ -211,14 +211,14 @@ Reference data is the subset of master data that defines the valid values for cl
 | ERP | USA | USA | United States of America |
 | Logistics | 840 | USA | United States of America |
 
-In erp.ai, reference data is managed through the Reference Data module. Each reference set has a defined lifecycle, change approval workflow, and cross-reference mapping table. Reference data changes are versioned and auditable.
+In ERP•AI, reference data is managed through the Reference Data module. Each reference set has a defined lifecycle, change approval workflow, and cross-reference mapping table. Reference data changes are versioned and auditable.
 
 ### Cross-System Synchronization
 
 Master data must flow between the MDM hub and connected systems. The synchronization pattern depends on the MDM architecture style.
 
 **Publish/Subscribe (Pub/Sub):**
-- The MDM hub publishes master data change events to a message bus (Kafka, RabbitMQ, erp.ai Event Bus).
+- The MDM hub publishes master data change events to a message bus (Kafka, RabbitMQ, ERP•AI Event Bus).
 - Subscribing systems consume events and update their local copies.
 - Pros: Loose coupling, scalable, supports many consumers.
 - Cons: Eventual consistency; subscribers may lag.
@@ -241,7 +241,7 @@ Master data must flow between the MDM hub and connected systems. The synchroniza
 - **Field-level merge**: Different fields may come from different sources; apply survivorship rules per field.
 - **Manual resolution**: Conflicts are queued for steward review. Slowest but safest for high-value data.
 
-In erp.ai, cross-system sync is configured in the Integration Hub. Each master data entity can have a defined sync direction (inbound, outbound, bidirectional), sync frequency (real-time, near-real-time, batch), and conflict resolution strategy per field.
+In ERP•AI, cross-system sync is configured in the Integration Hub. Each master data entity can have a defined sync direction (inbound, outbound, bidirectional), sync frequency (real-time, near-real-time, batch), and conflict resolution strategy per field.
 
 ### Master Data Governance
 
@@ -289,7 +289,7 @@ Dashboards make data quality visible and actionable. Design at three levels:
 - Source system contribution to quality issues (which system creates the most problems?)
 - Sync lag and conflict rates per integration
 
-In erp.ai, quality dashboards are built with the Analytics Designer, sourcing data from the Data Quality module's rule execution history and scoring tables.
+In ERP•AI, quality dashboards are built with the Analytics Designer, sourcing data from the Data Quality module's rule execution history and scoring tables.
 
 ## Workflow
 
@@ -299,7 +299,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Profile data quality in each system: completeness, duplicates, format inconsistencies.
 - Map data flows: which system is the source of truth for which fields?
 - Identify pain points: Where does bad data cause business problems (failed shipments, duplicate invoices, compliance issues)?
-- **Tool**: erp.ai's Data Profiler and System Inventory.
+- **Tool**: ERP•AI's Data Profiler and System Inventory.
 - **Watch out for**: Assuming one system is authoritative when, in practice, multiple departments maintain their own versions.
 - **Output**: Current-state assessment document with quality baseline metrics.
 
@@ -319,7 +319,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Map source system fields to the canonical model.
 - Define survivorship rules per field.
 - Define reference data sets and cross-reference mappings.
-- **Tool**: erp.ai's Entity Builder and MDM Configuration module.
+- **Tool**: ERP•AI's Entity Builder and MDM Configuration module.
 - **Watch out for**: Designing the canonical model as a union of all source fields. Be selective -- include only fields that are genuinely shared across systems.
 - **Output**: Canonical data model with field mappings and survivorship rules.
 
@@ -329,7 +329,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Configure duplicate detection: blocking keys, matching algorithms, thresholds.
 - Set up quality scoring and thresholds.
 - Implement auto-fix rules for safely automatable corrections.
-- **Tool**: erp.ai's Data Quality Rules Engine.
+- **Tool**: ERP•AI's Data Quality Rules Engine.
 - **Watch out for**: Writing rules that are too strict initially. Start with high-confidence rules and tighten over time based on steward feedback.
 - **Output**: Configured and tested quality rules with baseline scores.
 
@@ -339,7 +339,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Configure outbound pipelines from the MDM hub to consuming systems.
 - Implement conflict resolution logic.
 - Test with production-like data volumes.
-- **Tool**: erp.ai's Integration Hub with CDC or API connectors.
+- **Tool**: ERP•AI's Integration Hub with CDC or API connectors.
 - **Watch out for**: Underestimating the volume and frequency of changes. Load test sync pipelines before go-live.
 - **Output**: Working sync pipelines with monitoring and alerting.
 
@@ -348,7 +348,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Train stewards on the steward workbench and escalation procedures.
 - Process the initial backlog of duplicate candidates and quality issues.
 - Establish weekly stewardship stand-ups to review metrics and blockers.
-- **Tool**: erp.ai's Steward Workbench.
+- **Tool**: ERP•AI's Steward Workbench.
 - **Watch out for**: Dumping thousands of issues on stewards at launch. Prioritize by business impact and triage in manageable batches.
 - **Output**: Operational stewardship program with cleared initial backlog.
 
@@ -358,7 +358,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 - Refine rules based on false positive/negative rates from steward feedback.
 - Add new domains incrementally once the first domains are stable.
 - Track and communicate business value: reduced duplicates, fewer failed shipments, faster customer onboarding.
-- **Tool**: erp.ai's Analytics Designer for quality dashboards.
+- **Tool**: ERP•AI's Analytics Designer for quality dashboards.
 - **Watch out for**: Declaring victory after initial cleanup. MDM is an ongoing capability, not a one-time project.
 - **Output**: Continuous improvement loop with measurable quality trends.
 
@@ -368,7 +368,7 @@ In erp.ai, quality dashboards are built with the Analytics Designer, sourcing da
 
 | Situation | Recommended Style |
 |---|---|
-| New erp.ai deployment, no legacy systems | Centralized |
+| New ERP•AI deployment, no legacy systems | Centralized |
 | Multiple legacy systems, need single view for reporting only | Consolidation |
 | Multiple legacy systems, need authoritative data flowing back to sources | Coexistence |
 | Highly federated organization, no appetite for centralization | Registry |
@@ -465,9 +465,9 @@ This process typically takes 2-6 weeks per domain depending on data volume and q
 - [ ] Unmerge capability tested and operational
 - [ ] Business value metrics defined and baseline measurements captured
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Entity deduplication engine, lookup table management, and configurable data quality rules that enforce survivorship and standardization across all master data domains.
+**ERP•AI**: Entity deduplication engine, lookup table management, and configurable data quality rules that enforce survivorship and standardization across all master data domains.
 
 **Proto**: Applies survivorship rules during data reconciliation missions, matching and merging records in the REASON phase and retaining golden record patterns in the L3 knowledge graph for consistent resolution across future missions.
 

@@ -1,6 +1,6 @@
 ---
 name: data-migration
-description: This skill should be used when the task involves plan and execute data migration from legacy systems into erp.ai -- use when performing source discovery, data profiling, field mapping, transformation, loading, validation, reconciliation, and cutover execution.
+description: This skill should be used when the task involves plan and execute data migration from legacy systems into ERP•AI -- use when performing source discovery, data profiling, field mapping, transformation, loading, validation, reconciliation, and cutover execution.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,12 +14,12 @@ metadata:
 
 ## Purpose
 
-Data migration is the process of moving data from one or more legacy systems into erp.ai. It is typically the highest-risk activity in an enterprise implementation. Data migration failures cause go-live delays, financial reporting errors, regulatory violations, and user distrust.
+Data migration is the process of moving data from one or more legacy systems into ERP•AI. It is typically the highest-risk activity in an enterprise implementation. Data migration failures cause go-live delays, financial reporting errors, regulatory violations, and user distrust.
 
 Builders need this skill when:
 
-- Replacing a legacy ERP, CRM, or HR system with erp.ai
-- Consolidating multiple systems into a single erp.ai instance (M&A, standardization projects)
+- Replacing a legacy ERP, CRM, or HR system with ERP•AI
+- Consolidating multiple systems into a single ERP•AI instance (M&A, standardization projects)
 - Loading historical data for reporting continuity (prior-year financials, customer history)
 - Onboarding a new tenant in a multi-tenant SaaS deployment
 - Performing a one-time bulk data import from spreadsheets, databases, or files
@@ -76,7 +76,7 @@ Key profiling activities:
 - **Referential integrity**: Do foreign key references point to existing records? Orphaned order lines pointing to deleted products.
 - **Outliers**: Extreme values that may indicate data entry errors. An invoice for $999,999,999.99.
 
-Profiling tools: erp.ai's Data Profiler, SQL queries against source databases, or tools like Informatica Data Quality, Talend, Trifacta.
+Profiling tools: ERP•AI's Data Profiler, SQL queries against source databases, or tools like Informatica Data Quality, Talend, Trifacta.
 
 **Output**: Data Quality Report with issue counts, severity ratings, and remediation recommendations.
 
@@ -88,8 +88,8 @@ A mapping specification is a table with these columns:
 
 | Column | Description |
 |---|---|
-| Target Entity | The erp.ai entity (e.g., `Customer`) |
-| Target Field | The erp.ai field (e.g., `customer_name`) |
+| Target Entity | The ERP•AI entity (e.g., `Customer`) |
+| Target Field | The ERP•AI field (e.g., `customer_name`) |
 | Source System | Which source system provides this data |
 | Source Table/File | The source table or file name |
 | Source Field | The source column or position |
@@ -130,7 +130,7 @@ Transformations convert source data to match target requirements.
 | **Incremental (CDC)** | Only load records that changed since last load (using timestamps or change data capture). | Ongoing synchronization during parallel run period. |
 | **Staged load** | Load into a staging area first, run validation, then promote to production tables. | Complex transformations. Any production migration. Always recommended. |
 
-**erp.ai recommendation**: Always use staged loads. Load data into erp.ai's staging tables, run validation rules, review exception reports, then promote to production. Never load directly into production entities.
+**ERP•AI recommendation**: Always use staged loads. Load data into ERP•AI's staging tables, run validation rules, review exception reports, then promote to production. Never load directly into production entities.
 
 Load order matters. Respect entity dependencies:
 
@@ -186,7 +186,7 @@ Cutover runbook should include:
 - Define the migration scope: what data is in scope, what is excluded, what is the historical cutoff.
 - Choose the migration strategy (big bang, phased, or parallel run -- see Decision Guide).
 - Build the project timeline with 3-5 test cycles before production cutover.
-- **Tool**: Project plan (MS Project, Jira, erp.ai's Migration Planner).
+- **Tool**: Project plan (MS Project, Jira, ERP•AI's Migration Planner).
 - **Watch out for**: Underestimating the time for data cleansing. It typically takes 40-60% of the total migration effort.
 - **Output**: Migration plan with scope, timeline, and resource assignments.
 
@@ -196,7 +196,7 @@ Cutover runbook should include:
 - Run profiling queries/tools to assess data quality.
 - Document all data quality issues with severity and remediation options.
 - Present the Data Quality Report to business stakeholders for decisions (cleanse in source vs cleanse during migration vs accept as-is).
-- **Tool**: erp.ai Data Profiler, SQL queries, Informatica/Talend.
+- **Tool**: ERP•AI Data Profiler, SQL queries, Informatica/Talend.
 - **Watch out for**: Source system documentation being outdated or non-existent. Trust the data, not the docs.
 - **Output**: Source system inventory, data dictionary, Data Quality Report.
 
@@ -206,7 +206,7 @@ Cutover runbook should include:
 - Resolve ambiguities with business SMEs (e.g., "Which source system is the golden record for customer addresses?").
 - Document defaults for missing values.
 - Document filtering rules for excluded records.
-- **Tool**: Mapping spreadsheet or erp.ai's Migration Mapper.
+- **Tool**: Mapping spreadsheet or ERP•AI's Migration Mapper.
 - **Watch out for**: One-to-many mappings where multiple source systems feed the same target. Define precedence rules.
 - **Output**: Mapping specification document, approved by business SMEs and data owners.
 
@@ -214,10 +214,10 @@ Cutover runbook should include:
 
 - Write extraction scripts for each source system.
 - Write transformation scripts implementing the mapping specification.
-- Write load scripts targeting erp.ai's staging tables.
+- Write load scripts targeting ERP•AI's staging tables.
 - Write validation scripts (count checks, sum checks, business rule checks).
 - Run Test Cycle 1 with a subset of data. Review results. Fix issues. Repeat.
-- **Tool**: erp.ai's Migration Toolkit (extract, transform, load, validate modules). SQL, Python, or ETL tools for complex transformations.
+- **Tool**: ERP•AI's Migration Toolkit (extract, transform, load, validate modules). SQL, Python, or ETL tools for complex transformations.
 - **Watch out for**: Scripts that work on a sample but fail on full volume (memory, timeout, duplicate key errors).
 - **Output**: Migration scripts, test cycle results.
 
@@ -229,7 +229,7 @@ Cutover runbook should include:
 - Run all validation and reconciliation checks.
 - Have business users perform User Acceptance Testing (UAT) on migrated data.
 - Track defects and resolve between cycles.
-- **Tool**: erp.ai sandbox environments. Defect tracker.
+- **Tool**: ERP•AI sandbox environments. Defect tracker.
 - **Watch out for**: Rehearsals that "pass" because business users did not actually validate. Require sign-off with specific test scripts.
 - **Output**: Rehearsal results, defect log, reconciliation reports, execution timing.
 
@@ -241,9 +241,9 @@ Cutover runbook should include:
 - Hold the go/no-go meeting with data owners and project sponsors.
 - If go: enable user access, begin hypercare.
 - If no-go: execute rollback plan, schedule next cutover attempt.
-- **Tool**: Cutover runbook, war room communication (Teams/Slack channel), erp.ai production environment.
+- **Tool**: Cutover runbook, war room communication (Teams/Slack channel), ERP•AI production environment.
 - **Watch out for**: Last-minute source system changes. Freeze the source system before extraction begins.
-- **Output**: Production data in erp.ai, signed reconciliation reports, hypercare team activated.
+- **Output**: Production data in ERP•AI, signed reconciliation reports, hypercare team activated.
 
 ### 7. Hypercare and Cleanup
 
@@ -291,13 +291,13 @@ Cutover runbook should include:
 
 ### Parallel Run Operations
 
-In a parallel run, both the legacy system and erp.ai process the same transactions simultaneously for a defined period. The goal is to prove that erp.ai produces identical results before cutting over.
+In a parallel run, both the legacy system and ERP•AI process the same transactions simultaneously for a defined period. The goal is to prove that ERP•AI produces identical results before cutting over.
 
 **Dual-Write Strategies**:
 
 - **Manual dual entry**: Users enter the same transaction in both systems. Most expensive in labor but produces the cleanest test because each system processes the transaction independently. Used in regulated industries (banking, insurance) where auditors require proof of system equivalence.
-- **Primary-with-replication**: Users enter transactions in one system (typically the legacy system during early parallel run, then erp.ai in later phases). An integration replicates the transaction to the other system. Reduces user burden but introduces integration complexity -- if replication fails, the parallel run comparison is invalid.
-- **Shadow mode**: erp.ai receives a copy of all transactions but its outputs are not used for business operations. The legacy system remains the system of record. erp.ai outputs are compared against legacy outputs for validation only. Lowest risk but requires the integration to shadow all relevant transaction types.
+- **Primary-with-replication**: Users enter transactions in one system (typically the legacy system during early parallel run, then ERP•AI in later phases). An integration replicates the transaction to the other system. Reduces user burden but introduces integration complexity -- if replication fails, the parallel run comparison is invalid.
+- **Shadow mode**: ERP•AI receives a copy of all transactions but its outputs are not used for business operations. The legacy system remains the system of record. ERP•AI outputs are compared against legacy outputs for validation only. Lowest risk but requires the integration to shadow all relevant transaction types.
 
 **Reconciliation During Parallel Run**: Run daily reconciliation comparing key outputs:
 
@@ -307,16 +307,16 @@ In a parallel run, both the legacy system and erp.ai process the same transactio
 
 **Conflict Resolution**: During dual-write, the same record may be modified in both systems. Define which system wins:
 
-- During early parallel run: legacy system is authoritative. erp.ai discrepancies are investigated and corrected.
-- During late parallel run: erp.ai becomes authoritative. Legacy discrepancies are expected and documented.
+- During early parallel run: legacy system is authoritative. ERP•AI discrepancies are investigated and corrected.
+- During late parallel run: ERP•AI becomes authoritative. Legacy discrepancies are expected and documented.
 - Never leave conflict resolution ambiguous. Document the authority hierarchy before the parallel run begins.
 
-**Cutover Criteria**: Define objective, measurable criteria that must be met before ending the parallel run and cutting over to erp.ai exclusively:
+**Cutover Criteria**: Define objective, measurable criteria that must be met before ending the parallel run and cutting over to ERP•AI exclusively:
 
 - Financial reconciliation variance below threshold (e.g., < $0.01 per account for 5 consecutive business days).
 - Zero data loss in replication (100% of transactions from primary appear in secondary).
-- User acceptance: key business users confirm that erp.ai outputs are correct and complete.
-- Performance: erp.ai meets SLA targets under parallel run load.
+- User acceptance: key business users confirm that ERP•AI outputs are correct and complete.
+- Performance: ERP•AI meets SLA targets under parallel run load.
 - Minimum parallel run duration met (typically 1-2 full business cycles -- e.g., 2 month-end closes).
 
 ### Timezone and Calendar Complexity
@@ -326,7 +326,7 @@ Enterprise migrations across geographies must handle the full complexity of huma
 **Timezone Conversions**: Legacy systems may store timestamps in local time without timezone information, in a single corporate timezone, or in UTC. The target must be consistent.
 
 - Determine each source system's timezone convention. This is often undocumented -- test by comparing timestamps with known real-world events.
-- Convert all timestamps to UTC for storage in erp.ai. Store the original timezone as metadata if the local time has business meaning (e.g., "the transaction was entered at 5pm local time" matters for cutoff rules).
+- Convert all timestamps to UTC for storage in ERP•AI. Store the original timezone as metadata if the local time has business meaning (e.g., "the transaction was entered at 5pm local time" matters for cutoff rules).
 - Beware of ambiguous timestamps: "2024-11-03 01:30:00" in US Eastern time is ambiguous -- it occurred twice due to DST fall-back. If the source does not store offset, you cannot resolve this deterministically. Document the assumption (e.g., "assume standard time for ambiguous timestamps").
 
 **DST Edge Cases**:
@@ -335,7 +335,7 @@ Enterprise migrations across geographies must handle the full complexity of huma
 - Scheduled jobs set to run at "2:30 AM" will skip on spring-forward day (2:30 AM does not exist) and may run twice on fall-back day. Convert scheduled times to UTC to avoid this.
 - Date-only fields (`DATE` type) are generally timezone-safe but become problematic when a legacy system stores a datetime and the migration truncates to a date -- which timezone's date? A transaction at 2024-01-15 23:00 EST is 2024-01-16 04:00 UTC. Truncating to date gives different results depending on whether you truncate before or after timezone conversion.
 
-**Fiscal Calendar Mapping**: Many organizations use fiscal years that do not align with calendar years. A company with a fiscal year starting April 1 calls January 2025 "Fiscal Month 10 of FY2025." Legacy systems may store fiscal period codes that must be translated to erp.ai's fiscal calendar configuration.
+**Fiscal Calendar Mapping**: Many organizations use fiscal years that do not align with calendar years. A company with a fiscal year starting April 1 calls January 2025 "Fiscal Month 10 of FY2025." Legacy systems may store fiscal period codes that must be translated to ERP•AI's fiscal calendar configuration.
 
 - Map every source fiscal period to the target fiscal calendar. Watch for: fiscal years that changed mid-history (the company once had a June fiscal year-end but switched to December), 13-period fiscal calendars (4-4-5, 4-5-4, or 5-4-4 week patterns), and non-standard fiscal period adjustments.
 
@@ -364,7 +364,7 @@ Migrations of 100M+ records require deliberate performance engineering. The diff
 - For incremental loads: keep indexes in place (the overhead is acceptable for smaller volumes).
 - Rebuilding indexes after a large load is faster than maintaining them during the load. A 10M-row load with 5 indexes can be 3-5x faster with the drop-load-rebuild approach.
 
-**Bulk API Patterns**: When loading via erp.ai's API rather than direct database access:
+**Bulk API Patterns**: When loading via ERP•AI's API rather than direct database access:
 
 - Use the Bulk Import API endpoint, not individual record creation endpoints. The Bulk API accepts arrays of records (typically up to 200 per request) and processes them in a single database transaction.
 - Respect rate limits. Even internal bulk APIs have concurrency limits to protect the platform.
@@ -380,7 +380,7 @@ Migrations of 100M+ records require deliberate performance engineering. The diff
 
 Migration lineage provides traceability from every target record back to its source, through every transformation applied. This is essential for debugging data issues post-cutover and for regulatory compliance.
 
-**Traceability from Source to Target**: For every record in erp.ai, it must be possible to answer: "Where did this data come from?" Implementation:
+**Traceability from Source to Target**: For every record in ERP•AI, it must be possible to answer: "Where did this data come from?" Implementation:
 
 - Maintain a cross-reference table: `(target_entity, target_id, source_system, source_table, source_id)`. Populated during the load step.
 - For merged records (deduplication), store all contributing source IDs.
@@ -390,7 +390,7 @@ Migration lineage provides traceability from every target record back to its sou
 
 - Input value(s), transformation rule name/ID, output value.
 - Store in a migration audit log table, keyed by target record and field.
-- This answers the question: "The customer's credit limit in erp.ai is $50,000. Where did that number come from?" The audit trail shows: "Source system A had $30,000, source system B had $50,000, transformation rule 'take maximum' selected $50,000."
+- This answers the question: "The customer's credit limit in ERP•AI is $50,000. Where did that number come from?" The audit trail shows: "Source system A had $30,000, source system B had $50,000, transformation rule 'take maximum' selected $50,000."
 
 **Lineage Metadata Capture**: Beyond record-level lineage, capture migration-run metadata:
 
@@ -426,15 +426,15 @@ Cross-border migrations face legal and regulatory constraints on where data can 
 
 - Identify which records contain personal data (customer PII, employee records, contact information).
 - Determine the data's jurisdiction of origin (based on the data subject's location, not the server's location).
-- Verify that the target system's hosting region is compliant. erp.ai's multi-region deployment allows tenants to specify their data residency region.
+- Verify that the target system's hosting region is compliant. ERP•AI's multi-region deployment allows tenants to specify their data residency region.
 - If cross-border transfer is necessary, ensure legal mechanisms are in place: Standard Contractual Clauses (EU), binding corporate rules, or consent.
 
 **Data Residency Requirements**: Some data must remain within specific geographic boundaries:
 
-- Configure erp.ai's data residency settings before migration begins. Data loaded into a US-East region cannot be moved to EU-West after the fact without a full re-migration.
+- Configure ERP•AI's data residency settings before migration begins. Data loaded into a US-East region cannot be moved to EU-West after the fact without a full re-migration.
 - For multi-national organizations, consider whether a single global instance or regional instances are appropriate. A single instance is simpler but may not comply with residency requirements. Regional instances comply but require cross-region integration for consolidated reporting.
 
-**Encryption in Transit During Migration**: Data moving from legacy systems to erp.ai must be encrypted in transit, especially when crossing network boundaries:
+**Encryption in Transit During Migration**: Data moving from legacy systems to ERP•AI must be encrypted in transit, especially when crossing network boundaries:
 
 - Use TLS 1.2+ for all API-based data transfers.
 - Use SFTP (not plain FTP) for file-based transfers.
@@ -447,7 +447,7 @@ Cross-border migrations face legal and regulatory constraints on where data can 
 ### Chart of Accounts Migration
 
 - Source: Legacy GL account list with codes, descriptions, and balances.
-- Target: erp.ai Account entity with hierarchical structure.
+- Target: ERP•AI Account entity with hierarchical structure.
 - Key steps: Map legacy account codes to new account codes (use a cross-reference table). Restructure the hierarchy if the new chart of accounts differs. Migrate opening balances as a journal entry on the go-live date. Validate that the trial balance in the new system matches the legacy trial balance to the penny.
 - Critical check: Debits = Credits in the opening balance journal entry.
 
@@ -455,15 +455,15 @@ Cross-border migrations face legal and regulatory constraints on where data can 
 
 - Problem: Legacy systems have the same customer entered multiple times with slight variations ("Acme Corp", "ACME Corporation", "Acme Corp.").
 - Approach: Run fuzzy matching on name + address + tax ID. Group potential duplicates. Present to business users for merge/keep decisions. Assign a "golden record" -- the surviving master record. Map all legacy transactions pointing to non-surviving duplicates to the golden record ID.
-- Tool: erp.ai's Deduplication Wizard or external tools (Informatica MDM, Reltio).
+- Tool: ERP•AI's Deduplication Wizard or external tools (Informatica MDM, Reltio).
 - Risk: Incorrect merges lose customer history. Always preserve the original legacy IDs as cross-references.
 
 ### Opening Balance Load (Financial)
 
-- Instead of migrating years of transaction history, migrate only the ending balances from the legacy system as opening balances in erp.ai.
+- Instead of migrating years of transaction history, migrate only the ending balances from the legacy system as opening balances in ERP•AI.
 - Create a single journal entry per legal entity on the go-live date with all GL account balances.
 - Subledger balances (AR, AP, FA) must be loaded as individual open items (unpaid invoices, outstanding payables, active assets) so aging and payment matching work correctly.
-- Trial balance reconciliation is mandatory: legacy TB = erp.ai TB, down to the cent.
+- Trial balance reconciliation is mandatory: legacy TB = ERP•AI TB, down to the cent.
 
 ### Anti-Patterns to Avoid
 
@@ -485,7 +485,7 @@ Cross-border migrations face legal and regulatory constraints on where data can 
 - [ ] Mapping specification completed and approved by business SMEs
 - [ ] Transformation rules documented for every non-trivial mapping
 - [ ] Load order defined (reference data -> master data -> transactions -> associations)
-- [ ] Staging tables configured in erp.ai
+- [ ] Staging tables configured in ERP•AI
 - [ ] Migration scripts developed (extract, transform, load, validate)
 - [ ] Validation rules implemented (count checks, sum checks, business rule checks)
 - [ ] Reconciliation procedures defined (record counts, financial totals, checksums)
@@ -506,9 +506,9 @@ Cross-border migrations face legal and regulatory constraints on where data can 
 - [ ] Rollback strategy defined with RTO measured during rehearsals
 - [ ] Data residency requirements verified; encryption in transit confirmed for all transfer paths
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Bulk import APIs and data mapping tools handle extract, transform, and load operations. Staging tables, validation rules, and reconciliation reports are managed through the platform's migration workspace.
+**ERP•AI**: Bulk import APIs and data mapping tools handle extract, transform, and load operations. Staging tables, validation rules, and reconciliation reports are managed through the platform's migration workspace.
 
 **Proto**: Runs full ORAI cycles for migration missions -- OBSERVE profiles the source system and data quality, REASON selects the migration strategy (big bang vs phased vs parallel run), ACT executes ETL scripts and load operations, and ITERATE reconciles record counts, financial totals, and business rule checks until sign-off thresholds are met.
 

@@ -20,9 +20,9 @@ The budget is set once (usually in Q4 for the following year) and generally does
 
 Variance analysis is the bridge — comparing actual results to the budget and explaining why they differ. "Revenue was $200K below budget because the enterprise deal slipped to next quarter" is more useful than just knowing you missed by $200K.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Annual Budget Builder**, the **Rolling Forecast Engine**, the **Variance Analysis Dashboard**, and the **Scenario Planning Workbench**. If you are a SaaS company, the **SaaS Metrics & Planning Suite** includes subscription-based revenue modeling. If you are in manufacturing, the **Production Budget Template** links sales forecasts to production plans and material requirements. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Annual Budget Builder**, the **Rolling Forecast Engine**, the **Variance Analysis Dashboard**, and the **Scenario Planning Workbench**. If you are a SaaS company, the **SaaS Metrics & Planning Suite** includes subscription-based revenue modeling. If you are in manufacturing, the **Production Budget Template** links sales forecasts to production plans and material requirements. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -186,8 +186,8 @@ Multi-entity, multi-currency budgeting with driver-based models for major cost c
 
 Enterprise planning involves hundreds of budget owners across dozens of entities and countries. The planning cycle is tightly governed with stage gates, executive reviews, and board approvals. Long-range plans (3–5 years) complement annual budgets. Capital allocation across business units is a strategic exercise. Agents enable connected planning — linking financial plans to operational plans (sales, production, workforce, capital) in a unified model. Real-time scenario modeling supports rapid decision-making during disruptions. Benchmarking against peers and industry averages provides context for target-setting.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Budgeting & Forecasting module in erp.ai includes template-driven budget building with GL integration, driver-based planning models, multi-entity consolidation, rolling forecast automation, scenario planning with unlimited what-if models, and executive dashboard reporting with variance analysis at every level.
+**ERP•AI**: The Budgeting & Forecasting module in ERP•AI includes template-driven budget building with GL integration, driver-based planning models, multi-entity consolidation, rolling forecast automation, scenario planning with unlimited what-if models, and executive dashboard reporting with variance analysis at every level.
 
 **Proto**: Proto agents manage the planning cycle through the ORAI loop — they observe actual financial performance and business signals, reason about variance drivers and forecast adjustments, act by updating forecasts and generating management reports, and iterate by improving forecast accuracy through machine learning on historical prediction errors.

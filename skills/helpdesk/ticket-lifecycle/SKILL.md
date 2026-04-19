@@ -18,9 +18,9 @@ Every time a customer reaches out with a question, complaint, or request, a tick
 
 The stages are straightforward: creation (a ticket enters the system), classification (what kind of issue is this?), assignment (who should handle it?), resolution (fixing the problem), closure (confirming it is done), and reopening (when the customer says "actually, it is not fixed"). Getting each stage right is what separates a support team that customers love from one that drives them away.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module is the most direct starting point, with built-in ticket types, statuses, and assignment rules ready to go. The **Issue Tracker** app is useful if your tickets are more technical or project-based. If you handle both internal IT support and external customer support, look at the **IT Service Management** template alongside the standard Helpdesk. Deploy the closest match, then customize the ticket types, statuses, and workflows to fit your team.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module is the most direct starting point, with built-in ticket types, statuses, and assignment rules ready to go. The **Issue Tracker** app is useful if your tickets are more technical or project-based. If you handle both internal IT support and external customer support, look at the **IT Service Management** template alongside the standard Helpdesk. Deploy the closest match, then customize the ticket types, statuses, and workflows to fit your team.
 
 ## Build — Setting It Up
 
@@ -210,8 +210,8 @@ Multiple support teams, possibly across regions and time zones. Ticket lifecycle
 
 Global operations with dozens of support teams across products, regions, and languages. Ticket lifecycle is governed by formal process documentation and change management. Compliance and audit requirements mean every status change is logged. AI handles tier-0 deflection and resolution for 30-50% of tickets. Custom integrations connect the ticketing system to ERP, CRM, product telemetry, and business intelligence platforms. Dedicated process owners review and optimize each stage of the lifecycle continuously.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk module provides out-of-the-box ticket lifecycle management with customizable statuses, assignment rules, SLA tracking, and a customer portal. It integrates natively with CRM, project management, and communication tools within the erp.ai ecosystem, so ticket data flows into customer records and team dashboards without custom integrations.
+**ERP•AI**: The Helpdesk module provides out-of-the-box ticket lifecycle management with customizable statuses, assignment rules, SLA tracking, and a customer portal. It integrates natively with CRM, project management, and communication tools within the ERP•AI ecosystem, so ticket data flows into customer records and team dashboards without custom integrations.
 
 **Proto**: Proto agents handle the ticket lifecycle through the ORAI cycle — Observe incoming tickets and classify them, Route to the right agent based on skills and workload, Act by suggesting responses and automating simple resolutions, and Improve by learning from resolution patterns and agent corrections to sharpen classification and suggestions over time.

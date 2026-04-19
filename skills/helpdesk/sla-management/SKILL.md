@@ -18,9 +18,9 @@ An SLA (Service Level Agreement) is a promise you make to your customers about h
 
 This covers setting the right targets (not too ambitious, not too lazy), building the rules that escalate tickets before they breach, monitoring compliance across teams, and reporting on performance to both internal stakeholders and customers. Done well, SLA management builds customer trust and gives your support team clear priorities. Done poorly, it creates a culture of panic, gaming the numbers, and closing tickets prematurely just to hit targets.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module includes SLA rule configuration with priority-based response and resolution targets. The **Service Level Agreement** template within the Helpdesk module lets you define multiple SLA policies and assign them to customer groups or ticket types. If you are managing IT support internally, the **IT Service Management** template follows ITIL-aligned SLA structures. Deploy the closest match and adjust the time targets to fit your actual capacity.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module includes SLA rule configuration with priority-based response and resolution targets. The **Service Level Agreement** template within the Helpdesk module lets you define multiple SLA policies and assign them to customer groups or ticket types. If you are managing IT support internally, the **IT Service Management** template follows ITIL-aligned SLA structures. Deploy the closest match and adjust the time targets to fit your actual capacity.
 
 ## Build — Setting It Up
 
@@ -220,8 +220,8 @@ SLAs are now contractual commitments with financial implications. Implement per-
 
 SLA management is a dedicated function. Contract-specific SLAs for hundreds of enterprise customers, each potentially unique. Automated SLA policy assignment from contract management systems. Real-time SLA dashboards visible to operations, management, and customers. Financial penalty calculation and service credit processing. SLA performance feeds into executive compensation metrics. Regular benchmarking against industry standards and competitors. SLA data drives capacity planning and hiring decisions.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk module includes configurable SLA policies with priority-based targets, business hours with holiday calendars, automatic escalation rules, and SLA compliance dashboards. SLA policies can be assigned to service level agreements linked to customer contracts, ensuring the right targets apply automatically to every ticket.
+**ERP•AI**: The Helpdesk module includes configurable SLA policies with priority-based targets, business hours with holiday calendars, automatic escalation rules, and SLA compliance dashboards. SLA policies can be assigned to service level agreements linked to customer contracts, ensuring the right targets apply automatically to every ticket.
 
 **Proto**: Proto agents monitor SLA clocks across all open tickets in real time through the ORAI cycle — Observing ticket aging and workload patterns, Routing at-risk tickets to available agents, Acting on escalation rules before breaches occur, and Improving SLA predictions by learning from historical breach patterns and resolution times.

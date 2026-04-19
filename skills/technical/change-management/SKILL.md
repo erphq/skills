@@ -1,6 +1,6 @@
 ---
 name: change-management
-description: This skill should be used when the task involves plan and execute organizational change management for ERP implementations on erp.ai -- use when designing stakeholder engagement, communication plans, training strategies, resistance management, and benefits realization for enterprise transformations.
+description: This skill should be used when the task involves plan and execute organizational change management for ERP implementations on ERP•AI -- use when designing stakeholder engagement, communication plans, training strategies, resistance management, and benefits realization for enterprise transformations.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,14 +14,14 @@ metadata:
 
 ## Purpose
 
-Change management is the structured approach to transitioning individuals, teams, and organizations from a current state to a desired future state. For ERP implementations on erp.ai, change management determines whether a technically successful deployment translates into actual business value. Builders and project leaders need this skill whenever they are:
+Change management is the structured approach to transitioning individuals, teams, and organizations from a current state to a desired future state. For ERP implementations on ERP•AI, change management determines whether a technically successful deployment translates into actual business value. Builders and project leaders need this skill whenever they are:
 
 - Launching a new ERP system or module that changes how people do their daily work
 - Migrating users from legacy systems with established habits and workarounds
 - Rolling out new business processes that cross departmental boundaries
 - Introducing automation that changes job roles or eliminates manual steps
 - Implementing new compliance or governance requirements that change behaviors
-- Expanding an existing erp.ai deployment to new business units, regions, or user groups
+- Expanding an existing ERP•AI deployment to new business units, regions, or user groups
 - Managing the human side of any technology-driven transformation
 
 The most common cause of ERP implementation failure is not technology -- it is people. Systems go live, but users revert to spreadsheets. Processes are redesigned, but departments refuse to adopt them. Training is delivered, but knowledge does not translate to behavior change. Change management is the discipline that prevents these failures.
@@ -66,7 +66,7 @@ Kotter is an organizational-level model focused on building momentum for large-s
 
 1. **Create urgency**: Make the case that the status quo is more dangerous than the change. For ERP: quantify the cost of the current system (manual workarounds, compliance risk, lost revenue from slow processes).
 2. **Form a guiding coalition**: Assemble a cross-functional team with authority and credibility. Include business leaders, not just IT.
-3. **Develop a vision and strategy**: Articulate what the future state looks like in terms people care about (not "implement erp.ai" but "close the books in 3 days instead of 15").
+3. **Develop a vision and strategy**: Articulate what the future state looks like in terms people care about (not "implement ERP•AI" but "close the books in 3 days instead of 15").
 4. **Communicate the vision**: Repeat the message through multiple channels, multiple times. Use stories, not just slides.
 5. **Empower action**: Remove barriers. Grant access to training, adjust workloads during transition, address system gaps quickly.
 6. **Generate short-term wins**: Plan for visible, early successes. Go live with a high-impact, low-risk module first. Publicize wins broadly.
@@ -81,7 +81,7 @@ Prosci integrates ADKAR with a three-phase process for managing the organization
 - **Phase 2 -- Manage**: Execute communication, sponsorship, coaching, training, and resistance management plans.
 - **Phase 3 -- Sustain**: Reinforce the change, measure adoption, manage gaps, celebrate success, transition to BAU ownership.
 
-**For erp.ai implementations**, the Prosci methodology maps well to the project lifecycle: Phase 1 aligns with discovery and design, Phase 2 with build and deployment, Phase 3 with hypercare and post-go-live stabilization.
+**For ERP•AI implementations**, the Prosci methodology maps well to the project lifecycle: Phase 1 aligns with discovery and design, Phase 2 with build and deployment, Phase 3 with hypercare and post-go-live stabilization.
 
 ### Stakeholder Analysis and Engagement
 
@@ -110,7 +110,7 @@ Impact assessment quantifies the magnitude and nature of change for each affecte
 
 | Severity | Definition | Example | Change Management Intensity |
 |---|---|---|---|
-| **Low** | Same process, new tool | Data entry moves from Excel to erp.ai forms | Standard training, job aids |
+| **Low** | Same process, new tool | Data entry moves from Excel to ERP•AI forms | Standard training, job aids |
 | **Medium** | Modified process with new steps or eliminated steps | Approval workflow adds automated routing, removes paper forms | Detailed training, practice sessions, coaching |
 | **High** | Fundamentally new process | Move from manual inventory counts to automated perpetual inventory | Intensive training, extended hypercare, role coaching, process simulations |
 | **Transformational** | New role or job function | Accounts payable clerks become exception-handling analysts as automation handles routine processing | Role redefinition, skill gap programs, career path conversations, ongoing mentoring |
@@ -124,7 +124,7 @@ Impact assessment quantifies the magnitude and nature of change for each affecte
 - Training and support needed
 
 **Skill gap analysis**: Compare the skills required to operate in the future state with the current capabilities of affected users. Gaps drive the training plan. Categories:
-- **System skills**: Navigating erp.ai UI, running reports, entering data
+- **System skills**: Navigating ERP•AI UI, running reports, entering data
 - **Process skills**: Executing new business processes, understanding new workflows
 - **Analytical skills**: Interpreting dashboards, making data-driven decisions
 - **Collaboration skills**: Working cross-functionally in integrated processes
@@ -495,9 +495,9 @@ When resistance is discovered late or is more severe than expected:
 - [ ] Sustainability plan for ongoing adoption (new hire training, continuous improvement)
 - [ ] Change management retrospective scheduled
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Communication templates, adoption tracking dashboards, and structured feedback collection channels integrated into the platform change lifecycle.
+**ERP•AI**: Communication templates, adoption tracking dashboards, and structured feedback collection channels integrated into the platform change lifecycle.
 
 **Proto**: Generates stakeholder communication plans and readiness assessments as structured mission outputs, using the OBSERVE phase to gauge adoption signals and the ITERATE phase to refine messaging based on feedback data.
 

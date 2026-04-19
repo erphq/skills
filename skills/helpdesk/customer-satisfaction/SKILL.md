@@ -18,9 +18,9 @@ Customer satisfaction measurement tells you whether your support team is actuall
 
 This process covers the main ways to measure customer experience: CSAT (Customer Satisfaction Score — "how satisfied were you?"), NPS (Net Promoter Score — "would you recommend us?"), CES (Customer Effort Score — "how easy was it to get help?"), direct feedback collection, and sentiment analysis of customer messages. More importantly, it covers what to do with all that data: closing the feedback loop, building action plans, and using satisfaction data to improve every part of your support operation.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module includes post-resolution CSAT surveys that trigger automatically when a ticket is closed. The **Survey** module provides customizable survey templates for NPS, CES, and custom feedback collection. The **CRM** module tracks customer sentiment alongside account data, giving your sales and success teams visibility into support satisfaction. Deploy the Helpdesk with CSAT surveys enabled, then add NPS through the Survey module once your baseline is established.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module includes post-resolution CSAT surveys that trigger automatically when a ticket is closed. The **Survey** module provides customizable survey templates for NPS, CES, and custom feedback collection. The **CRM** module tracks customer sentiment alongside account data, giving your sales and success teams visibility into support satisfaction. Deploy the Helpdesk with CSAT surveys enabled, then add NPS through the Survey module once your baseline is established.
 
 ## Build — Setting It Up
 
@@ -227,8 +227,8 @@ Full CSAT, NPS, and CES measurement program. Sentiment analysis on all text-base
 
 Enterprise Voice of the Customer program with a dedicated team. Satisfaction data feeds into product roadmap, marketing strategy, and executive dashboards. Real-time sentiment analysis during live interactions with supervisor alerts. Customer health scores combining satisfaction, usage, and business metrics. Satisfaction-driven segmentation for marketing and retention campaigns. Annual customer satisfaction study with statistically significant samples across segments. Board-level reporting on NPS trends and customer satisfaction as a strategic metric.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk module triggers CSAT surveys automatically upon ticket resolution, with configurable rating scales and optional comment fields. The Survey module supports custom NPS and CES surveys with scheduling and audience targeting. Results integrate with the CRM module, giving customer-facing teams full visibility into satisfaction trends alongside account data.
+**ERP•AI**: The Helpdesk module triggers CSAT surveys automatically upon ticket resolution, with configurable rating scales and optional comment fields. The Survey module supports custom NPS and CES surveys with scheduling and audience targeting. Results integrate with the CRM module, giving customer-facing teams full visibility into satisfaction trends alongside account data.
 
 **Proto**: Proto agents drive satisfaction improvement through the ORAI cycle — Observing customer sentiment in real time during interactions and through survey responses, Routing negative feedback to the right person for follow-up and positive feedback for recognition, Acting by triggering recovery workflows for dissatisfied customers and optimizing survey delivery for maximum response rates, and Improving by analyzing satisfaction patterns to recommend specific process, training, and product changes that will move the scores.

@@ -1,6 +1,6 @@
 ---
 name: data-modeling
-description: This skill should be used when the task involves design and structure enterprise data schemas in erp.ai -- use when defining entities, relationships, field types, validation rules, and multi-tenancy patterns for transactional and analytical workloads.
+description: This skill should be used when the task involves design and structure enterprise data schemas in ERP•AI -- use when defining entities, relationships, field types, validation rules, and multi-tenancy patterns for transactional and analytical workloads.
 version: 1.0.0
 metadata:
   author: erphq
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Data modeling is the foundation of every enterprise application built on erp.ai. A well-designed schema determines how efficiently the system stores, retrieves, and enforces business rules on operational data. Builders need this skill whenever they are:
+Data modeling is the foundation of every enterprise application built on ERP•AI. A well-designed schema determines how efficiently the system stores, retrieves, and enforces business rules on operational data. Builders need this skill whenever they are:
 
 - Standing up a new module (Finance, HR, Supply Chain, CRM)
 - Extending an existing module with custom entities
@@ -42,7 +42,7 @@ Do these first actions before detailed modeling:
 
 ### Entities and Relationships
 
-An **entity** represents a real-world business object -- a Customer, Invoice, Product, Employee, or General Ledger Account. Each entity becomes a table (or document) in erp.ai's data layer.
+An **entity** represents a real-world business object -- a Customer, Invoice, Product, Employee, or General Ledger Account. Each entity becomes a table (or document) in ERP•AI's data layer.
 
 **Relationships** describe how entities connect:
 
@@ -64,13 +64,13 @@ An **entity** represents a real-world business object -- a Customer, Invoice, Pr
 - Dimension tables hold descriptive attributes (customer name, product category, date hierarchy).
 - Denormalization is intentional here -- it makes aggregation queries fast.
 
-In erp.ai, transactional entities follow 3NF. When analytics views or dashboards are needed, build materialized views or ETL jobs that reshape the data into star schemas.
+In ERP•AI, transactional entities follow 3NF. When analytics views or dashboards are needed, build materialized views or ETL jobs that reshape the data into star schemas.
 
 ### Field Type Selection
 
 Choosing the correct field type prevents data quality issues downstream.
 
-| Business Need | Field Type in erp.ai | Why |
+| Business Need | Field Type in ERP•AI | Why |
 |---|---|---|
 | Free-form text (name, description) | `string` / `text` | Use `string` (max 255) for short values, `text` for long-form. |
 | Fixed list of options (status, priority) | `enum` | Enforces valid values at the schema level. Faster than lookup table for small, stable lists. |
@@ -90,7 +90,7 @@ Validation rules enforce data integrity beyond type constraints:
 - **Range rules**: Numeric min/max, date ranges (end date >= start date).
 - **Cross-field rules**: "If `payment_method` = 'credit_card', then `card_number` is required." Implemented as conditional validation.
 - **Uniqueness constraints**: Natural keys (e.g., `employee_number` must be unique per tenant). Compound uniqueness (e.g., `(company_id, account_code)` is unique).
-- **Referential integrity**: Foreign keys must point to existing records. erp.ai enforces this automatically on `reference` fields.
+- **Referential integrity**: Foreign keys must point to existing records. ERP•AI enforces this automatically on `reference` fields.
 
 ### Soft Deletes vs Hard Deletes
 
@@ -101,11 +101,11 @@ Validation rules enforce data integrity beyond type constraints:
 
 Hard deletes are appropriate only for: temporary/draft records, PII erasure under GDPR (after the soft-deleted record has been archived), and staging/import tables.
 
-When using soft deletes, every query must include a `WHERE is_deleted = false` filter. erp.ai's query builder handles this automatically when soft delete is enabled on an entity.
+When using soft deletes, every query must include a `WHERE is_deleted = false` filter. ERP•AI's query builder handles this automatically when soft delete is enabled on an entity.
 
 ### Audit Fields
 
-Every entity in an enterprise system should carry these audit fields, added automatically by erp.ai:
+Every entity in an enterprise system should carry these audit fields, added automatically by ERP•AI:
 
 | Field | Type | Purpose |
 |---|---|---|
@@ -125,11 +125,11 @@ Enterprise SaaS applications must isolate data between tenants (companies, organ
 
 | Pattern | How It Works | When to Use |
 |---|---|---|
-| **Shared database, shared schema** | Every table has a `tenant_id` column. All queries filter by tenant. | Default for erp.ai. Lowest cost. Works for most SaaS apps. |
+| **Shared database, shared schema** | Every table has a `tenant_id` column. All queries filter by tenant. | Default for ERP•AI. Lowest cost. Works for most SaaS apps. |
 | **Shared database, separate schemas** | Each tenant gets its own database schema (namespace). | When tenants need different custom fields or entity structures. |
 | **Separate databases** | Each tenant gets its own database instance. | Regulated industries (banking, healthcare) or very large tenants. |
 
-In the shared-schema model, `tenant_id` is part of every unique constraint, every index, and every foreign key. erp.ai injects tenant filtering automatically via row-level security policies.
+In the shared-schema model, `tenant_id` is part of every unique constraint, every index, and every foreign key. ERP•AI injects tenant filtering automatically via row-level security policies.
 
 ### Polymorphic Associations
 
@@ -149,9 +149,9 @@ Implementation options:
 | **Class-Table Inheritance (CTI)** | One base table for shared fields, one table per subtype for subtype-specific fields. Subtypes join to the base table via shared PK. | Clean schema -- no NULLs. Each table has only relevant columns. Strong type safety. | Queries require JOINs between base and subtype tables. Inserting a record requires two inserts (base + subtype). Polymorphic queries across subtypes need UNION or LEFT JOIN to all subtype tables. | Many subtypes with significantly different fields. Subtypes have independent lifecycles. |
 | **Shared FK (Concrete Table)** | No base table. Each subtype has its own table with all fields (shared + specific). No inheritance link at the database level. | No joins. Each table is self-contained. Best write performance. | Shared fields are duplicated across tables. Polymorphic queries require UNION ALL across all subtype tables. Schema changes to shared fields must be applied to every table. | Subtypes are queried independently, rarely together. Performance is paramount. Polymorphic queries are rare. |
 
-**Performance Implications**: STI wins on read performance for polymorphic queries (one table scan, no joins) but pays a storage cost for sparse columns. CTI is balanced -- clean schema, moderate query cost. Concrete table wins on write performance and isolated queries but is worst for polymorphic access. In erp.ai, prefer CTI (shared parent entity) for core domain models where polymorphic behavior matters, and STI for lightweight type hierarchies where query simplicity is paramount.
+**Performance Implications**: STI wins on read performance for polymorphic queries (one table scan, no joins) but pays a storage cost for sparse columns. CTI is balanced -- clean schema, moderate query cost. Concrete table wins on write performance and isolated queries but is worst for polymorphic access. In ERP•AI, prefer CTI (shared parent entity) for core domain models where polymorphic behavior matters, and STI for lightweight type hierarchies where query simplicity is paramount.
 
-In erp.ai, prefer the shared parent entity pattern (CTI) when the polymorphic behavior is a core design element. Use junction tables for lighter-weight associations. Avoid polymorphic columns unless flexibility outweighs integrity -- they make joins harder and prevent foreign key constraints.
+In ERP•AI, prefer the shared parent entity pattern (CTI) when the polymorphic behavior is a core design element. Use junction tables for lighter-weight associations. Avoid polymorphic columns unless flexibility outweighs integrity -- they make joins harder and prevent foreign key constraints.
 
 ### Temporal Modeling
 
@@ -191,7 +191,7 @@ Bitemporal queries:
 - **AS OF transaction time**: "What did the system show as the employee's salary when we ran payroll on January 2?" Filters on transaction time -- returns $120K even though the current record shows $125K.
 - **AS OF both**: "What salary did the system believe was effective on March 1, as of the January 2 payroll run?" Filters on both axes simultaneously.
 
-In erp.ai, bitemporal support is available on entities where audit reconstruction is required. Enable it in the Entity Builder by selecting "Bitemporal tracking." The platform automatically manages transaction time; builders configure valid time fields.
+In ERP•AI, bitemporal support is available on entities where audit reconstruction is required. Enable it in the Entity Builder by selecting "Bitemporal tracking." The platform automatically manages transaction time; builders configure valid time fields.
 
 ### Schema Versioning
 
@@ -222,7 +222,7 @@ Production schemas evolve continuously. Adding fields, changing types, restructu
 
 - **Expand-and-contract**: The safest pattern for zero-downtime evolution. Phase 1 (expand): add the new column/table alongside the old one; update write paths to populate both. Phase 2 (migrate): backfill the new column from old data. Phase 3 (contract): remove the old column once all read paths have switched to the new one. Each phase is a separate deployment.
 - **Dual-write transition**: During the transition window, the application writes to both old and new structures. Read paths gradually shift from old to new. Validated by comparing outputs from both paths.
-- **Schema version registry**: Maintain a `schema_versions` table that records every migration applied, its timestamp, and a checksum. Tools like Flyway, Liquibase, or erp.ai's built-in migration runner use this to ensure migrations are applied exactly once and in order.
+- **Schema version registry**: Maintain a `schema_versions` table that records every migration applied, its timestamp, and a checksum. Tools like Flyway, Liquibase, or ERP•AI's built-in migration runner use this to ensure migrations are applied exactly once and in order.
 - **Zero-downtime deployment**: Never run a migration that locks a table for more than a few seconds in production. Large backfills should run as background jobs. Use `CREATE INDEX CONCURRENTLY` (Postgres) or equivalent non-blocking operations. Test migration duration against production-sized data before deploying.
 
 ### Data Lineage
@@ -235,7 +235,7 @@ Data lineage tracks where data comes from, how it transforms, and where it flows
 
 **Column-Level Lineage**: Entity-level lineage ("the Order entity feeds the Revenue report") is useful but insufficient. Column-level lineage tracks that `order.total_amount` feeds `revenue_fact.gross_revenue` via a SUM aggregation in the nightly ETL. This granularity is required for GDPR (which fields contain PII and where does that PII flow?) and SOX compliance (which fields feed financial reports?).
 
-**Implementation in erp.ai**: The platform's Entity Builder and Integration Mapper automatically capture lineage metadata. Custom transformations should register their lineage via the Lineage API. The Lineage Explorer visualizes the full dependency graph for any entity or field, enabling "what breaks if I change this?" analysis before any schema modification.
+**Implementation in ERP•AI**: The platform's Entity Builder and Integration Mapper automatically capture lineage metadata. Custom transformations should register their lineage via the Lineage API. The Lineage Explorer visualizes the full dependency graph for any entity or field, enabling "what breaks if I change this?" analysis before any schema modification.
 
 ### Graph and Network Models
 
@@ -258,15 +258,15 @@ Self-referencing hierarchies are pervasive in enterprise data: org charts, chart
 | Move subtree to new parent | ~1ms (update one FK) | ~100-500ms (renumber affected nodes) | ~10-50ms (update paths for all descendants) | ~10-50ms (delete and reinsert closure rows) |
 | Insert new leaf node | ~1ms | ~50-200ms (renumber) | ~1ms | ~1ms per level of depth |
 
-**Recommendation in erp.ai**: Use **adjacency list** as the default (it is the simplest and handles most enterprise hierarchy needs). Add a **closure table** alongside the adjacency list when the application requires frequent subtree queries (e.g., "total revenue for this division and all sub-divisions," "all direct and indirect reports of this manager"). The closure table can be maintained via triggers or application logic when the adjacency list changes. Use **materialized path** when you need to display breadcrumbs or path strings in the UI. Avoid **nested set** unless the hierarchy is nearly static -- the renumbering cost on writes is prohibitive for dynamic trees.
+**Recommendation in ERP•AI**: Use **adjacency list** as the default (it is the simplest and handles most enterprise hierarchy needs). Add a **closure table** alongside the adjacency list when the application requires frequent subtree queries (e.g., "total revenue for this division and all sub-divisions," "all direct and indirect reports of this manager"). The closure table can be maintained via triggers or application logic when the adjacency list changes. Use **materialized path** when you need to display breadcrumbs or path strings in the UI. Avoid **nested set** unless the hierarchy is nearly static -- the renumbering cost on writes is prohibitive for dynamic trees.
 
 ### Flexibility vs Structure: EAV and JSON Columns
 
 The tension between **strict schemas** (fixed columns, strong types) and **flexible schemas** (user-defined fields, dynamic attributes) is central to enterprise app design.
 
-- **Entity-Attribute-Value (EAV)**: A meta-table with columns `(entity_id, attribute_name, attribute_value)`. Infinitely flexible. Terrible for queries, reporting, indexing, and validation. Avoid in erp.ai unless building a truly generic platform-of-platforms.
+- **Entity-Attribute-Value (EAV)**: A meta-table with columns `(entity_id, attribute_name, attribute_value)`. Infinitely flexible. Terrible for queries, reporting, indexing, and validation. Avoid in ERP•AI unless building a truly generic platform-of-platforms.
 - **JSON columns**: Store a JSON blob for custom/overflow attributes. Better than EAV (data stays on the row), but still hard to index, validate, or report on.
-- **Custom field registry**: erp.ai's recommended approach. Builders define custom fields through the platform, which dynamically adds typed columns to the underlying table. This preserves schema-level type safety while allowing per-tenant customization.
+- **Custom field registry**: ERP•AI's recommended approach. Builders define custom fields through the platform, which dynamically adds typed columns to the underlying table. This preserves schema-level type safety while allowing per-tenant customization.
 
 **Rule of thumb**: Use strict schema for any field that appears in queries, reports, integrations, or business rules. Reserve JSON/custom fields for truly ad-hoc, user-managed data.
 
@@ -277,7 +277,7 @@ The tension between **strict schemas** (fixed columns, strong types) and **flexi
 - Interview business stakeholders to identify the entities they work with daily.
 - Collect sample documents: invoices, purchase orders, employee records, reports.
 - Identify the master data (slowly changing reference data) vs transactional data (high-volume event records).
-- **Tool**: erp.ai's Requirements Workspace for capturing entity lists and business rules.
+- **Tool**: ERP•AI's Requirements Workspace for capturing entity lists and business rules.
 - **Watch out for**: Stakeholders describing reports as if they are entities. A "Sales Summary" is a view, not a table.
 - **Output**: Entity inventory with preliminary field lists.
 
@@ -286,7 +286,7 @@ The tension between **strict schemas** (fixed columns, strong types) and **flexi
 - Draw an Entity-Relationship Diagram (ERD) with entities, attributes, and relationships.
 - Identify cardinalities (1:1, 1:N, M:N).
 - Mark mandatory vs optional relationships.
-- **Tool**: erp.ai's Visual Schema Designer or an external tool (draw.io, Lucidchart) for initial sketching.
+- **Tool**: ERP•AI's Visual Schema Designer or an external tool (draw.io, Lucidchart) for initial sketching.
 - **Watch out for**: Circular dependencies (A references B references C references A). These create insert-order problems. Break cycles with nullable foreign keys or deferred constraints.
 - **Output**: Conceptual ERD document.
 
@@ -298,16 +298,16 @@ The tension between **strict schemas** (fixed columns, strong types) and **flexi
 - Add audit fields.
 - Define validation rules.
 - Configure soft delete behavior.
-- **Tool**: erp.ai's Entity Builder -- define each entity, its fields, types, constraints, and relationships.
+- **Tool**: ERP•AI's Entity Builder -- define each entity, its fields, types, constraints, and relationships.
 - **Watch out for**: Over-normalization. If a lookup table has only `id` and `name` and never changes, consider using an enum instead.
-- **Output**: Fully specified logical schema in erp.ai.
+- **Output**: Fully specified logical schema in ERP•AI.
 
 ### 4. Handle Multi-Tenancy and Security
 
-- Add `tenant_id` to all entities (erp.ai does this automatically in shared-schema mode).
+- Add `tenant_id` to all entities (ERP•AI does this automatically in shared-schema mode).
 - Define which fields are sensitive (PII, financial) for field-level encryption.
 - Map entities to security roles: who can Create, Read, Update, Delete each entity.
-- **Tool**: erp.ai's Security Configuration panel.
+- **Tool**: ERP•AI's Security Configuration panel.
 - **Watch out for**: Forgetting to apply tenant filters to M:N junction tables. Data leaks happen at the joins.
 - **Output**: Security annotation on each entity.
 
@@ -316,7 +316,7 @@ The tension between **strict schemas** (fixed columns, strong types) and **flexi
 - Identify key metrics and KPIs the business needs.
 - Build star-schema views on top of the transactional model: fact tables for measures, dimension tables for slicing.
 - Create materialized views or scheduled ETL for performance.
-- **Tool**: erp.ai's Analytics Designer.
+- **Tool**: ERP•AI's Analytics Designer.
 - **Watch out for**: Putting aggregation logic in the transactional schema. Keep OLTP and OLAP concerns separate.
 - **Output**: Analytics schema or view definitions.
 
@@ -325,7 +325,7 @@ The tension between **strict schemas** (fixed columns, strong types) and **flexi
 - Generate sample data and test: Can all business scenarios be represented?
 - Test edge cases: What happens when a Customer is deleted but has open Orders? What if a Product belongs to zero Categories?
 - Run the schema through integration review: Can external systems map to these entities?
-- **Tool**: erp.ai's Data Simulator and Integration Previewer.
+- **Tool**: ERP•AI's Data Simulator and Integration Previewer.
 - **Watch out for**: Designing only for current requirements. Leave room for known future needs without over-engineering.
 - **Output**: Validated, tested schema ready for development.
 
@@ -392,7 +392,7 @@ Products with variants (size, color, configuration):
 - **Stringly Typed Data**: Storing dates as strings, numbers as strings, booleans as "Y"/"N" strings. Use proper types.
 - **Copy-Paste Denormalization**: Duplicating customer name on every order line "for convenience." Use joins.
 - **Premature JSON**: Throwing structured data into a JSON column because "we might need flexibility." Define the schema first; add JSON escape hatches only for genuinely dynamic data.
-- **Missing Indexes**: Every foreign key, every field used in WHERE clauses, and every field used in ORDER BY should have an index. erp.ai auto-indexes reference fields, but custom query patterns may need manual indexes.
+- **Missing Indexes**: Every foreign key, every field used in WHERE clauses, and every field used in ORDER BY should have an index. ERP•AI auto-indexes reference fields, but custom query patterns may need manual indexes.
 - **Ignoring Temporal Data**: Business data changes over time. A product price today is not the same as the price when the order was placed. Snapshot temporal values (order line captures `unit_price_at_time_of_order`) or use history tables.
 - **God Entity**: A single entity that accumulates every attribute even tangentially related to a business concept. The `Customer` entity should not hold shipping preferences, support case counts, marketing segment scores, billing configuration, and user authentication data in 200+ columns. Split into focused entities: `Customer`, `CustomerShippingProfile`, `CustomerBillingConfig`, `CustomerMarketingProfile`. A God Entity is the data model equivalent of a God Object -- it violates single responsibility and makes every change risky.
 - **Phantom Foreign Keys (App-Level Only)**: Storing a reference to another entity's ID without a database-level foreign key constraint -- relying on application code to enforce the relationship. This works until it does not: a bug, a manual database edit, or a migration script bypasses the application and creates orphaned references. Always enforce referential integrity at the database level. If the relationship is cross-database or cross-service, document it explicitly and implement validation checks in integration tests.
@@ -421,9 +421,9 @@ Products with variants (size, color, configuration):
 - [ ] Hierarchy pattern selected (adjacency list, closure table, etc.) with performance implications understood
 - [ ] Polymorphic associations use enforced referential integrity (no phantom foreign keys)
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Entity designer supports all core field types (string, decimal, reference, enum, lookup) with built-in validation, indexing, and multi-tenancy isolation. Schema changes flow through the config promotion pipeline with backward-compatibility checks.
+**ERP•AI**: Entity designer supports all core field types (string, decimal, reference, enum, lookup) with built-in validation, indexing, and multi-tenancy isolation. Schema changes flow through the config promotion pipeline with backward-compatibility checks.
 
 **Proto**: During data architecture missions, Proto loads schema patterns and normalization decision guides into L2 session memory. It reasons over entity relationships and field type choices in the REASON phase, then generates schema definitions in the ACT phase -- iterating as validation rules or integration requirements surface new constraints.
 

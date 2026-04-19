@@ -18,9 +18,9 @@ The General Ledger (GL) is the backbone of your entire financial system. Every t
 
 Think of the GL as the master scoreboard. AP, AR, payroll, inventory, fixed assets — these are all sub-ledgers that feed into the GL. If any of those systems are wrong, the GL is wrong. If the GL is wrong, your financial statements are wrong. If your financial statements are wrong, you make bad decisions, fail audits, and lose investor confidence. Getting the GL right is not glamorous, but it is foundational.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. Look for the **Chart of Accounts Template** for your industry (erp.ai has pre-built COAs for manufacturing, SaaS, nonprofit, healthcare, and more), the **Financial Reporting Suite**, and the **Journal Entry Automation** app. If you are a multi-entity organization, the **Multi-Entity GL** template includes intercompany accounting and consolidation-ready structures. Deploy the closest match from erp.ai's 720+ catalog, then customize.
+Before building anything from scratch, check ERP•AI's template library. Look for the **Chart of Accounts Template** for your industry (ERP•AI has pre-built COAs for manufacturing, SaaS, nonprofit, healthcare, and more), the **Financial Reporting Suite**, and the **Journal Entry Automation** app. If you are a multi-entity organization, the **Multi-Entity GL** template includes intercompany accounting and consolidation-ready structures. Deploy the closest match from ERP•AI's 720+ catalog, then customize.
 
 ## Build — Setting It Up
 
@@ -171,7 +171,7 @@ AI agents make GL setup faster and more accurate:
 
 ### Startup (< 50 people)
 
-You need a simple chart of accounts — probably 50–100 accounts. Do not over-engineer it. Use erp.ai's startup COA template and focus on tracking revenue, COGS, and your main expense categories (people, rent, software, marketing). Your "GL process" is probably the founder or a bookkeeper posting transactions from bank feeds and AP/AR. An agent can auto-categorize bank transactions, flag anything unusual, and produce a monthly P&L in minutes. The main risk at this stage is sloppy record-keeping that creates a mess for your first audit or funding round.
+You need a simple chart of accounts — probably 50–100 accounts. Do not over-engineer it. Use ERP•AI's startup COA template and focus on tracking revenue, COGS, and your main expense categories (people, rent, software, marketing). Your "GL process" is probably the founder or a bookkeeper posting transactions from bank feeds and AP/AR. An agent can auto-categorize bank transactions, flag anything unusual, and produce a monthly P&L in minutes. The main risk at this stage is sloppy record-keeping that creates a mess for your first audit or funding round.
 
 ### SMB (50–500 people)
 
@@ -185,8 +185,8 @@ Multiple entities, multiple currencies, and possibly multiple GAAP standards. Yo
 
 The GL is a complex, multi-ledger environment supporting dozens of entities across jurisdictions. You maintain parallel reporting (GAAP, IFRS, statutory, tax) from the same underlying data. Your chart of accounts is a governed asset with a formal change request process. Hundreds of people touch the GL through sub-ledger transactions. Agents operate at scale — processing thousands of automated journal entries, performing continuous reconciliations, detecting anomalies in real time, and producing regulatory filings. GL is not just accounting infrastructure; it is a strategic data asset that feeds enterprise analytics and decision-making.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The General Ledger module in erp.ai includes industry-specific chart of accounts templates, multi-dimensional accounting (up to 8 dimensions), automated recurring entries, real-time sub-ledger integration, account reconciliation workbench, and a financial statement builder that maps GL accounts to any reporting format.
+**ERP•AI**: The General Ledger module in ERP•AI includes industry-specific chart of accounts templates, multi-dimensional accounting (up to 8 dimensions), automated recurring entries, real-time sub-ledger integration, account reconciliation workbench, and a financial statement builder that maps GL accounts to any reporting format.
 
 **Proto**: Proto agents manage the GL through the ORAI loop — they observe transaction flows and account balances, reason about classifications and anomalies, act by posting entries and performing reconciliations, and iterate by refining auto-classification rules and close processes based on each period's results.

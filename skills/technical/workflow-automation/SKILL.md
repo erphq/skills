@@ -1,6 +1,6 @@
 ---
 name: workflow-automation
-description: This skill should be used when the task involves design and implement business process automation in erp.ai -- use when building approval chains, state machines, scheduled jobs, notification rules, SLA enforcement, and business rule engines.
+description: This skill should be used when the task involves design and implement business process automation in ERP•AI -- use when building approval chains, state machines, scheduled jobs, notification rules, SLA enforcement, and business rule engines.
 version: 1.0.0
 metadata:
   author: erphq
@@ -66,7 +66,7 @@ Triggers define what initiates a workflow action or state transition.
 | **API / Webhook** | An external system calls an endpoint | Integration-triggered workflows (payment received, shipment updated) |
 | **Timer** | A duration elapses since a reference event | Escalate if not approved within 48 hours |
 
-In erp.ai, triggers are configured on the Workflow Builder. Each trigger can have **filter conditions** that narrow when it fires (e.g., "only fire when `amount` > 10000").
+In ERP•AI, triggers are configured on the Workflow Builder. Each trigger can have **filter conditions** that narrow when it fires (e.g., "only fire when `amount` > 10000").
 
 ### Approval Chains
 
@@ -82,7 +82,7 @@ Approval workflows determine who must approve a record and in what order.
 
 **Delegation**: An approver can delegate their approval authority to another user, either permanently (role-based) or temporarily (out-of-office).
 
-Approval chain design in erp.ai:
+Approval chain design in ERP•AI:
 
 1. Define the **approval matrix** -- a table mapping conditions (amount thresholds, department, document type) to required approver roles.
 2. Build the approval steps in the Workflow Builder, referencing the matrix.
@@ -120,7 +120,7 @@ Escalation levels:
 3. **Auto-action**: Automatically approve, reject, or route based on business rules. Use with caution -- auto-approval should require explicit business sign-off during design.
 4. **Alert**: Notify a supervisor or compliance team that SLA has been breached.
 
-Escalation configuration in erp.ai:
+Escalation configuration in ERP•AI:
 
 - Define the SLA duration for each workflow step (e.g., "Approval must occur within 48 business hours").
 - Set escalation tiers with increasing severity.
@@ -136,7 +136,7 @@ Key concepts:
 - **Start event**: When the timer begins (e.g., when the record enters "Pending Approval" state).
 - **Stop event**: When the timer stops (e.g., when the record leaves "Pending Approval").
 - **Pause conditions**: Some SLAs pause when waiting on external input (e.g., "waiting for vendor response" pauses the internal approval SLA).
-- **Business hours**: SLA timers should calculate against a business calendar, not wall-clock time. Configure calendars per region/timezone in erp.ai.
+- **Business hours**: SLA timers should calculate against a business calendar, not wall-clock time. Configure calendars per region/timezone in ERP•AI.
 - **Measurement**: Track actual duration vs target. Surface in dashboards. Calculate compliance rates.
 
 ### Business Rule Engine
@@ -150,14 +150,14 @@ WHEN [conditions are met]
 THEN [execute actions]
 ```
 
-Rule types in erp.ai:
+Rule types in ERP•AI:
 
 - **Validation rules**: Prevent invalid data. "An invoice cannot be submitted if total = 0."
 - **Calculation rules**: Derive field values. "Line total = quantity * unit price * (1 - discount)."
 - **Assignment rules**: Set field values based on conditions. "If region = EMEA, assign to EMEA support queue."
 - **Routing rules**: Determine the next step in a workflow. "If priority = Critical, skip Tier 1 and go directly to Tier 2."
 
-Rule evaluation order matters. erp.ai evaluates rules in priority order within each category. Define explicit priorities to avoid ambiguity.
+Rule evaluation order matters. ERP•AI evaluates rules in priority order within each category. Define explicit priorities to avoid ambiguity.
 
 ### Saga Pattern
 
@@ -182,7 +182,7 @@ A **saga** manages long-running business transactions that span multiple entitie
 | Send notification | Send correction/cancellation notification |
 | Charge credit card | Issue refund |
 
-Design rules for sagas in erp.ai:
+Design rules for sagas in ERP•AI:
 
 - Every step's compensating action must be idempotent (safe to execute multiple times).
 - Compensations are executed in reverse order (last successful step compensated first).
@@ -194,7 +194,7 @@ Design rules for sagas in erp.ai:
 
 Production workflows evolve. Approval thresholds change, steps are added or removed, routing logic is updated. But when you change a workflow definition, what happens to the instances already in flight?
 
-**Version Coexistence**: erp.ai maintains versioned workflow definitions. When a new version is published:
+**Version Coexistence**: ERP•AI maintains versioned workflow definitions. When a new version is published:
 
 - **In-flight instances continue on their original version**. A purchase order that is currently in "Pending Finance Approval" under workflow v3 will complete its lifecycle under v3 rules, even if v4 is now active. This prevents mid-process confusion (an approval step the user already passed suddenly reappearing because v4 added it).
 - **New instances start on the latest version**. Any new purchase order submitted after v4 is published will follow v4 rules.
@@ -206,7 +206,7 @@ Production workflows evolve. Approval thresholds change, steps are added or remo
 - **Force migration**: Move in-flight instances to the new version. This requires mapping the old state to an equivalent state in the new version. If v4 renames "Pending Manager Approval" to "Pending L1 Approval," the mapping is straightforward. If v4 removes a state entirely, instances in that state need manual routing.
 - **Offer both**: Present users with a choice -- continue on the old version or restart on the new version. Appropriate when the changes improve the experience and the instance is early in its lifecycle.
 
-**Version Comparison**: erp.ai's Workflow Builder provides a diff view between workflow versions, highlighting added/removed/changed states, transitions, and rules. Always review the diff before publishing a new version, especially for the impact on in-flight instances.
+**Version Comparison**: ERP•AI's Workflow Builder provides a diff view between workflow versions, highlighting added/removed/changed states, transitions, and rules. Always review the diff before publishing a new version, especially for the impact on in-flight instances.
 
 ### Error Handling and Recovery
 
@@ -251,7 +251,7 @@ As the number of active workflow instances grows, rule evaluation and trigger pr
 
 - **Short-circuit evaluation**: Order conditions within a rule so that the cheapest and most likely-to-fail condition is evaluated first. If a rule requires `amount > 50000 AND department = 'Finance' AND requester.level >= 'Director'`, and 95% of requests have amounts under $50K, put the amount check first.
 - **Rule grouping**: Group rules by trigger type and entity. When an Invoice is updated, only evaluate Invoice-related rules -- do not scan rules for POs, Employees, or other entities.
-- **Compiled rules**: For high-volume workflows (thousands of instances per hour), pre-compile rule conditions into optimized expressions rather than interpreting them at runtime. erp.ai's rule engine supports this automatically for rules flagged as "high frequency."
+- **Compiled rules**: For high-volume workflows (thousands of instances per hour), pre-compile rule conditions into optimized expressions rather than interpreting them at runtime. ERP•AI's rule engine supports this automatically for rules flagged as "high frequency."
 
 **Avoiding N+1 Evaluation**: When a batch trigger fires (e.g., "every hour, check all open POs for SLA breaches"), do not load each PO individually and evaluate rules one-by-one. Instead, translate the rule conditions into a database query that returns only the POs that match: `SELECT * FROM purchase_orders WHERE status = 'Pending Approval' AND submitted_at < NOW() - INTERVAL '48 hours'`. Evaluate rules against the result set, not against the entire table.
 
@@ -286,7 +286,7 @@ Running workflows in production without observability is operating blind. When a
 - The total number of in-flight instances exceeds a threshold (indicating a systemic backlog).
 - A specific approver has more than N items in their queue with no action in the last 24 hours.
 
-In erp.ai, the Workflow Analytics dashboard provides pre-built views for execution traces, bottleneck analysis, SLA compliance, and stuck workflow alerting. Configure alert routing to the appropriate operations team or workflow owner.
+In ERP•AI, the Workflow Analytics dashboard provides pre-built views for execution traces, bottleneck analysis, SLA compliance, and stuck workflow alerting. Configure alert routing to the appropriate operations team or workflow owner.
 
 ## Workflow
 
@@ -295,7 +295,7 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Interview process owners to document the as-is process.
 - Identify all roles involved, decision points, handoffs, and exceptions.
 - Document the "happy path" first, then map edge cases and exception handling.
-- **Tool**: erp.ai's Process Mapper or external tools (BPMN diagrams in Visio, Miro).
+- **Tool**: ERP•AI's Process Mapper or external tools (BPMN diagrams in Visio, Miro).
 - **Watch out for**: Undocumented exception paths. Ask "What happens when things go wrong?" for every step.
 - **Output**: Process flow diagram with roles, decision points, and exception paths.
 
@@ -305,9 +305,9 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Define valid transitions between states.
 - For each transition, specify: trigger, guard conditions, and side-effect actions.
 - Identify terminal states.
-- **Tool**: erp.ai's Workflow Builder -- State Machine view.
+- **Tool**: ERP•AI's Workflow Builder -- State Machine view.
 - **Watch out for**: States that are really sub-processes. If a state has internal steps, it may need its own sub-workflow.
-- **Output**: State machine diagram configured in erp.ai.
+- **Output**: State machine diagram configured in ERP•AI.
 
 ### 3. Configure Approval Logic
 
@@ -316,7 +316,7 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Configure delegation rules.
 - Set SLA targets for each approval step.
 - Define escalation tiers.
-- **Tool**: erp.ai's Approval Chain Builder.
+- **Tool**: ERP•AI's Approval Chain Builder.
 - **Watch out for**: Approval loops. Ensure rejected records can be revised and re-submitted without getting stuck. Limit the number of revision cycles.
 - **Output**: Approval chain configuration with SLAs and escalation rules.
 
@@ -325,9 +325,9 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Identify all actions that should happen automatically (field updates, record creation, notifications, calculations).
 - Write each as a rule: WHEN [trigger + conditions] THEN [actions].
 - Set rule priorities to handle overlapping conditions.
-- **Tool**: erp.ai's Rule Builder.
+- **Tool**: ERP•AI's Rule Builder.
 - **Watch out for**: Rule conflicts (two rules trying to set the same field to different values). The priority system resolves this, but log conflicts for review.
-- **Output**: Rule definitions in erp.ai.
+- **Output**: Rule definitions in ERP•AI.
 
 ### 5. Configure Notifications
 
@@ -335,7 +335,7 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Write notification templates with dynamic field references (e.g., "PO {{po_number}} requires your approval").
 - Configure digest vs real-time delivery.
 - Set up notification preferences (allow users to opt out of non-critical notifications).
-- **Tool**: erp.ai's Notification Builder.
+- **Tool**: ERP•AI's Notification Builder.
 - **Watch out for**: Over-notifying. If a user receives more than 5 notifications per hour from a single workflow, consolidate into a digest.
 - **Output**: Notification configuration with templates.
 
@@ -346,7 +346,7 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Verify notifications are sent to correct recipients with correct content.
 - Test delegation scenarios.
 - Test concurrent approvals (two approvers acting at the same time).
-- **Tool**: erp.ai's Workflow Simulator (step-through mode).
+- **Tool**: ERP•AI's Workflow Simulator (step-through mode).
 - **Watch out for**: Testing only the happy path. Ensure rejected, cancelled, and escalated paths all work.
 - **Output**: Test results documented. Issues resolved.
 
@@ -356,7 +356,7 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - Monitor SLA compliance dashboards.
 - Review escalation frequency -- high escalation rates indicate SLA targets are too tight or the process has bottlenecks.
 - Collect feedback from users after the first week.
-- **Tool**: erp.ai's Workflow Analytics dashboard.
+- **Tool**: ERP•AI's Workflow Analytics dashboard.
 - **Watch out for**: Workflows that work in testing but fail in production due to data volume, concurrent users, or timezone differences.
 - **Output**: Production workflow with monitoring in place.
 
@@ -460,9 +460,9 @@ In erp.ai, the Workflow Analytics dashboard provides pre-built views for executi
 - [ ] Workflow performance validated: trigger conditions indexed, rules use short-circuit evaluation, N+1 evaluation avoided
 - [ ] Observability configured: execution traces, SLA compliance dashboards, stuck workflow alerts
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Workflow Builder provides visual state machine design, trigger configuration, and approval chain setup. Business rules are authored as declarative WHEN-THEN conditions with the rule engine handling evaluation priority and short-circuit logic.
+**ERP•AI**: Workflow Builder provides visual state machine design, trigger configuration, and approval chain setup. Business rules are authored as declarative WHEN-THEN conditions with the rule engine handling evaluation priority and short-circuit logic.
 
 **Proto**: During process automation missions, Proto reasons over state machine patterns in the REASON phase, identifying guard conditions and approval routing. It synthesizes trigger conditions and escalation rules at runtime, then iterates by observing workflow execution traces to refine timeout and SLA thresholds.
 

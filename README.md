@@ -28,7 +28,7 @@ category: index
 [![Technical](https://img.shields.io/badge/Technical_Skills-17-green)](skills/technical/)
 [![Industries](https://img.shields.io/badge/Industries-30-orange)](skills/)
 [![Files](https://img.shields.io/badge/Total_Files-80-purple)](skills/)
-[![erp.ai](https://img.shields.io/badge/Works_with-erp.ai-6C3CE9)](https://erp.ai)
+[![ERP•AI](https://img.shields.io/badge/Works_with-ERP•AI-6C3CE9)](https://erp.ai)
 
 <br>
 
@@ -418,9 +418,9 @@ Load business process skills as mission context. Load technical skills for imple
 
 ---
 
-## Works with erp.ai
+## Works with ERP•AI
 
-SDStack is platform-agnostic enterprise knowledge. It also integrates with [**erp.ai**](https://erp.ai) and [**Proto**](https://erp.ai/proto/) (erp.ai's autonomous agent engine). Each skill file includes a small section showing how it maps to erp.ai's 720+ app templates and Proto's ORAI cycle.
+SDStack is platform-agnostic enterprise knowledge. It also integrates with [**ERP•AI**](https://erp.ai) and [**Proto**](https://erp.ai/proto/) (ERP•AI's autonomous agent engine). Each skill file includes a small section showing how it maps to ERP•AI's 720+ app templates and Proto's ORAI cycle.
 
 ---
 
@@ -446,4 +446,4 @@ MIT — use it, fork it, build with it.
 
 ---
 
-<sub>SD — Shashank Dixit · [erp.ai](https://erp.ai)</sub>
+<sub>SD — Shashank Dixit · [ERP•AI](https://erp.ai)</sub>

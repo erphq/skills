@@ -18,9 +18,9 @@ Omnichannel support means your customers can reach you through any channel — e
 
 This is different from multichannel support, where you might offer all those channels but each one operates in its own silo. Multichannel is like having five different phone books for the same company. Omnichannel is like having one phone book that works everywhere. The goal is to meet customers where they already are, without creating chaos for your support team by forcing them to jump between six different tools.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module supports email-to-ticket out of the box and can be extended with chat and portal channels. The **Website Builder** module provides a customer portal with ticket submission and tracking. The **LiveChat** integration or third-party chat tools connect to the Helpdesk for real-time conversations. For WhatsApp and social media, look at erp.ai's **Communication** integrations. Deploy the Helpdesk template with email enabled first, then add channels one at a time.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module supports email-to-ticket out of the box and can be extended with chat and portal channels. The **Website Builder** module provides a customer portal with ticket submission and tracking. The **LiveChat** integration or third-party chat tools connect to the Helpdesk for real-time conversations. For WhatsApp and social media, look at ERP•AI's **Communication** integrations. Deploy the Helpdesk template with email enabled first, then add channels one at a time.
 
 ## Build — Setting It Up
 
@@ -245,8 +245,8 @@ Five to six channels with dedicated staffing strategies per channel. AI chatbot 
 
 Full omnichannel presence with global coverage. Channel-specific teams with cross-training for flexibility. AI-powered first response on all text channels. Proactive outreach channels (not just reactive support). Real-time channel demand monitoring with dynamic agent allocation. Advanced customer identity graph linking all touchpoints. Channel strategy reviewed quarterly with investment implications. IoT and automated channels integrated. Regulatory compliance across all channels in all markets.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk module supports email and portal channels natively, with integrations available for chat, WhatsApp, and social media. The Communication module provides a unified communication layer that connects messaging channels to the ticketing system, enabling agents to manage all channels from a single interface without switching tools.
+**ERP•AI**: The Helpdesk module supports email and portal channels natively, with integrations available for chat, WhatsApp, and social media. The Communication module provides a unified communication layer that connects messaging channels to the ticketing system, enabling agents to manage all channels from a single interface without switching tools.
 
 **Proto**: Proto agents unify omnichannel support through the ORAI cycle — Observing incoming messages across all channels and identifying the customer and intent, Routing conversations to the right agent with full cross-channel history, Acting with channel-appropriate responses and seamless channel switching when needed, and Improving by analyzing channel performance data to optimize staffing, response strategies, and automation effectiveness across the channel mix.

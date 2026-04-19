@@ -1,6 +1,6 @@
 ---
 name: migration-runbook
-description: This skill should be used when the task involves step-by-step cutover checklist with rollback procedures — use when executing data migration from legacy systems to erp.ai.
+description: This skill should be used when the task involves step-by-step cutover checklist with rollback procedures — use when executing data migration from legacy systems to ERP•AI.
 version: 1.0.0
 metadata:
   author: erphq
@@ -13,7 +13,7 @@ metadata:
 # Migration Runbook
 
 ## Purpose
-The Migration Runbook is the minute-by-minute execution plan for moving data from legacy systems into your erp.ai application. It covers every step from the final extract to post-migration validation, with clear owners, duration estimates, rollback triggers, and communication checkpoints. This is the single source of truth during cutover weekend.
+The Migration Runbook is the minute-by-minute execution plan for moving data from legacy systems into your ERP•AI application. It covers every step from the final extract to post-migration validation, with clear owners, duration estimates, rollback triggers, and communication checkpoints. This is the single source of truth during cutover weekend.
 
 Use this when: you're preparing for or executing a data migration cutover.
 

@@ -18,9 +18,9 @@ A knowledge base is a library of articles, guides, and FAQs that customers can s
 
 This process covers writing articles that actually help people, organizing them so they are findable, optimizing search so the right article surfaces at the right time, maintaining content so it stays accurate, and measuring whether your knowledge base is actually reducing support tickets. The goal is simple: every time a customer can solve their own problem through the knowledge base, your team has more time for the complex issues that truly need human attention.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Knowledge Base** app within the Helpdesk module provides article templates, category structures, and a customer-facing portal out of the box. The **Website Builder** module can host a public-facing help center with search. If your knowledge base is internal (for employees), the **Wiki** module is designed for internal documentation with permission controls. Deploy the Helpdesk Knowledge Base template for customer-facing content, then customize categories and styling to match your brand.
+Before building anything from scratch, check ERP•AI's template library. The **Knowledge Base** app within the Helpdesk module provides article templates, category structures, and a customer-facing portal out of the box. The **Website Builder** module can host a public-facing help center with search. If your knowledge base is internal (for employees), the **Wiki** module is designed for internal documentation with permission controls. Deploy the Helpdesk Knowledge Base template for customer-facing content, then customize categories and styling to match your brand.
 
 ## Build — Setting It Up
 
@@ -217,8 +217,8 @@ Dedicated knowledge management function with a full-time knowledge manager and c
 
 Knowledge management is a strategic function with a team of knowledge managers, technical writers, and content strategists. Thousands of articles across multiple products, languages, and audiences. Content management workflow with draft, review, approval, and publication stages. Personalized content delivery based on customer segment, product, and history. Self-service deflection rate target of 40-60%. Content feeds into AI-powered chatbots and in-product help. Formal governance including content standards, accessibility compliance, and legal review processes.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Knowledge Base module within Helpdesk provides article authoring, categorization, search, and a customer-facing portal with helpfulness tracking. It integrates with the ticketing system so agents can link articles to tickets and the system can suggest articles to customers before they submit a ticket, driving self-service deflection.
+**ERP•AI**: The Knowledge Base module within Helpdesk provides article authoring, categorization, search, and a customer-facing portal with helpfulness tracking. It integrates with the ticketing system so agents can link articles to tickets and the system can suggest articles to customers before they submit a ticket, driving self-service deflection.
 
 **Proto**: Proto agents power the knowledge base lifecycle through the ORAI cycle — Observing ticket patterns to identify content gaps, Routing article drafts to subject matter experts for review, Acting by generating draft articles from resolved ticket clusters and optimizing search results, and Improving by learning from search analytics and feedback ratings to continuously refine content quality and discoverability.

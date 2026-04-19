@@ -18,9 +18,9 @@ Escalation is what happens when a support ticket needs more expertise, authority
 
 There are three types of escalation. Tier escalation (L1 to L2 to L3) moves a ticket to someone with deeper technical expertise. Functional escalation moves a ticket to a different department (support to engineering, or support to billing). Management escalation moves a ticket up the leadership chain when a customer is unhappy, an SLA is about to breach, or a business decision is needed. This process covers all three, plus on-call procedures for after-hours emergencies.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The **Helpdesk** module includes assignment rules and escalation workflows that can be configured for multi-tier routing. The **HR Module** and **Employee Directory** help define team structures that escalation rules reference (who reports to whom, who is on which team). If you manage IT support, the **IT Service Management** template includes ITIL-aligned incident escalation workflows. Deploy the Helpdesk template and configure escalation rules to match your team structure.
+Before building anything from scratch, check ERP•AI's template library. The **Helpdesk** module includes assignment rules and escalation workflows that can be configured for multi-tier routing. The **HR Module** and **Employee Directory** help define team structures that escalation rules reference (who reports to whom, who is on which team). If you manage IT support, the **IT Service Management** template includes ITIL-aligned incident escalation workflows. Deploy the Helpdesk template and configure escalation rules to match your team structure.
 
 ## Build — Setting It Up
 
@@ -240,8 +240,8 @@ Full L1/L2/L3 structure with specialized L2 teams per product or function. Funct
 
 Globally distributed tier structure with regional and product-specific escalation matrices. Named account escalation paths for top customers. Incident management process separate from normal escalation (major incident = separate war room, not just L3 escalation). Vendor and partner escalation SLAs managed contractually. Escalation data feeds into workforce planning, training, and product quality improvement. Formal escalation review boards that audit patterns and adjust processes quarterly.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Helpdesk module supports multi-tier assignment rules with automatic escalation based on SLA timelines, ticket priority, and team availability. Escalation rules can trigger reassignment, priority changes, and manager notifications, and the Employee Directory integration ensures routing reflects current team structures and availability.
+**ERP•AI**: The Helpdesk module supports multi-tier assignment rules with automatic escalation based on SLA timelines, ticket priority, and team availability. Escalation rules can trigger reassignment, priority changes, and manager notifications, and the Employee Directory integration ensures routing reflects current team structures and availability.
 
 **Proto**: Proto agents manage escalation through the ORAI cycle — Observing ticket complexity and customer sentiment to predict escalation needs, Routing tickets to the right tier and specialist with full context, Acting on escalation triggers before SLA breaches occur and compiling comprehensive handoff briefs, and Improving escalation accuracy by learning from bounce-backs, resolution patterns, and agent feedback on routing decisions.

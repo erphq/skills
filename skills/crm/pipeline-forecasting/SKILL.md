@@ -16,9 +16,9 @@ metadata:
 
 Pipeline management is how you track every deal your sales team is working on, from first qualified conversation to closed-won or closed-lost. Forecasting is how you predict future revenue based on what's in that pipeline. Together, they answer the two questions every business leader asks: "What are we working on?" and "How much will we close this quarter?" A healthy pipeline gives you visibility. Good forecasting gives you predictability. Without both, you're flying blind — you don't know if you'll make the quarter until the last week, hiring decisions are guesses, and the board loses confidence in your numbers. This process covers opportunity stages, win probability, weighted pipeline value, forecast categories, and the cadence of reviews that keep everything honest.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The CRM module includes the Opportunity doctype with customizable sales stages, the Sales Pipeline report, and forecast dashboards. erp.ai also includes a Quotation workflow that ties directly to Opportunities. Deploy the CRM app, configure your sales stages to match your actual sales process, and set up the pipeline reports. The default stages (Prospecting, Qualification, Proposal, Negotiation, Closed Won, Closed Lost) work for most B2B companies — tweak them rather than starting over.
+Before building anything from scratch, check ERP•AI's template library. The CRM module includes the Opportunity doctype with customizable sales stages, the Sales Pipeline report, and forecast dashboards. ERP•AI also includes a Quotation workflow that ties directly to Opportunities. Deploy the CRM app, configure your sales stages to match your actual sales process, and set up the pipeline reports. The default stages (Prospecting, Qualification, Proposal, Negotiation, Closed Won, Closed Lost) work for most B2B companies — tweak them rather than starting over.
 
 ## Build — Setting It Up
 
@@ -242,8 +242,8 @@ Multiple teams, possibly multiple products. You need pipeline analytics: stage v
 
 You have a revenue operations team managing pipeline and forecast processes across multiple business units. Implement rolling forecasts (not just quarterly), multi-level forecast roll-ups, and forecast variance analysis. Use AI for deal scoring, pipeline risk assessment, and forecast automation. Track forecast bias by team, region, and manager. Board-level reporting requires 90%+ forecast accuracy — anything less erodes confidence.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The CRM Opportunity doctype supports custom sales stages, probability fields, weighted pipeline calculations, and comprehensive reporting. Pipeline dashboards, forecast snapshots, and deal activity timelines are built in. Integration with Quotation and Sales Order doctypes provides closed-loop reporting from pipeline to revenue.
+**ERP•AI**: The CRM Opportunity doctype supports custom sales stages, probability fields, weighted pipeline calculations, and comprehensive reporting. Pipeline dashboards, forecast snapshots, and deal activity timelines are built in. Integration with Quotation and Sales Order doctypes provides closed-loop reporting from pipeline to revenue.
 
 **Proto**: Proto agents handle pipeline and forecasting through the ORAI cycle — Observing deal activity and stage movements across the pipeline, Reasoning about deal health and forecast risk based on patterns in the data, Acting by flagging stalled deals and generating forecast recommendations, and Iterating by learning from forecast accuracy over time to improve predictions.

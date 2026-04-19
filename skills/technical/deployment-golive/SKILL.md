@@ -45,7 +45,7 @@ Key rules:
 
 ### Deployment Pipeline for Config-Heavy Apps
 
-Enterprise apps built on platforms like erp.ai are configuration-heavy rather than code-heavy. The deployment pipeline must handle:
+Enterprise apps built on platforms like ERP•AI are configuration-heavy rather than code-heavy. The deployment pipeline must handle:
 
 - **Configuration packages**: Bundles of entity definitions, validation rules, workflow configurations, security roles, report definitions, and UI layouts. These must be versioned and promotable as a unit.
 - **Reference data**: Lookup tables, code lists, GL account structures, organizational hierarchies. These often differ between environments (test accounts vs. real accounts) and require environment-specific value mapping.
@@ -120,7 +120,7 @@ The intensive support period immediately following go-live, typically lasting 2 
 ### 2. Build the Deployment Pipeline
 
 - Define the configuration package format: what is included, how it is versioned, how it is promoted.
-- Build or configure the promotion mechanism in erp.ai (export from source environment, import to target environment).
+- Build or configure the promotion mechanism in ERP•AI (export from source environment, import to target environment).
 - Implement pre-deployment validation: schema compatibility checks, dependency checks, conflict detection for configurations modified in both source and target.
 - Implement post-deployment verification: automated smoke tests that run after each deployment to confirm the environment is functional.
 - Document the rollback procedure for each deployment step: how to revert a configuration package if post-deployment verification fails.
@@ -183,7 +183,7 @@ The intensive support period immediately following go-live, typically lasting 2 
 ### 7. Execute Hypercare
 
 - Staff the war room with representatives from each workstream (configuration, data, integrations, security, training).
-- Establish an escalation path: Level 1 (help desk / super-users), Level 2 (project team), Level 3 (platform vendor / erp.ai support).
+- Establish an escalation path: Level 1 (help desk / super-users), Level 2 (project team), Level 3 (platform vendor / ERP•AI support).
 - Triage incoming issues daily (twice daily in the first week). Categorize as: defect, training gap, data issue, or enhancement request.
 - Track issue volume and resolution time daily. A declining trend indicates stabilization; a flat or increasing trend indicates unresolved systemic issues.
 - At the end of hypercare (typically 2 weeks), conduct a formal transition to steady-state support. Hand over open issues, documentation, and monitoring to the operations team.
@@ -382,7 +382,7 @@ After go-live, the production environment must remain consistent with the intend
 
 **Detecting unauthorized config changes:**
 
-- **Configuration audit log**: erp.ai logs all configuration changes (role modifications, workflow changes, field definitions, validation rules) in the audit trail. Set up a daily automated report that lists all configuration changes made in production in the last 24 hours, with the user who made them and the approval ticket (if any).
+- **Configuration audit log**: ERP•AI logs all configuration changes (role modifications, workflow changes, field definitions, validation rules) in the audit trail. Set up a daily automated report that lists all configuration changes made in production in the last 24 hours, with the user who made them and the approval ticket (if any).
 - **Change without ticket**: Any production configuration change that does not reference an approved change ticket is a policy violation. The automated report should flag these as exceptions for the security team to investigate.
 - **Scheduled configuration scans**: Weekly, export the complete configuration from production and compare it against the last approved configuration baseline (stored in version control). Any difference is a drift.
 
@@ -500,7 +500,7 @@ Publish the RACI matrix as part of the cutover runbook. Review it in the cutover
 **Escalation paths:**
 
 Pre-define escalation paths for different types of issues:
-- **Technical issue (app/infra)**: Team member -> Workstream Lead -> Cutover Commander -> Platform Vendor (erp.ai support, on standby).
+- **Technical issue (app/infra)**: Team member -> Workstream Lead -> Cutover Commander -> Platform Vendor (ERP•AI support, on standby).
 - **Business issue (data, process)**: Team member -> Business Lead -> Project Sponsor.
 - **Timeline issue (task overrunning)**: Task owner -> Cutover Commander (who decides to extend, skip, or rollback).
 - **Vendor issue (external system down)**: Integration Lead -> Vendor emergency contact (pre-arranged and tested before cutover).
@@ -552,9 +552,9 @@ Every escalation path must include pre-exchanged contact information (direct pho
 - [ ] RACI matrix published for every cutover task
 - [ ] Escalation paths documented with direct contact information at every level
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: Environment manager handles config promotion across dev/staging/production with drift detection and parity scoring. Feature flags enable gradual rollout, and the deployment pipeline enforces test gates and approval checkpoints.
+**ERP•AI**: Environment manager handles config promotion across dev/staging/production with drift detection and parity scoring. Feature flags enable gradual rollout, and the deployment pipeline enforces test gates and approval checkpoints.
 
 **Proto**: Executes cutover runbooks as structured missions, progressing through each task in sequence. Human-approval gates pause the ORAI cycle at go/no-go decision points, resuming only after designated stakeholders confirm readiness.
 

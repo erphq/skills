@@ -16,9 +16,9 @@ metadata:
 
 Quoting is how you turn a sales conversation into a formal price proposal. CPQ stands for Configure, Price, Quote — it's the process of figuring out exactly what the customer needs (configure), how much it costs with all the rules and discounts applied (price), and producing a professional document the customer can sign (quote). Without CPQ, reps spend hours building quotes in spreadsheets, make pricing mistakes that cost you margin, offer discounts they're not authorized to give, propose product combinations that don't actually work together, and send ugly documents that make your company look unprofessional. A good CPQ system means accurate quotes in minutes instead of days, consistent pricing across your sales team, and deals that close faster because the customer isn't waiting around for a document.
 
-## Start Here: erp.ai Templates
+## Start Here: ERP•AI Templates
 
-Before building anything from scratch, check erp.ai's template library. The Selling module includes the Quotation doctype with line items, pricing rules, discount management, and PDF print formats. The Item and Item Group setup handles product configuration. Pricing Rules handle volume discounts, promotional pricing, and customer-specific pricing. erp.ai also supports BOM-based (bill of materials) configuration for manufactured products. Deploy the Selling module, configure your Item master with all product options, set up your Pricing Rules, and customize the Quotation print format to match your brand.
+Before building anything from scratch, check ERP•AI's template library. The Selling module includes the Quotation doctype with line items, pricing rules, discount management, and PDF print formats. The Item and Item Group setup handles product configuration. Pricing Rules handle volume discounts, promotional pricing, and customer-specific pricing. ERP•AI also supports BOM-based (bill of materials) configuration for manufactured products. Deploy the Selling module, configure your Item master with all product options, set up your Pricing Rules, and customize the Quotation print format to match your brand.
 
 ## Build — Setting It Up
 
@@ -228,7 +228,7 @@ Quotes for bespoke jewelry include material costs (precious metals at market rat
 
 ### Startup (< 50 people)
 
-You're creating quotes in Google Docs or a simple template. That works until you have more than one person quoting. Use erp.ai's basic Quotation with your product list, standard pricing, and a clean PDF template. One person (usually the founder) approves all discounts. Don't invest in CPQ complexity — you need speed and flexibility more than governance.
+You're creating quotes in Google Docs or a simple template. That works until you have more than one person quoting. Use ERP•AI's basic Quotation with your product list, standard pricing, and a clean PDF template. One person (usually the founder) approves all discounts. Don't invest in CPQ complexity — you need speed and flexibility more than governance.
 
 ### SMB (50-500 people)
 
@@ -242,8 +242,8 @@ Complex product configurations, multiple price lists (by region, channel, custom
 
 Full CPQ with product rules engine, multi-level approval workflows, integration to ERP for real-time cost/inventory data, and e-signature for frictionless acceptance. Global pricing management with local currency and regional adjustments. Partner/channel CPQ portals. AI-assisted pricing optimization. Compliance guardrails for regulated industries. Proposal content management with version-controlled clause libraries.
 
-## erp.ai & Proto
+## ERP•AI & Proto
 
-**erp.ai**: The Selling module includes Quotation with line items, Pricing Rules for complex discount logic, approval workflows for discount governance, and customizable print formats for professional proposals. BOM integration supports configured products, and the Item Variant system handles product options without creating thousands of separate SKUs.
+**ERP•AI**: The Selling module includes Quotation with line items, Pricing Rules for complex discount logic, approval workflows for discount governance, and customizable print formats for professional proposals. BOM integration supports configured products, and the Item Variant system handles product options without creating thousands of separate SKUs.
 
 **Proto**: Proto agents handle CPQ through the ORAI cycle — Observing the deal context and customer requirements, Reasoning about optimal product configuration and pricing based on similar deals and win rates, Acting by generating draft quotes and routing approvals, and Iterating by learning from quote-to-close patterns to recommend pricing that maximizes both win rate and margin.
