@@ -168,23 +168,6 @@ AI agents streamline fixed asset management significantly:
 
 30. **Jewelry & Luxury**: Store buildouts for luxury retail locations are significant assets — flagship stores can cost millions in leasehold improvements. Display cases, security systems, and vault facilities are specialized assets. Manufacturing assets include precision cutting and polishing equipment. Agents manage luxury retail lease accounting and track high-security asset installations.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your asset register is short — maybe some computers, furniture, and leasehold improvements. Use ERP•AI's basic fixed asset template. Set your capitalization threshold high enough ($2,500 or more) to avoid tracking every desk lamp. Your tax accountant handles depreciation at year-end. The main thing an agent does for you is flag purchases that should be capitalized but were expensed (or vice versa). If you have leases, use the agent to calculate your ASC 842 entries — this is complex enough that even a small company should automate it.
-
-### SMB (50–500 people)
-
-You probably have 100–1,000 assets across a few locations. Monthly depreciation needs to be automated — posting manual entries for 500 assets is not practical. Implement barcode tracking for physical verification. Your biggest risk is ghost assets — equipment that was disposed of but never removed from the books. Run your first physical count (you will be surprised at the results). An agent should calculate monthly depreciation, maintain both book and tax schedules, and flag fully depreciated assets for replacement planning.
-
-### Mid-Market (500–5,000 people)
-
-Thousands of assets across multiple locations, entities, and countries. Capital project management becomes a major workstream — you are building facilities, installing production lines, and managing construction-in-progress. Lease accounting for office and warehouse space is a significant effort. Agents manage the full asset lifecycle, maintain multi-book depreciation (book, tax, IFRS), support physical verification programs, and handle lease portfolio accounting. Start benchmarking your capital efficiency (revenue per dollar of fixed assets) against peers.
-
-### Enterprise (5,000+ people)
-
-Tens of thousands to millions of assets across global operations. Asset-intensive enterprises (utilities, telecom, manufacturing) have dedicated asset management teams. Integration with engineering asset management (EAM), maintenance management (CMMS), and GIS systems is essential. Agents handle high-volume depreciation, complex tax optimization (cost segregation, bonus depreciation strategies), global lease portfolio management, and regulatory compliance across jurisdictions. Fixed asset data feeds into capital allocation models, replacement planning, and insurance valuations.
 
 ## ERP•AI & Proto
 

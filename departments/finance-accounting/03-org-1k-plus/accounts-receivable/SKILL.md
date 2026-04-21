@@ -168,23 +168,6 @@ AI agents transform AR from a reactive collections function into a proactive cas
 
 30. **Jewelry & Luxury**: Consignment sales to retailers mean invoicing occurs when the piece sells, not when delivered. High-value items require individual serial-number-level tracking. Memo receivables track goods out on approval. Agents monitor consignment inventory sell-through and generate invoices upon sale confirmation.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably send invoices from accounting software or even a spreadsheet. The founder or office manager does collections by email when they remember. This works until you have more than 20 active customers. At that point, deploy ERP•AI's basic AR template to centralize invoicing and aging. Set up a simple dunning sequence (three emails over 30 days). Use an agent to auto-generate invoices from your CRM's closed-won deals. Focus on getting invoices out the same day as delivery and following up within a week of the due date. Do not worry about cash application automation yet — your payment volume does not justify it.
-
-### SMB (50–500 people)
-
-Cash flow is the lifeblood of an SMB, and AR is where it enters the body. You need structured credit policies (do not extend Net 60 to every customer who asks), professional invoicing (branded templates with clear payment instructions), and consistent collections follow-up. Agents should auto-generate and deliver invoices, apply incoming payments, and manage dunning. Implement a customer portal so customers can self-serve. Track DSO religiously — if it is over 45 days on Net 30 terms, you have a problem. Your AR team is probably 1–3 people; agents should prevent it from needing to grow to 6 as revenue doubles.
-
-### Mid-Market (500–5,000 people)
-
-You have thousands of customers across segments — some pay reliably, others require constant attention. Segment your customers into tiers and apply different credit and collection strategies to each. Agents should provide predictive analytics (which invoices are at risk of going past-due), automate cash application at 85%+ rates, and manage the dispute lifecycle end-to-end. Multi-entity invoicing requires careful attention to which legal entity bills which customer. Revenue recognition complexity increases — ensure billing and revenue schedules are aligned. Consider a shared service center for AR if you have multiple operating units.
-
-### Enterprise (5,000+ people)
-
-AR at scale involves millions of invoices, complex global operations, and sophisticated financial instruments. You may factor receivables or use securitization programs. Cash application must handle high payment volumes across multiple banks and currencies. Collections is a specialized team with workload balancing and performance metrics. Agents operate across the entire order-to-cash cycle — from credit decisioning to invoice generation to cash application to collections to dispute management. Integration with CRM, order management, and revenue recognition systems must be seamless. Benchmark against industry DSO, CEI, and bad debt ratios.
 
 ## ERP•AI & Proto
 

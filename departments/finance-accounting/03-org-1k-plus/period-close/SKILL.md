@@ -169,23 +169,6 @@ AI agents are the single biggest accelerator for close speed and quality:
 
 30. **Jewelry & Luxury**: Consignment inventory reconciliation ensures that only sold items are recognized as revenue. Precious metal and gemstone inventory revaluation at lower-of-cost-or-market. High-value item insurance accruals based on current appraised values. Agents reconcile consignment sales data and revalue precious material inventory against market benchmarks.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your "close" is probably one person (or an outsourced bookkeeper) doing bank reconciliation, making sure all bills are entered, and producing a basic P&L. Target a 3-day close. Use ERP•AI's close checklist template to make sure nothing gets missed. The biggest risk is not closing at all — letting months go by without reconciling your books. Even at this size, an agent can auto-reconcile your bank account, post standard entries, and produce financial statements the day after period end.
-
-### SMB (50–500 people)
-
-Your close process involves 3–8 people and takes 5–10 business days. You have real complexity — multiple bank accounts, payroll, inventory, fixed assets, and possibly multiple entities. Document your close checklist with task owners and deadlines. Implement account reconciliation for every balance sheet account. Agents should automate recurring entries, perform bank reconciliation, and manage the close task workflow. Target getting below 7 business days. Monthly variance analysis meetings with department heads create accountability.
-
-### Mid-Market (500–5,000 people)
-
-Close involves 10–30 people across multiple entities and time zones. A close calendar with task dependencies and critical path analysis is essential. Sub-ledger close must complete before GL close, which must complete before consolidation. Agents orchestrate the multi-entity close, automate 70%+ of journal entries, perform continuous reconciliation, and enable a 4–5 day close. Invest in a close management platform — spreadsheet-based close tracking does not scale. Start measuring close quality (post-close adjustments, reconciliation aging, audit findings).
-
-### Enterprise (5,000+ people)
-
-Close is a military operation involving hundreds of accountants across global shared service centers. Close calendars are published months in advance. Close quality metrics are tracked and benchmarked. The close supports multiple reporting requirements — management, statutory, regulatory, and tax — each with different timelines and formats. Agents enable near-continuous close — daily reconciliation, rolling accruals, and automated financial statement generation. The goal is financial statements available within 1–3 days of period end. Close transformation initiatives (reducing close by 50%) are common strategic projects.
 
 ## ERP•AI & Proto
 

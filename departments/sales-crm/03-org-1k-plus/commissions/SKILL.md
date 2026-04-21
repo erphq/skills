@@ -225,23 +225,6 @@ Oilfield service sales commissions are based on job revenue or margin. Commissio
 **30. Jewelry & Luxury**
 Retail jewelry sales associates earn commission on gross margin (typically 3-8%). High-ticket items (engagement rings, luxury watches) may have flat-rate spiffs in addition to percentage commissions. Custom design work earns premium commissions. Consignment sales are commissioned differently than owned inventory sales.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Keep it dead simple: one plan, one rate, maybe a small accelerator. The founder is probably approving every deal anyway. Pay commissions with the regular payroll cycle. Don't overcomplicate splits or territories — you're too small. A spreadsheet is fine for tracking when you have fewer than 5 reps and 30 deals per month.
-
-### SMB (50-500 people)
-
-You need a real commission system now — spreadsheets are breaking. Implement 2-3 plan types (SDR, AE, AM), basic accelerators, and a clear dispute resolution process. Commission statements should be automated and delivered monthly. Track commission expense as a percentage of revenue. This is where most companies first hire a Sales Operations or RevOps person.
-
-### Mid-Market (500-5,000 people)
-
-Multiple plans, split credits, multi-product rates, team-based incentives, and SPIFs. You need a commission calculation engine — either a dedicated tool or a well-built custom module. Plan modeling before rollout is essential. Implement real-time earnings visibility for reps. Commission governance (who can approve plan exceptions) becomes a formal process.
-
-### Enterprise (5,000+ people)
-
-Hundreds of reps across multiple geographies with different plans, currencies, and regulatory requirements. You need a dedicated Incentive Compensation Management (ICM) system. Automated data flows from CRM to commission system eliminate manual reconciliation. Advanced analytics model plan effectiveness, cost of sales, and pay equity. Annual plan design involves finance, HR, sales leadership, and legal.
 
 ## ERP•AI & Proto
 

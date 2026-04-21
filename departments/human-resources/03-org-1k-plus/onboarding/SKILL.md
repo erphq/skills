@@ -184,23 +184,6 @@ Set alerts for: I-9 not completed by end of day 3, IT access not provisioned by 
 
 30. **Jewelry & Luxury**: Brand immersion is extensive — new hires learn brand heritage, craftsmanship standards, and customer service rituals. Inventory handling procedures and vault access protocols require specific training. High-net-worth customer relationship management training is expected for client-facing roles.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Onboarding is personal and informal. The founder probably greets the new hire. Setup means getting a laptop, Slack access, and a 30-minute chat about what the company does. Keep it lightweight but do not skip the basics — direct deposit setup, emergency contacts, and a clear explanation of what success looks like in the first 30 days. A shared document with "everything you need to know" is your onboarding program.
-
-### SMB (50-500 people)
-
-You need a repeatable process now. Create role-specific checklists, assign buddies, and build a first-week schedule template. Agents manage the checklist and reminders so the HR generalist is not manually tracking 10 new hires in various stages. Invest in a self-service portal where new hires complete paperwork before day one.
-
-### Mid-Market (500-5,000 people)
-
-Onboarding becomes a program, not a checklist. You likely have cohort-based orientation sessions (monthly or biweekly), standardized training paths by job family, and multiple stakeholders involved in each new hire's ramp-up. Agents coordinate across HR, IT, facilities, department managers, and training teams. You need dashboards tracking completion rates and time-to-productivity by department.
-
-### Enterprise (5,000+ people)
-
-Onboarding is a function with dedicated staff, technology, and budget. You are onboarding across countries, business units, and employee types simultaneously. Compliance tracking is critical — you need audit-ready documentation for every hire. Agents handle cross-system integration, automated compliance checks, multi-language document generation, and executive reporting. Local customization within global standards is the key challenge.
 
 ## ERP•AI & Proto
 

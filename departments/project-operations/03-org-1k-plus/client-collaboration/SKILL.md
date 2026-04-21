@@ -197,23 +197,6 @@ AI agents make client collaboration proactive instead of reactive:
 
 30. **Jewelry & Luxury**: Brand discretion requirements mean project information is treated as highly confidential. Collaboration tools must reflect the premium client experience the brand represents. High-touch, personalized communication is expected.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-The project manager is the client relationship. Formal portals and structured reporting may be overkill — a weekly email update and a shared folder for documents might be sufficient. Focus on being responsive and transparent. As you grow, the informal approach will not scale, so build good habits early: consistent report format, clear approval processes, and centralized document storage.
-
-### SMB (50–500 people)
-
-Deploy a client portal, even a simple one. Standardize your status report template. Implement formal approval workflows for key deliverables. Train your team on client communication standards — what to share, what to escalate, and when to involve the account manager. This is where agents add major value by automating status report generation and approval tracking.
-
-### Mid-Market (500–5,000 people)
-
-Multi-project client portals with role-based access. Formal client satisfaction measurement programs (quarterly surveys, annual reviews). Dedicated client success or account management function that owns the relationship separately from project delivery. Integration between portal and your internal systems so clients see real-time data without your team manually updating a separate view.
-
-### Enterprise (5,000+ people)
-
-Client experience is a competitive differentiator. Invest in a polished, branded portal experience. AI-driven personalization of client communications. Dedicated client success teams for strategic accounts. Integration with client systems for seamless data exchange. Formal Voice of Client programs feeding into service improvement. Client collaboration technology is evaluated and upgraded on a regular cycle.
 
 ## ERP•AI & Proto
 

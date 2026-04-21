@@ -195,23 +195,6 @@ AI agents accelerate warehouse setup in several ways:
 
 **30. Jewelry & Luxury**: High-security warehouses with vault-level access control, cameras, and insurance requirements. Every piece is individually tracked and often photographed. Climate control protects sensitive materials. Packaging and presentation are critical — luxury goods require careful handling and premium packaging materials.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably start by shipping from an office, a garage, or a spare room. That is fine until you are shipping more than 20 orders a day. At that point, get a small warehouse or use a 3PL fulfillment service. If you run your own space, keep it simple — label your shelves, use a basic barcode system, and create a clear receiving and shipping checklist. Agents can manage your order fulfillment queue and shipping label generation.
-
-### SMB (50–500 people)
-
-Time for a real warehouse with proper zones, barcode scanning, and defined processes. Implement a warehouse management system — even a lightweight one — to track locations and guide picking. Set up receiving verification and pick accuracy measurement. Agents handle wave planning, pick route optimization, and exception management. Your biggest gains come from organizing your space properly (slotting) and making picking efficient.
-
-### Mid-Market (500–5,000 people)
-
-Multiple warehouses or a large operation with complex fulfillment requirements. Implement a full WMS with system-directed putaway, optimized pick paths, and real-time labor tracking. Consider automation for your highest-volume activities — automated conveyor sortation, automated storage and retrieval for slow movers, or goods-to-person picking for each-pick operations. Agents orchestrate the whole floor — dynamically planning waves, balancing workload across zones, and managing exceptions.
-
-### Enterprise (5,000+ people)
-
-Network of distribution centers and warehouses with sophisticated automation. Fulfillment is a competitive advantage. Robotic picking, automated guided vehicles, dense storage systems, and real-time optimization of the entire network. Agents serve as the intelligence layer — managing the orchestration of human workers and robots, predicting and preventing bottlenecks, optimizing space allocation continuously, and running what-if scenarios for network changes. Warehouse operations are deeply integrated with transportation planning and customer promise management.
 
 ## ERP•AI & Proto
 

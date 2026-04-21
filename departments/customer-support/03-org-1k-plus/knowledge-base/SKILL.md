@@ -199,23 +199,6 @@ AI agents are transformative for knowledge base management:
 
 30. **Jewelry & Luxury**: Product care and maintenance guides (how to care for platinum, cleaning diamonds, storing pearls). Authenticity and certification explanation articles. Repair and servicing process articles that set expectations for timelines on artisan work. Gifting guides and occasion-based buying guides. Heritage and craftsmanship content that reinforces brand value and justifies premium pricing.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Start with 10-15 articles covering your most common support questions. Use your support inbox to identify what people ask most. A simple FAQ page on your website beats a full-blown knowledge base when you have limited content. Write articles yourself — you know the product best. Do not invest in a separate knowledge base platform until you have 30+ articles. Use Google Docs or Notion initially, then migrate to a proper tool when the volume justifies it.
-
-### SMB (50–500 people)
-
-Build a proper knowledge base with 50-200 articles organized by category. Assign article ownership to support team members based on their expertise. Set up helpfulness tracking and review cycles. Integrate the KB with your ticket system so agents can insert article links in responses. Target a 15-25% self-service deflection rate. Designate one person (even part-time) as knowledge base owner responsible for content quality and gap analysis.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated knowledge management function with a full-time knowledge manager and contributor network across teams. 200-1,000 articles with formal taxonomy, style guide, and review processes. Multi-language content for top markets. AI-powered search and article suggestion. Self-service deflection rate target of 30-40%. Knowledge base analytics reviewed weekly with content sprints to address gaps. Integration with product releases for synchronized documentation updates.
-
-### Enterprise (5,000+ people)
-
-Knowledge management is a strategic function with a team of knowledge managers, technical writers, and content strategists. Thousands of articles across multiple products, languages, and audiences. Content management workflow with draft, review, approval, and publication stages. Personalized content delivery based on customer segment, product, and history. Self-service deflection rate target of 40-60%. Content feeds into AI-powered chatbots and in-product help. Formal governance including content standards, accessibility compliance, and legal review processes.
 
 ## ERP•AI & Proto
 

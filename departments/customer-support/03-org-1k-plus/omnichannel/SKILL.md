@@ -227,23 +227,6 @@ Always explain to the customer why you are asking them to switch and make the tr
 
 30. **Jewelry & Luxury**: In-store appointment scheduling as a channel. Phone with personal client advisors for VIP customers. Email for bespoke order coordination. WhatsApp for personal shopping and after-sales service. Video consultation for remote clienteling. Social media (Instagram, Pinterest) for brand engagement and product inquiries. Portal for repair tracking and authentication verification. Every channel touchpoint must reflect the luxury brand experience — no automated hold music, no chatbot first response for high-value clients.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Start with email and add one more channel (chat or social, depending on where your customers are). Do not try to be everywhere at once — you will spread too thin and deliver a terrible experience on every channel. Use a tool that unifies at least email and chat in one inbox. Monitor your social media mentions but handle them through the same inbox. Add phone only if your customers demand it; many startups successfully avoid phone support until they reach 100+ employees.
-
-### SMB (50–500 people)
-
-Three to four channels managed through a unified helpdesk platform. Email, chat, phone, and one messaging or social channel. Dedicate agents to chat during business hours (chat requires real-time attention, unlike email). Implement identity linking so customer records span channels. Track channel-specific satisfaction and response times. Start exploring AI chatbot deflection on chat. Evaluate whether your customer demographics warrant WhatsApp or SMS.
-
-### Mid-Market (500–5,000 people)
-
-Five to six channels with dedicated staffing strategies per channel. AI chatbot handles 30%+ of chat volume. In-app messaging for web and mobile products. Social media monitoring with response workflows. Channel analytics drive staffing and investment decisions. Multi-language support on primary channels. Video support for complex issues. Evaluate community forums as a scale strategy. Cross-channel customer journey mapping to identify friction points.
-
-### Enterprise (5,000+ people)
-
-Full omnichannel presence with global coverage. Channel-specific teams with cross-training for flexibility. AI-powered first response on all text channels. Proactive outreach channels (not just reactive support). Real-time channel demand monitoring with dynamic agent allocation. Advanced customer identity graph linking all touchpoints. Channel strategy reviewed quarterly with investment implications. IoT and automated channels integrated. Regulatory compliance across all channels in all markets.
 
 ## ERP•AI & Proto
 

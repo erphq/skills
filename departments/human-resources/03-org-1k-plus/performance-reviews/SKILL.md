@@ -190,23 +190,6 @@ Set alerts for: managers who have not started reviews within 7 days of cycle lau
 
 30. **Jewelry & Luxury**: Sales associate reviews track revenue, average transaction value, client book growth, and repeat purchase rates. Artisan reviews include craftsmanship quality, production timeline adherence, and innovation. Brand standards compliance and client experience delivery are core competencies across all customer-facing roles.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Formal performance reviews feel like overkill, but you still need feedback and goal alignment. Keep it lightweight — quarterly one-on-ones between each person and their manager with documented goals and progress. Skip 360 feedback and calibration. The CEO should know how everyone is performing. Agents help by reminding managers to have the conversations and documenting the outcomes.
-
-### SMB (50-500 people)
-
-Implement a structured review cycle — semi-annual or annual with mid-year check-ins. Define a simple rating scale, build basic competency expectations by level, and start calibration at the department head level. You probably do not need 360 feedback yet unless you have a management development priority. Agents manage the cycle logistics and help managers write better reviews.
-
-### Mid-Market (500-5,000 people)
-
-Performance management becomes a strategic function. You need consistent competency frameworks, formal calibration sessions, 360 feedback for managers, and clear links between performance and compensation. Multiple review cycles (different timing for different populations) may be necessary. Agents handle cycle orchestration, bias detection, analytics, and integration with compensation planning.
-
-### Enterprise (5,000+ people)
-
-Performance management has dedicated staff, technology platforms, and executive governance. Global consistency with local flexibility is the challenge — different countries, business units, and employee populations may need variations within a unified framework. Agents manage the complexity at scale — running parallel cycles, preparing executive-level talent reviews, generating succession planning data, and ensuring compliance with local labor laws around performance documentation.
 
 ## ERP•AI & Proto
 

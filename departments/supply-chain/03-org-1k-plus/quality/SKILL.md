@@ -197,23 +197,6 @@ AI agents make quality management more consistent and less paperwork-heavy:
 
 **30. Jewelry & Luxury**: Quality is about authenticity, craftsmanship, and materials. Gemstone grading (4 Cs for diamonds) follows GIA or equivalent standards. Precious metal assay verifies purity (hallmarking). Craftsmanship inspection examines setting security, finish quality, and overall presentation. Provenance documentation ensures ethical sourcing claims are verified.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Quality might just be "the founder checks things before they ship." Formalize this into a basic inspection checklist even if it is just a Google Form. Start tracking defects and complaints from day one — this data is gold when you grow. If you are in a regulated industry, get professional quality help early. Agents can monitor customer feedback channels and flag quality signals that you might miss while focused on growth.
-
-### SMB (50–500 people)
-
-Time for a real quality system. Assign someone to own quality, implement incoming and in-process inspections, and set up a CAPA process. If your industry requires ISO 9001 or similar certification, start the journey now — it takes 6-12 months. Agents manage inspection scheduling, CAPA tracking, and supplier quality reporting, freeing your quality person to focus on root cause analysis and process improvement.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated quality department with inspectors, quality engineers, and a quality manager. Formal quality management system certified to your industry's standard. SPC on critical processes. Supplier audit program. Laboratory for testing if your products require it. Agents handle the data-intensive work — analyzing defect trends, generating control charts, preparing regulatory submissions, and managing the document control system.
-
-### Enterprise (5,000+ people)
-
-Full quality organization with corporate quality leadership setting standards and site quality teams executing. Integrated quality data across all sites for enterprise-wide visibility. Advanced analytics identifying subtle quality patterns that span sites, products, and time periods. Agents serve as the quality intelligence layer — continuously monitoring all quality signals, predicting emerging issues, automating routine compliance documentation, and enabling real-time quality decision-making across the organization.
 
 ## ERP•AI & Proto
 

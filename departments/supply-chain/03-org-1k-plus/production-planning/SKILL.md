@@ -198,23 +198,6 @@ AI agents make production planning setup and execution significantly easier:
 
 **30. Jewelry & Luxury**: Production planning for handcrafted items is artisan-based — scheduling individual craftspeople with unique skills. Stone setting, engraving, and finishing require sequential operations with quality checkpoints. Custom orders follow individual routings. Batch production of standard pieces uses more traditional scheduling for casting and machine operations.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your production plan might be a whiteboard or a spreadsheet, and the founder decides what to make next. That works when you have one product, one machine, and ten orders. Document your BOMs early — even basic ones — because they are essential for costing, purchasing, and scaling. Use agents to track orders against capacity and flag when you are overcommitting. Your biggest risk is promising delivery dates you cannot meet because you are not tracking capacity.
-
-### SMB (50–500 people)
-
-Implement a proper production planning system with BOMs, work orders, and basic scheduling. Define your work centers and their capacities. Track actual production against plan to build data for improvement. Agents manage the routine planning — generating work orders from demand, checking material availability, and sequencing jobs. Your production planner (a dedicated role you need at this stage) focuses on exception management and improvement.
-
-### Mid-Market (500–5,000 people)
-
-Full production planning and scheduling system with finite capacity scheduling, shop floor data collection, and real-time visibility. Multiple production planners managing different product lines or areas. Agents handle detailed scheduling optimization, material coordination, and exception management. Invest in shop floor data collection (MES or IoT) to get real-time production feedback. S&OP process connects production planning to demand planning and financial planning.
-
-### Enterprise (5,000+ people)
-
-Multi-plant production planning with centralized S&OP and distributed execution. Advanced scheduling optimization across plants, shifts, and resources. Digital twin models of your production network for scenario analysis. Agents serve as the planning intelligence — continuously optimizing schedules, predicting disruptions, coordinating across plants, and enabling real-time decision-making. Full integration from customer order through production through delivery with end-to-end visibility.
 
 ## ERP•AI & Proto
 

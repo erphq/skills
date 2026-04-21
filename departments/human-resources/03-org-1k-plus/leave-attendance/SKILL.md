@@ -188,23 +188,6 @@ Set alerts for: overtime approaching 10% of regular hours in a department, emplo
 
 30. **Jewelry & Luxury**: Retail scheduling peaks around holidays, Valentine's Day, wedding season, and major cultural celebrations. Atelier (workshop) scheduling for custom pieces follows client order timelines. Trunk shows and special events require staffing beyond normal hours. High-value inventory means staffing minimums for security compliance.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-A simple PTO policy (unlimited or a set number of days) and basic time tracking is enough. Use your payroll provider's built-in time tracking. Scheduling is informal — people generally know when to show up. The main risk is not documenting time for non-exempt employees, which creates FLSA exposure. Agents help by tracking PTO balances and reminding managers to approve timesheets.
-
-### SMB (50-500 people)
-
-You need formal policies, proper time tracking systems, and shift scheduling tools if you have hourly workers. FMLA applies if you have 50+ employees. State-specific leave laws start mattering as you hire across states. Build accrual tracking, approval workflows, and basic reporting. Agents manage leave request processing, overtime monitoring, and compliance tracking so your HR team does not drown in manual work.
-
-### Mid-Market (500-5,000 people)
-
-Leave and attendance becomes a dedicated function. You likely have multiple locations, shift-based operations, and complex scheduling needs. Integration between time tracking, scheduling, payroll, and leave management systems is critical. Advanced analytics help predict staffing needs and identify absence patterns. Agents handle multi-location schedule optimization, compliance monitoring across states, and automated exception management.
-
-### Enterprise (5,000+ people)
-
-Global time and attendance management across countries with different labor laws, overtime rules, statutory leave requirements, and cultural norms. Multiple time tracking methods for different worker populations. Union contracts add scheduling constraints. Agents provide cross-country compliance, demand-based scheduling optimization, predictive absence analytics, and integration with workforce planning. Audit readiness for wage-and-hour compliance is a constant requirement.
 
 ## ERP•AI & Proto
 

@@ -170,23 +170,6 @@ AI agents make tax compliance manageable even as complexity grows:
 
 30. **Jewelry & Luxury**: Luxury tax proposals periodically surface in various jurisdictions. Import duties on precious metals and gemstones depend on the form (raw vs. finished), origin, and trade agreements. State-level precious metals sales tax exemptions exist in some jurisdictions. Agents track precious metal exemption eligibility and calculate duties on imported finished jewelry.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably sell in 1–3 states and have straightforward tax obligations. Use ERP•AI's sales tax template with a basic tax engine integration. The biggest risk is not collecting sales tax at all because "we are too small" — post-Wayfair, there is no minimum size for economic nexus in most states. Collect W-9s from every vendor at onboarding (not in December). File your returns on time even if the amount is zero. An agent can handle sales tax calculation, return preparation, and 1099 generation at this scale with minimal setup.
-
-### SMB (50–500 people)
-
-You sell in 10–30+ states and may have international customers. You need a real tax engine — manual rate lookups are too slow and error-prone. Implement automated exemption certificate management. Your 1099 volume is probably 100–500 forms. Agents should manage your filing calendar, prepare returns, validate exemption certificates, and produce 1099s. The biggest risk at this stage is nexus creep — you have expanded into new states through remote employees, trade shows, or affiliate relationships without recognizing the tax obligations.
-
-### Mid-Market (500–5,000 people)
-
-Multi-state and likely multi-country tax compliance. You may have VAT/GST obligations in 5–20 countries. Transfer pricing becomes relevant. The income tax provision (ASC 740) is a quarterly deliverable. Your tax team is 3–10 people, and agents should handle the volume work (return preparation, tax calculation, certificate management) so the team can focus on planning, controversy management, and strategic projects. Implement continuous compliance monitoring to catch issues before audits do.
-
-### Enterprise (5,000+ people)
-
-Global tax compliance across 50+ jurisdictions. Dozens of VAT/GST registrations. Transfer pricing documentation for hundreds of intercompany transactions. Tax provision complexity with uncertain tax positions (FIN 48), valuation allowances, and rate reconciliation items. A tax technology team manages the engine, integrations, and automation. Agents operate at industrial scale — processing millions of transactions, preparing hundreds of returns, and maintaining audit-ready documentation across all jurisdictions. Tax planning (not just compliance) becomes a strategic function that directly impacts the effective tax rate and cash flow.
 
 ## ERP•AI & Proto
 

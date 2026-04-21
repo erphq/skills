@@ -194,23 +194,6 @@ AI agents transform resource management from a manual matching exercise into an 
 
 30. **Jewelry & Luxury**: Brand sensitivity means resources must understand luxury customer experience standards. Inventory management for high-value, unique items requires specialized knowledge. Multi-currency and multi-language skills are often needed for global brands.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Everyone knows everyone. Resource management is informal — the CEO or a delivery lead decides who goes where based on gut feel. Your biggest challenge is that you have too few people and every person is critical. Start simple: maintain a skill matrix and a utilization tracker. Make sure someone is watching utilization weekly so you catch bench time or burnout early.
-
-### SMB (50–500 people)
-
-You need a formal staffing process. Spreadsheets break down around 75 to 100 people — too many moving parts for one person to track mentally. Implement a staffing request workflow, define utilization targets by role, and designate someone (even part-time) as the resource manager. This is where a real PSA system pays for itself.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated resource management office with full-time staff. Skill taxonomy needs to be formalized and maintained. You are balancing competing demands across practices and need governance to arbitrate. Forecast models should incorporate pipeline data to predict demand 2 to 3 months out. Subcontractor management becomes a regular part of capacity planning.
-
-### Enterprise (5,000+ people)
-
-Regional or practice-level resource managers rolling up to a global function. Sophisticated demand modeling incorporating win rates, seasonal patterns, and strategic account plans. Formal career pathing integrated with resource management so assignments develop people, not just fill seats. AI-driven matching is not optional at this scale — no human can optimize across thousands of people and hundreds of projects.
 
 ## ERP•AI & Proto
 

@@ -193,23 +193,6 @@ Set alerts for: involuntary termination initiated without access revocation plan
 
 30. **Jewelry & Luxury**: Vault and secure inventory access revocation is the highest security priority. Client book and purchase history transfer for relationship-based sales. High-value sample and display inventory audit. Brand standards and unreleased collection confidentiality. Luxury market contact and vendor relationship documentation.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Every departure is felt intensely. Knowledge transfer is critical because one person may own entire functions. Keep it simple — a checklist covering access revocation, equipment return, final pay, and a genuine conversation about why they are leaving. The founder or CEO should be involved in exit conversations for early employees. Agents help by ensuring nothing is missed on the checklist and final pay complies with state law.
-
-### SMB (50-500 people)
-
-Formalize the process. Create separation-type-specific workflows, implement proper access revocation procedures (talk to your IT person or MSP), and start conducting structured exit interviews. COBRA compliance becomes important as departures are regular. Agents manage the workflow coordination, ensure legal timelines are met, and compile exit interview data into actionable reports.
-
-### Mid-Market (500-5,000 people)
-
-Offboarding is a regular operation — you may process dozens of departures per month. Integration between HR, IT, facilities, and payroll systems is essential for timely execution. Reduction-in-force playbooks should be ready before you need them. Alumni programs start making sense at this scale. Agents handle the volume, compliance tracking across states, and pattern analysis that turns individual departures into workforce intelligence.
-
-### Enterprise (5,000+ people)
-
-Offboarding is a global operation with legal, cultural, and logistical complexity across countries. Works council consultations, statutory severance calculations, government notifications, and multi-system access revocation across dozens of platforms require robust automation. Mass layoff management is a capability you need to have ready. Agents manage cross-country compliance, coordinate across systems, produce executive analytics, and maintain audit readiness for every separation.
 
 ## ERP•AI & Proto
 

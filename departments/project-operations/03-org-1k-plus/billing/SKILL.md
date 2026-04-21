@@ -202,23 +202,6 @@ AI agents remove the manual grind from billing and help catch revenue leakage:
 
 30. **Jewelry & Luxury**: Brand consulting engagements often include retainer structures for ongoing advisory with separate project billing for implementations. Valuation and authentication services use per-item or per-collection billing.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-One billing model (usually T&M), one billing frequency (monthly), and one person generating invoices. Revenue recognition is straightforward. Your biggest risk is not billing promptly — do not let more than 30 days of work go uninvoiced. Use the agent to generate draft invoices immediately after timesheets are approved.
-
-### SMB (50–500 people)
-
-Multiple billing models in play. You need a billing coordinator role (even if part-time). Formalize your rate card management — when rates change, every active contract needs to be checked. Revenue recognition starts requiring real accounting judgment, especially if you have fixed-price work. Implement a billing calendar and stick to it.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated billing team, likely 3 to 10 people. Complex contract structures including multi-year deals, volume discounts, and blended rates. Revenue recognition requires careful application of ASC 606 (or IFRS 15). You need proper contract review to determine performance obligations, transaction prices, and allocation. Integration between PSA and ERP financials is critical.
-
-### Enterprise (5,000+ people)
-
-Global billing operations across multiple entities, currencies, and tax jurisdictions. Shared service center model for invoice production. Centralized revenue recognition with quarterly close processes reviewed by external auditors. Contract review involves legal, finance, and delivery teams. You are managing thousands of active contracts with varying terms. AI-driven billing anomaly detection is not optional — it is how you maintain accuracy at scale.
 
 ## ERP•AI & Proto
 

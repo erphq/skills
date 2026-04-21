@@ -222,23 +222,6 @@ Operator 360 includes well inventory, production volumes, drilling activity, ser
 **30. Jewelry & Luxury**
 Client 360 includes purchase history, style preferences, metal/stone preferences, gifting occasions (anniversaries, birthdays), and wish list items. Life events (engagement, wedding, milestone birthday) are expansion opportunities. VIP clients expect the sales associate to know their preferences and history without asking. Privacy and discretion in data handling are paramount.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You don't need a formal Customer 360 system — your team is small enough that everyone knows every customer. But build the habit now: keep notes centralized in your CRM, not in individual email inboxes. Use the Customer doctype's linked records in ERP•AI to naturally accumulate a 360 view as you sell, invoice, and support each customer.
-
-### SMB (50-500 people)
-
-You have enough customers that no one person knows them all. Build a basic Customer 360 with purchase history, support tickets, payment status, and last interaction date. Implement a simple health score (even a manual red/yellow/green rating from the account owner). Review customer health monthly. This is where you first experience the pain of siloed data.
-
-### Mid-Market (500-5,000 people)
-
-Formal Customer 360 initiative. Integrate CRM, billing, support, and product usage data into a unified view. Automated health scoring with multiple factors. Cross-sell/upsell signal detection. Dedicated customer success team using the 360 view as their primary tool. Track data completeness and quality as ongoing KPIs.
-
-### Enterprise (5,000+ people)
-
-Enterprise-grade Customer 360 spanning multiple business units, products, and geographies. Master data management handles deduplication and data quality at scale. AI-driven predictive health scores and opportunity detection. Real-time data integration from dozens of source systems. Role-based views for sales, support, success, finance, and executive leadership. Privacy and data governance compliance (GDPR, CCPA) is built into the architecture.
 
 ## ERP•AI & Proto
 

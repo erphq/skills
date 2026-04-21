@@ -195,23 +195,6 @@ AI agents can dramatically speed up your procurement setup:
 
 **30. Jewelry & Luxury**: You buy precious metals, gemstones, and artisan services. Provenance tracking (conflict-free diamonds, responsible gold) is essential for compliance and brand reputation. Small-batch, high-value purchases require different controls than bulk commodity buying.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Keep it simple. You probably need one person managing purchases with a shared spreadsheet or a lightweight procurement app. Focus on getting competitive quotes for your top 10 vendors by spend and setting up a basic approval flow (founder approves over a threshold). Do not overbuild — you do not need a full procurement suite when you are placing 20 POs a month. Use corporate credit cards with spending limits for small purchases and POs only for larger buys.
-
-### SMB (50–500 people)
-
-This is where procurement discipline starts paying off. Implement a proper procurement system with requisitions, approvals, and POs. Establish preferred vendor lists for your top spending categories. Start tracking spend by category and vendor. Set up three-way matching for invoices over a threshold. An agent can handle most of the routine PO processing while your procurement person focuses on negotiating better deals and managing key vendor relationships.
-
-### Mid-Market (500–5,000 people)
-
-You need a dedicated procurement team, formal policies, and systematic vendor management. Implement category management — assign ownership of each spending category to a procurement specialist. Run formal RFQ processes for major purchases. Set up vendor scorecards and conduct regular business reviews with top suppliers. Use agents extensively for transactional purchasing, spend analytics, and compliance monitoring. Start building a strategic sourcing capability.
-
-### Enterprise (5,000+ people)
-
-Full-scale procurement organization with category managers, sourcing specialists, and procurement operations. Global contracts with preferred vendors, regional execution. Procurement analytics driving strategy — total cost of ownership models, should-cost analysis, market intelligence. Agents handle the vast majority of transactional purchasing end-to-end, surface savings opportunities, and monitor compliance across the organization. Center-led procurement with regional execution and clear governance.
 
 ## ERP•AI & Proto
 

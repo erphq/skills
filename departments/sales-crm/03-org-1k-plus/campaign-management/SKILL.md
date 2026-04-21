@@ -223,23 +223,6 @@ Campaigns target through industry publications (Journal of Petroleum Technology,
 **30. Jewelry & Luxury**
 Campaign channels are high-end: magazine advertising (Vogue, Town & Country), exclusive events (private viewings, trunk shows), and targeted digital (social media with luxury lifestyle targeting). Bridal campaigns peak January-February and June. Holiday campaigns drive gifting. Brand heritage and craftsmanship storytelling are the core narrative. Influencer partnerships must be carefully curated to protect brand image.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You have zero budget and need to generate demand fast. Focus on two channels — usually content marketing (blog, LinkedIn, community) and one paid channel (Google Ads or targeted outbound). The founder is probably the best marketer you have. Track campaign-to-pipeline manually in your CRM. Don't invest in attribution models — you don't have enough data. Ship fast, measure what you can, iterate.
-
-### SMB (50-500 people)
-
-You have a small marketing team (2-5 people) and a real budget. Run 5-10 campaigns per quarter across email, content, events, and paid digital. Implement first-touch attribution so you can prove ROI. Segment your audience into at least 3-5 groups. Build a campaign calendar and coordinate send frequencies. Track cost per lead and cost per qualified pipeline dollar by campaign.
-
-### Mid-Market (500-5,000 people)
-
-Full marketing operations with 10+ people, multiple channels, and a significant budget. Implement multi-touch attribution. Run ABM alongside broad demand generation. A/B test everything. Build a marketing technology stack (CRM, email platform, analytics, ad platforms) with integrations. Track full-funnel metrics: impressions to leads to pipeline to revenue. Marketing Operations becomes a dedicated role.
-
-### Enterprise (5,000+ people)
-
-Global marketing organization with regional teams, brand management, demand generation, field marketing, digital marketing, and marketing operations. Multi-touch attribution models with sophisticated data science. Centralized campaign management platforms coordinate execution across dozens of teams. Compliance review processes for regulated industries. Real-time performance dashboards drive budget allocation. AI-powered personalization and predictive targeting at scale.
 
 ## ERP•AI & Proto
 

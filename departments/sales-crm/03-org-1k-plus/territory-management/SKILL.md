@@ -222,23 +222,6 @@ Territories follow geological basins and play types. A Permian Basin rep covers 
 **30. Jewelry & Luxury**
 Territories are ultra-local for retail — a luxury brand rep covers a few blocks in Manhattan or a high-end shopping district. Wholesale territories are broader, covering independent jewelers in a region. Direct-to-consumer territories align with wealth demographics. Auction house territories are global for major houses (Sotheby's, Christie's).
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably don't need formal territories yet. The founder and first few reps divide accounts informally. The main rule: no two reps should call the same company. Keep a shared list of who owns what. When you hire rep #3 or #4, draw some basic boundaries (usually geographic or by account size). Don't over-engineer it.
-
-### SMB (50-500 people)
-
-You have 10-30 reps and territory design matters now. Define territories by geography, segment, or vertical. Use data to balance account potential across territories. Allocate quotas based on territory potential, not just evenly. Do a formal territory review annually. Maintain a clear territory map and account ownership list that's visible to the whole team.
-
-### Mid-Market (500-5,000 people)
-
-Complex territory models with layers — base territories, named accounts, overlays, and channel partner territories. You need a territory planning tool or process that runs annually and handles mid-year adjustments for new hires and departures. White space analysis drives territory expansion. Quota allocation uses historical data and market potential models.
-
-### Enterprise (5,000+ people)
-
-Global territory management across regions, countries, and segments. Annual territory planning is a multi-month process involving sales ops, finance, and field leadership. AI-powered territory optimization balances dozens of variables. Named account programs carve out hundreds of strategic accounts. Partner and channel territories add another dimension. Territory governance requires a dedicated team.
 
 ## ERP•AI & Proto
 

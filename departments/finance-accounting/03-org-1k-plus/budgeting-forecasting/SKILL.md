@@ -168,23 +168,6 @@ AI agents transform budgeting from a painful annual exercise into a continuous p
 
 30. **Jewelry & Luxury**: Revenue budgets by product category and sales channel (boutique, wholesale, e-commerce). Precious material cost assumptions drive COGS budgets. Marketing budgets emphasize brand-building over performance marketing. Agents model revenue by channel with precious material cost sensitivity and seasonal demand patterns for gifting periods.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your budget is a 12-month cash runway model. How much money do you have? How fast are you spending it? When do you need to raise more? Keep it simple — revenue forecast, headcount plan, and major expense categories. Update monthly. An agent can build this from your bank transactions and payroll data in minutes. The CEO and one finance person should own it. Do not build complex department-level budgets — you do not have departments yet. Focus on the questions investors will ask: burn rate, months of runway, and path to breakeven.
-
-### SMB (50–500 people)
-
-Budget by department with monthly granularity. Revenue budgets should come from sales leadership based on pipeline and capacity. Expense budgets should be bottom-up from department heads within a top-down spending envelope. Implement monthly variance reviews — department heads own their variances and explain them. Agents compile department budgets, produce monthly variance reports, and maintain a rolling forecast. Start building scenarios (what if revenue is 20% below plan?). Your finance team is probably 2–5 people; agents keep them from drowning in spreadsheet maintenance.
-
-### Mid-Market (500–5,000 people)
-
-Multi-entity, multi-currency budgeting with driver-based models for major cost categories. Workforce planning integration is critical — headcount is your biggest cost. Rolling 18-month forecasts give visibility beyond the calendar year. Sophisticated scenario planning (pricing changes, M&A, market downturns) supports strategic decision-making. Agents manage the entire planning cycle — template distribution, compilation, consolidation, variance analysis, and board reporting. Finance Business Partners embedded in operating units use agent-driven analytics to advise business leaders.
-
-### Enterprise (5,000+ people)
-
-Enterprise planning involves hundreds of budget owners across dozens of entities and countries. The planning cycle is tightly governed with stage gates, executive reviews, and board approvals. Long-range plans (3–5 years) complement annual budgets. Capital allocation across business units is a strategic exercise. Agents enable connected planning — linking financial plans to operational plans (sales, production, workforce, capital) in a unified model. Real-time scenario modeling supports rapid decision-making during disruptions. Benchmarking against peers and industry averages provides context for target-setting.
 
 ## ERP•AI & Proto
 

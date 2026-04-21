@@ -192,23 +192,6 @@ AI agents can accelerate your ticket lifecycle setup dramatically. Here is how:
 
 30. **Jewelry & Luxury**: White-glove service means every ticket gets personal attention. Appointment-based service (repairs, custom orders, appraisals) drives ticket creation. Authentication and provenance inquiries need expert routing. High-value item tickets (a watch worth $50K in for repair) need special handling and insurance tracking. Clienteling data from the ticket history informs future personalized outreach.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Use a shared inbox or basic helpdesk tool. One or two people handle all tickets. Do not over-engineer — your ticket lifecycle is: new, someone grabs it, they fix it, done. Focus on response speed over process. Set up email-to-ticket so nothing gets lost. Use canned responses for your top 10 questions. The founder is probably still answering support tickets, and that is fine — it builds product intuition. Revisit your setup when you hit 100 tickets per week.
-
-### SMB (50–500 people)
-
-You now have a dedicated support team of 3-15 people. Implement proper classification, skill-based routing, and SLA tracking. Build your knowledge base to deflect simple tickets. Set up a customer portal so customers can check status without emailing you. Start tracking metrics: first response time, resolution time, CSAT. Use AI classification and suggested responses. This is where most teams either build good habits or accumulate technical debt they will fight for years.
-
-### Mid-Market (500–5,000 people)
-
-Multiple support teams, possibly across regions and time zones. Ticket lifecycle becomes critical for handoffs between teams and shifts. Implement follow-the-sun routing. Build automation for your top 20 ticket types. Integrate tickets with CRM, product, and engineering systems. Create different workflows for different customer segments (enterprise vs. self-serve). Invest in reporting and analytics to drive staffing decisions. Audit your process quarterly.
-
-### Enterprise (5,000+ people)
-
-Global operations with dozens of support teams across products, regions, and languages. Ticket lifecycle is governed by formal process documentation and change management. Compliance and audit requirements mean every status change is logged. AI handles tier-0 deflection and resolution for 30-50% of tickets. Custom integrations connect the ticketing system to ERP, CRM, product telemetry, and business intelligence platforms. Dedicated process owners review and optimize each stage of the lifecycle continuously.
 
 ## ERP•AI & Proto
 

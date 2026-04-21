@@ -209,23 +209,6 @@ Start with CSAT for transactional measurement. Add NPS for relationship measurem
 
 30. **Jewelry & Luxury**: Every touchpoint is a satisfaction opportunity in luxury — from the boutique greeting to the packaging to the follow-up call weeks later. Repair and servicing satisfaction is a loyalty driver — a well-handled repair deepens the relationship. Purchase anniversary follow-up satisfaction measures ongoing engagement. Clienteling satisfaction measures the personal advisor relationship. Net Promoter Score drives word-of-mouth referrals, which are the primary acquisition channel for luxury brands.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Add a CSAT question to your ticket resolution emails. That is it. Use a 3-point scale (happy/neutral/sad emoji) for maximum response rate. Read every comment personally. When someone is unhappy, email them yourself (founder-level outreach at this stage builds lasting loyalty). Track your score in a spreadsheet. You do not need NPS or CES yet. Your survey tool is your email footer. When you hit 50 tickets per week, implement a proper CSAT tool.
-
-### SMB (50–500 people)
-
-Implement automated CSAT surveys after ticket resolution. Track scores by agent, category, and channel. Review negative feedback weekly with the team. Start a monthly satisfaction report for management. Add NPS surveys quarterly to measure relationship health. Set a CSAT target (e.g., 4.2 out of 5) and review progress monthly. Implement a closed-loop process: every rating below 3 gets a follow-up. Use satisfaction data in agent coaching conversations, but pair it with other metrics.
-
-### Mid-Market (500–5,000 people)
-
-Full CSAT, NPS, and CES measurement program. Sentiment analysis on all text-based interactions. Satisfaction data integrated with CRM and customer success platforms. Predictive models identifying at-risk customers before they complain. Closed-loop follow-up within 24 hours for all negative feedback. Quarterly satisfaction reports to executive leadership with action plans. Satisfaction benchmarking against industry peers. Customer advisory board for qualitative feedback on top issues.
-
-### Enterprise (5,000+ people)
-
-Enterprise Voice of the Customer program with a dedicated team. Satisfaction data feeds into product roadmap, marketing strategy, and executive dashboards. Real-time sentiment analysis during live interactions with supervisor alerts. Customer health scores combining satisfaction, usage, and business metrics. Satisfaction-driven segmentation for marketing and retention campaigns. Annual customer satisfaction study with statistically significant samples across segments. Board-level reporting on NPS trends and customer satisfaction as a strategic metric.
 
 ## ERP•AI & Proto
 
