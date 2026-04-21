@@ -197,23 +197,6 @@ AI agents help you build a systematic vendor management program:
 
 **30. Jewelry & Luxury**: Provenance verification — responsible sourcing certifications for precious metals (LBMA), diamonds (Kimberley Process, RJC), and colored gemstones. Artisan and craftsman relationships are managed for quality and exclusivity. Brand alignment — luxury vendors must meet aesthetic and quality standards that protect the brand.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have 10-30 vendors and know them all personally. That personal knowledge is valuable but does not scale. Start documenting which vendors you use, what they supply, and how they perform — even informally. Make sure you have backup options for your most critical supplies. Agents can monitor vendor news and alert you to risks. Keep vendor management lightweight but intentional.
-
-### SMB (50–500 people)
-
-Implement a vendor master database and basic scorecards for your top 20 vendors by spend. Set up a simple onboarding process that collects the essentials — tax information, insurance certificates, contact details, and banking information. Run quarterly reviews with your most important vendors. Agents manage the data collection, scorecard calculation, and monitoring. Your procurement person should own vendor relationships as a defined part of their role.
-
-### Mid-Market (500–5,000 people)
-
-Formal vendor management program with segmentation (strategic, preferred, approved, transactional), documented evaluation criteria, and regular review cadences. Dedicated vendor management role or team. Vendor portal for self-service. Agents handle automated onboarding, continuous risk monitoring, performance scoring, and compliance tracking. Annual vendor conferences or summits for your top suppliers to communicate strategy and recognize performance.
-
-### Enterprise (5,000+ people)
-
-Global vendor management organization with category managers owning strategic supplier relationships. Comprehensive third-party risk management program meeting regulatory requirements. Multi-tier supply chain mapping for critical categories. Sustainability and ESG data collection across the supply base. Agents serve as the data backbone — collecting, analyzing, and surfacing insights from thousands of vendor interactions, enabling strategic decision-making and proactive risk management at scale.
 
 ## ERP•AI & Proto
 

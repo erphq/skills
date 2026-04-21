@@ -222,23 +222,6 @@ Production sharing contracts (PSCs) define how revenue splits between the operat
 **30. Jewelry & Luxury**
 Consignment agreements define which pieces the retailer holds without owning. Wholesale agreements include minimum purchase requirements and authorized retailer standards. Custom design contracts specify materials, design approval milestones, and delivery dates. Brand licensing agreements protect brand standards and define royalty structures.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have fewer than 50 contracts and the founder knows every customer. Track contracts in your CRM with a renewal date field and a simple alert. The key discipline is not losing track of renewal dates — one missed renewal when you have 20 customers is 5% of your revenue. Review every renewal personally.
-
-### SMB (50-500 people)
-
-You have hundreds of contracts and no one person can track them all. Implement a formal contract record with automated alerts. Assign renewal ownership clearly. Start tracking renewal rate as a key metric. Build a renewal calendar and review it monthly with the leadership team. Standardize your contract templates to reduce amendment volume.
-
-### Mid-Market (500-5,000 people)
-
-Thousands of contracts, multiple product lines, possibly multiple entities. You need a dedicated contract management process — if not a team, at least a defined owner. Implement tiered renewal management (high-touch for large accounts, automated for small ones). Track net retention rate alongside gross retention. Build predictive models for churn risk.
-
-### Enterprise (5,000+ people)
-
-You have a contract lifecycle management (CLM) system or need one. Legal, sales, finance, and customer success all touch contracts — you need a shared system of record. Global contracts require multi-entity, multi-currency, multi-language support. AI-powered contract analysis extracts terms and obligations from thousands of legacy documents. Board-level reporting on renewal rates and customer retention.
 
 ## ERP•AI & Proto
 

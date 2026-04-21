@@ -172,23 +172,6 @@ AI agents turn consolidation from a month-end nightmare into a streamlined proce
 
 30. **Jewelry & Luxury**: Luxury groups consolidate maisons (brand entities), manufacturing ateliers, and retail distribution entities. Brand-level reporting is critical for managing the portfolio. Intercompany transfers of finished goods from atelier to retail must be eliminated with close attention to margin impact. Agents consolidate by brand while eliminating intercompany transfers, preserving brand-level profitability for management reporting.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have one entity and do not need consolidation. If you have a holding company and an operating company, the consolidation is simple — one elimination set and one combined view. An agent can handle this as part of the regular close process. The main risk is forming new entities (international subsidiary, IP holding company) without thinking about how they will be consolidated. Ask your accountant about consolidation impact before creating new entities.
-
-### SMB (50–500 people)
-
-You may have 2–5 entities — perhaps an operating company, a real estate holding entity, and an international subsidiary. Consolidation is manageable but requires discipline. Implement intercompany policies (how transactions are priced, when they settle, what documentation is needed) now, before bad habits form. Agents should reconcile intercompany balances, generate elimination entries, and produce the consolidated trial balance. Your biggest risk is letting intercompany mismatches accumulate because "we will sort it out at year-end."
-
-### Mid-Market (500–5,000 people)
-
-Consolidation is now a significant workstream — 10–50 entities across multiple countries and currencies. You need a dedicated consolidation tool (not spreadsheets) and clear ownership of the process. A consolidation accountant or team manages entity close coordination, intercompany reconciliation, currency translation, and consolidated reporting. Agents automate 80%+ of the consolidation — intercompany matching, elimination generation, currency translation, and minority interest calculations. Focus on reducing the consolidation timeline to 2–3 days after all entities close.
-
-### Enterprise (5,000+ people)
-
-Consolidation is a global operation involving hundreds of entities across dozens of countries. A dedicated Financial Reporting team manages the process with support from entity-level controllers. Multi-tier consolidation structures (sub-group consolidations feeding the parent) require careful orchestration. Multiple reporting outputs — GAAP, IFRS, statutory, regulatory, tax, and management — are produced from the same underlying data. Agents enable parallel processing, continuous intercompany reconciliation, and real-time consolidated views. The consolidation process is fully governed with SOX controls over elimination entries, top-side adjustments, and period-end rates.
 
 ## ERP•AI & Proto
 

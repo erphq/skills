@@ -196,23 +196,6 @@ AI agents make inventory setup dramatically faster:
 
 **30. Jewelry & Luxury**: High-value, low-volume inventory requiring secure storage and individual item tracking. Every diamond, watch, or designer piece is essentially serialized. Consignment is common — designers place goods in retail stores that remain the designer's inventory until sold. Insurance and valuation require regular reappraisal.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably track inventory in a spreadsheet, and for now that might be fine. The moment you have more than 100 SKUs, more than one storage location, or more than one person managing stock, move to a proper system. Start with the basics — item master, stock levels, simple reorder alerts. An agent can monitor your spreadsheet or simple system and email you when something needs reordering. Focus on not running out of your top 20 items.
-
-### SMB (50–500 people)
-
-Implement a proper inventory management system with barcode or QR code scanning for receiving and shipping. Set up ABC classification and differentiate your management intensity. Establish cycle counting — you should not need a full physical inventory shutdown anymore. Agents handle reorder calculations, count scheduling, and exception flagging. Your biggest win is usually reducing dead stock and improving order fill rates.
-
-### Mid-Market (500–5,000 people)
-
-Multiple warehouses, potentially multiple countries. You need robust inventory planning with demand-driven reorder points, safety stock optimization, and multi-location visibility. Implement lot tracking where required. Agents manage the full replenishment cycle for routine items, optimize stock distribution across locations, and run continuous inventory analysis. Start measuring and optimizing inventory turns and carrying costs as key metrics.
-
-### Enterprise (5,000+ people)
-
-Sophisticated multi-echelon inventory optimization across a global network of warehouses and distribution centers. Demand sensing using multiple data sources (POS data, market intelligence, weather). Service level-driven inventory targets by customer segment. Agents run continuous optimization, balancing service levels against working capital. Digital twin models simulate inventory scenarios before committing to changes. Full traceability from raw material to finished product.
 
 ## ERP•AI & Proto
 

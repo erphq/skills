@@ -202,23 +202,6 @@ These are examples. Set targets based on what you can actually achieve 90-95% of
 
 30. **Jewelry & Luxury**: Repair SLAs account for artisan availability and parts sourcing for vintage pieces. Authentication inquiry SLAs balance thoroughness with customer anxiety about a major purchase. VIP client SLAs are individually negotiated and may include personal courier service for high-value items. After-sales SLAs (engraving, resizing, cleaning) are part of the luxury experience and should never feel rushed.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably do not need formal SLAs yet. What you need is a commitment to respond to customers within a reasonable time — same day for email, within minutes for chat. Track your response times informally. When you start getting complaints about slow responses or when you sign your first enterprise customer who asks for SLA commitments in the contract, it is time to formalize. Start with two tiers: urgent (4-hour response) and everything else (24-hour response).
-
-### SMB (50–500 people)
-
-Implement 3-4 SLA tiers matched to customer value or plan level. Configure business hours with holiday calendars. Set up automated warnings at 50% and 75% of SLA window. Track SLA compliance weekly at team meetings. Build a simple dashboard showing compliance by tier. When a customer churns and cites slow support, you should be able to pull their ticket history and SLA data to understand what happened.
-
-### Mid-Market (500–5,000 people)
-
-SLAs are now contractual commitments with financial implications. Implement per-customer SLA policies for enterprise accounts. Build SLA reporting into quarterly business reviews with customers. Configure breach prediction and proactive escalation. Track SLA compliance by product, team, region, and shift. Integrate SLA data with revenue data to quantify the cost of breaches. Have a formal exception process for SLA adjustments during incidents.
-
-### Enterprise (5,000+ people)
-
-SLA management is a dedicated function. Contract-specific SLAs for hundreds of enterprise customers, each potentially unique. Automated SLA policy assignment from contract management systems. Real-time SLA dashboards visible to operations, management, and customers. Financial penalty calculation and service credit processing. SLA performance feeds into executive compensation metrics. Regular benchmarking against industry standards and competitors. SLA data drives capacity planning and hiring decisions.
 
 ## ERP•AI & Proto
 

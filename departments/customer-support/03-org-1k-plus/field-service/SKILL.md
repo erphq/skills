@@ -230,23 +230,6 @@ Each type has different scheduling urgency, skill requirements, duration estimat
 
 30. **Jewelry & Luxury**: Field service is artisan-level — master watchmakers, jewelers, and craftspeople performing repairs and restoration. On-site service for high-value installations (built-in safes, display cases). High-security logistics for transporting valuable items to and from service centers. White-glove delivery and installation of fine jewelry storage. Authentication and appraisal visits for estate collections. Every service interaction is a brand experience and must reflect the luxury positioning.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably do not have dedicated field technicians yet. The founders or engineers handle on-site visits personally. Use your standard ticketing system to track site visits — just add a "requires on-site" flag. Keep a spreadsheet of what parts are in your car trunk. When you do 10+ site visits per month, start using basic scheduling and routing tools. Hire your first dedicated field technician when site visits become more than 20% of any one person's time.
-
-### SMB (50–500 people)
-
-A team of 5-20 field technicians with a part-time or full-time dispatcher. Implement a proper field service module with work order management, mobile app for technicians, and basic scheduling. Track first-time fix rate and technician utilization. Set up truck stock management with standard inventories. Use routing software for daily schedule optimization. Build a parts ordering process that checks stock before dispatch. Start tracking SLA compliance for on-site response.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated field service management team with 50-200+ technicians across regions. AI-optimized dispatching and route planning. Predictive parts management based on work order forecasting. IoT integration for connected equipment monitoring. Customer self-scheduling portal for appointments. Third-party technician network for overflow and specialized skills. Advanced analytics: technician scorecards, territory optimization, capacity planning. Mobile app with offline capability, photo documentation, and knowledge base access.
-
-### Enterprise (5,000+ people)
-
-Global field service operations with thousands of technicians. Multiple dispatch centers with follow-the-sun coverage. AI drives the majority of dispatching decisions. Predictive maintenance from IoT replaces reactive break/fix as the primary work order driver. Augmented reality for remote assistance and training. Complex parts logistics with forward stocking locations, just-in-time delivery, and 3D printing for specialty parts. Workforce management including hiring, training, certification, and career pathing for field technicians. Integration with ERP for billing, contracts, and revenue recognition.
 
 ## ERP•AI & Proto
 

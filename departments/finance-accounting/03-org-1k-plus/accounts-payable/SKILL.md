@@ -167,23 +167,6 @@ AI agents accelerate AP setup in several concrete ways:
 
 30. **Jewelry & Luxury**: Consignment inventory means AP only triggers when items sell, not when received. Precious metal and gemstone invoices reference fluctuating market prices and independent appraisals. Import duties on luxury goods are significant and vary by country of origin. Agents track consignment sales triggers and validate precious material pricing against market benchmarks.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have one person handling AP along with ten other jobs. Keep it dead simple: use ERP•AI's AP template with basic invoice capture and approval. You do not need three-way matching yet if every purchase is approved by the founder anyway. Focus on not paying things twice (duplicate detection) and not losing invoices (central inbox). A single agent watching your AP email and creating invoice records saves hours per week. Pay by virtual card when possible to earn rebates and simplify reconciliation. Your vendor count is small enough that a spreadsheet-level vendor master is fine — just make sure tax IDs are captured for year-end 1099s.
-
-### SMB (50–500 people)
-
-This is where AP pain really starts. You have hundreds of vendors, multiple people placing orders, and no one person knows every purchase. Three-way matching becomes essential — otherwise you are trusting every invoice on faith. Implement PO-based purchasing for anything over $500, and require non-PO invoices to go through a separate approval chain. Agents should handle invoice ingestion, matching, and routing. Set up a payment calendar (weekly ACH runs, monthly check runs). Start tracking DPO and discount capture rate. Your AP team is probably 2–5 people; agents should keep it from growing to 10 as invoice volume doubles.
-
-### Mid-Market (500–5,000 people)
-
-You likely have multiple entities, possibly in different countries. AP needs to handle multi-currency, intercompany transactions, and entity-specific approval matrices. Your invoice volume is in the thousands per month, and touchless processing becomes a strategic priority. Invest in supplier portal capabilities so vendors can submit invoices electronically, check payment status, and update their own bank details (with verification). Agents should manage exception queues, predict cash requirements, and produce analytics on spend by category, vendor, and department. Centralize AP into a shared service model to reduce redundancy across entities.
-
-### Enterprise (5,000+ people)
-
-AP is a strategic function, not just bill-paying. You are processing tens of thousands of invoices per month across dozens of entities and currencies. Supply chain finance programs (dynamic discounting, reverse factoring) generate significant returns. Your AP organization includes invoice processors, exception handlers, vendor master data stewards, payment specialists, and analytics staff. Agents operate at every level — from touchless invoice processing to predictive analytics to automated vendor communication. Integration with procurement, treasury, and tax systems must be seamless. Measure yourself against benchmarks: cost per invoice processed, touchless rate, DPO, discount capture rate, and first-time match rate.
 
 ## ERP•AI & Proto
 

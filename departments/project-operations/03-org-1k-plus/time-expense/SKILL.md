@@ -197,23 +197,6 @@ AI agents eliminate the most painful parts of time and expense management:
 
 30. **Jewelry & Luxury**: High-value sample transport and insurance costs are unique expense categories. Time spent at exclusive client events blurs the line between business development and billable work — clear policy guidance is needed.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have one person handling finance who also manages timesheets and expenses. Keep it dead simple — a weekly timesheet with 5 to 10 project codes and a basic expense form with receipt upload. Do not build approval workflows yet. The founder or delivery lead reviews everything directly. Focus on getting people to submit on time, every time.
-
-### SMB (50–500 people)
-
-Formal approval workflows become necessary. You need a real expense policy document. Automate reminders for late submissions. This is where OCR receipt processing saves meaningful time — at 200 employees averaging 3 expense reports per month, that is 600 manual entries you can eliminate. Implement manager approval for time and expenses.
-
-### Mid-Market (500–5,000 people)
-
-Multi-level approval workflows, delegation rules (approve on behalf of someone on vacation), and automated policy enforcement. You need analytics to spot trends — expense inflation, timesheet gaming, approval bottlenecks. Integration with your accounting system for automated journal entries. Likely operating in multiple countries with different policies.
-
-### Enterprise (5,000+ people)
-
-Global expense policy framework with regional variations. Integration with corporate travel booking systems, corporate card programs, and ERP financials. Audit sampling programs. Predictive analytics for budget forecasting. AI-driven fraud detection. You are processing tens of thousands of timesheets and expense reports per month — manual review is impossible, so automation and exception-based management are the only path.
 
 ## ERP•AI & Proto
 

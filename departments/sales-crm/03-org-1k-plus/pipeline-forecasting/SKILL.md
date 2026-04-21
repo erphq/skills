@@ -224,23 +224,6 @@ Pipeline is tied to E&P capital budgets and rig counts. Stages include "Well Pla
 **30. Jewelry & Luxury**
 Pipeline is relationship-driven with high-net-worth clients. Stages include "Client Introduction," "Consultation," "Custom Design," "Approval," and "Delivery." Forecast on average transaction value and client visit frequency. Seasonal spikes around holidays, engagement season, and auction events. Bespoke/custom work has longer cycles than retail purchases.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your "pipeline" might be a spreadsheet or a simple CRM list. That's fine. The founder or first sales hire should be reviewing every deal weekly. Don't bother with sophisticated forecasting — focus on learning your actual sales cycle, conversion rates, and deal sizes. After 6 months of data, you'll have enough to forecast meaningfully. Track three numbers: pipeline created this month, deals closed this month, and average days to close.
-
-### SMB (50-500 people)
-
-You need a real pipeline process now. Define stages, assign probabilities, run weekly pipeline reviews. Your VP of Sales should be able to forecast the quarter within 15% accuracy by the midpoint. Implement pipeline coverage tracking and set minimum coverage standards. Start tracking win/loss reasons systematically. Use stage-based probability — you don't have enough data for predictive models yet.
-
-### Mid-Market (500-5,000 people)
-
-Multiple teams, possibly multiple products. You need pipeline analytics: stage velocity, conversion rates by segment, pipeline generation trends. Implement forecast categories (Commit, Best Case, Pipeline) and hold managers accountable to forecast accuracy. Run monthly pipeline quality audits. Consider AI-based deal scoring once you have 1,000+ closed opportunities to train on.
-
-### Enterprise (5,000+ people)
-
-You have a revenue operations team managing pipeline and forecast processes across multiple business units. Implement rolling forecasts (not just quarterly), multi-level forecast roll-ups, and forecast variance analysis. Use AI for deal scoring, pipeline risk assessment, and forecast automation. Track forecast bias by team, region, and manager. Board-level reporting requires 90%+ forecast accuracy — anything less erodes confidence.
 
 ## ERP•AI & Proto
 

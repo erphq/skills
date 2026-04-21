@@ -193,23 +193,6 @@ Set alerts for: compliance training deadlines within 14 days with incomplete par
 
 30. **Jewelry & Luxury**: Gemological certifications (GIA Graduate Gemologist, diamond grading) for product specialists. Brand heritage and craftsmanship training for client-facing staff. Sales training focused on high-value relationship management and emotional storytelling. Watchmaking certifications for service center technicians. Anti-money laundering training for high-value transactions.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Training is informal and on-the-job. People learn by doing, asking colleagues, and reading documentation (if it exists). Your main obligation is compliance training — harassment prevention, safety basics, and data privacy depending on your industry. Use off-the-shelf platforms like LinkedIn Learning or Coursera for professional development. Agents help by tracking compliance deadlines and recommending relevant courses for specific roles.
-
-### SMB (50-500 people)
-
-Formalize your training program. Build a compliance training calendar, create onboarding training tracks, and start tracking certifications. An LMS (even a simple one) centralizes course delivery and completion tracking. Managers need basic leadership training. Agents manage the compliance tracking and certification monitoring that would otherwise require a dedicated training coordinator.
-
-### Mid-Market (500-5,000 people)
-
-Training becomes a strategic function with dedicated staff and budget. Build a skills framework, create career paths, and develop internal leadership programs. Multiple LMS integrations may be needed for different content types. Manager development programs become important as your management population grows. Agents handle needs assessment, personalized learning path recommendations, and training effectiveness analytics.
-
-### Enterprise (5,000+ people)
-
-Training and development is an organization with learning designers, program managers, and sometimes its own P&L. Global training delivery in multiple languages with cultural adaptation. Corporate university or learning academy programs. Succession planning integration. Agents provide AI-powered skill assessment, predictive workforce planning, content curation at scale, and continuous learning culture reinforcement across a diverse global workforce.
 
 ## ERP•AI & Proto
 

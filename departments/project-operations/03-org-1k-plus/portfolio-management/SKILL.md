@@ -197,23 +197,6 @@ AI agents turn portfolio management from a monthly reporting exercise into a con
 
 30. **Jewelry & Luxury**: Brand reputation risk must be a portfolio health dimension — a botched luxury brand project can have outsized negative impact. Collection launch timelines are immovable and seasonal.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have 5 to 15 active projects and the founder can keep the portfolio in their head. Focus on two things: a simple project status tracker (even a spreadsheet) and a monthly conversation about which clients and projects deserve the most attention. Do not over-engineer governance — you need speed, not process.
-
-### SMB (50–500 people)
-
-With 20 to 75 active projects, you need a real portfolio view. Implement health scoring (even a simple red/yellow/green) and a regular portfolio review meeting. Connect your pipeline to capacity planning — the number one mistake at this stage is winning more work than you can deliver. Designate a portfolio manager (can be part-time) who owns the cross-project view.
-
-### Mid-Market (500–5,000 people)
-
-PMO function with dedicated staff. Formal prioritization framework with executive sponsorship. Integrated pipeline and delivery capacity model. Tiered governance — large and strategic projects get more oversight, smaller ones get lighter touch. Quarterly portfolio rebalancing reviews. This is where predictive analytics start adding real value.
-
-### Enterprise (5,000+ people)
-
-Global PMO with regional portfolio managers. Sophisticated modeling including Monte Carlo simulation for project outcomes, portfolio optimization algorithms, and scenario planning. Executive portfolio dashboards updated in real time. Integration between portfolio management, financial planning, HR, and sales pipeline. Portfolio management is a core strategic function, not just a reporting exercise.
 
 ## ERP•AI & Proto
 

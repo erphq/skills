@@ -197,23 +197,6 @@ AI agents streamline subcontractor management from onboarding through payment:
 
 30. **Jewelry & Luxury**: Brand confidentiality is paramount — subcontractors handling product launch information sign aggressive NDAs. High-value inventory environments require additional background screening and bonding.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You use subcontractors to punch above your weight — taking on projects your small team cannot handle alone. Keep the process simple: a standard SOW template, clear rate cards, and direct PM approval of time. Your biggest risk is over-reliance on a single subcontractor who knows your clients better than you do. Build internal capability as fast as you can.
-
-### SMB (50–500 people)
-
-Subcontracting is a regular part of your delivery model. You need formalized onboarding, a vendor master database, and standard contract templates. Track subcontractor spend as a percentage of revenue and set a target ceiling. Start building preferred vendor relationships with 3 to 5 firms whose quality and rates you trust.
-
-### Mid-Market (500–5,000 people)
-
-Dedicated vendor management function (even if just 1 to 2 people). Formal preferred vendor program with tiered status, negotiated rate cards, and annual performance reviews. Master Services Agreements with your top 10 to 15 subcontractor partners. Automated compliance tracking for insurance, certifications, and contract expirations. Margin analytics by vendor.
-
-### Enterprise (5,000+ people)
-
-Strategic vendor management office integrated with procurement. Formal sourcing events for major skill categories. Volume-based rate negotiations. Subcontractor performance scorecards fed by project manager ratings, quality metrics, and client feedback. Risk management program covering concentration risk, compliance, and continuity planning. AI-driven matching of subcontractor capabilities to staffing needs across the global organization.
 
 ## ERP•AI & Proto
 

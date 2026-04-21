@@ -188,23 +188,6 @@ Set alerts for: employees missing direct deposit information, tax rate updates f
 
 30. **Jewelry & Luxury**: Sales commissions on high-value transactions with split credit for team selling. Artisan and craftsperson pay may include piece-rate and quality bonuses. Seasonal peaks around holidays and wedding season create overtime spikes. International luxury brands need multi-currency payroll for global retail operations.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Use a payroll service — do not try to run this in-house. Gusto, Rippling, or a similar platform handles calculations, tax filings, and direct deposits. Your job is to enter accurate data. The biggest risk at this stage is misclassifying contractors and forgetting to register in states where your remote employees live. Agents help by monitoring compliance obligations as you add employees in new states.
-
-### SMB (50-500 people)
-
-Payroll complexity increases with multiple pay frequencies, benefit deductions, garnishments, and multi-state obligations. You probably have a dedicated payroll person or small team. Integration between your HRMS, time tracking, and benefits systems becomes critical — manual data transfer causes errors. Agents validate data between systems, flag anomalies, and handle routine processing so your team focuses on exceptions.
-
-### Mid-Market (500-5,000 people)
-
-You likely have a payroll department or a managed service relationship with a major provider. Multi-state and possibly international payroll is standard. Union agreements, complex compensation plans, and equity awards add layers. Agents automate reconciliation, compliance monitoring, and reporting. The challenge is maintaining accuracy across thousands of unique pay calculations every cycle.
-
-### Enterprise (5,000+ people)
-
-Payroll is a core financial operation with its own budget, technology stack, and governance structure. Global payroll consolidation across dozens of countries, multiple currencies, and hundreds of tax jurisdictions is the norm. Agents handle cross-system data validation, automated compliance across jurisdictions, real-time analytics for finance, and continuous audit readiness. Integration with ERP, benefits, equity, and time systems must be seamless.
 
 ## ERP•AI & Proto
 

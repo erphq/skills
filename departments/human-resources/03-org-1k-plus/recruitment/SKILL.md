@@ -184,23 +184,6 @@ Set alerts for: job postings open longer than 45 days, interview feedback not su
 
 30. **Jewelry & Luxury**: Brand affinity and presentation matter — candidates often go through brand immersion assessments. Gemological certifications (GIA) are required for certain roles. High-value inventory means extensive background and credit checks.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Every hire matters disproportionately. One bad hire in a 20-person company affects 5% of your workforce. Keep it simple: one job board plus your network, a shared spreadsheet or basic ATS, and 2-3 interview rounds. The founder or CEO should be involved in every hire. Do not over-engineer the process — you need speed and personal judgment more than scalable systems. Agents help most with writing job descriptions and scheduling.
-
-### SMB (50-500 people)
-
-You need a real ATS now. Hiring managers across departments are requesting headcount, and you cannot track it all in spreadsheets. Implement structured scorecards, define approval workflows, and start tracking metrics. You probably have 1-3 recruiters. Agents handle resume screening, interview coordination, and candidate communication — the tasks that eat recruiter time without adding strategic value.
-
-### Mid-Market (500-5,000 people)
-
-You have a recruiting team, probably organized by function or business unit. Employer branding becomes important — you are competing against bigger names for talent. Implement referral programs with tracking, build talent pools for frequently hired roles, and use data to optimize your sources. Multi-location hiring means standardizing while allowing local flexibility. Agents run sourcing campaigns, manage high-volume pipelines, and produce analytics.
-
-### Enterprise (5,000+ people)
-
-You are hiring hundreds or thousands of people per year across multiple countries, business units, and job families. Governance is as important as speed — you need audit trails, compliance documentation, and standardized processes. Requisition approval chains are longer. Vendor management for staffing agencies needs its own workflow. Agents handle compliance monitoring, cross-business-unit candidate sharing, workforce planning integration, and executive reporting.
 
 ## ERP•AI & Proto
 

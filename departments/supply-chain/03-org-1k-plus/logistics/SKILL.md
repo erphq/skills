@@ -198,23 +198,6 @@ AI agents streamline logistics setup and ongoing management:
 
 **30. Jewelry & Luxury**: High-value, low-weight shipments requiring secure, insured transport. Armored courier or secure parcel services for diamond and jewelry shipments. Import documentation must match origin certifications (Kimberley Process for diamonds). Insurance values require declared value shipments with full coverage.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You are probably shipping via FedEx, UPS, or your postal service. That is fine. Set up a shipping account (even a small business account gets better rates than retail), use a shipping platform (ShipStation, Shippo, or similar) to rate shop across carriers, and track everything. Agents can manage your daily shipping — selecting carriers, printing labels, and sending tracking info to customers. Negotiate rates once you have 3 months of volume data.
-
-### SMB (50–500 people)
-
-Implement a transportation management system (TMS) or use your ERP's shipping module. Negotiate rates with 2-3 carriers based on your shipping profile. Set up automated routing rules so most shipments do not need manual carrier selection. Agents handle daily shipping operations, freight audit, and carrier performance tracking. Your biggest wins are usually rate negotiation and reducing expedited shipping through better planning.
-
-### Mid-Market (500–5,000 people)
-
-Full TMS implementation with multi-carrier rate shopping, automated routing, and integrated tracking. Dedicated logistics team managing carrier relationships, international shipping, and freight cost optimization. Agents run the operational logistics — carrier selection, documentation, tracking, exception management — while your team focuses on strategic carrier negotiations, network optimization, and service improvement. Consider a 3PL relationship for specialized needs.
-
-### Enterprise (5,000+ people)
-
-Logistics is a strategic function. Multi-modal, global transportation network with dedicated carrier contracts, freight brokerage relationships, and possibly owned fleet. Control tower approach with real-time visibility across the entire network. Agents serve as the intelligence layer — optimizing carrier selection across thousands of daily shipments, predicting delays before they happen, managing exceptions across the network, and continuously analyzing for cost and service improvement opportunities. Network modeling drives strategic decisions about distribution center locations and modal strategy.
 
 ## ERP•AI & Proto
 

@@ -197,23 +197,6 @@ AI agents transform demand planning from a spreadsheet exercise into a continuou
 
 **30. Jewelry & Luxury**: Demand is driven by economic confidence, gifting occasions (holidays, weddings), and fashion trends. Limited-edition and custom pieces make forecasting irrelevant at the item level — planning focuses on material requirements and craftsman capacity. Brand perception and exclusivity sometimes benefit from intentional scarcity rather than demand fulfillment.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Your demand plan is probably the founder's gut feeling plus a spreadsheet. That actually works when you have a few products and know your customers personally. The key is to start recording your actual demand data from day one, even if you do not do sophisticated forecasting yet. Use agents to spot trends in your sales data and alert you when ordering patterns change. Your biggest risk is either over-investing in inventory on optimistic projections or running out of your best-selling items.
-
-### SMB (50–500 people)
-
-Implement a basic forecasting process — even simple moving averages and seasonal adjustments beat guessing. Run a monthly review of forecast vs. actual to build forecasting discipline. Agents can manage the statistical forecasting for your full product line while you focus on the items where human judgment matters (new products, key accounts, promotions). Set up safety stock calculations based on data, not rules of thumb.
-
-### Mid-Market (500–5,000 people)
-
-Establish a formal S&OP process with monthly meetings that align sales forecasts, operations capacity, and financial plans. Implement demand planning software with automated statistical forecasting and collaboration tools for sales input. Agents manage the bulk of SKU-level forecasting and surface exceptions. Dedicate at least one person to demand planning as their primary job. Start measuring forecast accuracy formally and set improvement targets.
-
-### Enterprise (5,000+ people)
-
-Full demand planning organization with dedicated planners by product family or region. Multi-tier forecasting process — statistical baseline, market intelligence overlay, management review, and financial reconciliation. Demand sensing supplements traditional forecasting with real-time signals. Agents handle the detailed SKU-level planning, run scenario analysis, and manage the vast number of exceptions that come with a large portfolio. Integrated business planning connects demand to strategy. Forecast accuracy is a KPI for the commercial organization, not just the planning team.
 
 ## ERP•AI & Proto
 

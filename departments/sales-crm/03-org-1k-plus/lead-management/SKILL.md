@@ -224,23 +224,6 @@ Leads are E&P companies, refineries, and oilfield service companies. Lead volume
 **30. Jewelry & Luxury**
 Leads are high-net-worth individuals, bridal couples, and collectors. Volume is low but deal values are high. Qualification is about purchasing power, occasion (engagement, anniversary, investment), and brand affinity. Leads come from events, referrals, and exclusive previews. Privacy and discretion are paramount — never blast a luxury lead with mass emails.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You probably have one or two people doing all the selling. Keep it dead simple: a single lead list, manual scoring (gut feel is fine with 20 leads a week), and basic email follow-up. Use ERP•AI's built-in lead form and auto-assignment (assign everything to the founder). Focus on speed — respond to every lead within an hour. Don't build nurture campaigns until you have more leads than you can personally follow up with.
-
-### SMB (50-500 people)
-
-You have a real sales team now, maybe 5-20 reps. You need routing rules, basic scoring, and territory or product-based assignment. Implement SLAs (web leads contacted within 30 minutes). Set up a simple nurture sequence for leads that aren't ready. Start tracking source ROI so you know where to invest your limited marketing budget. Weekly pipeline reviews should include lead quality discussions.
-
-### Mid-Market (500-5,000 people)
-
-Multiple sales teams, possibly selling different products to different segments. You need sophisticated scoring (demographic + behavioral), multi-touch attribution, SDR/BDR teams for outbound, and marketing-sales SLAs with teeth. Implement lead recycling — leads that don't convert go back to marketing for re-nurture. Build predictive models once you have enough conversion data. Territory management becomes critical.
-
-### Enterprise (5,000+ people)
-
-Global operations, dozens of lead sources, multiple business units that might be pursuing the same account. You need centralized lead governance, account-based scoring, global deduplication across business units, compliance workflows for every region you operate in, and AI-driven predictive scoring. Lead management becomes a full-time job for a team — RevOps or Marketing Ops — not something a sales manager handles on the side.
 
 ## ERP•AI & Proto
 

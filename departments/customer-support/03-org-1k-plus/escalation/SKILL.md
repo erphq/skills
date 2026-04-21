@@ -222,23 +222,6 @@ Adjust based on your actual resolution times and SLA commitments.
 
 30. **Jewelry & Luxury**: Customer complaint escalation for high-value items involves senior artisans and authentication experts. VIP client escalation goes directly to client advisors and boutique directors. Insurance and valuation dispute escalation involves certified gemologists and appraisers. Provenance and authenticity escalation requires specialist knowledge and may involve third-party certification bodies. Social media complaint escalation for luxury brands is extremely sensitive due to brand reputation impact.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You do not need formal tiers. Everyone is L1 and L2 combined. Escalation means walking over to the developer's desk (or pinging them on Slack) and saying "can you look at this?" Formalize just two things: who gets pinged for urgent issues after hours (one person) and what counts as urgent enough to ping them. Write it down so there is no ambiguity at 2 AM. As you grow past 20 support tickets a day, start separating L1 (front-line responders) from L2 (specialists).
-
-### SMB (50–500 people)
-
-Implement L1/L2 tiers with clear escalation criteria. L3 is your engineering team, accessed through a defined channel (not direct Slack DMs to random engineers). Set up on-call rotation with at least 3 people to avoid burnout. Document escalation paths so new hires know exactly what to do. Track escalation rates and use them in coaching conversations. Build a management escalation path for customer retention situations.
-
-### Mid-Market (500–5,000 people)
-
-Full L1/L2/L3 structure with specialized L2 teams per product or function. Functional escalation paths to billing, legal, security, and product teams. Follow-the-sun escalation across regions. On-call rotations with compensation and defined severity levels. Escalation SLAs with automated triggers. Customer-specific escalation paths for enterprise accounts. Regular calibration sessions where L1 and L2 agents review escalation decisions together to maintain consistency.
-
-### Enterprise (5,000+ people)
-
-Globally distributed tier structure with regional and product-specific escalation matrices. Named account escalation paths for top customers. Incident management process separate from normal escalation (major incident = separate war room, not just L3 escalation). Vendor and partner escalation SLAs managed contractually. Escalation data feeds into workforce planning, training, and product quality improvement. Formal escalation review boards that audit patterns and adjust processes quarterly.
 
 ## ERP•AI & Proto
 

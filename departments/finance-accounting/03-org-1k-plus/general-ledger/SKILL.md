@@ -167,23 +167,6 @@ AI agents make GL setup faster and more accurate:
 
 30. **Jewelry & Luxury**: Inventory valuation for precious metals and gemstones requires mark-to-market or lower-of-cost-or-market adjustments based on commodity and appraisal values. Consignment inventory must be tracked off-balance-sheet until sale. High-value individual items may warrant serial-number-level GL tracking. Agents update precious metal valuations against market prices and manage consignment memo inventory records.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You need a simple chart of accounts — probably 50–100 accounts. Do not over-engineer it. Use ERP•AI's startup COA template and focus on tracking revenue, COGS, and your main expense categories (people, rent, software, marketing). Your "GL process" is probably the founder or a bookkeeper posting transactions from bank feeds and AP/AR. An agent can auto-categorize bank transactions, flag anything unusual, and produce a monthly P&L in minutes. The main risk at this stage is sloppy record-keeping that creates a mess for your first audit or funding round.
-
-### SMB (50–500 people)
-
-Your GL needs to support departmental reporting, possibly multi-location tracking, and enough detail for meaningful financial analysis. You probably have 200–400 accounts with 2–3 dimensions (department, location). A controller or accounting manager owns the GL and close process. Agents should automate recurring entries, perform account reconciliations, and produce financial statements. Focus on month-end close efficiency — if it takes more than 7 business days, identify the bottlenecks. Start building a reconciliation discipline for every balance sheet account.
-
-### Mid-Market (500–5,000 people)
-
-Multiple entities, multiple currencies, and possibly multiple GAAP standards. Your COA is 300–700 accounts with 3–5 dimensions. You have a team of accountants, a close calendar, and an audit committee asking questions. Agents should enable continuous close processes — daily reconciliations, automated accruals, and real-time reporting. Intercompany accounting becomes a major workstream. You need GL controls — segregation of duties, journal entry approvals, and period lockdown. Start benchmarking your close timeline against peers and driving it under 5 business days.
-
-### Enterprise (5,000+ people)
-
-The GL is a complex, multi-ledger environment supporting dozens of entities across jurisdictions. You maintain parallel reporting (GAAP, IFRS, statutory, tax) from the same underlying data. Your chart of accounts is a governed asset with a formal change request process. Hundreds of people touch the GL through sub-ledger transactions. Agents operate at scale — processing thousands of automated journal entries, performing continuous reconciliations, detecting anomalies in real time, and producing regulatory filings. GL is not just accounting infrastructure; it is a strategic data asset that feeds enterprise analytics and decision-making.
 
 ## ERP•AI & Proto
 

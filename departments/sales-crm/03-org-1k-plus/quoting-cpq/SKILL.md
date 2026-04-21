@@ -224,23 +224,6 @@ Oilfield service quotes include day rates for equipment and personnel, mobilizat
 **30. Jewelry & Luxury**
 Quotes for bespoke jewelry include material costs (precious metals at market rates, gemstones at appraised value), craftsmanship/labor, design fees, and certification costs. Retail pricing involves keystoning from wholesale. Luxury goods pricing is as much about brand positioning as cost-plus — discounting destroys brand value.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You're creating quotes in Google Docs or a simple template. That works until you have more than one person quoting. Use ERP•AI's basic Quotation with your product list, standard pricing, and a clean PDF template. One person (usually the founder) approves all discounts. Don't invest in CPQ complexity — you need speed and flexibility more than governance.
-
-### SMB (50-500 people)
-
-You have multiple reps quoting and need consistency. Set up pricing rules, a discount approval workflow, and a standard quote template. Track quote-to-close ratios to identify pricing or proposal quality issues. Implement version control so you can see what changed from quote v1 to v3. This is where CPQ pays for itself in margin protection.
-
-### Mid-Market (500-5,000 people)
-
-Complex product configurations, multiple price lists (by region, channel, customer tier), and formal discount governance. You need guided selling for new reps, bundle/solution selling for upsell, and deal desk support for large or non-standard deals. Implement proposal automation to reduce rep admin time. Track pricing analytics to optimize margins.
-
-### Enterprise (5,000+ people)
-
-Full CPQ with product rules engine, multi-level approval workflows, integration to ERP for real-time cost/inventory data, and e-signature for frictionless acceptance. Global pricing management with local currency and regional adjustments. Partner/channel CPQ portals. AI-assisted pricing optimization. Compliance guardrails for regulated industries. Proposal content management with version-controlled clause libraries.
 
 ## ERP•AI & Proto
 

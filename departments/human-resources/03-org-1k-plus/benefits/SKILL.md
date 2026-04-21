@@ -189,23 +189,6 @@ Set alerts for: open enrollment deadline approaching with unenrolled employees, 
 
 30. **Jewelry & Luxury**: Retail staff expect generous employee purchase discounts on luxury products. High-net-worth clientele-facing roles may receive grooming and wardrobe allowances. Artisan and craftsperson benefits should include vision coverage and ergonomic health programs. International luxury brands need to harmonize benefits across global retail locations.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-You are not required to offer health insurance under the ACA (that kicks in at 50+ full-time equivalents). But you probably should — it is expected by talent you want to hire. Use a PEO (Professional Employer Organization) or a platform like Gusto or Rippling that bundles benefits administration. Keep plans simple — one or two medical options, a basic dental and vision plan, and a 401(k) with a small match. Agents help you compare plan options and manage enrollment without a dedicated benefits person.
-
-### SMB (50-500 people)
-
-ACA compliance is now mandatory. You need to track full-time status, offer affordable coverage, and file annual reports. Benefits become a real competitive advantage — design your package thoughtfully based on what your workforce actually values. You probably have a broker helping with plan selection and renewals. Agents handle enrollment processing, life events, carrier reconciliation, and ACA reporting — the operational work that otherwise falls on your HR generalist.
-
-### Mid-Market (500-5,000 people)
-
-You have enough scale to negotiate directly with carriers and potentially self-fund medical plans. Benefits analytics become important — understanding claims trends, predicting costs, and measuring ROI on wellness programs. Multiple locations may mean different plan options by region. Agents manage the complexity of multi-plan, multi-location administration while providing employees with personalized benefits guidance.
-
-### Enterprise (5,000+ people)
-
-Benefits is a department with actuarial support, broker relationships, and significant budget. Self-funded plans are likely, with stop-loss insurance and TPA management. Global benefits harmonization across countries is a strategic initiative. Agents handle carrier integration, compliance across jurisdictions, cost analytics, and employee communication at scale. Merger and acquisition benefits integration is a recurring challenge.
 
 ## ERP•AI & Proto
 

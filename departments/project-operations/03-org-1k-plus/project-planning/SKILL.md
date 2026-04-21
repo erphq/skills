@@ -190,23 +190,6 @@ AI agents can dramatically speed up project setup. Here is how:
 
 30. **Jewelry & Luxury**: Authentication and provenance tracking systems require specialized validation. Plans must account for high-security environments, seasonal collection launches, and multi-currency/multi-language requirements for global boutique networks.
 
-## By Company Size
-
-### Startup (< 50 people)
-
-Keep it simple. You probably have 1 to 5 active projects at a time, and the same people work on everything. A basic task list with milestones and a single Gantt view is sufficient. Do not over-engineer the WBS — two levels (Phase > Task) is plenty. The biggest risk is not having any plan at all. Even a lightweight plan beats winging it.
-
-### SMB (50–500 people)
-
-You are running 10 to 50 concurrent projects and need consistency across project managers. Invest in project templates for your top 3 to 5 engagement types. Standardize your WBS structure and milestone naming conventions. Start tracking baseline variance. This is where agents add real value by automating status reporting and flagging schedule risks.
-
-### Mid-Market (500–5,000 people)
-
-Multiple practices, possibly multiple geographies, and 50 to 200 active projects demand portfolio-level visibility. You need program management capabilities, cross-project dependency tracking, and resource-aware scheduling. Earned value management becomes practical. Invest in a PMO function that maintains templates, enforces standards, and reviews project health.
-
-### Enterprise (5,000+ people)
-
-You are managing hundreds or thousands of projects across business units, geographies, and delivery models. Governance becomes critical — stage-gate processes, formal change control boards, and executive dashboards. You need integration between project planning and financial systems for revenue forecasting. Consider a dedicated planning tool that feeds into your PSA rather than relying on PSA-native planning alone.
 
 ## ERP•AI & Proto
 
