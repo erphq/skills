@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -30,9 +30,9 @@ The most common cause of ERP implementation failure is not technology -- it is p
 
 Before designing communications or training, set the execution frame:
 
-- Start with the [Fit-Gap Matrix](../../../templates/fit-gap-matrix/SKILL.md) to identify which process changes are likely to create adoption resistance.
-- Use the [Go-Live Checklist](../../../templates/go-live-checklist/SKILL.md) to define readiness gates and reinforcement checkpoints.
-- Assign a primary owner from [Requirements Analyst](../../../roles/requirements-analyst/SKILL.md) and [Solution Architect](../../../roles/solution-architect/SKILL.md) for business + technical alignment.
+- Start with the [Fit-Gap Matrix](../../../../templates/03-org-1k-plus/fit-gap-matrix/SKILL.md) to identify which process changes are likely to create adoption resistance.
+- Use the [Go-Live Checklist](../../../../templates/03-org-1k-plus/go-live-checklist/SKILL.md) to define readiness gates and reinforcement checkpoints.
+- Assign a primary owner from [Requirements Analyst](../../role-overviews/requirements-analyst.md) and [Solution Architect](../../role-overviews/solution-architect.md) for business + technical alignment.
 
 Do these first actions before the detailed workflow:
 

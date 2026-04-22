@@ -5,9 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - solution-architect
-  type: role
+  department: information-technology
+  type: role-overview
   scope: internal
 ---
 # Solution Architect

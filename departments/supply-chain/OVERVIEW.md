@@ -5,9 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - domain
-  type: domain
+  department: supply-chain
+  type: department-overview
   scope: internal
 ---
 # Supply Chain

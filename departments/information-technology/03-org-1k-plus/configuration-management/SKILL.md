@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -34,9 +34,9 @@ Bad configuration management is invisible until it is catastrophic. A mismatched
 
 Before promoting any configuration, set guardrails:
 
-- Use the [Requirements Traceability](../../../templates/requirements-traceability/SKILL.md) template to map each config change to a business requirement and test case.
-- Use the [Go-Live Checklist](../../../templates/go-live-checklist/SKILL.md) to define deployment gates, rollback requirements, and approval ownership.
-- Assign [Solution Architect](../../../roles/solution-architect/SKILL.md) as release design owner and [QA Lead](../../../roles/qa-lead/SKILL.md) as gate validator.
+- Use the [Requirements Traceability](../../../../templates/03-org-1k-plus/requirements-traceability/SKILL.md) template to map each config change to a business requirement and test case.
+- Use the [Go-Live Checklist](../../../../templates/03-org-1k-plus/go-live-checklist/SKILL.md) to define deployment gates, rollback requirements, and approval ownership.
+- Assign [Solution Architect](../../role-overviews/solution-architect.md) as release design owner and [QA Lead](../../role-overviews/qa-lead.md) as gate validator.
 
 Do these first actions before implementation:
 
