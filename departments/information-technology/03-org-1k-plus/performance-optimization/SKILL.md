@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -520,4 +520,4 @@ Load the page skeleton immediately (navigation, layout, headers). Then load sect
 - [Data Modeling](../data-modeling/SKILL.md) -- schema design (normalization, indexing) is the foundation of query performance
 - [Reports & Dashboards](../reports-dashboards/SKILL.md) -- report queries are often the heaviest database consumers
 - [Deployment & Go-Live](../deployment-golive/SKILL.md) -- performance testing is a go-live gate
-- [Solution Architect](../../../roles/solution-architect/SKILL.md) -- the role that owns infrastructure and scaling decisions
+- [Solution Architect](../../role-overviews/solution-architect.md) -- the role that owns infrastructure and scaling decisions

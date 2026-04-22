@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -30,9 +30,9 @@ The core challenge: legacy data is dirty, inconsistent, undocumented, and struct
 
 Before writing ETL logic, lock down migration controls:
 
-- Start with the [Migration Runbook](../../../templates/migration-runbook/SKILL.md) to sequence cutover tasks, ownership, and rollback steps.
-- Use the [Requirements Traceability](../../../templates/requirements-traceability/SKILL.md) template to connect mapping rules to validation and sign-off criteria.
-- Assign [Migration Architect](../../../roles/migration-architect/SKILL.md) as accountable owner and [Data Engineer](../../../roles/data-engineer/SKILL.md) as execution lead.
+- Start with the [Migration Runbook](../../../../templates/03-org-1k-plus/migration-runbook/SKILL.md) to sequence cutover tasks, ownership, and rollback steps.
+- Use the [Requirements Traceability](../../../../templates/03-org-1k-plus/requirements-traceability/SKILL.md) template to connect mapping rules to validation and sign-off criteria.
+- Assign [Migration Architect](../../role-overviews/migration-architect.md) as accountable owner and [Data Engineer](../../role-overviews/data-engineer.md) as execution lead.
 
 Do these first actions before the migration lifecycle:
 

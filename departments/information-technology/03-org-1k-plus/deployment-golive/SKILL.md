@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -564,6 +564,6 @@ Every escalation path must include pre-exchanged contact information (direct pho
 - [Data Migration](../data-migration/SKILL.md) -- data migration tasks are a major component of the cutover runbook
 - [Security & Roles](../security-roles/SKILL.md) -- access provisioning is part of cutover
 - [User Onboarding](../user-onboarding/SKILL.md) -- training must be complete before go-live
-- [Go-Live Checklist](../../../templates/go-live-checklist/SKILL.md) -- template for the go/no-go criteria checklist
-- [Migration Runbook](../../../templates/migration-runbook/SKILL.md) -- template for the data migration portion of the cutover
-- [Solution Architect](../../../roles/solution-architect/SKILL.md) -- the role that owns environment strategy and deployment architecture
+- [Go-Live Checklist](../../../../templates/03-org-1k-plus/go-live-checklist/SKILL.md) -- template for the go/no-go criteria checklist
+- [Migration Runbook](../../../../templates/03-org-1k-plus/migration-runbook/SKILL.md) -- template for the data migration portion of the cutover
+- [Solution Architect](../../role-overviews/solution-architect.md) -- the role that owns environment strategy and deployment architecture

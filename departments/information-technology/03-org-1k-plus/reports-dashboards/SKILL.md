@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -469,6 +469,6 @@ This requires a commentary engine that accepts the current filter context and th
 - [Data Modeling](../data-modeling/SKILL.md) -- schema design directly impacts report query performance and available dimensions
 - [Security & Roles](../security-roles/SKILL.md) -- row-level and field-level security for reports
 - [Performance Optimization](../performance-optimization/SKILL.md) -- query tuning, indexing, and caching for report performance
-- [Finance & Accounting](../../../domains/finance-accounting/SKILL.md) -- financial reporting patterns (GL, AP/AR, budget vs actual)
-- [Supply Chain](../../../domains/supply-chain/SKILL.md) -- inventory and procurement reporting patterns
-- [Sales & CRM](../../../domains/sales-crm/SKILL.md) -- pipeline and revenue reporting patterns
+- [Finance & Accounting](../../../finance-accounting/OVERVIEW.md) -- financial reporting patterns (GL, AP/AR, budget vs actual)
+- [Supply Chain](../../../supply-chain/OVERVIEW.md) -- inventory and procurement reporting patterns
+- [Sales & CRM](../../../sales-crm/OVERVIEW.md) -- pipeline and revenue reporting patterns

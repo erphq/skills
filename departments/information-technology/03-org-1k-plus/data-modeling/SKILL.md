@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -28,9 +28,9 @@ Poor data modeling creates compounding technical debt: bad queries, broken repor
 
 Before creating entities and fields, align design intent:
 
-- Use the [Fit-Gap Matrix](../../../templates/fit-gap-matrix/SKILL.md) to classify standard vs custom data structures.
-- Use the [Requirements Traceability](../../../templates/requirements-traceability/SKILL.md) template to connect each entity decision to reporting, integration, and compliance needs.
-- Assign [Solution Architect](../../../roles/solution-architect/SKILL.md) and [Data Engineer](../../../roles/data-engineer/SKILL.md) as joint owners for model quality and operability.
+- Use the [Fit-Gap Matrix](../../../../templates/03-org-1k-plus/fit-gap-matrix/SKILL.md) to classify standard vs custom data structures.
+- Use the [Requirements Traceability](../../../../templates/03-org-1k-plus/requirements-traceability/SKILL.md) template to connect each entity decision to reporting, integration, and compliance needs.
+- Assign [Solution Architect](../../role-overviews/solution-architect.md) and [Data Engineer](../../role-overviews/data-engineer.md) as joint owners for model quality and operability.
 
 Do these first actions before detailed modeling:
 

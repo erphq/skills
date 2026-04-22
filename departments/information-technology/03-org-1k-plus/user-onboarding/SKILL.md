@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -557,4 +557,4 @@ Present training ROI in financial terms: "The $180,000 training investment reduc
 - [Security & Roles](../security-roles/SKILL.md) -- training paths align with security roles; users train on what they have access to
 - [Workflow Automation](../workflow-automation/SKILL.md) -- workflow changes drive retraining needs
 - [Reports & Dashboards](../reports-dashboards/SKILL.md) -- dashboard training is part of manager onboarding
-- [Human Resources](../../../domains/human-resources/SKILL.md) -- LMS integration and organizational hierarchy for training assignments
+- [Human Resources](../../../human-resources/OVERVIEW.md) -- LMS integration and organizational hierarchy for training assignments

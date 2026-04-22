@@ -5,9 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - domain
-  type: domain
+  department: human-resources
+  type: department-overview
   scope: internal
 ---
 # Human Resources

@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -591,5 +591,5 @@ Build reconciliation tests that pull data from both systems (via API or database
 - [Data Modeling](../data-modeling/SKILL.md) -- validation rules originate from the data model
 - [Workflow Automation](../workflow-automation/SKILL.md) -- workflow logic must be tested across state transitions
 - [Security & Roles](../security-roles/SKILL.md) -- security testing validates role-based access controls
-- [QA Lead](../../../roles/qa-lead/SKILL.md) -- the role persona responsible for test strategy and execution
-- [Requirements Traceability](../../../templates/requirements-traceability/SKILL.md) -- template for linking requirements to test cases
+- [QA Lead](../../role-overviews/qa-lead.md) -- the role persona responsible for test strategy and execution
+- [Requirements Traceability](../../../../templates/03-org-1k-plus/requirements-traceability/SKILL.md) -- template for linking requirements to test cases

@@ -5,8 +5,7 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - template
+  size_tier: 03-org-1k-plus
   type: template
   scope: internal
 ---

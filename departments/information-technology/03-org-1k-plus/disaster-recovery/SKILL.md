@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - technical
+  department: information-technology
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
@@ -31,9 +31,9 @@ An ERP system is the operational backbone of an enterprise. When it is down, ord
 
 Before selecting architecture, define recovery commitments:
 
-- Use the [Go-Live Checklist](../../../templates/go-live-checklist/SKILL.md) to define mandatory DR readiness gates and evidence before production launch.
-- Use the [Migration Runbook](../../../templates/migration-runbook/SKILL.md) style to codify failover and rollback runbooks with step ownership.
-- Assign [Solution Architect](../../../roles/solution-architect/SKILL.md) as DR design owner and [Compliance Analyst](../../../roles/compliance-analyst/SKILL.md) for audit/control requirements.
+- Use the [Go-Live Checklist](../../../../templates/03-org-1k-plus/go-live-checklist/SKILL.md) to define mandatory DR readiness gates and evidence before production launch.
+- Use the [Migration Runbook](../../../../templates/03-org-1k-plus/migration-runbook/SKILL.md) style to codify failover and rollback runbooks with step ownership.
+- Assign [Solution Architect](../../role-overviews/solution-architect.md) as DR design owner and [Compliance Analyst](../../role-overviews/compliance-analyst.md) for audit/control requirements.
 
 Do these first actions before technical design:
 

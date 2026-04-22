@@ -5,8 +5,8 @@ version: 1.0.0
 metadata:
   author: erphq
   domain: erpai.studio
-  roles:
-    - scm
+  department: supply-chain
+  size_tier: 03-org-1k-plus
   type: skill
   scope: internal
 ---
