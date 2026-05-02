@@ -2,6 +2,14 @@
 name: quoting-cpq
 description: This skill should be used when the task involves configure products, calculate pricing with discounts and bundles, get approvals, and generate professional proposals that close deals.
 version: 1.0.0
+agents:
+  - approvals
+  - quote-approval
+related:
+  - commissions
+  - contracts-renewals
+  - customer-360
+  - pipeline-forecasting
 metadata:
   author: erphq
   domain: erpai.studio

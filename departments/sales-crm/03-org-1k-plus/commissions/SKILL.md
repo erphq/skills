@@ -2,6 +2,11 @@
 name: commissions
 description: This skill should be used when the task involves design commission plans, calculate payouts with accelerators and clawbacks, handle split credits, and pay your sales team accurately and on time.
 version: 1.0.0
+agents:
+  - commission-statement
+related:
+  - contracts-renewals
+  - pipeline-forecasting
 metadata:
   author: erphq
   domain: erpai.studio

@@ -2,6 +2,14 @@
 name: contracts-renewals
 description: This skill should be used when the task involves manage contract creation, track renewal dates, handle amendments, process auto-renewals, and make sure revenue doesn't walk out the door.
 version: 1.0.0
+agents:
+  - deal-coach
+  - renewals
+related:
+  - commissions
+  - customer-360
+  - pipeline-forecasting
+  - quoting-cpq
 metadata:
   author: erphq
   domain: erpai.studio

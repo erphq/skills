@@ -2,6 +2,12 @@
 name: general-ledger
 description: This skill should be used when the task involves manage your chart of accounts, record journal entries, produce trial balances, and generate financial statements.
 version: 1.0.0
+agents:
+related:
+  - accounts-payable
+  - accounts-receivable
+  - consolidation
+  - period-close
 metadata:
   author: erphq
   domain: erpai.studio

@@ -2,6 +2,11 @@
 name: fixed-assets
 description: This skill should be used when the task involves track company property and equipment, calculate depreciation, handle disposals and revaluations, and manage lease accounting.
 version: 1.0.0
+agents:
+  - period-close
+related:
+  - accounts-payable
+  - general-ledger
 metadata:
   author: erphq
   domain: erpai.studio

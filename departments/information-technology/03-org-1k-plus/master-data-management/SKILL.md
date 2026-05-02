@@ -2,6 +2,10 @@
 name: master-data-management
 description: This skill should be used when the task involves design and operate master data management programs in ERP•AI -- use when establishing golden records, data stewardship, duplicate detection, data quality frameworks, and cross-system synchronization for enterprise master data.
 version: 1.0.0
+agents:
+related:
+  - general-ledger
+  - security-roles
 metadata:
   author: erphq
   domain: erpai.studio

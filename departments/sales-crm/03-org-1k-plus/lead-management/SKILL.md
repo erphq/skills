@@ -2,6 +2,15 @@
 name: lead-management
 description: This skill should be used when the task involves capture leads from every source, score them, route them to the right rep, nurture the ones not ready to buy, and track what converts.
 version: 1.0.0
+agents:
+  - approvals
+  - deal-coach
+  - lead-scoring
+related:
+  - campaign-management
+  - customer-360
+  - pipeline-forecasting
+  - territory-management
 metadata:
   author: erphq
   domain: erpai.studio

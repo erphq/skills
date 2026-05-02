@@ -2,6 +2,10 @@
 name: logistics
 description: This skill should be used when the task involves how to move products from point A to point B efficiently, affordably, and on time.
 version: 1.0.0
+agents:
+related:
+  - accounts-receivable
+  - warehouse
 metadata:
   author: erphq
   domain: erpai.studio

@@ -2,6 +2,12 @@
 name: procurement
 description: This skill should be used when the task involves how to buy things your company needs — from requesting items to paying for them.
 version: 1.0.0
+agents:
+related:
+  - accounts-payable
+  - inventory
+  - production-planning
+  - vendor-management
 metadata:
   author: erphq
   domain: erpai.studio
