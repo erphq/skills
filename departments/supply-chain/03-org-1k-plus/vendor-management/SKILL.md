@@ -2,6 +2,13 @@
 name: vendor-management
 description: This skill should be used when the task involves how to find, evaluate, and work with the companies that supply what you need.
 version: 1.0.0
+agents:
+  - ap-intake
+  - procurement
+related:
+  - accounts-payable
+  - procurement
+  - quality
 metadata:
   author: erphq
   domain: erpai.studio

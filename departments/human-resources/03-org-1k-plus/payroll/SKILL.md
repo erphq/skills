@@ -2,6 +2,12 @@
 name: payroll
 description: This skill should be used when the task involves calculate pay, withhold taxes, process deductions, run pay cycles, and stay compliant with wage laws.
 version: 1.0.0
+agents:
+  - approvals
+related:
+  - general-ledger
+  - leave-attendance
+  - tax-compliance
 metadata:
   author: erphq
   domain: erpai.studio

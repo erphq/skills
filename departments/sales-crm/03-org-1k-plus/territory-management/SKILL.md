@@ -2,6 +2,12 @@
 name: territory-management
 description: This skill should be used when the task involves design sales territories, assign accounts to reps, allocate quotas fairly, and rebalance when things get lopsided.
 version: 1.0.0
+agents:
+  - territory-realignment
+related:
+  - commissions
+  - lead-management
+  - pipeline-forecasting
 metadata:
   author: erphq
   domain: erpai.studio

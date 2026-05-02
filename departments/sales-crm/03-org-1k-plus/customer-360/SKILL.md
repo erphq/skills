@@ -2,6 +2,15 @@
 name: customer-360
 description: This skill should be used when the task involves build a unified view of every customer — their history, health, spending patterns, and signals for cross-sell and upsell opportunities.
 version: 1.0.0
+agents:
+  - deal-coach
+  - lead-scoring
+  - renewals
+related:
+  - commissions
+  - contracts-renewals
+  - lead-management
+  - pipeline-forecasting
 metadata:
   author: erphq
   domain: erpai.studio

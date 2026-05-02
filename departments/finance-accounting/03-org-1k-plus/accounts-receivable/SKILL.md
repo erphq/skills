@@ -2,6 +2,15 @@
 name: accounts-receivable
 description: This skill should be used when the task involves send customer invoices, track who owes you money, collect payments, apply cash, and manage aging and dunning.
 version: 1.0.0
+agents:
+  - approvals
+  - collections
+  - reconciliation
+related:
+  - accounts-payable
+  - general-ledger
+  - period-close
+  - tax-compliance
 metadata:
   author: erphq
   domain: erpai.studio

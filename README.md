@@ -189,6 +189,37 @@ The whole skill — context, decisions, build steps, integrations, checklists �
 
 To improve a skill, edit its `SKILL.md` in place. To add a new skill, create `departments/<dept>/<size>/<new-skill>/SKILL.md` following the frontmatter format used by existing files.
 
+### Frontmatter — `agents:` and `related:` (optional, downstream-facing)
+
+Every `SKILL.md` may declare two optional top-level frontmatter fields that downstream consumers (e.g. [erphq/lab-sites](https://github.com/erphq/lab-sites), which renders erpai.studio's skill pages) use to surface cross-references on the rendered page:
+
+```yaml
+---
+name: accounts-receivable
+description: This skill should be used when…
+version: 1.0.0
+agents:                    # ← optional
+  - collections
+  - reconciliation
+  - approvals
+related:                   # ← optional
+  - accounts-payable
+  - general-ledger
+  - period-close
+metadata:
+  author: erphq
+  …
+---
+```
+
+**`agents:`** — list of agent capability slugs that work on this skill. Slugs are reusable across apps (e.g. `approvals` shows up in nearly every skill). Renderers display them as cards / chips on the skill page; if the consumer's site has per-agent pages, it cross-links.
+
+**`related:`** — list of other skill slugs this skill commonly works with. Slugs MUST resolve to other `SKILL.md` files in this repo. Renderers use them for the "works with" cross-link grid.
+
+Both fields are optional. Skills without them render the standard page sans those sections. As fields fill in, downstream consumers automatically pick them up.
+
+These fields live at top level — sibling to `name:` / `description:` / `version:` — not nested under `metadata:`. The `metadata:` block holds technical facts about the file; `agents:` and `related:` describe the skill's relationships.
+
 ---
 
 ## For humans

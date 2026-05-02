@@ -2,6 +2,12 @@
 name: integrations
 description: This skill should be used when the task involves connect ERP•AI applications to external systems -- use when designing API connections, data syncs, middleware orchestration, and event-driven communication between enterprise platforms.
 version: 1.0.0
+agents:
+  - ap-intake
+  - reconciliation
+related:
+  - security-roles
+  - workflow-automation
 metadata:
   author: erphq
   domain: erpai.studio

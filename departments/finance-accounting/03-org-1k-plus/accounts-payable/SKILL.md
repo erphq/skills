@@ -2,6 +2,12 @@
 name: accounts-payable
 description: This skill should be used when the task involves manage vendor invoices, match them to purchase orders and receipts, run payment batches, and keep supplier relationships healthy.
 version: 1.0.0
+agents:
+related:
+  - general-ledger
+  - period-close
+  - procurement
+  - vendor-management
 metadata:
   author: erphq
   domain: erpai.studio

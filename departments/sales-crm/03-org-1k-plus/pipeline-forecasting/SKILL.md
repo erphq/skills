@@ -2,6 +2,14 @@
 name: pipeline-forecasting
 description: This skill should be used when the task involves track deals through stages, weight them by probability, build reliable revenue forecasts, and hold reps accountable to their numbers.
 version: 1.0.0
+agents:
+  - deal-coach
+  - forecast
+related:
+  - commissions
+  - contracts-renewals
+  - lead-management
+  - quoting-cpq
 metadata:
   author: erphq
   domain: erpai.studio

@@ -2,6 +2,12 @@
 name: budgeting-forecasting
 description: This skill should be used when the task involves create budgets, run variance analysis, build rolling forecasts, and model scenarios so you can plan with confidence.
 version: 1.0.0
+agents:
+  - variance-analyst
+related:
+  - general-ledger
+  - period-close
+  - reports-dashboards
 metadata:
   author: erphq
   domain: erpai.studio

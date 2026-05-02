@@ -2,6 +2,13 @@
 name: workflow-automation
 description: This skill should be used when the task involves design and implement business process automation in ERP•AI -- use when building approval chains, state machines, scheduled jobs, notification rules, SLA enforcement, and business rule engines.
 version: 1.0.0
+agents:
+  - approvals
+  - period-close
+related:
+  - accounts-payable
+  - procurement
+  - security-roles
 metadata:
   author: erphq
   domain: erpai.studio
