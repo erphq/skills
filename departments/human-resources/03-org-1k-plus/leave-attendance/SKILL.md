@@ -2,6 +2,10 @@
 name: leave-attendance
 description: This skill should be used when the task involves track time, manage PTO policies, handle FMLA, schedule shifts, and manage overtime compliance.
 version: 1.0.0
+agents:
+  - approvals
+related:
+  - payroll
 metadata:
   author: erphq
   domain: erpai.studio

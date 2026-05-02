@@ -2,6 +2,12 @@
 name: tax-compliance
 description: This skill should be used when the task involves handle sales tax, VAT, GST, withholding tax, 1099 reporting, and statutory filings so you stay on the right side of every tax authority.
 version: 1.0.0
+agents:
+  - period-close
+related:
+  - accounts-payable
+  - accounts-receivable
+  - general-ledger
 metadata:
   author: erphq
   domain: erpai.studio

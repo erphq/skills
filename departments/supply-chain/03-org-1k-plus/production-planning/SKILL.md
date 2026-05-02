@@ -2,6 +2,16 @@
 name: production-planning
 description: This skill should be used when the task involves how to figure out what to make, when to make it, and how to keep the shop floor running smoothly.
 version: 1.0.0
+agents:
+  - approvals
+  - consolidation
+  - procurement
+related:
+  - demand-planning
+  - inventory
+  - procurement
+  - quality
+  - warehouse
 metadata:
   author: erphq
   domain: erpai.studio

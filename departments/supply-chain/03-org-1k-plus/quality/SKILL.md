@@ -2,6 +2,11 @@
 name: quality
 description: This skill should be used when the task involves how to make sure what you buy, make, and sell meets your standards every time.
 version: 1.0.0
+agents:
+related:
+  - production-planning
+  - vendor-management
+  - warehouse
 metadata:
   author: erphq
   domain: erpai.studio

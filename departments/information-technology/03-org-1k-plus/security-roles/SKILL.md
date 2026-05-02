@@ -2,6 +2,11 @@
 name: security-roles
 description: This skill should be used when the task involves design and implement access control, authentication, audit logging, encryption, and compliance-driven security configurations in ERP•AI -- use when defining RBAC, segregation of duties, SSO, field-level security, and regulatory controls.
 version: 1.0.0
+agents:
+  - approvals
+related:
+  - master-data-management
+  - workflow-automation
 metadata:
   author: erphq
   domain: erpai.studio

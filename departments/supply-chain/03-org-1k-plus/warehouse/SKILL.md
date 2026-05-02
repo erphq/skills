@@ -2,6 +2,11 @@
 name: warehouse
 description: This skill should be used when the task involves how to receive, store, find, pick, pack, and ship products efficiently.
 version: 1.0.0
+agents:
+related:
+  - inventory
+  - logistics
+  - procurement
 metadata:
   author: erphq
   domain: erpai.studio

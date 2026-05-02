@@ -2,6 +2,12 @@
 name: inventory
 description: This skill should be used when the task involves how to track what you have, where it is, and when to order more.
 version: 1.0.0
+agents:
+related:
+  - demand-planning
+  - procurement
+  - production-planning
+  - warehouse
 metadata:
   author: erphq
   domain: erpai.studio

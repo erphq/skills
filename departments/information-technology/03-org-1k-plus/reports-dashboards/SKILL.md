@@ -2,6 +2,12 @@
 name: reports-dashboards
 description: This skill should be used when the task involves designing, building, and managing enterprise reporting and analytics -- from KPI selection through dashboard layout, scheduled distribution, and data security.
 version: 1.0.0
+agents:
+  - variance-analyst
+related:
+  - budgeting-forecasting
+  - consolidation
+  - general-ledger
 metadata:
   author: erphq
   domain: erpai.studio

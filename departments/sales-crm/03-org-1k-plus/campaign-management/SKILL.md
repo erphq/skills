@@ -2,6 +2,11 @@
 name: campaign-management
 description: This skill should be used when the task involves plan marketing campaigns, segment your audience, execute across channels, track what influenced revenue, and prove ROI.
 version: 1.0.0
+agents:
+  - lead-scoring
+related:
+  - customer-360
+  - lead-management
 metadata:
   author: erphq
   domain: erpai.studio

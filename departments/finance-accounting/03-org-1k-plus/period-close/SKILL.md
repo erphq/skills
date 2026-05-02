@@ -2,6 +2,12 @@
 name: period-close
 description: This skill should be used when the task involves run your month-end close efficiently — reconciliations, accruals, adjustments, and reporting on time every time.
 version: 1.0.0
+agents:
+related:
+  - budgeting-forecasting
+  - consolidation
+  - general-ledger
+  - reports-dashboards
 metadata:
   author: erphq
   domain: erpai.studio

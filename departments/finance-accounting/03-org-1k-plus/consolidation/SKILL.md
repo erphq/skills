@@ -2,6 +2,13 @@
 name: consolidation
 description: This skill should be used when the task involves roll up multiple entities into one set of financial statements with intercompany eliminations, currency translation, and minority interest adjustments.
 version: 1.0.0
+agents:
+  - consolidation
+  - period-close
+related:
+  - general-ledger
+  - period-close
+  - reports-dashboards
 metadata:
   author: erphq
   domain: erpai.studio

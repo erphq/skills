@@ -2,6 +2,11 @@
 name: demand-planning
 description: This skill should be used when the task involves how to predict what customers will need so you can have the right stuff ready at the right time.
 version: 1.0.0
+agents:
+related:
+  - inventory
+  - procurement
+  - production-planning
 metadata:
   author: erphq
   domain: erpai.studio
