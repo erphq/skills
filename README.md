@@ -1,6 +1,6 @@
 ---
-title: SDStack
-description: The open enterprise skill stack — business and IT skills organized by department, company size, and process. For humans and AI agents alike.
+title: ERP•AI Skills
+description: The open enterprise skill stack: business and IT skills organized by department, company size, and process. For humans and AI agents alike.
 audience: both
 category: index
 ---
@@ -8,13 +8,15 @@ category: index
 <div align="center">
 
 <pre>
-███████╗██████╗ ███████╗████████╗ █████╗  ██████╗██╗  ██╗
-██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝
-███████╗██║  ██║███████╗   ██║   ███████║██║     █████╔╝ 
-╚════██║██║  ██║╚════██║   ██║   ██╔══██║██║     ██╔═██╗ 
-███████║██████╔╝███████║   ██║   ██║  ██║╚██████╗██║  ██╗
-╚══════╝╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+███████╗█████╔╝ ██║██║     ██║     ███████╗
+╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+███████║██║  ██╗██║███████╗███████╗███████║
+╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 </pre>
+
+# `erp•ai` skills
 
 ### The Open Enterprise Skill Stack
 
@@ -34,7 +36,7 @@ category: index
 
 ## What this repo is
 
-SDStack is a library of skills that an AI agent (or a human) can pick from. It has three top-level concepts:
+**ERP•AI Skills** (formerly SDStack) is a library of skills that an AI agent (or a human) can pick from. It has three top-level concepts:
 
 1. **`departments/`** — work scoped to a specific business function. Pinned to **department × company size × skill** (e.g., `finance-accounting/02-org-100-to-1k/accounts-payable/SKILL.md`).
 2. **`templates/`** — cross-department work artifacts (e.g., fit-gap matrix, go-live checklist). Scoped by company size only.
@@ -238,8 +240,8 @@ Today, every department has its `03-org-1k-plus/` populated (the enterprise tier
 
 ## License
 
-MIT — use it, fork it, build with it.
+MIT: use it, fork it, build with it.
 
 ---
 
-<sub>SD — Shashank Dixit · [ERP•AI](https://erp.ai)</sub>
+<sub>[ERP•AI](https://erp.ai)</sub>
