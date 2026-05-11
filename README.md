@@ -26,7 +26,7 @@ category: index
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![ERP•AI](https://img.shields.io/badge/Works_with-ERP•AI-6C3CE9)](https://erp.ai)
+[![ERP•AI](https://img.shields.io/badge/Works_with-ERP•AI-6C3CE9)](https://erpai.studio)
 
 <br>
 
@@ -244,4 +244,4 @@ MIT: use it, fork it, build with it.
 
 ---
 
-<sub>[ERP•AI](https://erp.ai)</sub>
+<sub>[ERP•AI](https://erpai.studio)</sub>
