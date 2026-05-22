@@ -36,11 +36,12 @@ category: index
 
 ## What this repo is
 
-**ERP•AI Skills** (formerly SDStack) is a library of skills that an AI agent (or a human) can pick from. It has three top-level concepts:
+**ERP•AI Skills** (formerly SDStack) is a library of skills that an AI agent (or a human) can pick from. It has four top-level concepts:
 
 1. **`departments/`** — work scoped to a specific business function. Pinned to **department × company size × skill** (e.g., `finance-accounting/02-org-100-to-1k/accounts-payable/SKILL.md`).
 2. **`templates/`** — cross-department work artifacts (e.g., fit-gap matrix, go-live checklist). Scoped by company size only.
 3. **`investment-research/`** — equity research, market commentary, and stock recommendations. For agents that combine domain expertise with sector knowledge + maintained ticker watchlists to publish investment content. Scoped by **sector**, not department or size.
+4. **`platforms/`** — product-specific operating playbooks for agent-run platforms, starting with `platforms/build-host/`.
 
 Pick the right top-level concept, then the right leaf — you land on exactly one `SKILL.md` file. No ambiguity, no cross-referencing multiple folders.
 
@@ -79,7 +80,7 @@ skills/
 │   ├── 02-org-100-to-1k/<template>/SKILL.md
 │   └── 03-org-1k-plus/<template>/SKILL.md
 │
-└── investment-research/                    equity research + market commentary (sector-scoped)
+├── investment-research/                    equity research + market commentary (sector-scoped)
     ├── OVERVIEW.md
     ├── core/                               sector-agnostic research craft
     │   ├── equity-research-framework/SKILL.md
@@ -96,6 +97,14 @@ skills/
         ├── supply-chain-tech/
         ├── project-ops-tech/
         └── platform-it/
+│
+└── platforms/                              product-specific operating playbooks
+    └── build-host/
+        ├── OVERVIEW.md
+        ├── hosting/<skill>/SKILL.md
+        ├── sites/<skill>/SKILL.md
+        ├── design/<skill>/SKILL.md
+        └── apps/<skill>/SKILL.md
 ```
 
 **The leaf paths are always:**
@@ -106,6 +115,7 @@ templates/<org-size>/<template>/SKILL.md
 investment-research/core/<skill>/SKILL.md
 investment-research/sectors/<sector>/SKILL.md
 investment-research/sectors/<sector>/tickers.md
+platforms/<platform>/<category>/<skill>/SKILL.md
 ```
 
 ---
@@ -178,6 +188,14 @@ investment-research/
 An agent composes: domain expertise (from `departments/`) + research craft (from `core/`) + sector knowledge + ticker watchlist (from `sectors/<sector>/`). Example: an HR-expert agent picks `departments/human-resources/` + `investment-research/core/*` + `investment-research/sectors/hr-tech/` and publishes commentary on Workday earnings, Paycom vs Paylocity, or the Rippling IPO. See [`investment-research/OVERVIEW.md`](investment-research/OVERVIEW.md) for the composition pattern.
 
 **Public-ticker universe: ~400+ across the 7 sectors**, covering the sizable majority of public enterprise-tech + adjacent ecosystem.
+
+---
+
+## Platforms
+
+Platform skills are detailed operating playbooks for a specific agent-run product. They are concrete enough for an installed agent to execute, not just labels in a catalog.
+
+- [`platforms/build-host/`](platforms/build-host/OVERVIEW.md) — deploy, operate, design, and scaffold projects on build.host. These are the per-recipe files behind the build.host skill catalog; the master installable contract still lives at `https://build.host/api/skill?raw=1`.
 
 ---
 
