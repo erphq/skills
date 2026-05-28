@@ -353,4 +353,4 @@ Top-of-mind battles:
 - [Tickers (Platform IT)](tickers.md)
 - [Equity Research Framework](../../core/equity-research-framework/SKILL.md)
 - [Earnings Call Analysis](../../core/earnings-call-analysis/SKILL.md)
-- [Information Technology](../../../departments/information-technology/03-org-1k-plus/) — domain expertise
+- [Information Technology](../../../departments/it-plumbing/03-org-1k-plus/) — domain expertise

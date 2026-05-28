@@ -59,7 +59,7 @@ skills/
 │   │   └── 03-org-1k-plus/<skill>/SKILL.md
 │   ├── finance-accounting/
 │   ├── human-resources/
-│   ├── information-technology/
+│   ├── it-plumbing/
 │   │   ├── OVERVIEW.md
 │   │   ├── role-overviews/                 reference: who does what in IT
 │   │   │   ├── compliance-analyst.md
@@ -141,14 +141,14 @@ The size tier refers to the **whole organization's headcount**, not the size of 
 | [Customer Support](departments/customer-support/OVERVIEW.md) | Ticketing, SLA, escalation, knowledge base, omnichannel, field service, CSAT |
 | [Finance & Accounting](departments/finance-accounting/OVERVIEW.md) | GL, AP/AR, fixed assets, budgeting, period close, consolidation, tax |
 | [Human Resources](departments/human-resources/OVERVIEW.md) | Payroll, benefits, recruitment, onboarding/offboarding, leave, performance, training |
-| [Information Technology](departments/information-technology/03-org-1k-plus/) | API design, integrations, data modeling/migration, security, observability, DR, testing, and more |
+| [Information Technology](departments/it-plumbing/03-org-1k-plus/) | API design, integrations, data modeling/migration, security, observability, DR, testing, and more |
 | [Project Operations](departments/project-operations/OVERVIEW.md) | Project planning, resourcing, time & expense, billing, portfolios, subcontractors |
 | [Sales & CRM](departments/sales-crm/OVERVIEW.md) | Leads, pipeline, quoting/CPQ, contracts/renewals, commissions, territory, customer 360, campaigns |
 | [Supply Chain](departments/supply-chain/OVERVIEW.md) | Procurement, inventory, warehouse, demand planning, logistics, quality, vendor management, production |
 
 Each department's `OVERVIEW.md` holds the cross-skill reference (entities, regulatory load, integration shape, KPIs). Read it before diving into any individual skill under that department.
 
-Inside `information-technology/`, the `role-overviews/` folder holds reference docs for the IT implementation roles (solution architect, data engineer, migration architect, QA lead, requirements analyst, compliance analyst). These are not skills themselves — they're how to *think* like that role when executing IT skills.
+Inside `it-plumbing/`, the `role-overviews/` folder holds reference docs for the IT implementation roles (solution architect, data engineer, migration architect, QA lead, requirements analyst, compliance analyst). These are not skills themselves — they're how to *think* like that role when executing IT skills.
 
 ---
 
