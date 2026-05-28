@@ -152,8 +152,8 @@ Use this when: you're within 2 weeks of planned go-live and need to assess readi
 
 ## Related
 
-- [Deployment & Go-Live](../../../departments/information-technology/03-org-1k-plus/deployment-golive/SKILL.md) — The skill guide for the full go-live process
+- [Deployment & Go-Live](../../../departments/it-plumbing/03-org-1k-plus/deployment-golive/SKILL.md) — The skill guide for the full go-live process
 - [Migration Runbook](../migration-runbook/SKILL.md) — Data cutover execution plan
 - [Requirements Traceability](../requirements-traceability/SKILL.md) — Proves all requirements are tested and signed off
-- [QA Lead](../../../departments/information-technology/role-overviews/qa-lead.md) — Owns testing readiness
-- [Compliance Analyst](../../../departments/information-technology/role-overviews/compliance-analyst.md) — Validates regulatory readiness
+- [QA Lead](../../../departments/it-plumbing/role-overviews/qa-lead.md) — Owns testing readiness
+- [Compliance Analyst](../../../departments/it-plumbing/role-overviews/compliance-analyst.md) — Validates regulatory readiness

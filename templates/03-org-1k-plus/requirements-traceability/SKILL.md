@@ -136,7 +136,7 @@ Can it be demonstrated in the system?
 ## Related
 
 - [Fit-Gap Matrix](../fit-gap-matrix/SKILL.md) — Source of requirements that populate this matrix
-- [Requirements Analyst](../../../departments/information-technology/role-overviews/requirements-analyst.md) — Owns the requirements side of traceability
-- [QA Lead](../../../departments/information-technology/role-overviews/qa-lead.md) — Owns the testing side of traceability
-- [Testing & Validation](../../../departments/information-technology/03-org-1k-plus/testing-validation/SKILL.md) — How to write the test cases
+- [Requirements Analyst](../../../departments/it-plumbing/role-overviews/requirements-analyst.md) — Owns the requirements side of traceability
+- [QA Lead](../../../departments/it-plumbing/role-overviews/qa-lead.md) — Owns the testing side of traceability
+- [Testing & Validation](../../../departments/it-plumbing/03-org-1k-plus/testing-validation/SKILL.md) — How to write the test cases
 - [Go-Live Checklist](../go-live-checklist/SKILL.md) — RTM coverage is a go-live gate

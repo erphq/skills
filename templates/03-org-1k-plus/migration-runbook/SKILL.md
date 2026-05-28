@@ -164,7 +164,7 @@ Use this when: you're preparing for or executing a data migration cutover.
 
 ## Related
 
-- [Migration Architect](../../../departments/information-technology/role-overviews/migration-architect.md) — The role that owns this runbook
-- [Data Migration](../../../departments/information-technology/03-org-1k-plus/data-migration/SKILL.md) — The skill guide for building the migration pipeline
+- [Migration Architect](../../../departments/it-plumbing/role-overviews/migration-architect.md) — The role that owns this runbook
+- [Data Migration](../../../departments/it-plumbing/03-org-1k-plus/data-migration/SKILL.md) — The skill guide for building the migration pipeline
 - [Go-Live Checklist](../go-live-checklist/SKILL.md) — Migration completion feeds into the go-live decision
-- [Data Engineer](../../../departments/information-technology/role-overviews/data-engineer.md) — Responsible for extract, transform, load execution
+- [Data Engineer](../../../departments/it-plumbing/role-overviews/data-engineer.md) — Responsible for extract, transform, load execution

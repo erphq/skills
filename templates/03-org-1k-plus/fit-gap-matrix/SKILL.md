@@ -127,7 +127,7 @@ Is it a Must Have?
 
 ## Related
 
-- [Requirements Analyst](../../../departments/information-technology/role-overviews/requirements-analyst.md) — The role that drives this process
-- [Solution Architect](../../../departments/information-technology/role-overviews/solution-architect.md) — Validates technical fit ratings and effort estimates
+- [Requirements Analyst](../../../departments/it-plumbing/role-overviews/requirements-analyst.md) — The role that drives this process
+- [Solution Architect](../../../departments/it-plumbing/role-overviews/solution-architect.md) — Validates technical fit ratings and effort estimates
 - [Requirements Traceability](../requirements-traceability/SKILL.md) — Links these requirements forward to config and test
 - [Go-Live Checklist](../go-live-checklist/SKILL.md) — Must Have items feed directly into go/no-go criteria
