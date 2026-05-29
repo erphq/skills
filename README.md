@@ -36,12 +36,13 @@ category: index
 
 ## What this repo is
 
-**ERP•AI Skills** (formerly SDStack) is a library of skills that an AI agent (or a human) can pick from. It has four top-level concepts:
+**ERP•AI Skills** (formerly SDStack) is a library of skills that an AI agent (or a human) can pick from. It has five top-level concepts:
 
 1. **`departments/`** — work scoped to a specific business function. Pinned to **department × company size × skill** (e.g., `finance-accounting/02-org-100-to-1k/accounts-payable/SKILL.md`).
 2. **`templates/`** — cross-department work artifacts (e.g., fit-gap matrix, go-live checklist). Scoped by company size only.
 3. **`investment-research/`** — equity research, market commentary, and stock recommendations. For agents that combine domain expertise with sector knowledge + maintained ticker watchlists to publish investment content. Scoped by **sector**, not department or size.
 4. **`platforms/`** — product-specific operating playbooks for agent-run platforms, starting with `platforms/build-host/`.
+5. **`entrepreneurship/`** — the operating manual for starting and running an early-stage venture, starting with `entrepreneurship/founding/`.
 
 Pick the right top-level concept, then the right leaf — you land on exactly one `SKILL.md` file. No ambiguity, no cross-referencing multiple folders.
 
@@ -81,30 +82,34 @@ skills/
 │   └── 03-org-1k-plus/<template>/SKILL.md
 │
 ├── investment-research/                    equity research + market commentary (sector-scoped)
-    ├── OVERVIEW.md
-    ├── core/                               sector-agnostic research craft
-    │   ├── equity-research-framework/SKILL.md
-    │   ├── reading-10k-10q/SKILL.md
-    │   ├── earnings-call-analysis/SKILL.md
-    │   ├── valuation-dcf-comps/SKILL.md
-    │   ├── competitive-landscape/SKILL.md
-    │   └── content-publishing/SKILL.md
-    └── sectors/                            one folder per sector
-        ├── hr-tech/                        SKILL.md + tickers.md
-        ├── finance-accounting-tech/
-        ├── sales-crm-tech/
-        ├── customer-support-tech/
-        ├── supply-chain-tech/
-        ├── project-ops-tech/
-        └── platform-it/
+│   ├── OVERVIEW.md
+│   ├── core/                               sector-agnostic research craft
+│   │   ├── equity-research-framework/SKILL.md
+│   │   ├── reading-10k-10q/SKILL.md
+│   │   ├── earnings-call-analysis/SKILL.md
+│   │   ├── valuation-dcf-comps/SKILL.md
+│   │   ├── competitive-landscape/SKILL.md
+│   │   ├── buy-sell-recommendations/SKILL.md
+│   │   └── content-publishing/SKILL.md
+│   └── sectors/                            one folder per sector
+│       ├── hr-tech/                        SKILL.md + tickers.md
+│       ├── finance-accounting-tech/
+│       ├── sales-crm-tech/
+│       ├── customer-support-tech/
+│       ├── supply-chain-tech/
+│       ├── project-ops-tech/
+│       └── platform-it/
 │
-└── platforms/                              product-specific operating playbooks
-    └── build-host/
-        ├── OVERVIEW.md
-        ├── hosting/<skill>/SKILL.md
-        ├── sites/<skill>/SKILL.md
-        ├── design/<skill>/SKILL.md
-        └── apps/<skill>/SKILL.md
+├── platforms/                              product-specific operating playbooks
+│   └── build-host/
+│       ├── OVERVIEW.md
+│       ├── hosting/<skill>/SKILL.md
+│       ├── sites/<skill>/SKILL.md
+│       ├── design/<skill>/SKILL.md
+│       └── apps/<skill>/SKILL.md
+│
+└── entrepreneurship/                       operating manual for early-stage ventures
+    └── founding/SKILL.md
 ```
 
 **The leaf paths are always:**
@@ -116,6 +121,7 @@ investment-research/core/<skill>/SKILL.md
 investment-research/sectors/<sector>/SKILL.md
 investment-research/sectors/<sector>/tickers.md
 platforms/<platform>/<category>/<skill>/SKILL.md
+entrepreneurship/<concept>/SKILL.md
 ```
 
 ---
@@ -174,7 +180,7 @@ Shape:
 ```
 investment-research/
 ├── OVERVIEW.md
-├── core/                         6 research-craft skills
+├── core/                         7 research-craft skills
 └── sectors/                      7 sectors with SKILL.md + tickers.md each
     ├── hr-tech/                  ~60 tickers (HCM, talent, staffing, L&D, benefits)
     ├── finance-accounting-tech/  ~90 tickers (ERP, AP, close, FP&A, tax, payments, banking)
@@ -196,6 +202,14 @@ An agent composes: domain expertise (from `departments/`) + research craft (from
 Platform skills are detailed operating playbooks for a specific agent-run product. They are concrete enough for an installed agent to execute, not just labels in a catalog.
 
 - [`platforms/build-host/`](platforms/build-host/OVERVIEW.md) — deploy, operate, design, and scaffold projects on build.host. These are the per-recipe files behind the build.host skill catalog; the master installable contract still lives at `https://build.host/api/skill?raw=1`.
+
+---
+
+## Entrepreneurship
+
+The operating manual for starting and running an early-stage venture — picking what to build, finding first customers, hiring the first ten people, raising money, and the daily operating discipline that compounds across years.
+
+- [`entrepreneurship/founding/`](entrepreneurship/founding/SKILL.md) — what a founder actually does in years zero through three.
 
 ---
 
