@@ -1,0 +1,6 @@
+[allowlist]
+description = "Allow documented fake API-token anti-pattern examples in old history."
+regexes = [
+  '''api_key=sk_live_abc123''',
+  '''Authorization: Bearer erp_live_sk_abc123''',
+]

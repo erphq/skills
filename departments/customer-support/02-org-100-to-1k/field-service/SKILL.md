@@ -168,6 +168,6 @@ Move to the **1k+ org** playbook when:
 - [Customer Satisfaction](../customer-satisfaction/SKILL.md) — post-service CSAT
 - [Customer 360](../../../sales-crm/02-org-100-to-1k/customer-360/SKILL.md) — service history part of customer record
 - [Accounts Receivable](../../../finance-accounting/02-org-100-to-1k/accounts-receivable/SKILL.md) — invoicing + collection
-- [Inventory](../../../supply-chain/02-org-100-to-1k/inventory/SKILL.md) — parts inventory management
+- [Inventory](../../../supply-chain/03-org-1k-plus/inventory/SKILL.md) — parts inventory management reference
 - [Small-Org Field Service (<100 people)](../../01-org-under-100/field-service/SKILL.md)
 - [Enterprise Field Service (1k+)](../../03-org-1k-plus/field-service/SKILL.md)

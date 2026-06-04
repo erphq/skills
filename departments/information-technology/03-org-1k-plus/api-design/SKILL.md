@@ -225,7 +225,7 @@ Content-Type: application/merge-patch+json
 **API keys**: Simple bearer tokens for server-to-server access. Easy to implement, hard to manage securely. Best for internal services and development. Always sent in the `Authorization` header, never in query parameters (query params are logged in server access logs and browser history).
 
 ```
-Authorization: Bearer erp_live_sk_abc123...
+Authorization: Bearer <example-api-token>
 ```
 
 **OAuth 2.0 scopes mapped to RBAC**: For delegated access, use OAuth 2.0 with scopes that map to ERP•AI's role-based access control:
@@ -600,7 +600,7 @@ ERP•AI's API Gateway handles idempotency key storage and deduplication transpa
 - **God Endpoint**: A single endpoint that does everything based on request parameters: `POST /api/action?type=createInvoice&subtype=draft`. Impossible to document, test, cache, or rate-limit meaningfully. Use separate resource endpoints with distinct URIs and HTTP methods.
 - **Chatty APIs**: Requiring multiple API calls to accomplish a single business operation. Creating an invoice requires: 1) create header, 2) add line 1, 3) add line 2, 4) add tax, 5) submit. Design composite operations that accept the full resource in one call.
 - **Breaking Changes Without Versioning**: Adding a required field to a request, changing a field type, or removing a field from a response without incrementing the API version. Every consumer breaks simultaneously. Use versioning and deprecation policy.
-- **Auth Token in Query Parameters**: `?api_key=sk_live_abc123`. Query parameters are logged in server access logs, browser history, and proxy logs. Always use the `Authorization` header.
+- **Auth Token in Query Parameters**: `?api_key=<example-api-key>`. Query parameters are logged in server access logs, browser history, and proxy logs. Always use the `Authorization` header.
 - **Exposing Internal IDs**: Using auto-increment database IDs in API URIs (`/customers/12345`). Allows enumeration (try 12346, 12347...). Use opaque identifiers (UUIDs or prefixed IDs like `cust_abc123`).
 - **Inconsistent Naming**: Mixing `camelCase`, `snake_case`, and `PascalCase` across endpoints. Some endpoints return `created_at`, others return `createdAt`. Pick one convention and enforce it across all endpoints via linting.
 - **Silent Truncation**: Accepting a 1000-character string in a field with a 255-character database column and silently truncating. Validate input length and return a clear error.

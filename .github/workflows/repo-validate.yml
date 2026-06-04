@@ -1,0 +1,21 @@
+name: Repo Validate
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: repo-validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate repo content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate skills, links, and brand hygiene
+        run: node scripts/validate-repo.mjs
