@@ -16,13 +16,13 @@ ERP•AI Skills is an open library of operational playbooks for humans and AI ag
 
 | Area | Purpose | Count |
 |---|---|---:|
-| `departments/` | Department and org-size specific business skills | 133 |
+| `departments/` | Department and org-size specific business skills | 181 |
 | `templates/` | Cross-department implementation artifacts by org size | 12 |
 | `investment-research/` | Research craft plus sector-specific enterprise-tech coverage | 14 |
 | `platforms/` | Product-specific operating playbooks, currently build.host | 43 |
 | `entrepreneurship/` | Early-stage venture operating manual | 1 |
 
-Total: **203 `SKILL.md` files**.
+Total: **251 `SKILL.md` files**.
 
 ## Repository Layout
 
@@ -189,7 +189,7 @@ CI runs the same repo validation on pull requests.
 
 ## Status
 
-The enterprise tier (`03-org-1k-plus`) is populated across all departments. Many `01-org-under-100` and `02-org-100-to-1k` skills are populated where the operating pattern differs materially. Some non-enterprise folders still contain only `.gitkeep` until there is a concrete skill to write.
+The enterprise tier (`03-org-1k-plus`) is populated across all departments. Information Technology now has full 01 / 02 / 03 coverage, Project Operations has full 01 / 02 / 03 coverage, and the current ERP.ai app registry resolves against the tier-specific Supply Chain leaves it references. Some non-enterprise folders still contain only `.gitkeep` until there is a concrete skill to write.
 
 ## License
 
