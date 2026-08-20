@@ -472,9 +472,9 @@ This requires a commentary engine that accepts the current filter context and th
 
 ## Related
 
-- [Data Modeling](../data-modeling/SKILL.md) -- schema design directly impacts report query performance and available dimensions
-- [Security & Roles](../security-roles/SKILL.md) -- row-level and field-level security for reports
-- [Performance Optimization](../performance-optimization/SKILL.md) -- query tuning, indexing, and caching for report performance
-- [Finance & Accounting](../../../finance-accounting/OVERVIEW.md) -- financial reporting patterns (GL, AP/AR, budget vs actual)
-- [Supply Chain](../../../supply-chain/OVERVIEW.md) -- inventory and procurement reporting patterns
-- [Sales & CRM](../../../sales-crm/OVERVIEW.md) -- pipeline and revenue reporting patterns
+- [Master Data Management](/it-plumbing/master-data-management/) -- schema quality directly impacts report dimensions
+- [Security & Roles](/it-plumbing/security-roles/) -- row-level and field-level security for reports
+- [Workflow Automation](/it-plumbing/workflow-automation/) -- scheduled reporting and exception routing
+- [Finance & Accounting](/finance-accounting/general-ledger/) -- financial reporting patterns for GL and close
+- [Supply Chain](/supply-chain/inventory/) -- inventory and procurement reporting patterns
+- [Sales & CRM](/sales-crm/pipeline-forecasting/) -- pipeline and revenue reporting patterns

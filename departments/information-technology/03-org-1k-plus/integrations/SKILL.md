@@ -456,7 +456,7 @@ APIs that live long enough will need to be deprecated. A disciplined deprecation
 
 ## Related
 
-- [Data Modeling](../data-modeling/SKILL.md) -- the entity structures that integrations read from and write to
-- [Workflow Automation](../workflow-automation/SKILL.md) -- workflows that trigger integrations and react to integration events
-- [Data Migration](../data-migration/SKILL.md) -- one-time data loads that use integration infrastructure
-- [Security & Roles](../security-roles/SKILL.md) -- API authentication, authorization, and audit logging for integrations
+- [Master Data Management](/it-plumbing/master-data-management/) -- the entity structures that integrations read from and write to
+- [Workflow Automation](/it-plumbing/workflow-automation/) -- workflows that trigger integrations and react to integration events
+- [Reports & Dashboards](/it-plumbing/reports-dashboards/) -- operational visibility for integration loads and failures
+- [Security & Roles](/it-plumbing/security-roles/) -- API authentication, authorization, and audit logging for integrations

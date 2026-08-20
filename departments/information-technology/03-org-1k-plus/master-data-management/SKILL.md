@@ -477,7 +477,7 @@ This process typically takes 2-6 weeks per domain depending on data volume and q
 
 ## Related
 
-- [Data Modeling](../data-modeling/SKILL.md) -- designing the schemas that master data entities follow
-- [Data Migration](../data-migration/SKILL.md) -- migrating master data from legacy systems into the MDM hub
-- [Integrations](../integrations/SKILL.md) -- building the sync pipelines between MDM hub and connected systems
-- [Security & Roles](../security-roles/SKILL.md) -- controlling who can create, modify, merge, and approve master data
+- [Reports & Dashboards](/it-plumbing/reports-dashboards/) -- measuring the quality of schemas and master data entities
+- [Workflow Automation](/it-plumbing/workflow-automation/) -- governing review and migration handoffs
+- [Integrations](/it-plumbing/integrations/) -- building the sync pipelines between MDM hub and connected systems
+- [Security & Roles](/it-plumbing/security-roles/) -- controlling who can create, modify, merge, and approve master data
