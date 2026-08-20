@@ -475,6 +475,6 @@ In ERP•AI, the Workflow Analytics dashboard provides pre-built views for execu
 
 ## Related
 
-- [Data Modeling](../data-modeling/SKILL.md) -- the entities and fields that workflows operate on
-- [Security & Roles](../security-roles/SKILL.md) -- who can trigger, approve, and override workflow steps
-- [Integrations](../integrations/SKILL.md) -- connecting workflows to external systems via webhooks and API triggers
+- [Master Data Management](/it-plumbing/master-data-management/) -- the governed entities and fields that workflows operate on
+- [Security & Roles](/it-plumbing/security-roles/) -- who can trigger, approve, and override workflow steps
+- [Integrations](/it-plumbing/integrations/) -- connecting workflows to external systems via webhooks and API triggers

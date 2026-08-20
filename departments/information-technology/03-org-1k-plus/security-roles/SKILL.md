@@ -699,7 +699,7 @@ Third-party integrations introduce code and data flows that you do not control:
 
 ## Related
 
-- [Data Modeling](../data-modeling/SKILL.md) -- security roles protect the entities and fields defined in the data model
-- [Workflow Automation](../workflow-automation/SKILL.md) -- approval workflows enforce security controls (approval chains, SoD in action)
-- [Integrations](../integrations/SKILL.md) -- API security, service account management, and credential storage
-- [Data Migration](../data-migration/SKILL.md) -- security controls for migration staging data and production loads
+- [Master Data Management](/it-plumbing/master-data-management/) -- security roles protect governed entities and fields
+- [Workflow Automation](/it-plumbing/workflow-automation/) -- approval workflows enforce security controls (approval chains, SoD in action)
+- [Integrations](/it-plumbing/integrations/) -- API security, service account management, and credential storage
+- [Reports & Dashboards](/it-plumbing/reports-dashboards/) -- auditing privileged access and control exceptions
